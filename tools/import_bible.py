@@ -7,6 +7,7 @@ import os
 from pathlib import Path
 import re
 import tempfile
+import sys
 
 # Flat-file numeric IDs use the Protestant 1-66 order, not internal enum ordinals.
 BOOKS = [
@@ -189,6 +190,11 @@ def convert(records, name, source=None):
 
 
 def main(argv=None):
+    # Windows CI/redirected consoles can use a legacy code page. A completion
+    # message must not turn a successful UTF-8 file conversion into a failure.
+    for stream in (sys.stdout, sys.stderr):
+        if hasattr(stream, "reconfigure"):
+            stream.reconfigure(errors="backslashreplace")
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("input", type=Path, help="사용 가능한 본문 JSON 또는 TXT/TSV 파일")
     parser.add_argument("output", type=Path, help="출력 krv.json 경로")

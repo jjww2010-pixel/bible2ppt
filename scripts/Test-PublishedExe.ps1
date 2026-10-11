@@ -4,6 +4,7 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
+$env:PYTHONUTF8 = '1'
 $originalExe = Join-Path (Resolve-Path $PublishDirectory) 'Bible2PPT.exe'
 New-Item -ItemType Directory -Force $ResultDirectory | Out-Null
 $results = (Resolve-Path $ResultDirectory).Path
@@ -65,7 +66,7 @@ try {
 
     $bibleDirectory = Join-Path $isolated 'Bibles'
     New-Item -ItemType Directory $bibleDirectory | Out-Null
-    python tools/import_bible.py $fullText (Join-Path $bibleDirectory 'krv.json') --name '진단용 예시'
+    python tools/import_bible.py $fullText (Join-Path $bibleDirectory 'krv.json') --name '진단용 예시' > (Join-Path $results 'prepare-ui.txt') 2>&1
     if ($LASTEXITCODE -ne 0) { throw 'Failed to prepare UI fixture.' }
     foreach ($configMode in @('fresh', 'truncated', 'invalid-line-limit')) {
         $configPath = "$exe.cfg"

@@ -5,6 +5,7 @@ import subprocess
 import sys
 import tempfile
 import unittest
+import os
 
 SCRIPT = Path(__file__).with_name("import_bible.py")
 spec = importlib.util.spec_from_file_location("import_bible", SCRIPT)
@@ -121,6 +122,17 @@ class ImportBibleTest(unittest.TestCase):
             result = self.run_cli(source, output, "--encoding", "cp949")
             self.assertEqual(0, result.returncode, result.stderr)
             self.assertIn("테스트 본문", output.read_text(encoding="utf-8"))
+
+    def test_legacy_redirected_console_does_not_report_failure_after_success(self):
+        with tempfile.TemporaryDirectory() as directory:
+            source, output = Path(directory) / "input.txt", Path(directory) / "krv.json"
+            source.write_text("창1:1 진단용 문장", encoding="utf-8")
+            env = os.environ.copy()
+            env["PYTHONIOENCODING"] = "ascii"
+            result = subprocess.run([sys.executable, str(SCRIPT), str(source), str(output), "--name", "진단용"],
+                                    env=env, capture_output=True, text=True, encoding="utf-8")
+            self.assertEqual(0, result.returncode, result.stderr)
+            self.assertEqual("진단용 문장", json.loads(output.read_text(encoding="utf-8"))["books"][0]["chapters"][0]["verses"][0]["text"])
 
 
 if __name__ == "__main__":
