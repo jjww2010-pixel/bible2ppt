@@ -1,0 +1,7 @@
+Exception: D:\a\bible2ppt\bible2ppt\scripts\Test-PublishedExe.ps1:69
+Line |
+  69 |  …    if ($LASTEXITCODE -ne 0) { throw 'Failed to prepare UI fixture.' }
+     |                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Failed to prepare UI fixture.
+
+
