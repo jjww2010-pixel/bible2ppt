@@ -1,0 +1,1 @@
+--check-bible / C:\Users\runneradmin\AppData\Local\Temp\Bible2PPT smoke b721a897-94d6-4be5-8304-96a90b07af3f\whole Bible.txt / expected=0 / started=2026-10-11T16:12:55.8065749Z
