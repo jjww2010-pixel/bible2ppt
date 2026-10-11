@@ -1,0 +1,9 @@
+Exception: D:\a\bible2ppt\bible2ppt\scripts\Test-PublishedExe.ps1:31
+Line |
+  31 |          throw "EXE exit code $($process.ExitCode), expected $Expected …
+     |          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | EXE exit code 1, expected 0. System.InvalidOperationException: Navigation did not select the expected page.   
+     | at Bible2PPT.MainForm.CheckUiAsync()    at
+     | Bible2PPT.PublishedUiCheck.<>c__DisplayClass0_1.<<Run>b__3>d.MoveNext()
+
+

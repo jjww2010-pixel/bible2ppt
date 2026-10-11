@@ -1,0 +1,3 @@
+System.InvalidOperationException: Navigation did not select the expected page.
+   at Bible2PPT.MainForm.CheckUiAsync()
+   at Bible2PPT.PublishedUiCheck.<>c__DisplayClass0_1.<<Run>b__3>d.MoveNext()
