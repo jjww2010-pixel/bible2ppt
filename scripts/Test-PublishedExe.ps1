@@ -17,6 +17,7 @@ $exe = Join-Path $isolated 'Bible2PPT.exe'
 Copy-Item $originalExe $exe
 
 function Invoke-BibleCheck([string]$InputFile, [string]$Report, [int]$ExpectedExit, [string]$Mode = '--check-bible') {
+    Set-Content (Join-Path $results 'last-check.txt') "$Mode / $InputFile / expected=$ExpectedExit / started=$([DateTime]::UtcNow.ToString('o'))"
     $arguments = if ($Mode -eq '--check-ui') { @($Mode, ('"{0}"' -f $Report)) } else { @($Mode, ('"{0}"' -f $InputFile), ('"{0}"' -f $Report)) }
     $process = Start-Process -FilePath $exe -ArgumentList $arguments -WorkingDirectory $scratch -PassThru
     $null = $process.Handle
@@ -89,6 +90,9 @@ try {
     Invoke-BibleCheck $badText (Join-Path $scratch 'bad TXT report.txt') 1
     Write-Host 'Published EXE passed: 66 books / 1189 chapters / 31101 verse queries, SQLite, imports, Unicode paths, UI navigation and settings.'
     Write-Host 'PowerPoint COM rendering: NOT TESTED (Office is not installed on hosted runners).'
+} catch {
+    $_ | Out-String | Set-Content (Join-Path $results 'failure.txt') -Encoding utf8
+    throw
 } finally {
     Get-ChildItem $scratch -Filter '*report.txt' | Copy-Item -Destination $results
     Remove-Item $scratch -Recurse -Force
