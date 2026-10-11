@@ -1,0 +1,1 @@
+--check-bible / C:\Users\runneradmin\AppData\Local\Temp\Bible2PPT smoke 0b0fb8df-3ee6-4eaf-87db-447e4df0af1c\bad TXT input.txt / expected=1 / started=2026-10-11T16:28:34.8992070Z
