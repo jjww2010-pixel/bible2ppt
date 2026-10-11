@@ -1,0 +1,29 @@
+name: Local Bible tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: |
+            8.0.x
+            6.0.x
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test local Bible source
+        run: dotnet test Bible2PPT.Services.BibleService.Tests/Bible2PPT.Services.BibleService.Tests.csproj --verbosity minimal
+      - name: Test verse queries
+        run: dotnet test Bible2PPT.Services.BibleIndexService.Tests/Bible2PPT.Services.BibleIndexService.Tests.csproj --verbosity minimal
+      - name: Test JSON and TXT import
+        run: python -m unittest discover -s tools -p 'test_*.py'

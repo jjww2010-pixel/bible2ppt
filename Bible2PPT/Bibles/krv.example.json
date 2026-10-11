@@ -1,0 +1,20 @@
+{
+  "name": "개역개정",
+  "languageCode": "ko",
+  "books": [
+    {
+      "key": "Genesis",
+      "name": "창세기",
+      "abbreviation": "창",
+      "chapters": [
+        {
+          "number": 1,
+          "verses": [
+            { "number": 1, "text": "여기에 사용 가능한 창세기 1장 1절 본문을 넣으세요." },
+            { "number": 2, "text": "여기에 사용 가능한 창세기 1장 2절 본문을 넣으세요." }
+          ]
+        }
+      ]
+    }
+  ]
+}
