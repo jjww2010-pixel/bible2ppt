@@ -12,7 +12,7 @@ public sealed class LocalBible : BibleSource
     // Keep the old web source IDs (0-2) reserved so their cached data is never reused.
     public const int DefaultSourceId = 3;
     private const string BibleOnlineId = "local-krv";
-    private readonly Lazy<Task<Document>> _document;
+    private Lazy<Task<Document>> _document;
 
     public string FilePath { get; }
     public override bool CacheContent => false;
@@ -25,6 +25,8 @@ public sealed class LocalBible : BibleSource
         // One validated snapshot per process. Restart after replacing the file.
         _document = new Lazy<Task<Document>>(LoadAsync);
     }
+
+    public void Reload() => _document = new Lazy<Task<Document>>(LoadAsync);
 
     public override async Task<List<Bible>> GetBiblesOnlineAsync()
     {

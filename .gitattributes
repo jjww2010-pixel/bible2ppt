@@ -13,6 +13,7 @@ packages.config text eol=crlf
 App.config text eol=crlf
 *.bat text eol=crlf
 *.cmd text eol=crlf
+*.cmd text eol=crlf
 *.snippet text eol=crlf
 *.manifest text eol=crlf
 *.licenseheader text eol=crlf

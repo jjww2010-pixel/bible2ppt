@@ -1,0 +1,50 @@
+name: Windows EXE
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: windows-latest
+    timeout-minutes: 20
+    strategy:
+      matrix:
+        runtime: [win-x64, win-x86]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+      - name: Publish standalone EXE
+        shell: pwsh
+        run: >-
+          dotnet publish Bible2PPT/Bible2PPT.csproj
+          -c Release -r ${{ matrix.runtime }} --self-contained true
+          -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true
+          -p:EnableCompressionInSingleFile=true
+          -p:PublishTrimmed=false -p:DebugType=None -p:DebugSymbols=false
+          -o artifacts/${{ matrix.runtime }}
+      - name: Run the published EXE
+        shell: pwsh
+        run: ./scripts/Test-PublishedExe.ps1 -PublishDirectory artifacts/${{ matrix.runtime }}
+      - name: Include usage and license
+        shell: pwsh
+        run: |
+          Copy-Item LICENSE artifacts/${{ matrix.runtime }}/LICENSE.txt
+          Copy-Item docs artifacts/${{ matrix.runtime }}/docs -Recurse
+          (Get-Content docs/windows-exe.md -Raw).Replace('(local-bible.md)', '(docs/local-bible.md)') |
+            Set-Content artifacts/${{ matrix.runtime }}/READ-ME.md -Encoding utf8
+          New-Item -ItemType Directory -Force artifacts/${{ matrix.runtime }}/Diagnostics | Out-Null
+          Copy-Item scripts/fixtures/diagnostic-bible.json artifacts/${{ matrix.runtime }}/Diagnostics/example.json
+          Copy-Item scripts/Check-PowerPoint.cmd artifacts/${{ matrix.runtime }}/Check-PowerPoint.cmd
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Bible2PPT-${{ matrix.runtime }}
+          path: artifacts/${{ matrix.runtime }}/
+          if-no-files-found: error

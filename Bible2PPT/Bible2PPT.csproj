@@ -34,6 +34,7 @@
   <ItemGroup>
     <EmbeddedResource Include="Resources\**\*" />
     <None Update="Bibles\*.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
+    <None Update="Bibles\krv.example.json" CopyToPublishDirectory="Never" />
   </ItemGroup>
 
   <ItemGroup>

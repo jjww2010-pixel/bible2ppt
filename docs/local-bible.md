@@ -2,6 +2,10 @@
 
 ## 본문 파일 준비
 
+`Bible2PPT.exe`에서는 파일이 없을 때 표시되는 안내 또는 설정 → **성경 본문 가져오기**로
+JSON·TXT·TSV 파일을 직접 가져올 수 있습니다. 프로그램이 형식을 변환하고 본문을 즉시 다시 읽습니다.
+Python을 실행하거나 프로그램을 재시작할 필요가 없습니다. [EXE 사용 안내](windows-exe.md)를 참고하세요.
+
 1. 사용할 수 있는 개역개정 본문을 UTF-8 JSON 파일로 준비합니다. 전체 본문은 이 저장소에 포함되어 있지 않습니다.
 2. `Bible2PPT.exe`와 같은 폴더에 `Bibles` 폴더를 만들고 `krv.json`을 넣습니다.
 3. 프로그램을 시작합니다. 소스는 **로컬 성경 (JSON)**, 성경은 JSON의 `name`으로 표시됩니다.
@@ -92,6 +96,7 @@ UTF-8이 기본입니다. CP949 파일은 `--encoding cp949`를 추가하세요.
 ## 파일 교체와 기존 데이터
 
 프로그램은 시작 후 처음 읽은 파일을 실행 중에 공유합니다. 본문을 교체하거나 파일 오류를 수정한 뒤 **프로그램을 다시 시작**하세요.
+설정의 **성경 본문 가져오기**를 사용하면 프로그램이 본문을 다시 읽으므로 재시작하지 않아도 됩니다.
 로컬 목차·본문은 SQLite 캐시에서 읽지 않습니다. 이전 웹사이트 캐시를 지울 필요가 없습니다.
 성경의 식별 정보만 저장하므로 파일을 교체해도 기존 로컬 성경 선택을 유지합니다.
 
@@ -186,11 +191,11 @@ dotnet test Bible2PPT.Services.BibleIndexService.Tests/Bible2PPT.Services.BibleI
 python -m unittest discover -s tools -p "test_*.py"
 ```
 
-전체 Windows 앱은 Visual Studio 2022의 .NET 데스크톱 빌드 도구와 Microsoft PowerPoint가 설치된 Windows에서 빌드합니다.
-실행에는 .NET 6 Desktop Runtime 또는 런타임 포함 배포본이 필요합니다.
+전체 Windows 앱은 .NET SDK로 빌드할 수 있습니다. 빌드 머신에는 PowerPoint 설치가 필요하지 않습니다.
+PPT 제작에는 PowerPoint가 필요합니다. 배포본에는 .NET 런타임이 포함됩니다.
 
 ```powershell
-msbuild Bible2PPT.sln -restore -p:Configuration=Release
+dotnet publish Bible2PPT/Bible2PPT.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true -p:PublishTrimmed=false -o artifacts/win-x64
 ```
 
 Windows에서는 본문 파일을 배치하고 `창1:1-2`로 PPT를 제작해 슬라이드 본문을 확인하세요.

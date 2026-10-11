@@ -66,9 +66,12 @@ namespace Bible2PPT
             sourceComboBox.SelectedItem = null;
             sourceComboBox.SelectedValueChanged += SourceComboBox_SelectedValueChanged;
             // 마지막으로 선택한 소스 불러오기
-            sourceComboBox.SelectedValue = BibleSource.AvailableSources.Any(source => source.Id == AppConfig.Context.BibleSourceId)
-                ? AppConfig.Context.BibleSourceId
-                : LocalBible.DefaultSourceId;
+            Shown += (_, _) =>
+            {
+                sourceComboBox.SelectedValue = BibleSource.AvailableSources.Any(source => source.Id == AppConfig.Context.BibleSourceId)
+                    ? AppConfig.Context.BibleSourceId
+                    : LocalBible.DefaultSourceId;
+            };
         }
 
         #region 빌드 대상 성경 관리
@@ -115,7 +118,12 @@ namespace Bible2PPT
             }
             catch (InvalidDataException ex) when (source is LocalBible)
             {
-                MessageBox.Show(ex.Message, "로컬 성경 파일 확인", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                if (DialogResult.Yes == MessageBox.Show(this,
+                    $"{ex.Message}\n\n사용할 개역개정 JSON 또는 TXT 파일을 가져올까요?",
+                    "로컬 성경 파일 확인", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
+                {
+                    if (await ImportLocalBibleAsync((LocalBible)source)) goto RETRY;
+                }
                 return;
             }
             // 성경 소스가 응답이 없으면 다시 시도
@@ -133,6 +141,12 @@ namespace Bible2PPT
 
             // 성경 목록 가져오기를 성공하였으므로 선택한 소스를 기억
             AppConfig.Context.BibleSourceId = source.Id;
+
+            for (var i = 0; i < biblesToBuild.Count; i++)
+            {
+                var refreshed = bibles.Find(item => item.Id == biblesToBuild[i].Id);
+                if (refreshed != null) biblesToBuild[i] = refreshed;
+            }
 
             // 성경 목록 초기화
             bibleComboBox.SelectedValueChanged -= BibleComboBox_SelectedValueChanged;
@@ -159,7 +173,7 @@ namespace Bible2PPT
             {
                 AppConfig.Context.BibleVersionId = bible.Id;
                 // 아래 코드는 FormShown 이벤트 발생 후에 작동하므로 불러오기 시에는 작동 안함
-                biblesAddIconButton.PerformClick();
+                if (!biblesToBuild.Any(item => item.Id == bible.Id)) biblesAddIconButton.PerformClick();
             }
         }
 

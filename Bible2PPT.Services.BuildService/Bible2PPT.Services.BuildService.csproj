@@ -7,24 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <COMReference Include="Microsoft.Office.Core">
-      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
-      <VersionMajor>2</VersionMajor>
-      <VersionMinor>8</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>primary</WrapperTool>
-      <Isolated>False</Isolated>
+    <PackageReference Include="Office" Version="12.0.0" GeneratePathProperty="true" ExcludeAssets="compile;runtime" />
+    <PackageReference Include="Microsoft.Office.Interop.PowerPoint" Version="12.0.4518.1014" GeneratePathProperty="true" ExcludeAssets="compile;runtime" />
+    <Reference Include="Office">
+      <HintPath>$(PkgOffice)/lib/net40/Office.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
-    </COMReference>
-    <COMReference Include="Microsoft.Office.Interop.PowerPoint">
-      <Guid>{91493440-5A91-11CF-8700-00AA0060263B}</Guid>
-      <VersionMajor>2</VersionMajor>
-      <VersionMinor>12</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>primary</WrapperTool>
-      <Isolated>False</Isolated>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.PowerPoint">
+      <HintPath>$(PkgMicrosoft_Office_Interop_PowerPoint)/lib/net20/Microsoft.Office.Interop.PowerPoint.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
-    </COMReference>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>

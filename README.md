@@ -87,6 +87,8 @@ TXT나 구절별 JSON은 `tools/import_bible.py`로 변환할 수 있습니다. 
 ## 설치 방법
 
 **성경2PPT**는 [실행 요구 사항](#실행-요구-사항)만 만족하면 설치 없이 사용할 수 있습니다. [Releases](https://github.com/sunghwan2789/Bible2PPT/releases) 페이지에서 최신 버전을 내려받고 바로 사용하세요!
+로컬 본문 변경판의 `Bible2PPT.exe`는 이 저장소 Actions의 **Windows EXE** 산출물에서 내려받습니다.
+압축 해제·본문 가져오기·PowerPoint 확인 방법은 [Windows 실행 파일 안내](docs/windows-exe.md)를 참고하세요.
 
 
 ## 실행 요구 사항

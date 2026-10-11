@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Configuration;
+using System.IO;
 using System.Text;
 using System.Windows.Forms;
 using Bible2PPT.PPT;
@@ -19,13 +19,23 @@ namespace Bible2PPT
         static IServiceProvider ServiceProvider { get; set; }
 
         [STAThread]
-        static void Main(string[] args)
+        static int Main(string[] args)
         {
+            if (args.Length > 0 && args[0] == "--check-bible")
+            {
+                return PublishedAppCheck.Run(args);
+            }
+            if (args.Length > 0 && args[0] == "--check-ppt")
+            {
+                return PublishedPptCheck.Run(args);
+            }
+            Directory.SetCurrentDirectory(AppContext.BaseDirectory);
             Application.SetDefaultFont(new System.Drawing.Font("Gulim", 9));
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             ConfigureServices();
             new Startup().Run(args);
+            return 0;
         }
 
         static void ConfigureServices()
@@ -37,7 +47,7 @@ namespace Bible2PPT
             services.AddBibleIndexService(options => options.UseSqlite("Data Source=bindex-v3.db"));
             services.AddBibleService(
                 dbContextOptionsAction: options =>
-                    options.UseSqlite(ConfigurationManager.ConnectionStrings["BibleContext"].ConnectionString));
+                    options.UseSqlite("Data Source=bible-v3.db"));
             services.AddBuildService(
                 dbContextOptionsAction: options => options.UseSqlite("Data Source=build-v3.db"),
                 interopInitializeErrorAction: ex =>
