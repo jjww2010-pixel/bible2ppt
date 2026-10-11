@@ -23,12 +23,16 @@ partial class MainForm
             if (!condition) throw new InvalidOperationException(message);
         }
         await WaitForBooks();
-        var buttons = new[] { historyNavButton, templatesNavButton, settingsNavButton, buildNavButton };
-        var pages = new[] { historyMultiPanelPage, templatesMultiPanelPage, settingsMultiPanelPage, buildMultiPanelPage };
+        // The upstream template-library page is unfinished and its button is
+        // intentionally hidden. Test the navigation actually available to users.
+        Require(!templatesNavButton.Visible, "Unfinished template-library navigation became visible.");
+        var buttons = new[] { historyNavButton, settingsNavButton, buildNavButton };
+        var pages = new[] { historyMultiPanelPage, settingsMultiPanelPage, buildMultiPanelPage };
         for (var index = 0; index < buttons.Length; index++)
         {
             buttons[index].PerformClick();
-            Require(mainMultiPanel.SelectedPage == pages[index] && !buttons[index].Enabled, "Navigation did not select the expected page.");
+            Require(mainMultiPanel.SelectedPage == pages[index] && !buttons[index].Enabled,
+                $"Navigation failed: button={buttons[index].Name}, selected={mainMultiPanel.SelectedPage.Name}, expected={pages[index].Name}.");
         }
         versesTextBox.Clear();
         booksSearchTextBox.Text = "요한일";
@@ -46,5 +50,9 @@ partial class MainForm
         buildNavButton.PerformClick();
         buildSplitChaptersIntoFilesCheckBox.Checked = !buildSplitChaptersIntoFilesCheckBox.Checked;
         Require(AppConfig.Context.SeperateByChapter == buildSplitChaptersIntoFilesCheckBox.Checked, "Split-chapter setting was not saved.");
+        ExtractDefaultTemplate();
+        Require(System.IO.File.Exists(AppConfig.TemplatePath), "Default PowerPoint template was not extracted.");
+        using var archive = System.IO.Compression.ZipFile.OpenRead(AppConfig.TemplatePath);
+        Require(archive.GetEntry("ppt/slides/slide1.xml") is not null, "Default template has no slide XML.");
     }
 }
