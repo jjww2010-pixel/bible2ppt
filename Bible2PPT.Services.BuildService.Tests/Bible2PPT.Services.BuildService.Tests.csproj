@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3" />
+    <ProjectReference Include="../Bible2PPT.Services.BuildService/Bible2PPT.Services.BuildService.csproj" />
+    <Compile Include="../test-support/DiagnosticBibleFixture.cs" Link="DiagnosticBibleFixture.cs" />
+    <Compile Include="../Bible2PPT/BinaryConfig.cs" Link="BinaryConfig.cs" />
+    <None Include="../scripts/fixtures/bible-format.json" Link="bible-format.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

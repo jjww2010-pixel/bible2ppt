@@ -119,6 +119,8 @@ namespace Bible2PPT
                 BibleToBuild[i] = BitConverter.ToInt32(s, 169 + 4 * i);
             }
             NumberOfVerseLinesPerSlide = BitConverter.ToInt32(s, 205);
+            if (NumberOfVerseLinesPerSlide < 0 || NumberOfVerseLinesPerSlide > 9)
+                NumberOfVerseLinesPerSlide = 6;
         }
     }
 }

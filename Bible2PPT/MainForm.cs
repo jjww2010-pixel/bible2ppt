@@ -15,8 +15,6 @@ namespace Bible2PPT
         private readonly BibleService _bibleService;
         private readonly TemplateService _templateService;
 
-        private readonly Dictionary<int, CancellationTokenSource> workCts = new Dictionary<int, CancellationTokenSource>();
-
         public MainForm(Builder builder, BibleService bibleService, TemplateService templateService)
         {
             _builder = builder;

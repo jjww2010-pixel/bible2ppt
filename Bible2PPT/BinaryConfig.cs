@@ -16,7 +16,7 @@ namespace Bible2PPT
 
         public void Save()
         {
-            using var fs = File.OpenWrite(path);
+            using var fs = File.Create(path);
             fs.Write(Serialize(), 0, size);
         }
 
@@ -25,8 +25,15 @@ namespace Bible2PPT
             try
             {
                 using var fs = File.OpenRead(path);
+                if (fs.Length != size) return;
                 var data = new byte[size];
-                fs.Read(data, 0, size);
+                var offset = 0;
+                while (offset < size)
+                {
+                    var count = fs.Read(data, offset, size - offset);
+                    if (count == 0) return;
+                    offset += count;
+                }
                 Deserialize(data);
             }
             catch (FileNotFoundException)

@@ -23,6 +23,7 @@ public class ZippedBibleService
     private async Task<IEnumerable<IEnumerable<Book>>> GetEachBooksAsync(IEnumerable<Bible> bibles, CancellationToken token)
     {
     RETRY:
+        token.ThrowIfCancellationRequested();
         try
         {
             return await Task.WhenAll(bibles
@@ -40,6 +41,7 @@ public class ZippedBibleService
     private async Task<IEnumerable<IEnumerable<Chapter>>> GetEachChaptersAsync(IEnumerable<Book?> books, CancellationToken token)
     {
     RETRY:
+        token.ThrowIfCancellationRequested();
         try
         {
             // 해당 책이 없는 성경도 있으므로 주의해서 장 정보 가져오기
@@ -59,65 +61,17 @@ public class ZippedBibleService
     {
         var eachTargetChapters = await GetEachChaptersAsync(targetEachBook, token).ConfigureAwait(false);
 
-        // 장 번호를 기준으로 각 성경의 책을 순회하도록 관리
-        // GetEnumerator() 반환형이 struct라 값 복사로 무한 반복되기를 예방하기 위해 캐스팅
-        var targetChapterEnumerators = eachTargetChapters.Select(i => (IEnumerator<Chapter>)i.GetEnumerator()).ToList();
-
-        var startChapterNumber = eachTargetChapters.Where(i => i.Any()).Min(i => i.First().Number);
-        for (var chapterNumber = startChapterNumber; ;)
+        foreach (var row in AlignByNumber(eachTargetChapters, chapter => chapter.Number))
         {
-            // 다음 장이 있는지 확인
-            var moved = new Dictionary<IEnumerator<Chapter>, bool>();
-            var nextChapterNumber = chapterNumber;
-            foreach (var i in targetChapterEnumerators)
-            {
-                if (i.MoveNext())
-                {
-                    moved[i] = true;
-                    nextChapterNumber = Math.Max(nextChapterNumber, i.Current.Number);
-                }
-            }
-
-            // 현재 장이 마지막이었으면 종료
-            if (!moved.Any())
-            {
-                break;
-            }
-
-            for (; chapterNumber <= nextChapterNumber; chapterNumber++)
-            {
-                var eachChapter = new List<Chapter?>();
-                foreach (var i in targetChapterEnumerators)
-                {
-                    // 범위를 넘어가면 더 페이지가 없음
-                    if (i.Current == null)
-                    {
-                        eachChapter.Add(null);
-                        continue;
-                    }
-
-                    // 장 번호가 앞서가면 앞 장이 비었음
-                    if (i.Current.Number > chapterNumber)
-                    {
-                        eachChapter.Add(null);
-                        continue;
-                    }
-
-                    if (!moved[i])
-                    {
-                        i.MoveNext();
-                    }
-                    eachChapter.Add(i.Current);
-                    moved[i] = false;
-                }
-                yield return eachChapter;
-            }
+            token.ThrowIfCancellationRequested();
+            yield return row;
         }
     }
 
     private async Task<IEnumerable<IEnumerable<Verse>>> GetEachVersesAsync(IEnumerable<Chapter?> chapters, CancellationToken token)
     {
     RETRY:
+        token.ThrowIfCancellationRequested();
         try
         {
             return await Task.WhenAll(chapters
@@ -136,58 +90,19 @@ public class ZippedBibleService
     {
         var eachTargetVerses = await GetEachVersesAsync(targetEachChapter, token).ConfigureAwait(false);
 
-        // GetEnumerator() 반환형이 struct라 값 복사로 무한 반복되기를 예방하기 위해 캐스팅
-        var targetVerseEnumerators = eachTargetVerses.Select(i => (IEnumerator<Verse>)i.GetEnumerator()).ToList();
-
-        var startVerseNumber = eachTargetVerses.Where(i => i.Any()).Min(i => i.First().Number);
-        for (var verseNumber = startVerseNumber; ;)
+        foreach (var row in AlignByNumber(eachTargetVerses, verse => verse.Number))
         {
-            // 다음 절이 있는지 확인
-            var moved = new Dictionary<IEnumerator<Verse>, bool>();
-            var nextVerseNumber = verseNumber;
-            foreach (var i in targetVerseEnumerators)
-            {
-                if (i.MoveNext())
-                {
-                    moved[i] = true;
-                    nextVerseNumber = Math.Max(nextVerseNumber, i.Current.Number);
-                }
-            }
-
-            // 현재 절이 마지막이었으면 종료
-            if (!moved.Any())
-            {
-                break;
-            }
-
-            for (; verseNumber <= nextVerseNumber; verseNumber++)
-            {
-                var eachVerse = new List<Verse?>();
-                foreach (var i in targetVerseEnumerators)
-                {
-                    // 범위를 넘어가면 더 페이지가 없음
-                    if (i.Current == null)
-                    {
-                        eachVerse.Add(null);
-                        continue;
-                    }
-
-                    // 절 번호가 앞서가면 앞 절이 비었음
-                    if (i.Current.Number > verseNumber)
-                    {
-                        eachVerse.Add(null);
-                        continue;
-                    }
-
-                    if (!moved[i])
-                    {
-                        i.MoveNext();
-                    }
-                    eachVerse.Add(i.Current);
-                    moved[i] = false;
-                }
-                yield return eachVerse;
-            }
+            token.ThrowIfCancellationRequested();
+            yield return row;
         }
+    }
+
+    private static IEnumerable<IEnumerable<T?>> AlignByNumber<T>(IEnumerable<IEnumerable<T>> sources, Func<T, int> number) where T : class
+    {
+        var maps = sources.Select(source => source.ToDictionary(number)).ToArray();
+        // Only visit existing numbers. Empty sources and gaps never reuse an
+        // exhausted enumerator or manufacture an all-null passage.
+        foreach (var key in maps.SelectMany(map => map.Keys).Distinct().OrderBy(key => key))
+            yield return maps.Select(map => map.TryGetValue(key, out var item) ? item : null).ToArray();
     }
 }

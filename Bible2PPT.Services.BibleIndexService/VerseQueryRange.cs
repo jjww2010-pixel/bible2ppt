@@ -14,60 +14,40 @@ public class VerseQueryRange //: ISpanParsable<VerseQueryRange>
 
     public static bool TryParse(ReadOnlySpan<char> s, IFormatProvider? provider, [NotNullWhen(true)] out VerseQueryRange? result)
     {
-        result = new();
-
+        result = null;
         var match = _regex.Match(s.ToString());
-        if (!match.Success)
+        if (!match.Success) return false;
+        bool Positive(string group, out int value) =>
+            int.TryParse(match.Groups[group].Value, System.Globalization.NumberStyles.None, provider, out value) && value > 0;
+        if (!Positive("chapFrom", out var startChapter)) return false;
+        var candidate = new VerseQueryRange { StartChapterNumber = startChapter, EndChapterNumber = startChapter };
+        var hasStartVerse = match.Groups["versFrom"].Success;
+        if (hasStartVerse)
         {
+            if (!Positive("versFrom", out var startVerse)) return false;
+            candidate.StartVerseNumber = startVerse;
+            candidate.EndVerseNumber = startVerse;
+        }
+        if (match.Groups["chapTo"].Success)
+        {
+            if (!Positive("chapTo", out var end)) return false;
+            if (hasStartVerse && !match.Groups["versTo"].Success)
+                candidate.EndVerseNumber = end;
+            else
+            {
+                candidate.EndChapterNumber = end;
+                candidate.EndVerseNumber = null;
+                if (match.Groups["versTo"].Success)
+                {
+                    if (!Positive("versTo", out var endVerse)) return false;
+                    candidate.EndVerseNumber = endVerse;
+                }
+            }
+        }
+        if (candidate.EndChapterNumber < candidate.StartChapterNumber ||
+            (candidate.EndChapterNumber == candidate.StartChapterNumber && candidate.EndVerseNumber < candidate.StartVerseNumber))
             return false;
-        }
-
-        // PPT 범위를 한 장으로 설정했을 때
-        // 예) 창1       = 창세기 1장 전체
-        result.StartChapterNumber = int.Parse(match.Groups["chapFrom"].Value, provider);
-        result.EndChapterNumber = result.StartChapterNumber;
-        if (string.IsNullOrEmpty(match.Groups["versFrom"].Value))
-        {
-            if (string.IsNullOrEmpty(match.Groups["chapTo"].Value))
-            {
-                return true;
-            }
-
-            // PPT 범위를 여러 장으로 설정했을 때
-            // 예) 롬1-3     = 로마서 1장 1절 - 3장 전체
-            result.EndChapterNumber = int.Parse(match.Groups["chapTo"].Value, provider);
-            if (string.IsNullOrEmpty(match.Groups["versTo"].Value))
-            {
-                return true;
-            }
-
-            // PPT 범위를 여러 장과 여러 절을 설정했을 때
-            // 예) 레1-3:9   = 레위기 1장 1절 - 3장 9절
-            result.EndVerseNumber = int.Parse(match.Groups["versTo"].Value, provider);
-            return true;
-        }
-
-        // PPT 범위를 한 절로 설정했을 때
-        // 예) 전1:3     = 전도서 1장 3절
-        result.StartVerseNumber = int.Parse(match.Groups["versFrom"].Value, provider);
-        result.EndVerseNumber = result.StartVerseNumber;
-        if (string.IsNullOrEmpty(match.Groups["chapTo"].Value))
-        {
-            return true;
-        }
-
-        // PPT 범위를 한 장에 여러 절로 설정했을 때
-        // 예) 스1:3-9   = 에스라 1장 3절 - 1장 9절
-        if (string.IsNullOrEmpty(match.Groups["versTo"].Value))
-        {
-            result.EndVerseNumber = int.Parse(match.Groups["chapTo"].Value, provider);
-            return true;
-        }
-
-        // PPT 범위를 여러 장에 여러 절로 설정했을 때
-        // 예) 사1:3-3:9 = 이사야 1장 3절 - 3장 9절
-        result.EndChapterNumber = int.Parse(match.Groups["chapTo"].Value, provider);
-        result.EndVerseNumber = int.Parse(match.Groups["versTo"].Value, provider);
+        result = candidate;
         return true;
     }
 }

@@ -25,6 +25,16 @@ public class VerseQueryRangeTest
     [InlineData("")]
     [InlineData("GEN")]
     [InlineData("1SAM")]
+    [InlineData("0")]
+    [InlineData("1:0")]
+    [InlineData("1-0")]
+    [InlineData("4-1")]
+    [InlineData("1:9-3")]
+    [InlineData("1:3-1:2")]
+    [InlineData("99999999999999999999")]
+    [InlineData("1:99999999999999999999")]
+    [InlineData("1-99999999999999999999")]
+    [InlineData("1:1-2:99999999999999999999")]
     public void Parse_BookAbbr_Fail(string s)
     {
         VerseQueryRange.TryParse(s, CultureInfo.InvariantCulture, out _).ShouldBeFalse();

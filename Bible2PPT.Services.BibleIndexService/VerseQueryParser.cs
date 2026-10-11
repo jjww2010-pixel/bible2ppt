@@ -1,4 +1,4 @@
-using System.Globalization;
+﻿using System.Globalization;
 
 namespace Bible2PPT.Services.BibleIndexService;
 
@@ -15,7 +15,8 @@ public class VerseQueryParser
     {
         var queries = new Queue<VerseQuery>();
 
-        var span = queryString.AsSpan().TrimStart();
+        var normalized = System.Text.RegularExpressions.Regex.Replace(queryString.Trim(), @"\s+", " ");
+        var span = normalized.AsSpan();
         while (!span.IsEmpty)
         {
             // 성경 책 약자 추출

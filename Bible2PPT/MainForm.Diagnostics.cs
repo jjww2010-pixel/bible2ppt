@@ -1,0 +1,50 @@
+using System;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Bible2PPT;
+
+partial class MainForm
+{
+    internal async Task CheckUiAsync()
+    {
+        async Task WaitForBooks()
+        {
+            for (var attempt = 0; attempt < 300; attempt++)
+            {
+                if (bibleComboBox.Enabled && booksListView.Enabled && booksListView.Items.Count == 66 && biblesToBuild.Count == 1) return;
+                await Task.Delay(50);
+            }
+            throw new InvalidOperationException($"UI Bible load did not finish: books={booksListView.Items.Count}, selected={biblesToBuild.Count}.");
+        }
+        void Require(bool condition, string message)
+        {
+            if (!condition) throw new InvalidOperationException(message);
+        }
+        await WaitForBooks();
+        var buttons = new[] { historyNavButton, templatesNavButton, settingsNavButton, buildNavButton };
+        var pages = new[] { historyMultiPanelPage, templatesMultiPanelPage, settingsMultiPanelPage, buildMultiPanelPage };
+        for (var index = 0; index < buttons.Length; index++)
+        {
+            buttons[index].PerformClick();
+            Require(mainMultiPanel.SelectedPage == pages[index] && !buttons[index].Enabled, "Navigation did not select the expected page.");
+        }
+        versesTextBox.Clear();
+        booksSearchTextBox.Text = "요한일";
+        AppendShortTitle();
+        Require(versesTextBox.Text == "요일", "Book search/selection did not append IJohn abbreviation.");
+        versesTextBox.AppendText(" 4:8");
+        Require(versesTextBox.Text == "요일 4:8", "Verse input did not preserve the requested reference.");
+        biblesRemoveIconButton.PerformClick();
+        Require(biblesToBuild.Count == 0, "Bible remove button failed.");
+        biblesAddIconButton.PerformClick();
+        await WaitForBooks();
+        settingsNavButton.PerformClick();
+        Require(settingsMultiPanelPage.Controls.OfType<Button>().Any(button => button.Text == "성경 본문 가져오기"), "Bible import button is missing.");
+        Require(numberOfVerseLinesPerSlideComboBox.SelectedIndex >= 0 && numberOfVerseLinesPerSlideComboBox.SelectedIndex <= 9, "Saved line limit is invalid.");
+        buildNavButton.PerformClick();
+        buildSplitChaptersIntoFilesCheckBox.Checked = !buildSplitChaptersIntoFilesCheckBox.Checked;
+        Require(AppConfig.Context.SeperateByChapter == buildSplitChaptersIntoFilesCheckBox.Checked, "Split-chapter setting was not saved.");
+    }
+}

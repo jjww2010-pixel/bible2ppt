@@ -22,7 +22,7 @@ namespace Bible2PPT
             };
             importButton.Click += async (_, _) =>
             {
-                if (workCts.Count > 0)
+                if (_builder.HasPendingJobs)
                 {
                     MessageBox.Show(this, "PPT 제작이 끝난 뒤 본문을 교체하세요.", Text);
                     return;

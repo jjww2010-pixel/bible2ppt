@@ -6,7 +6,7 @@ using Shape = Microsoft.Office.Interop.PowerPoint.Shape;
 
 namespace Bible2PPT.PPT;
 
-public partial class PPTManager
+public partial class PPTManager : IPresentationWriter
 {
     public Job Job { get; }
     public string Output { get; }
@@ -46,6 +46,7 @@ public partial class PPTManager
     public async Task AppendChapter(IAsyncEnumerable<IEnumerable<Verse?>> eachVerses, Book book, Chapter chapter, int startVerseNumber, int? endVerseNumber, CancellationToken token)
     {
         isFirstVerseOfChapter = true;
+        var appended = false;
         await foreach (var eachVerse in eachVerses)
         {
             token.ThrowIfCancellationRequested();
@@ -57,9 +58,12 @@ public partial class PPTManager
             }
 
             AppendVerse(eachVerse, mainVerse, book, chapter, startVerseNumber, endVerseNumber, token);
+            appended = true;
 
             isFirstVerseOfChapter = false;
         }
+        if (!appended)
+            throw new InvalidDataException($"{book.Name} {chapter.Number}:{startVerseNumber} 요청에 해당하는 본문이 없습니다.");
     }
 
     public void AppendVerse(IEnumerable<Verse?> eachVerse, Verse mainVerse, Book book, Chapter chapter, int startVerseNumber, int? endVerseNumber, CancellationToken token) =>

@@ -18,6 +18,8 @@ public class VerseQueryParserTest
     [InlineData("창1 롬", 2)]
     [InlineData("창1 롬1", 2)]
     [InlineData("창 1 2", 2)]
+    [InlineData("요일\t4:8", 1)]
+    [InlineData("창1:1\r\n요일4:8", 2)]
     public void Parse_Counts(string queryString, int count)
     {
         var parser = GetVerseQueryParser();

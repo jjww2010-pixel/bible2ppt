@@ -25,5 +25,7 @@ jobs:
         run: dotnet test Bible2PPT.Services.BibleService.Tests/Bible2PPT.Services.BibleService.Tests.csproj --verbosity minimal
       - name: Test verse queries
         run: dotnet test Bible2PPT.Services.BibleIndexService.Tests/Bible2PPT.Services.BibleIndexService.Tests.csproj --verbosity minimal
+      - name: Test complete build jobs and failure handling
+        run: dotnet test Bible2PPT.Services.BuildService.Tests/Bible2PPT.Services.BuildService.Tests.csproj --verbosity minimal
       - name: Test JSON and TXT import
         run: python -m unittest discover -s tools -p 'test_*.py'

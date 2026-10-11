@@ -14,6 +14,8 @@ public partial class JobManager
 
     private IProgress<EventArgs>? _jobProgress;
 
+    public bool HasPendingJobs => !_jobCancellationTokenSources.IsEmpty;
+
     public JobManager()
     {
         _jobChannel = Channel.CreateBounded<Job>(new BoundedChannelOptions(WorkerCount)

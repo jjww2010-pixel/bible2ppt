@@ -23,119 +23,94 @@ public class Builder : JobManager
         _dbFactory = dbFactory;
     }
 
+    protected virtual IPresentationWriter CreatePresentation(Job job, string output) =>
+        new PPTManager(_powerPoint.Instance, job, output);
+
     protected override async Task ProcessAsync(Job job, CancellationToken token)
     {
         await base.ProcessAsync(job, token).ConfigureAwait(false);
-
-        var channel = Channel.CreateBounded<(IAsyncEnumerable<IEnumerable<Verse?>> targetEachVerses, Book mainBook, Chapter mainChapter, int startVerseNumber, int? endVerseNumber)>(new BoundedChannelOptions(1)
-        {
-            FullMode = BoundedChannelFullMode.Wait,
-        });
-
-        var queries = _verseQueryParser.ParseVerseQueries(job.QueryString);
-        var queriesDoneCount = 0;
-        var queriesCount = queries.Count();
-        var chaptersDoneCount = 0;
-        var chaptersCount = 0;
-        OnJobProgress(new JobProgressEventArgs(job, null, queriesDoneCount, queriesCount, chaptersDoneCount, chaptersCount));
+        var queries = _verseQueryParser.ParseVerseQueries(job.QueryString).ToArray();
+        if (queries.Length == 0) throw new InvalidDataException("PPT로 만들 성경 구절을 입력하세요.");
+        using var stop = CancellationTokenSource.CreateLinkedTokenSource(token);
+        var workerToken = stop.Token;
+        var channel = Channel.CreateBounded<(IAsyncEnumerable<IEnumerable<Verse?>> verses, Book book, Chapter chapter, int start, int? end)>(1);
+        var queriesDone = 0;
+        var chaptersDone = 0;
+        var chapterCount = 0;
 
         async Task ProduceAsync()
         {
-            foreach (var query in queries)
+            try
             {
-                var targetEachBook = await _zippedBibleService.FindBookAsync(job.Bibles, query.BookKey, token).ConfigureAwait(false);
-
-                // 해당 책이 있는 성경에서 해당 책을 대표로 사용
-                var mainBook = targetEachBook.FirstOrDefault(i => i is not null);
-                if (mainBook is null)
+                foreach (var query in queries)
                 {
-                    goto PROGRESS_QUERY;
-                }
-
-                // 장 번호를 기준으로 각 성경의 책을 순회하도록 관리
-                var targetEachChapters = _zippedBibleService.GetChaptersAsync(targetEachBook, token)
-                    .Where(eachChapter => eachChapter.Any(chapter =>
-                        (query.EndChapterNumber == null)
-                        ? (chapter.Number >= query.StartChapterNumber)
-                        : (chapter.Number >= query.StartChapterNumber) && (chapter.Number <= query.EndChapterNumber)
-                    ));
-                var originalChaptersCount = chaptersCount;
-                var chapterCount = 0;
-                await foreach (var targetEachChapter in targetEachChapters)
-                {
-                    chapterCount += 1;
-                    chaptersCount = originalChaptersCount + query switch
+                    var books = await _zippedBibleService.FindBookAsync(job.Bibles, query.BookKey, workerToken).ConfigureAwait(false);
+                    var book = books.FirstOrDefault(book => book is not null)
+                        ?? throw new InvalidDataException($"{query.BookKey} 본문이 선택한 성경에 없습니다.");
+                    var foundChapter = false;
+                    await foreach (var eachChapter in _zippedBibleService.GetChaptersAsync(books, workerToken).ConfigureAwait(false))
                     {
-                        { EndChapterNumber: null } => chapterCount,
-                        _ => query.EndChapterNumber.Value - query.StartChapterNumber + 1,
-                    };
-
-                    // 해당 장이 있는 성경의 책에서 해당 장을 대표로 사용
-                    var mainChapter = targetEachChapter.FirstOrDefault(i => i is not null);
-                    if (mainChapter is null)
-                    {
-                        continue;
+                        var chapter = eachChapter.FirstOrDefault(chapter => chapter is not null);
+                        if (chapter is null || chapter.Number < query.StartChapterNumber ||
+                            (query.EndChapterNumber is { } last && chapter.Number > last)) continue;
+                        foundChapter = true;
+                        var start = chapter.Number == query.StartChapterNumber ? query.StartVerseNumber : 1;
+                        var end = chapter.Number == query.EndChapterNumber ? query.EndVerseNumber : null;
+                        var rows = await _zippedBibleService.GetVersesAsync(eachChapter, workerToken)
+                            .Where(row => row.Any(verse => verse is not null && verse.Overlaps(start, end)))
+                            .ToListAsync(workerToken).ConfigureAwait(false);
+                        if (rows.Count == 0)
+                            throw new InvalidDataException($"{book.Name} {chapter.Number}:{start} 요청에 해당하는 본문이 없습니다.");
+                        chapterCount++;
+                        await channel.Writer.WriteAsync((rows.ToAsyncEnumerable(), book, chapter, start, end), workerToken).ConfigureAwait(false);
                     }
-
-                    var startVerseNumber = (mainChapter.Number == query.StartChapterNumber) ? query.StartVerseNumber : 1;
-                    var endVerseNumber = (mainChapter.Number == query.EndChapterNumber) ? query.EndVerseNumber : null;
-
-                    var targetEachVerses = _zippedBibleService.GetVersesAsync(targetEachChapter, token)
-                        .Where(eachVerse => eachVerse.Any(verse =>
-                            verse is not null && verse.Overlaps(startVerseNumber, endVerseNumber)
-                        ));
-                    await channel.Writer.WriteAsync((targetEachVerses, mainBook, mainChapter, startVerseNumber, endVerseNumber), token).ConfigureAwait(false);
+                    if (!foundChapter)
+                        throw new InvalidDataException($"{book.Name} {query.StartChapterNumber} 요청에 해당하는 장이 없습니다.");
+                    queriesDone++;
                 }
-
-                chaptersCount = originalChaptersCount + chapterCount;
-
-            PROGRESS_QUERY:
-                queriesDoneCount += 1;
+                channel.Writer.TryComplete();
             }
-
-            channel.Writer.Complete();
-        }
-
-        var produce = ProduceAsync();
-
-        if (job.SplitChaptersIntoFiles)
-        {
-            while (!channel.Reader.Completion.IsCompleted)
+            catch (Exception ex)
             {
-                _ = await Task.WhenAny(channel.Reader.WaitToReadAsync(token).AsTask(), produce).ConfigureAwait(false);
-                if (!channel.Reader.TryRead(out var item))
-                {
-                    break;
-                }
-
-                var (targetEachVerses, mainBook, mainChapter, startVerseNumber, endVerseNumber) = item;
-                var output = Path.Combine(job.OutputDestination, mainBook.Name, $"{mainChapter.Number:000}.pptx");
-                using var ppt = new PPTManager(_powerPoint.Instance, job, output);
-                await ppt.AppendChapter(targetEachVerses, mainBook, mainChapter, startVerseNumber, endVerseNumber, token).ConfigureAwait(false);
-                chaptersDoneCount += 1;
-                ppt.Save();
-                OnJobProgress(new JobProgressEventArgs(job, null, queriesDoneCount, queriesCount, chaptersDoneCount, chaptersCount));
+                channel.Writer.TryComplete(ex);
+                throw;
             }
         }
-        else
+
+        var producer = ProduceAsync();
+        IPresentationWriter? combined = null;
+        try
         {
-            using var ppt = new PPTManager(_powerPoint.Instance, job, job.OutputDestination);
-            while (!channel.Reader.Completion.IsCompleted)
+            await foreach (var item in channel.Reader.ReadAllAsync(workerToken).ConfigureAwait(false))
             {
-                _ = await Task.WhenAny(channel.Reader.WaitToReadAsync(token).AsTask(), produce).ConfigureAwait(false);
-                if (!channel.Reader.TryRead(out var item))
+                if (job.SplitChaptersIntoFiles)
                 {
-                    break;
+                    var output = Path.Combine(job.OutputDestination, item.book.Name, $"{item.chapter.Number:000}.pptx");
+                    using var ppt = CreatePresentation(job, output);
+                    await ppt.AppendChapter(item.verses, item.book, item.chapter, item.start, item.end, workerToken).ConfigureAwait(false);
+                    workerToken.ThrowIfCancellationRequested();
+                    ppt.Save();
                 }
-
-                var (targetEachVerses, mainBook, mainChapter, startVerseNumber, endVerseNumber) = item;
-                await ppt.AppendChapter(targetEachVerses, mainBook, mainChapter, startVerseNumber, endVerseNumber, token).ConfigureAwait(false);
-                chaptersDoneCount += 1;
-                OnJobProgress(new JobProgressEventArgs(job, null, queriesDoneCount, queriesCount, chaptersDoneCount, chaptersCount));
+                else
+                {
+                    combined ??= CreatePresentation(job, job.OutputDestination);
+                    await combined.AppendChapter(item.verses, item.book, item.chapter, item.start, item.end, workerToken).ConfigureAwait(false);
+                }
+                chaptersDone++;
+                OnJobProgress(new JobProgressEventArgs(job, null, queriesDone, queries.Length, chaptersDone, chapterCount));
             }
-            ppt.Save();
+            await producer.ConfigureAwait(false);
+            workerToken.ThrowIfCancellationRequested();
+            combined?.Save();
         }
-        await produce.ConfigureAwait(false);
+        finally
+        {
+            // A rendering/file error must stop a producer blocked on the bounded
+            // channel. Observe its completion without replacing the original error.
+            stop.Cancel();
+            try { await producer.ConfigureAwait(false); } catch { }
+            combined?.Dispose();
+        }
     }
 
     public new void Queue(Job job)

@@ -11,8 +11,10 @@ permissions:
 
 jobs:
   publish:
+    permissions:
+      contents: write
     runs-on: windows-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     strategy:
       matrix:
         runtime: [win-x64, win-x86]
@@ -20,8 +22,22 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: 8.0.x
+          dotnet-version: |
+            8.0.x
+            6.0.x
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run regression tests on Windows
+        id: regressions
+        shell: pwsh
+        run: |
+          foreach ($project in @('BibleService', 'BibleIndexService', 'BuildService')) {
+            dotnet test "Bible2PPT.Services.$project.Tests/Bible2PPT.Services.$project.Tests.csproj" --verbosity minimal --logger "trx;LogFileName=$project.trx" --results-directory verification-tests
+            if ($LASTEXITCODE -ne 0) { throw "$project regression tests failed." }
+          }
       - name: Publish standalone EXE
+        id: publish
         shell: pwsh
         run: >-
           dotnet publish Bible2PPT/Bible2PPT.csproj
@@ -31,8 +47,9 @@ jobs:
           -p:PublishTrimmed=false -p:DebugType=None -p:DebugSymbols=false
           -o artifacts/${{ matrix.runtime }}
       - name: Run the published EXE
+        id: exe
         shell: pwsh
-        run: ./scripts/Test-PublishedExe.ps1 -PublishDirectory artifacts/${{ matrix.runtime }}
+        run: ./scripts/Test-PublishedExe.ps1 -PublishDirectory artifacts/${{ matrix.runtime }} -ResultDirectory verification-exe
       - name: Include usage and license
         shell: pwsh
         run: |
@@ -42,9 +59,30 @@ jobs:
             Set-Content artifacts/${{ matrix.runtime }}/READ-ME.md -Encoding utf8
           New-Item -ItemType Directory -Force artifacts/${{ matrix.runtime }}/Diagnostics | Out-Null
           Copy-Item scripts/fixtures/diagnostic-bible.json artifacts/${{ matrix.runtime }}/Diagnostics/example.json
+          Copy-Item scripts/fixtures/wrapped-bible.txt artifacts/${{ matrix.runtime }}/Diagnostics/wrapped-example.txt
           Copy-Item scripts/Check-PowerPoint.cmd artifacts/${{ matrix.runtime }}/Check-PowerPoint.cmd
+          Copy-Item scripts/Check-Bible.cmd artifacts/${{ matrix.runtime }}/Check-Bible.cmd
       - uses: actions/upload-artifact@v4
         with:
           name: Bible2PPT-${{ matrix.runtime }}
           path: artifacts/${{ matrix.runtime }}/
           if-no-files-found: error
+      - name: Save verification reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: verification-${{ matrix.runtime }}
+          path: |
+            verification-tests/
+            verification-exe/
+          if-no-files-found: warn
+      - name: Publish readable verification result
+        if: always() && github.event_name != 'pull_request'
+        shell: pwsh
+        env:
+          CHECKED_COMMIT: ${{ github.sha }}
+          CHECK_RUNTIME: ${{ matrix.runtime }}
+          REGRESSION_RESULT: ${{ steps.regressions.outcome }}
+          PUBLISH_RESULT: ${{ steps.publish.outcome }}
+          EXE_RESULT: ${{ steps.exe.outcome }}
+        run: ./scripts/Publish-VerificationReport.ps1

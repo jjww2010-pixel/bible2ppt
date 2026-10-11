@@ -29,6 +29,10 @@ namespace Bible2PPT
             {
                 return PublishedPptCheck.Run(args);
             }
+            if (args.Length > 0 && args[0] == "--check-ui")
+            {
+                return PublishedUiCheck.Run(args);
+            }
             Directory.SetCurrentDirectory(AppContext.BaseDirectory);
             Application.SetDefaultFont(new System.Drawing.Font("Gulim", 9));
             Application.EnableVisualStyles();

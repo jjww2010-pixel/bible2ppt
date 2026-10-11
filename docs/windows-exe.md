@@ -23,6 +23,9 @@ UTF-8과 CP949를 지원하며, 잘못된 파일을 가져와도 기존 본문�
 
 ## PowerPoint 동작 확인
 
+`Check-Bible.cmd`는 가져온 본문의 모든 구절 요청을 자동 검사하고 `Bible-check.txt`에 결과를 저장합니다.
+구절을 하나씩 직접 입력할 필요가 없습니다.
+
 압축을 해제한 폴더에서 `Check-PowerPoint.cmd`를 실행하면 **배포 EXE 자체**가 PowerPoint를 호출해
 예시 문장 두 개를 PPT로 만들고, 저장된 슬라이드 XML에 본문이 들어 있는지 검사합니다.
 성공하면 `PowerPoint-check.pptx`와 `PowerPoint-check.txt`가 생성됩니다.
@@ -46,5 +49,7 @@ dotnet publish Bible2PPT/Bible2PPT.csproj -c Release -r win-x64 --self-contained
 
 Windows 자동 빌드는 생성한 EXE를 직접 실행해서 런타임 시작, SQLite 초기화, 본문 조회,
 잘못된 본문 파일 거부를 검증합니다. 테스트 데이터는 형식 예시의 안내 문장입니다.
-이 검증은 화면 조작이나 PowerPoint 슬라이드 생성 검증을 대신하지 않습니다.
+Windows 자동 검증은 실제 메인 화면을 열어 탐색·책 검색·성경 선택·설정도 검사합니다.
+PowerPoint 슬라이드 생성 검증은 Office가 없는 서버에서 실행하지 않습니다.
+검사한 커밋과 상세 결과는 [자동 검증 안내](validation.md)를 참고하세요.
 최종 사용 환경에서는 실제 본문을 가져온 뒤 PPT를 제작하고 슬라이드 내용을 확인해야 합니다.
