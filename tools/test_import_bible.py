@@ -65,6 +65,29 @@ class ImportBibleTest(unittest.TestCase):
             self.assertEqual(0, result.returncode, result.stderr)
             self.assertEqual("사용자가 제공한 테스트", json.loads(output.read_text(encoding="utf-8"))["source"])
 
+    def test_wrapped_and_combined_verses_are_preserved_once(self):
+        with tempfile.TemporaryDirectory() as directory:
+            source, output = Path(directory) / "input.txt", Path(directory) / "krv.json"
+            source.write_text("창35:22 첫 문장\n창세기35:이어진 문장\n창35:23-25 통합 문장\n창35:추가 문장\n창35:26 마지막 문장", encoding="utf-8-sig")
+            result = self.run_cli(source, output)
+            self.assertEqual(0, result.returncode, result.stderr)
+            verses = json.loads(output.read_text(encoding="utf-8"))["books"][0]["chapters"][0]["verses"]
+            self.assertEqual([22, 23, 26], [verse["number"] for verse in verses])
+            self.assertEqual("첫 문장 이어진 문장", verses[0]["text"])
+            self.assertEqual("통합 문장 추가 문장", verses[1]["text"])
+            self.assertEqual(25, verses[1]["endNumber"])
+
+    def test_orphan_continuations_and_invalid_ranges_are_rejected(self):
+        for text in ["창35:이어진 문장", "창35:22 본문\n출35:이어진 문장",
+                     "창35:22 본문\n창36:이어진 문장", "창35:22-21 역방향",
+                     "창35:22-24 본문\n창35:23 겹친 본문", "창35:22 본문\n창35:23- 잘못된 범위"]:
+            with self.subTest(text=text), tempfile.TemporaryDirectory() as directory:
+                source, output = Path(directory) / "input.txt", Path(directory) / "krv.json"
+                source.write_text(text, encoding="utf-8")
+                output.write_text("기존 파일", encoding="utf-8")
+                self.assertNotEqual(0, self.run_cli(source, output, "--overwrite").returncode)
+                self.assertEqual("기존 파일", output.read_text(encoding="utf-8"))
+
     def test_existing_output_requires_explicit_overwrite(self):
         with tempfile.TemporaryDirectory() as directory:
             source, output = Path(directory) / "input.txt", Path(directory) / "krv.json"

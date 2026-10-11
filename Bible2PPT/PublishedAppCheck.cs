@@ -25,7 +25,14 @@ namespace Bible2PPT
                 services.UseBibleIndexService();
                 services.UseBibleService();
                 var bibleService = services.GetRequiredService<BibleService>();
-                var source = new LocalBible(args[1]);
+                var input = args[1];
+                if (!Path.GetExtension(input).Equals(".json", StringComparison.OrdinalIgnoreCase))
+                {
+                    var converted = Path.Combine(temporaryDirectory, "imported.json");
+                    LocalBibleImporter.ImportAsync(input, converted).GetAwaiter().GetResult();
+                    input = converted;
+                }
+                var source = new LocalBible(input);
                 var bibles = bibleService.GetBiblesAsync(source).GetAwaiter().GetResult();
                 var books = bibleService.GetBooksAsync(bibles[0]).GetAwaiter().GetResult();
                 var verseCount = 0;

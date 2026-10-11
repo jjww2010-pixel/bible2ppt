@@ -33,6 +33,48 @@ public sealed class LocalBibleImporterTest : IDisposable
     }
 
     [Fact]
+    public async Task KeepsWrappedVerseTextAndCombinedVerseRangesWithoutDuplicatingThem()
+    {
+        var input = Path.Combine(_directory, "input.txt");
+        await File.WriteAllTextAsync(input,
+            "창35:22 첫 문장\n창35:이어진 문장\n\n창세기35:두 번째 이어진 문장\n창35:23 다음 구절\n창35:24-26 통합 문장\n창35:추가 통합 문장\n창35:27 마지막 구절");
+        await LocalBibleImporter.ImportAsync(input, Output);
+        var source = new LocalBible(Output);
+        var book = Assert.Single(await source.GetBooksOnlineAsync(Assert.Single(await source.GetBiblesOnlineAsync())));
+        var chapter = Assert.Single(await source.GetChaptersOnlineAsync(book));
+        chapter.Book = book;
+        var verses = await source.GetVersesOnlineAsync(chapter);
+        Assert.Equal(new[] { 22, 23, 24, 27 }, verses.Select(verse => verse.Number));
+        Assert.Equal("첫 문장 이어진 문장 두 번째 이어진 문장", verses[0].Text);
+        Assert.Equal("통합 문장 추가 통합 문장", verses[2].Text);
+        Assert.Equal(26, verses[2].EndNumber);
+        Assert.Equal("24-26", verses[2].NumberLabel);
+        Assert.Equal("23", verses[1].NumberLabel);
+        Assert.Same(verses[2], Assert.Single(verses.Where(verse => verse.Overlaps(25, 25))));
+        Assert.Same(verses[2], Assert.Single(verses.Where(verse => verse.Overlaps(26, 26))));
+        Assert.Equal(2, verses.Count(verse => verse.Overlaps(23, 25)));
+        Assert.False(verses[2].Overlaps(27, null));
+    }
+
+    [Theory]
+    [InlineData("창35:이어진 문장")]
+    [InlineData("창35:22 본문\n창36:이어진 문장")]
+    [InlineData("창35:22 본문\n출35:이어진 문장")]
+    [InlineData("창35:22 본문\n창35:23- 잘못된 절")]
+    [InlineData("창35:24-23 역방향 범위")]
+    [InlineData("창35:24-26 통합 본문\n창35:25 겹친 본문")]
+    public async Task RejectsOrphanContinuationsAndInvalidRangesWithoutReplacingWorkingFile(string text)
+    {
+        var input = Path.Combine(_directory, "input.txt");
+        await File.WriteAllTextAsync(input, "창1:1 기존 본문");
+        await LocalBibleImporter.ImportAsync(input, Output);
+        var before = await File.ReadAllTextAsync(Output);
+        await File.WriteAllTextAsync(input, text);
+        await Assert.ThrowsAsync<InvalidDataException>(() => LocalBibleImporter.ImportAsync(input, Output));
+        Assert.Equal(before, await File.ReadAllTextAsync(Output));
+    }
+
+    [Fact]
     public async Task ImportsFlatJsonWithContentField()
     {
         var input = Path.Combine(_directory, "input.json");

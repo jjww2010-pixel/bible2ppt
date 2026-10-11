@@ -117,35 +117,50 @@ def read_records(path, encoding):
                 except KeyError as ex:
                     raise ValueError(f"JSON 항목 {number}: {ex.args[0]} 필드가 없습니다.") from ex
         else:
+            previous = None
             for number, line in enumerate(stream, 1):
                 line = line.rstrip("\r\n")
                 if not line.strip() or line.lstrip().startswith("#"):
                     continue
                 fields = line.split("\t", 3)
-                if len(fields) == 4:
-                    yield tuple(fields)
-                    continue
-                match = re.fullmatch(r"\s*(.+?)\s*([0-9]+):([0-9]+)\s+(.+)", line)
-                if not match:
-                    raise ValueError(f"TXT {number}번째 줄: '창1:1 본문' 또는 책/장/절/본문 TSV 형식이 필요합니다.")
-                yield match.groups()
+                if len(fields) != 4:
+                    match = re.fullmatch(r"\s*(.+?)\s*([0-9]+):([0-9]+)(?:-([0-9]+))?\s+(.+)", line)
+                    if not match:
+                        continuation = re.fullmatch(r"\s*(.+?)\s*([0-9]+):([^0-9\s].*)", line)
+                        if (continuation and previous is not None
+                                and book_index(continuation[1]) == book_index(previous[0])
+                                and int(continuation[2]) == int(previous[1])):
+                            previous[3] += " " + continuation[3].strip()
+                            continue
+                        raise ValueError(f"TXT {number}번째 줄: '창1:1 본문' 또는 책/장/절/본문 TSV 형식이 필요합니다.")
+                    fields = [match[1], match[2], match[3], match[5], match[4]]
+                if previous is not None:
+                    yield tuple(previous)
+                previous = fields
+            if previous is not None:
+                yield tuple(previous)
 
 
 def convert(records, name, source=None):
     if not isinstance(name, str) or not name.strip():
         raise ValueError("성경 이름이 필요합니다.")
     books = {}
-    for row, (book, chapter, verse, text) in enumerate(records, 1):
+    for row, record in enumerate(records, 1):
+        book, chapter, verse, text = record[:4]
+        end_number = record[4] if len(record) == 5 else None
         try:
             index = book_index(book)
             chapter = positive_number(chapter, "장")
             verse = positive_number(verse, "절")
+            end_number = positive_number(end_number, "끝 절") if end_number is not None else verse
+            if end_number < verse:
+                raise ValueError("끝 절 번호는 시작 절 번호 이상이어야 합니다.")
             if not isinstance(text, str) or not text.strip():
                 raise ValueError("본문이 비어 있거나 문자열이 아닙니다.")
             verses = books.setdefault(index, {}).setdefault(chapter, {})
             if verse in verses:
                 raise ValueError(f"{BOOKS[index][1]} {chapter}:{verse} 구절이 중복되어 있습니다.")
-            verses[verse] = text
+            verses[verse] = (text, end_number)
         except ValueError as ex:
             raise ValueError(f"본문 항목 {row}: {ex}") from ex
     if not books:
@@ -154,12 +169,19 @@ def convert(records, name, source=None):
     if source:
         document["source"] = source
     for index, chapters in sorted(books.items()):
+        for chapter, verses in chapters.items():
+            previous_end = 0
+            for verse, (_, end_number) in sorted(verses.items()):
+                if verse <= previous_end:
+                    raise ValueError(f"{BOOKS[index][1]} {chapter}:{verse} 절 범위가 겹칩니다.")
+                previous_end = end_number
         key, title, abbreviation = BOOKS[index]
         document["books"].append({
             "key": key, "name": title, "abbreviation": abbreviation,
             "chapters": [
                 {"number": chapter, "verses": [
-                    {"number": verse, "text": text} for verse, text in sorted(verses.items())
+                    {"number": verse, "text": text, **({"endNumber": end_number} if end_number != verse else {})}
+                    for verse, (text, end_number) in sorted(verses.items())
                 ]} for chapter, verses in sorted(chapters.items())
             ],
         })

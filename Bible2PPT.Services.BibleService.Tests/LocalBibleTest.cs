@@ -63,6 +63,43 @@ public sealed class LocalBibleTest : IDisposable
     }
 
     [Fact]
+    public async Task SelectsSecondMemberOfCombinedVerseThroughThePptQueryPipeline()
+    {
+        var input = Path.Combine(_directory, "input.txt");
+        await File.WriteAllTextAsync(input, "창1:1 시작 테스트\n창1:2-3 통합 테스트\n창1:4 마지막 테스트");
+        await LocalBibleImporter.ImportAsync(input, FilePath);
+        using var services = CreateServices();
+        var service = services.GetRequiredService<BibleService>();
+        var bible = Assert.Single(await service.GetBiblesAsync(new LocalBible(FilePath)));
+        var book = Assert.Single(await service.GetBooksAsync(bible));
+        var chapter = Assert.Single(await service.GetChaptersAsync(book));
+        var zipped = services.GetRequiredService<ZippedBibleService>();
+        var query = Assert.Single(services.GetRequiredService<VerseQueryParser>().ParseVerseQueries("창1:3"));
+        var selected = new List<Verse>();
+        await foreach (var each in zipped.GetVersesAsync(new[] { chapter }, CancellationToken.None))
+            selected.AddRange(each.Where(verse => verse is not null && verse.Overlaps(query.StartVerseNumber, query.EndVerseNumber))!);
+        var combined = Assert.Single(selected);
+        Assert.Equal("2-3", combined.NumberLabel);
+        Assert.Equal("통합 테스트", combined.Text);
+    }
+
+    [Theory]
+    [InlineData(0, 2)]
+    [InlineData(1, 2)]
+    [InlineData(3, 2)]
+    public async Task RejectsInvalidOrOverlappingNativeJsonRanges(int endNumber, int nextNumber)
+    {
+        WriteBible();
+        var document = System.Text.Json.Nodes.JsonNode.Parse(File.ReadAllText(FilePath))!;
+        var verses = document["books"]![0]!["chapters"]![1]!["verses"]!;
+        verses[0]!["endNumber"] = endNumber;
+        verses[1]!["number"] = nextNumber;
+        if (endNumber == 1) verses[0]!["number"] = 2;
+        await File.WriteAllTextAsync(FilePath, document.ToJsonString());
+        await Assert.ThrowsAsync<InvalidDataException>(() => new LocalBible(FilePath).GetBiblesOnlineAsync());
+    }
+
+    [Fact]
     public async Task ReplacingFileAndReopeningSourceKeepsIdentityAndReadsNewText()
     {
         WriteBible();

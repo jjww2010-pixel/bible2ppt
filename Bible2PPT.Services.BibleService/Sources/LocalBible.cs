@@ -73,6 +73,7 @@ public sealed class LocalBible : BibleSource
         return data.Verses!.OrderBy(verse => verse.Number).Select(verse => new Verse
         {
             Number = verse.Number,
+            EndNumber = verse.EndNumber,
             Text = verse.Text!,
         }).ToList();
     }
@@ -161,13 +162,16 @@ public sealed class LocalBible : BibleSource
                     throw Invalid($"{book.Name} {chapter.Number}장의 verses가 비어 있습니다.");
                 }
 
-                var verseNumbers = new HashSet<int>();
-                foreach (var verse in chapter.Verses)
+                if (chapter.Verses.Any(verse => verse is null))
+                    throw Invalid($"{book.Name} {chapter.Number}장의 절이 비어 있습니다.");
+                var previousEnd = 0;
+                foreach (var verse in chapter.Verses.OrderBy(verse => verse.Number))
                 {
-                    if (verse is null || verse.Number < 1 || !verseNumbers.Add(verse.Number))
+                    if (verse.Number < 1 || verse.Number <= previousEnd || verse.EndNumber < verse.Number)
                     {
-                        throw Invalid($"{book.Name} {chapter.Number}장의 절 번호는 양수여야 하며 중복될 수 없습니다.");
+                        throw Invalid($"{book.Name} {chapter.Number}장의 절 번호·범위는 양수여야 하며 중복되거나 겹칠 수 없습니다.");
                     }
+                    previousEnd = verse.EndNumber ?? verse.Number;
                     if (string.IsNullOrWhiteSpace(verse.Text))
                     {
                         throw Invalid($"{book.Name} {chapter.Number}:{verse.Number}의 text가 비어 있습니다.");
@@ -208,6 +212,7 @@ public sealed class LocalBible : BibleSource
     {
         public VerseData() { }
         public int Number { get; set; }
+        public int? EndNumber { get; set; }
         public string? Text { get; set; }
     }
 }

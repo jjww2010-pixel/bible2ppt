@@ -86,8 +86,8 @@ TXT나 구절별 JSON은 `tools/import_bible.py`로 변환할 수 있습니다. 
 
 ## 설치 방법
 
-**성경2PPT**는 [실행 요구 사항](#실행-요구-사항)만 만족하면 설치 없이 사용할 수 있습니다. [Releases](https://github.com/sunghwan2789/Bible2PPT/releases) 페이지에서 최신 버전을 내려받고 바로 사용하세요!
-로컬 본문 변경판의 `Bible2PPT.exe`는 이 저장소 Actions의 **Windows EXE** 산출물에서 내려받습니다.
+로컬 본문 변경판은 [64비트 Windows ZIP](https://github.com/jjww2010-pixel/bible2ppt/raw/refs/heads/windows-download/Bible2PPT-win-x64.zip) 또는 [32비트 Windows ZIP](https://github.com/jjww2010-pixel/bible2ppt/raw/refs/heads/windows-download/Bible2PPT-win-x86.zip)을 내려받아 압축을 모두 풀고 `Bible2PPT.exe`를 실행합니다.
+비공개 저장소에 접근할 수 있는 GitHub 계정으로 로그인해야 합니다. 직접 다운로드되지 않으면 [배포 파일 목록](https://github.com/jjww2010-pixel/bible2ppt/tree/windows-download)에서 ZIP을 열고 **Download raw file**을 누르세요.
 압축 해제·본문 가져오기·PowerPoint 확인 방법은 [Windows 실행 파일 안내](docs/windows-exe.md)를 참고하세요.
 
 
@@ -102,7 +102,7 @@ PPT를 만들고 보는 데 필요한 프로그램입니다. 프로그램 구성
 ### 로컬 본문 파일
 실행 파일 옆의 `Bibles/krv.json`이 필요합니다. 본문 조회에는 인터넷 연결이 필요하지 않습니다.
 
-이 변경판은 소스 코드 기준이며, 위의 원본 저장소 Releases 배포본에는 로컬 JSON 기능이 포함되어 있지 않을 수 있습니다.
+원본 저장소의 배포본에는 이 로컬 본문 변경 기능이 포함되어 있지 않습니다.
 
 
 ## 기여 방법

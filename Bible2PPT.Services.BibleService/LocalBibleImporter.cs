@@ -92,6 +92,7 @@ public static class LocalBibleImporter
     {
         using var reader = new StringReader(content);
         var lineNumber = 0;
+        Row? previous = null;
         while (reader.ReadLine() is { } line)
         {
             lineNumber++;
@@ -99,20 +100,44 @@ public static class LocalBibleImporter
             var fields = line.Split('\t', 4);
             if (fields.Length != 4)
             {
-                var match = Regex.Match(line, @"^\s*(.+?)\s*([0-9]+):([0-9]+)\s+(.+)$");
+                var match = Regex.Match(line, @"^\s*(.+?)\s*([0-9]+):([0-9]+)(?:-([0-9]+))?\s+(.+)$");
                 if (!match.Success)
                 {
+                    // Some TXT exports repeat only the book/chapter prefix on a
+                    // wrapped verse. Keep that text with its preceding verse.
+                    var continuation = Regex.Match(line, @"^\s*(.+?)\s*([0-9]+):([^0-9\s].*)$");
+                    if (continuation.Success && previous is not null &&
+                        GetBookKey(continuation.Groups[1].Value) == previous.Key &&
+                        int.TryParse(continuation.Groups[2].Value, out var continuationChapter) &&
+                        continuationChapter == previous.Chapter)
+                    {
+                        previous = previous with { Text = previous.Text + " " + continuation.Groups[3].Value.Trim() };
+                        continue;
+                    }
                     throw new InvalidDataException($"TXT {lineNumber}번째 줄: '창1:1 본문' 또는 책/장/절/본문 TSV 형식이 필요합니다.");
                 }
-                fields = Enumerable.Range(1, 4).Select(index => match.Groups[index].Value).ToArray();
+                fields = new[] { match.Groups[1].Value, match.Groups[2].Value, match.Groups[3].Value, match.Groups[5].Value };
+                if (match.Groups[4].Success)
+                {
+                    if (!int.TryParse(match.Groups[4].Value, NumberStyles.None, CultureInfo.InvariantCulture, out var endNumber))
+                        throw new InvalidDataException($"TXT {lineNumber}번째 줄의 절 범위를 확인하세요.");
+                    if (previous is not null) yield return previous;
+                    previous = ParseRow(fields, lineNumber) with { EndNumber = endNumber };
+                    continue;
+                }
             }
-            if (!int.TryParse(fields[1], NumberStyles.None, CultureInfo.InvariantCulture, out var chapter) ||
-                !int.TryParse(fields[2], NumberStyles.None, CultureInfo.InvariantCulture, out var verse))
-            {
-                throw new InvalidDataException($"TXT {lineNumber}번째 줄의 장·절 번호를 확인하세요.");
-            }
-            yield return new Row(GetBookKey(fields[0]), chapter, verse, fields[3]);
+            if (previous is not null) yield return previous;
+            previous = ParseRow(fields, lineNumber);
         }
+        if (previous is not null) yield return previous;
+    }
+
+    private static Row ParseRow(string[] fields, int lineNumber)
+    {
+        if (!int.TryParse(fields[1], NumberStyles.None, CultureInfo.InvariantCulture, out var chapter) ||
+            !int.TryParse(fields[2], NumberStyles.None, CultureInfo.InvariantCulture, out var verse))
+            throw new InvalidDataException($"TXT {lineNumber}번째 줄의 장·절 번호를 확인하세요.");
+        return new Row(GetBookKey(fields[0]), chapter, verse, fields[3]);
     }
 
     private static string ConvertRows(IEnumerable<Row> input)
@@ -121,7 +146,7 @@ public static class LocalBibleImporter
         if (rows.Count == 0) throw new InvalidDataException("본문 파일에 구절이 없습니다.");
         foreach (var row in rows)
         {
-            if (row.Chapter < 1 || row.Verse < 1 || string.IsNullOrWhiteSpace(row.Text))
+            if (row.Chapter < 1 || row.Verse < 1 || row.EndNumber < row.Verse || string.IsNullOrWhiteSpace(row.Text))
                 throw new InvalidDataException($"{row.Key} {row.Chapter}:{row.Verse}: 장·절 번호는 양수여야 하며 본문이 필요합니다.");
         }
         if (rows.GroupBy(row => (row.Key, row.Chapter, row.Verse)).Any(group => group.Count() > 1))
@@ -138,7 +163,7 @@ public static class LocalBibleImporter
                 chapters = book.GroupBy(row => row.Chapter).OrderBy(group => group.Key).Select(chapter => new
                 {
                     number = chapter.Key,
-                    verses = chapter.OrderBy(row => row.Verse).Select(row => new { number = row.Verse, text = row.Text }),
+                    verses = chapter.OrderBy(row => row.Verse).Select(row => new { number = row.Verse, endNumber = row.EndNumber, text = row.Text }),
                 }),
             }),
         };
@@ -160,5 +185,5 @@ public static class LocalBibleImporter
         throw new InvalidDataException($"알 수 없는 책 이름 또는 번호: {value}. 숫자 책 번호는 1~66을 사용하세요.");
     }
 
-    private sealed record Row(BookKey Key, int Chapter, int Verse, string Text);
+    private sealed record Row(BookKey Key, int Chapter, int Verse, string Text, int? EndNumber = null);
 }

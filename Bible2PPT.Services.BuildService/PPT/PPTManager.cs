@@ -82,7 +82,7 @@ public partial class PPTManager
             text = AddSuffix(text, "TITLE", book.NameInfo, Job.Template.BookNameVisible);
             text = text.Replace("[CPAS]", $"{startVerseNumber}");
             text = text.Replace("[CPAE]", $"{endVerseNumber}");
-            text = text.Replace("[PARA]", $"{mainVerse.Number}");
+            text = text.Replace("[PARA]", mainVerse.NumberLabel);
 
             textShape.Text = text;
         }

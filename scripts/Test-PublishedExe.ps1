@@ -33,6 +33,14 @@ try {
     $invalid = Join-Path $scratch 'invalid input.json'
     Set-Content -Path $invalid -Value '{}' -Encoding utf8
     Invoke-BibleCheck $invalid (Join-Path $scratch 'invalid report.txt') 1
+    $text = Join-Path $scratch 'wrapped and combined input.txt'
+    Copy-Item 'scripts/fixtures/wrapped-bible.txt' $text
+    $textReport = Join-Path $scratch 'text report.txt'
+    Invoke-BibleCheck $text $textReport 0
+    $textResult = Get-Content $textReport -Raw
+    if ($textResult -notmatch 'Books=1' -or $textResult -notmatch 'Verses=3') {
+        throw "Unexpected TXT import result from published EXE: $textResult"
+    }
     Write-Host 'Published EXE passed: runtime startup, SQLite initialization, local Bible reading, invalid-file handling.'
 } finally {
     Remove-Item $scratch -Recurse -Force

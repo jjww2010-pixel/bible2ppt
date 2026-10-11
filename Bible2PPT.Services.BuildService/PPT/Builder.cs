@@ -82,9 +82,7 @@ public class Builder : JobManager
 
                     var targetEachVerses = _zippedBibleService.GetVersesAsync(targetEachChapter, token)
                         .Where(eachVerse => eachVerse.Any(verse =>
-                            (endVerseNumber == null)
-                            ? (verse.Number >= startVerseNumber)
-                            : (verse.Number >= startVerseNumber) && (verse.Number <= endVerseNumber)
+                            verse is not null && verse.Overlaps(startVerseNumber, endVerseNumber)
                         ));
                     await channel.Writer.WriteAsync((targetEachVerses, mainBook, mainChapter, startVerseNumber, endVerseNumber), token).ConfigureAwait(false);
                 }
