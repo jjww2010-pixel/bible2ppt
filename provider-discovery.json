@@ -1,0 +1,310 @@
+[
+  {
+    "url": "http://www.holybible.or.kr/B_AGAPE/",
+    "status": 200,
+    "finalURL": "http://www.holybible.or.kr/B_AGAPE/",
+    "bytes": 9121,
+    "title": "다국어 성경 Holy-Bible",
+    "links": [
+      [
+        "http://www.holybible.or.kr/",
+        ""
+      ],
+      [
+        "mailto:holybible.orkr@gmail.com",
+        "holybible.orkr@gmail.com"
+      ],
+      [
+        "http://www.holybible.or.kr/mobile/",
+        "mobile용 HolyBible로 가기(시험중)"
+      ]
+    ],
+    "frames": [
+      "https://www.googletagmanager.com/ns.html?id=GTM-NX3PB98"
+    ],
+    "locations": [],
+    "scripts": [
+      "https://ads.vidoomy.com/holybible_15914.js",
+      "//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+      "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+      "http://wcs.naver.net/wcslog.js"
+    ],
+    "forms": [
+      "<FORM action=cgi/biblesrch.php method=get>"
+    ],
+    "options": [
+      [
+        "99",
+        "통합검색\n\t\t\t\t\t"
+      ],
+      [
+        "GAE",
+        "개역개정\n\t\t\t\t\t"
+      ],
+      [
+        "RHV",
+        "개역한글\n\t\t\t\t\t"
+      ],
+      [
+        "COGNEW",
+        "공동번역\n\t\t\t\t\t"
+      ],
+      [
+        "SAENEW",
+        "새번역\n\t\t\t\t\t"
+      ],
+      [
+        "HDB",
+        "현대인\n\t\t\t\t\t"
+      ],
+      [
+        "NIV",
+        "NIV\n\t\t\t\t\t"
+      ],
+      [
+        "KJV",
+        "KJV\n\t\t\t\t\t"
+      ],
+      [
+        "NASB",
+        "NASB\n\t\t\t\t\t"
+      ],
+      [
+        "KSNKI",
+        "新改譯\n\t\t\t\t\t"
+      ],
+      [
+        "KKUG",
+        "口語譯\n\t\t\t\t\t"
+      ],
+      [
+        "KSNKD",
+        "新共同譯\n\t\t\t\t\t"
+      ],
+      [
+        "NHYMN",
+        "새찬송가\n\t\t\t\t\t"
+      ],
+      [
+        "HYMN",
+        "찬송가\n\t\t\t\t"
+      ]
+    ],
+    "apiPaths": [
+      "/B_DICT_NEW/cgi/bdictftxt.php?DN=",
+      "/images/favi/manifest.json",
+      "http://www.holybible.or.kr/365bible.php",
+      ">\n\t\t<tr>\n\t\t<FORM action=cgi/biblesrch.php method=get>\n\t\t\t<td noWrap><FONT face=돋움 size=2>\n\t\t\t\t<SELECT name=VR>\n\t\t\t\t\t<OPTION VALUE="
+    ]
+  },
+  {
+    "url": "https://www.biblenote.kr/read.html",
+    "status": 200,
+    "finalURL": "https://www.biblenote.kr/read.html",
+    "bytes": 156068,
+    "title": "성경읽기 - 개역개정 개역한글 NIV KJV 온라인 성경 | HolyBible :: 홀리바이블",
+    "links": [
+      [
+        "/read.html",
+        "성경읽기"
+      ],
+      [
+        "/bible_reading_plan.html",
+        "일독성경"
+      ],
+      [
+        "https://www.biblenote.kr/typing",
+        "✍ 성경필사"
+      ],
+      [
+        "/read_parallel.html?translation=${currentVersion}&book=${currentBook}&chapter=${currentChapter}",
+        "＋ 다른 번역본과 함께 보기"
+      ]
+    ],
+    "frames": [],
+    "locations": [
+      "/read_parallel.html?"
+    ],
+    "scripts": [
+      "/api/seo-script.js",
+      "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0540539911186598",
+      "/api/site-components.js",
+      "/common-footer.js",
+      "/config.js",
+      "/translations-config.js",
+      "/i18n.js",
+      "/user-preferences.js",
+      "/user-preferences-ui.js",
+      "/copy-format-engine.js",
+      "/copy-options-schema-loader.js",
+      "/copy-options-stats-emitter.js",
+      "/dictionary_tooltip.js?v=2",
+      "/strongs-popup.js",
+      "/common-header.js",
+      "/adsense.js",
+      "/notice-popup.js"
+    ],
+    "forms": [],
+    "options": [
+      [
+        "unified",
+        "통합검색"
+      ],
+      [
+        "/read.html?translation=H0_RHV&book=OLD01&chapter=1",
+        "성경 개역한글"
+      ],
+      [
+        "/read.html?translation=H1_GAE&book=OLD01&chapter=1",
+        "성경 개역개정"
+      ],
+      [
+        "/read.html?translation=H2_SAE&book=OLD01&chapter=1",
+        "성경 새번역(구판)"
+      ],
+      [
+        "/read.html?translation=H2_SAENEW&book=OLD01&chapter=1",
+        "성경 새번역"
+      ],
+      [
+        "/read.html?translation=H3_COGNEW&book=OLD01&chapter=1",
+        "성경 공동번역(개정)"
+      ],
+      [
+        "/read.html?translation=H6_HKJV&book=OLD01&chapter=1",
+        "성경 킹제임스"
+      ],
+      [
+        "/read.html?translation=H7_HDB&book=OLD01&chapter=1",
+        "성경 현대인의성경"
+      ],
+      [
+        "/read.html?translation=E0_NIV&book=OLD01&chapter=1",
+        "성경 NIV"
+      ],
+      [
+        "/read.html?translation=E1_KJV&book=OLD01&chapter=1",
+        "성경 KJV"
+      ],
+      [
+        "/read.html?translation=E2_NASB&book=OLD01&chapter=1",
+        "성경 NASB"
+      ],
+      [
+        "/read.html?translation=J0_KSNKI&book=OLD01&chapter=1",
+        "성경 일본어 구어역"
+      ],
+      [
+        "/read.html?translation=J1_KKUG&book=OLD01&chapter=1",
+        "성경 일본어 신개역"
+      ],
+      [
+        "/read.html?translation=J2_KSNKD&book=OLD01&chapter=1",
+        "성경 일본어 신공동역"
+      ],
+      [
+        "/read.html?translation=C0_GB&book=OLD01&chapter=1",
+        "중국어성경 Simplified"
+      ],
+      [
+        "/read.html?translation=C1_B5&book=OLD01&chapter=1",
+        "중국어성경 Traditional"
+      ],
+      [
+        "/read.html?translation=F0_LSG&book=OLD01&chapter=1",
+        "성경 Louis Segond 1910"
+      ],
+      [
+        "/read.html?translation=R0_RUSSIA&book=OLD01&chapter=1",
+        "아제르성경"
+      ],
+      [
+        "dictionary",
+        "성경사전"
+      ],
+      [
+        "hymns",
+        "찬송가"
+      ],
+      [
+        "yearplan",
+        "일독성경"
+      ],
+      [
+        "font-noto-sans",
+        "Noto Sans KR"
+      ],
+      [
+        "font-noto-serif",
+        "Noto Serif KR"
+      ],
+      [
+        "font-nanum-gothic",
+        "나눔고딕"
+      ],
+      [
+        "font-nanum-myeongjo",
+        "나눔명조"
+      ],
+      [
+        "font-ibm-plex",
+        "IBM Plex Sans"
+      ],
+      [
+        "font-gothic-a1",
+        "Gothic A1"
+      ],
+      [
+        "font-sunflower",
+        "Sunflower"
+      ],
+      [
+        "font-do-hyeon",
+        "도현체"
+      ],
+      [
+        "font-jua",
+        "주아체"
+      ],
+      [
+        "font-black-han",
+        "검은고딕"
+      ],
+      [
+        "font-stylish",
+        "스타일리시"
+      ],
+      [
+        "font-song-myung",
+        "송명조"
+      ],
+      [
+        "font-gamja",
+        "감자꽃체"
+      ],
+      [
+        "font-gulim",
+        "굴림"
+      ]
+    ],
+    "apiPaths": [
+      "/api/seo-script.js",
+      "/typing/api/auth/check",
+      "}).then(function(r){return r.ok?r.json():null}).catch(function(){return null});}catch(e){}</script>\n    <script async id=",
+      "/api/site-components.js",
+      ", { book: currentBook, chapter: parseInt(currentChapter) || 1 });\n                }\n            } catch (e) {}\n\n            try {\n                const apiUrl = `/api/v2/chapter?translation=${currentVersion}&book=${currentBook}&chapter=${currentChapter}`;\n                console.log(",
+      ", apiUrl);\n\n                const response = await fetch(apiUrl);\n                const data = await response.json();\n\n                if (data.success && data.verses) {\n                    displayChapter(data);\n                } else {\n                    showError(",
+      ").trim();\n                    if (para) out.push(para);\n                }\n            });\n            return out;\n        }\n\n        // 장 AI 해설 로드 — #chapter-commentary 갱신(없으면 생성). XSS 방지: textContent만 사용.\n        function loadCommentary(book, ch) {\n            if (!book || !ch) return;\n            fetch(`/api/v2/commentary?book=${encodeURIComponent(book)}&chapter=${encodeURIComponent(ch)}`)\n                .then(res => res.ok ? res.json() : null)\n                .then(data => {\n                    const cm = data && data.commentary;\n                    let section = document.getElementById(",
+      " — 한 번의 호출로 예화와 설교 전문을 함께 받아 각각 섹션으로 표시.\n        // 해당 없으면 섹션 자체를 지운다. XSS 방지: textContent만 사용.\n        function loadRelatedIllustrations(book, ch) {\n            if (!book || !ch) return;\n            fetch(`/api/v2/bible/related?book=${encodeURIComponent(book)}&chapter=${encodeURIComponent(ch)}`)\n                .then(res => res.ok ? res.json() : null)\n                .then(data => {\n                    if (!data) { removeRelatedSection(",
+      "/api/v2/memos?book=",
+      " });\n                if (res.status === 401) { memoLoggedIn = false; return; }\n                if (!res.ok) return;\n                memoLoggedIn = true;\n                var data = await res.json();\n                if (book !== currentBook || chapter !== currentChapter) return; // 그사이 장을 옮겼다\n                chapterMemos = (data && data.memos) || {};\n                Object.keys(chapterMemos).forEach(function (v) { renderVerseMemo(parseInt(v, 10)); });\n            } catch (e) { /* 메모는 부가 기능 — 실패해도 본문 읽기에 영향 없음 */ }\n        }\n\n        function openMemoForSelection() {\n            var els = selectedVerseEls();\n            if (els.length !== 1) return;\n            var verseNum = verseNumOf(els[0]);\n            openMemoEditor(currentBook, currentChapter, verseNum, document.getElementById(",
+      "/api/v2/memos",
+      ";\n                try { code = (await res.json()).error || ",
+      "/api/v2/memos/all",
+      "; return; }\n                var data = await res.json();\n                var memos = (data && data.memos) || [];\n                list.innerHTML = ",
+      ";\n        }\n\n        // 장 전체 원문을 한 번의 요청으로 받아 절마다 패널을 그린다.\n        // 절마다 /api/v2/strongs/verse를 부르면 시편 119편이 176회가 된다.\n        async function applyInterlinearAll(on) {\n            updateInterlinearToggleUI(on);\n\n            const container = document.getElementById(",
+      ") return;\n\n            let byVerse = {};\n            try {\n                const res = await fetch(`/api/v2/strongs/chapter?book=${encodeURIComponent(currentBook)}&chapter=${encodeURIComponent(currentChapter)}`);\n                const data = await res.json();\n                byVerse = (data && data.success && data.verses) ? data.verses : {};\n            } catch (e) {\n                byVerse = {};\n            }\n\n            verseDivs.forEach(div => {\n                if (div.querySelector(",
+      " 신고 — 2026-07-25, 2026-08-04).\n        // 로그인 회원만 우연히 정상 동작했던 이유는 schema-loader 가 로그인 감지 시\n        // syncFromServerOnLogin() → loadSchema() 를 타기 때문이고, 그 경로는 /api/v2/me\n        // 왕복에 달려 있어 "
+    ]
+  }
+]
