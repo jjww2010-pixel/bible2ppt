@@ -6,18 +6,30 @@ import re
 import sys
 import urllib.request
 
-URLS = ['https://www.bible.com/ko/languages/kor',
-        'https://www.bible.com/ko/versions',
-        'https://www.bible.com/json/bible/versions/kor',
-        'https://bible.godpeople.com/',
-        'https://www.holybible.or.kr/B_EASY/cgi/bibleftxt.php?VR=0&VL=7&CN=20&CV=99']
+URLS = ['https://www.kaggle.com/api/v1/datasets/download/rycont/korean-bible-classic-modern-pair',
+        'https://nocr.net/korea_easy',
+        'https://bible.godpeople.com/index.html',
+        'https://www.godpeople.com/?GO=bible']
 
 
 def probe(url):
     result = {'url': url}
     try:
         with urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'}), timeout=25) as r:
-            raw = r.read(2_000_000)
+            raw = r.read(32_000_000)
+            if raw.startswith(b'PK'):
+                import csv, io, zipfile
+                with zipfile.ZipFile(io.BytesIO(raw)) as archive:
+                    result['archiveFiles'] = archive.namelist()
+                    for name in archive.namelist():
+                        if name.endswith('.csv'):
+                            content = archive.read(name).decode('utf-8-sig')
+                            rows = list(csv.reader(io.StringIO(content)))
+                            result.setdefault('tables', []).append({'name': name, 'header': rows[0], 'rows': len(rows)-1})
+                            output = Path(sys.argv[1]); output.mkdir(parents=True, exist_ok=True)
+                            (output / (Path(name).name + '.json')).write_text(json.dumps(rows,ensure_ascii=False), encoding='utf-8')
+                result.update(status=r.status, finalURL=r.geturl(), bytes=len(raw))
+                return result
             charset = r.headers.get_content_charset() or ('cp949' if 'holybible' in url else 'utf-8')
             page = raw.decode(charset, errors='replace')
             result.update(status=r.status, finalURL=r.geturl(), bytes=len(raw))
