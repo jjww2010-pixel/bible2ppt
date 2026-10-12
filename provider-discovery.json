@@ -1,0 +1,134 @@
+[
+  {
+    "url": "https://www.kaggle.com/api/v1/datasets/download/rycont/korean-bible-classic-modern-pair",
+    "archiveFiles": [
+      "pair.csv"
+    ],
+    "tables": [
+      {
+        "name": "pair.csv",
+        "header": [
+          "input_text",
+          "target_text"
+        ],
+        "rows": 31092
+      }
+    ],
+    "candidates": [
+      {
+        "book": "Judges",
+        "chapter": 20,
+        "column": "input_text",
+        "starts": [
+          7076
+        ],
+        "ends": [
+          7077
+        ]
+      },
+      {
+        "book": "Judges",
+        "chapter": 20,
+        "column": "target_text",
+        "starts": [],
+        "ends": []
+      },
+      {
+        "book": "IISamuel",
+        "chapter": 4,
+        "column": "input_text",
+        "starts": [
+          8123
+        ],
+        "ends": [
+          8124
+        ]
+      },
+      {
+        "book": "IISamuel",
+        "chapter": 4,
+        "column": "target_text",
+        "starts": [],
+        "ends": []
+      },
+      {
+        "book": "IKings",
+        "chapter": 8,
+        "column": "input_text",
+        "starts": [
+          9021
+        ],
+        "ends": [
+          9022
+        ]
+      },
+      {
+        "book": "IKings",
+        "chapter": 8,
+        "column": "target_text",
+        "starts": [],
+        "ends": []
+      },
+      {
+        "book": "Jeremiah",
+        "chapter": 16,
+        "column": "input_text",
+        "starts": [
+          19329,
+          20660,
+          20672,
+          20692,
+          20700,
+          20734,
+          20746,
+          20841,
+          20931,
+          20936,
+          20943,
+          20953,
+          20968,
+          20984,
+          20990,
+          20999,
+          21062,
+          21075,
+          21113,
+          21149,
+          21159,
+          21168,
+          21196,
+          21272,
+          21305,
+          21336,
+          21417,
+          22947
+        ],
+        "ends": [
+          19330
+        ]
+      },
+      {
+        "book": "Jeremiah",
+        "chapter": 16,
+        "column": "target_text",
+        "starts": [],
+        "ends": []
+      }
+    ],
+    "status": 200,
+    "finalURL": "https://storage.googleapis.com:443/kaggle-data-sets/2331604/4004965/bundle/archive.zip?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gcp-kaggle-com%40kaggle-161607.iam.gserviceaccount.com%2F20261012%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20261012T181713Z&X-Goog-Expires=259200&X-Goog-SignedHeaders=host&X-Goog-Signature=01345bfb7710445261df84cc04cbf65645e43870b80b27b84229b7049901886e7d453b7aee3d71fa0d0dd2f7e96e879667b3b5efbc86125f10f73f0f8f97e0545f3b4565dd511ff7af18dbc83f1b6627e11286a958e762885bf2dda22ecbc8299713b6d2e68bf19dd6da335462b07732e388c35f38f5123da255a1cc8701e5b70f71126d1f8e5d185fb25653141def17d1d297c171318b76d365c52eb22787f0a59faa57b1fecf8de39f4cdcdf4633b67480da8855334adef3789e6ae652367dcdbb60a4d1047ae405e2129561ab6bbd782df1eb4e252efb50282ee880347bde1552dc0fc4ee4341721e15c70a2088b5c7443138c5a40136b615078df9eee18d",
+    "bytes": 2753290
+  },
+  {
+    "url": "https://nocr.net/korea_easy",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://bible.godpeople.com/index.html",
+    "error": "Remote end closed connection without response"
+  },
+  {
+    "url": "https://www.godpeople.com/?GO=bible",
+    "error": "Remote end closed connection without response"
+  }
+]
