@@ -19,6 +19,13 @@ jobs:
           python-version: '3.12'
       - name: Read official public documentation
         run: python scripts/verify_logos_export_docs.py "$RUNNER_TEMP/logos-doc-report"
+      - name: Read public help with a normal browser
+        env:
+          NODE_PATH: ${{ runner.temp }}/logos-browser/node_modules
+        run: |
+          npm install --prefix "$RUNNER_TEMP/logos-browser" playwright@1.56.0
+          "$RUNNER_TEMP/logos-browser/node_modules/.bin/playwright" install --with-deps chromium
+          node scripts/verify_logos_browser_docs.cjs "$RUNNER_TEMP/logos-doc-report"
       - name: Publish readable result
         if: always()
         env:
@@ -29,6 +36,6 @@ jobs:
           cp -R "$RUNNER_TEMP/logos-doc-report/." .
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add README.md report.json
+          git add .
           git commit -m 'Record official Logos export documentation check'
           git push origin "HEAD:refs/heads/$report_branch"
