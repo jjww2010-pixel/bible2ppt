@@ -20,16 +20,15 @@ TASKS = []
 for key,online,number,chapter,verses in CASES:
     for ver in ['easy','gae']:
         TASKS.append({'provider':'Godpia','translation':ver,'book':key,'chapter':chapter,'targets':verses,
-                      'url':f'http://bible.godpia.com/read/reading.asp?ver={ver}&vol={online}&chap={chapter}'})
+                      'url':f'https://www.godpia.com/read/reading.asp?ver={ver}&vol={online}&chap={chapter}'})
     TASKS.append({'provider':'GOODTV','translation':'2','book':key,'chapter':chapter,'targets':verses,
-                  'url':'http://goodtvbible.goodtv.co.kr/bible.asp',
+                  'url':'https://goodtvbible.goodtv.co.kr/bible.asp',
                   'post':{'bible_idx':str(number),'jang_idx':str(chapter),'bible_version_1':'2',
                           'bible_version_2':'0','bible_version_3':'0','count':'1'}})
     TASKS.append({'provider':'Korean Bible Society','translation':'GAE','book':key,'chapter':chapter,'targets':verses,
                   'url':f'https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book={online}&chap={chapter}'})
 TASKS.extend([
-    {'provider':'Godpia','url':'http://bible.godpia.com/index.asp'},
-    {'provider':'Godpia','url':'https://bible.godpia.com/index.asp'},
+    {'provider':'Godpia','url':'https://www.godpia.com/read/reading.asp'},
     {'provider':'GOODTV','url':'http://goodtvbible.goodtv.co.kr/bible.asp'},
     {'provider':'GOODTV','url':'https://goodtvbible.goodtv.co.kr/bible.asp'},
     {'provider':'Korean Bible Society','url':'https://www.bskorea.or.kr/bible/korbibReadpage.php'},
@@ -69,9 +68,16 @@ def fetch(task):
                                  if re.search(r'읽기|쉬운|개역|현대|성경|reading|bible',a.get_text()+' '+a.get('href',''),re.I)][:60]
         result['scripts'] = [s.get('src') for s in soup.select('script[src]')]
         rows = {}
+        ranges = {}
         if task['provider']=='Godpia':
-            for number,body in re.findall(r'class=[\"\']num[\"\']>(\d+).*?</span>(.*?)</p>',page,re.S):
-                rows[int(number)] = text_only(body)
+            for label,body in re.findall(r'class=[\"\']num[\"\']>(.*?)</span>(.*?)</p>',page,re.S):
+                numbers = re.findall(r'\d+',text_only(label))
+                if numbers:
+                    start=int(numbers[0]); end=int(numbers[-1])
+                    if end<start or end-start>10: continue
+                    for number in range(start,end+1):
+                        rows[number] = text_only(body)
+                        ranges[number] = (start,end)
         elif task['provider']=='GOODTV':
             area = soup.find(id='one_jang')
             if area:
@@ -91,6 +97,7 @@ def fetch(task):
                     if body: rows[int(number)] = body
         result['parsedVerseCount'] = len(rows)
         result['versePresence'] = [{'number':n,'found':n in rows,'characters':len(rows.get(n,'')),
+                                    'sourceRange':ranges.get(n,[n,n]),
                                     'isExplicitNone':rows.get(n,'').strip() in ['(없음)','없음'],
                                     'textSHA256':hashlib.sha256(rows[n].encode()).hexdigest() if n in rows else None,
                                     'shortExcerpt': ' '.join(rows.get(n,'').split()[:4])}
@@ -101,6 +108,16 @@ def fetch(task):
                                          if n.get_text(strip=True) in [str(v) for v in task['targets']]][:12]
             result['relevantClasses'] = list(dict.fromkeys(' '.join(n.get('class',[])) for n in soup.find_all(class_=True)
                                                           if re.search(r'verse|bible|content|number|num|read', ' '.join(n.get('class',[])),re.I)))[:60]
+        # Preserve only the requested Easy Bible repair passages and supplied
+        # neighboring text for local comparison; never include full chapters.
+        if task['provider']=='Godpia' and task.get('translation')=='easy' and rows:
+            repair = {'book':task['book'],'chapter':task['chapter'],'url':result['finalURL'],
+                      'translationOptions':result['translationOptions'],
+                      'targets':[{'number':n,'text':rows.get(n,''),'range':ranges.get(n,[n,n])} for n in task['targets']],
+                      'neighbors':[{'number':n,'text':rows.get(n,''),'range':ranges.get(n,[n,n])}
+                                   for n in [min(task['targets'])-1,max(task['targets'])+1]]}
+            output=Path(sys.argv[1]);output.mkdir(parents=True,exist_ok=True)
+            (output/(task['book']+'-easy-repair.json')).write_text(json.dumps(repair,ensure_ascii=False,indent=2),encoding='utf-8')
     except Exception as error:
         result['error'] = str(error)
     return result
