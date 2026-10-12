@@ -67,6 +67,7 @@ def fetch(task):
                                  for a in soup.select('a[href]')
                                  if re.search(r'읽기|쉬운|개역|현대|성경|reading|bible',a.get_text()+' '+a.get('href',''),re.I)][:60]
         result['scripts'] = [s.get('src') for s in soup.select('script[src]')]
+        result['readerSelection'] = dict(re.findall(r'let\s+(jsCurVer|jsCurVol|jsCurChap)\s*=\s*[\"\']([^\"\']*)',page))
         if task['provider']=='Godpia' and 'book' not in task:
             # Public application code identifies the actual reading endpoint.
             pieces=[]
@@ -75,6 +76,8 @@ def fetch(task):
                     address=urllib.parse.urljoin(result['finalURL'],script['src'])
                     parsed=urllib.parse.urlsplit(address)
                     if parsed.hostname!='www.godpia.com':continue
+                    if not parsed.path.endswith('/read.js'): continue
+                    address=urllib.parse.quote(address,safe=':/?=&%+!')
                     try:
                         with urllib.request.urlopen(address,timeout=15) as js:
                             code=js.read(1_500_000).decode('utf-8',errors='replace')
