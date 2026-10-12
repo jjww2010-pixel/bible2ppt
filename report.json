@@ -1,0 +1,51 @@
+{
+  "checked_utc": "2026-10-12T17:21:45.332737+00:00",
+  "source_commit": "d21fc9afd8571028b311e6316ce6d04738d669e3",
+  "runner_os": "Linux",
+  "run_url": "https://github.com/jjww2010-pixel/bible2ppt/actions/runs/38283684290",
+  "mac_application_execution": "NOT TESTED",
+  "searches": [
+    {
+      "query": "Print Export",
+      "request_url": "https://support.logos.com/api/v2/help_center/en-us/articles/search.json?query=Print+Export&per_page=20",
+      "error": "HTTPError: HTTP Error 404: Not Found"
+    },
+    {
+      "query": "Copy Bible Verses",
+      "request_url": "https://support.logos.com/api/v2/help_center/en-us/articles/search.json?query=Copy+Bible+Verses&per_page=20",
+      "error": "HTTPError: HTTP Error 404: Not Found"
+    },
+    {
+      "query": "export limit",
+      "request_url": "https://support.logos.com/api/v2/help_center/en-us/articles/search.json?query=export+limit&per_page=20",
+      "error": "HTTPError: HTTP Error 404: Not Found"
+    },
+    {
+      "query": "copy limit",
+      "request_url": "https://support.logos.com/api/v2/help_center/en-us/articles/search.json?query=copy+limit&per_page=20",
+      "error": "HTTPError: HTTP Error 404: Not Found"
+    }
+  ],
+  "pages": [
+    {
+      "request_url": "https://support.logos.com/",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "request_url": "https://support.logos.com/hc/en-us/search?query=Print%20Export",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "request_url": "https://support.logos.com/hc/en-us/search?query=Copy%20Bible%20Verses",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "request_url": "https://community.logos.com/search?query=Print%2FExport&scope=knowledgebase",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "request_url": "https://community.logos.com/search?query=Copy%20Bible%20Verses&scope=knowledgebase",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    }
+  ]
+}
