@@ -47,3 +47,9 @@ JSON의 `sourceLine`, `originalText`, `sourceMarkers` 정보를 이용해 **두 
 `Validation` 폴더에는 현재 프로그램의 C# 본문 조회 코드로 JSON·TXT 각각의 모든 절 요청을 검사한 결과가 있습니다.
 이 검사는 파일 조회·선택과 숫자 대응을 확인하며, 원문의 번역 정확성이나 누락된 문장의 복원을 보장하지 않습니다.
 실제 PowerPoint 슬라이드 렌더링은 이 검사에 포함하지 않습니다.
+
+실제 Windows 검사 결과:
+
+[Windows 실행 검사](https://github.com/jjww2010-pixel/bible2ppt/actions/runs/38287531484)에서 x64·x86 배포 EXE로 두 JSON·TXT의 모든 절 조회가 통과했습니다.
+`Validation/Windows-x64`, `Validation/Windows-x86`에 각 파일의 SHA-256과 검사 결과가 있습니다.
+배포 JSON·TXT는 Windows 검사 당시의 CRLF 줄바꿈으로 저장하여 검사한 파일과 SHA-256이 정확히 일치합니다. 본문 문자는 변하지 않았습니다.

@@ -1,0 +1,3 @@
+Bibles/*.json -text
+TXT/*.txt -text
+BibleTexts.zip binary
