@@ -1,0 +1,1511 @@
+[
+  {
+    "provider": "Godpia",
+    "translation": "easy",
+    "book": "Judges",
+    "chapter": 20,
+    "targets": [
+      22,
+      23
+    ],
+    "url": "http://bible.godpia.com/read/reading.asp?ver=easy&vol=jdg&chap=20",
+    "status": 200,
+    "finalURL": "https://www.godpia.com/",
+    "bytes": 46887,
+    "charset": "utf-8",
+    "title": "GODpia",
+    "translationOptions": [],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://www.godpia.com/read/reading.asp",
+        "label": "성경 읽기"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RE",
+        "label": "매일 성경 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RR",
+        "label": "Reformation 95일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RM",
+        "label": "Miracle 153일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RT",
+        "label": "오늘의 만나 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-sel.asp",
+        "label": "선택 통독"
+      },
+      {
+        "url": "https://www.godpia.com/search/search-dic.asp",
+        "label": "성경 사전"
+      },
+      {
+        "url": "https://www.godpia.com/write/write_everyday.asp",
+        "label": "매일 성경 필사"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading.asp?ver=gae&vol=rom&chap=8&sec=2&goSec=gae_rom_8_2",
+        "label": "많이 본 성경 말씀 이는 그리스도 예수 안에 있는 생명의 성령의 법이 죄와 사망의 법에서 너를 해방하였음이라 로마서 8:2"
+      },
+      {
+        "url": "https://www.godpia.com/search/search-dic.asp",
+        "label": "성경 사전 가우다 (Cauda) 크레타 섬 남쪽으로 약 37㎞ 가량 떨어져 있는 작은 섬으로 오늘날에는 ‘가우도스’(Gaudos)로 불린다. 성경에서는, 바울과 다른 죄수들을 실은 로마행 배가 풍랑을 만난 것과 연관해서 언급하고 있다(행 27 : 16). 이 섬 남쪽을 지나면서 난파를 대비할 수 있었.."
+      },
+      {
+        "url": "https://www.godpia.com/qt/open_qt.asp?db_idx=693700",
+        "label": "날마다 솟는 샘물 결단과 적용 늘 내 일상생활이 먼저이기에 매일 큐티와 말씀읽기를 게을리하고 있었습니다. \r\n나의 일상과 타협하며 하나님을.. 신선영 yevonia | 2026-10-05 아멘 1"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading.asp?ver=gae&vol=1pe&chap=2&sec=2&goSec=gae_1pe_2_2",
+        "label": "갓난 아기들 같이 순전하고 신령한 젖을 사모하라 이는 그로 말미암아 너희로 구원에 이르도록 자라게 하려 함이라 베드로전서 2:2"
+      }
+    ],
+    "scripts": [
+      "/assets/js/jquery-3.6.0.min.js",
+      "/assets/js/plugins.js",
+      "/assets/js/gsap.min.js",
+      "/assets/js/scripts.js?v=1",
+      "/assets/js/aos.js",
+      "/assets/js/common.js?v=0.1",
+      "/plugin/confirm/jquery-confirm.js",
+      "/assets/js/Script_Login.asp?HTTPD=www.godpia.com&VIU=frameindex.asp&HTTPU=/index.asp?",
+      "https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"
+    ],
+    "parsedVerseCount": 0,
+    "versePresence": [
+      {
+        "number": 22,
+        "found": false,
+        "characters": 0,
+        "isExplicitNone": false,
+        "textSHA256": null,
+        "shortExcerpt": ""
+      },
+      {
+        "number": 23,
+        "found": false,
+        "characters": 0,
+        "isExplicitNone": false,
+        "textSHA256": null,
+        "shortExcerpt": ""
+      }
+    ],
+    "numericElements": [],
+    "relevantClasses": [
+      "progress-circle svg-content",
+      "collapse navbar-collapse justify-content-center",
+      "row justify-content-between",
+      "content full-width",
+      "row justify-content-end"
+    ]
+  },
+  {
+    "provider": "Godpia",
+    "translation": "gae",
+    "book": "Judges",
+    "chapter": 20,
+    "targets": [
+      22,
+      23
+    ],
+    "url": "http://bible.godpia.com/read/reading.asp?ver=gae&vol=jdg&chap=20",
+    "status": 200,
+    "finalURL": "https://www.godpia.com/",
+    "bytes": 46887,
+    "charset": "utf-8",
+    "title": "GODpia",
+    "translationOptions": [],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://www.godpia.com/read/reading.asp",
+        "label": "성경 읽기"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RE",
+        "label": "매일 성경 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RR",
+        "label": "Reformation 95일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RM",
+        "label": "Miracle 153일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RT",
+        "label": "오늘의 만나 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-sel.asp",
+        "label": "선택 통독"
+      },
+      {
+        "url": "https://www.godpia.com/search/search-dic.asp",
+        "label": "성경 사전"
+      },
+      {
+        "url": "https://www.godpia.com/write/write_everyday.asp",
+        "label": "매일 성경 필사"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading.asp?ver=gae&vol=rom&chap=8&sec=2&goSec=gae_rom_8_2",
+        "label": "많이 본 성경 말씀 이는 그리스도 예수 안에 있는 생명의 성령의 법이 죄와 사망의 법에서 너를 해방하였음이라 로마서 8:2"
+      },
+      {
+        "url": "https://www.godpia.com/search/search-dic.asp",
+        "label": "성경 사전 가우다 (Cauda) 크레타 섬 남쪽으로 약 37㎞ 가량 떨어져 있는 작은 섬으로 오늘날에는 ‘가우도스’(Gaudos)로 불린다. 성경에서는, 바울과 다른 죄수들을 실은 로마행 배가 풍랑을 만난 것과 연관해서 언급하고 있다(행 27 : 16). 이 섬 남쪽을 지나면서 난파를 대비할 수 있었.."
+      },
+      {
+        "url": "https://www.godpia.com/qt/open_qt.asp?db_idx=693700",
+        "label": "날마다 솟는 샘물 결단과 적용 늘 내 일상생활이 먼저이기에 매일 큐티와 말씀읽기를 게을리하고 있었습니다. \r\n나의 일상과 타협하며 하나님을.. 신선영 yevonia | 2026-10-05 아멘 1"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading.asp?ver=gae&vol=1pe&chap=2&sec=2&goSec=gae_1pe_2_2",
+        "label": "갓난 아기들 같이 순전하고 신령한 젖을 사모하라 이는 그로 말미암아 너희로 구원에 이르도록 자라게 하려 함이라 베드로전서 2:2"
+      }
+    ],
+    "scripts": [
+      "/assets/js/jquery-3.6.0.min.js",
+      "/assets/js/plugins.js",
+      "/assets/js/gsap.min.js",
+      "/assets/js/scripts.js?v=1",
+      "/assets/js/aos.js",
+      "/assets/js/common.js?v=0.1",
+      "/plugin/confirm/jquery-confirm.js",
+      "/assets/js/Script_Login.asp?HTTPD=www.godpia.com&VIU=frameindex.asp&HTTPU=/index.asp?",
+      "https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"
+    ],
+    "parsedVerseCount": 0,
+    "versePresence": [
+      {
+        "number": 22,
+        "found": false,
+        "characters": 0,
+        "isExplicitNone": false,
+        "textSHA256": null,
+        "shortExcerpt": ""
+      },
+      {
+        "number": 23,
+        "found": false,
+        "characters": 0,
+        "isExplicitNone": false,
+        "textSHA256": null,
+        "shortExcerpt": ""
+      }
+    ],
+    "numericElements": [],
+    "relevantClasses": [
+      "progress-circle svg-content",
+      "collapse navbar-collapse justify-content-center",
+      "row justify-content-between",
+      "content full-width",
+      "row justify-content-end"
+    ]
+  },
+  {
+    "provider": "GOODTV",
+    "translation": "2",
+    "book": "Judges",
+    "chapter": 20,
+    "targets": [
+      22,
+      23
+    ],
+    "url": "http://goodtvbible.goodtv.co.kr/bible.asp",
+    "post": {
+      "bible_idx": "7",
+      "jang_idx": "20",
+      "bible_version_1": "2",
+      "bible_version_2": "0",
+      "bible_version_3": "0",
+      "count": "1"
+    },
+    "error": "HTTP Error 307: Temporary Redirect"
+  },
+  {
+    "provider": "Korean Bible Society",
+    "translation": "GAE",
+    "book": "Judges",
+    "chapter": 20,
+    "targets": [
+      22,
+      23
+    ],
+    "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=jdg&chap=20",
+    "status": 200,
+    "finalURL": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=jdg&chap=20",
+    "bytes": 34859,
+    "charset": "utf-8",
+    "title": "대한성서공회",
+    "translationOptions": [
+      {
+        "value": "GAE",
+        "label": "개역개정",
+        "selected": true
+      },
+      {
+        "value": "HAN",
+        "label": "개역한글",
+        "selected": false
+      },
+      {
+        "value": "SAE",
+        "label": "표준새번역",
+        "selected": false
+      },
+      {
+        "value": "SAENEW",
+        "label": "새번역",
+        "selected": false
+      },
+      {
+        "value": "COG",
+        "label": "공동번역",
+        "selected": false
+      },
+      {
+        "value": "COGNEW",
+        "label": "공동번역 개정판",
+        "selected": false
+      }
+    ],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://bible.bskorea.or.kr",
+        "label": "성경플랫폼 가기"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php",
+        "label": "성경읽기"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/korbibSearchlist.php",
+        "label": "성경검색"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/write_comment.php",
+        "label": "개역개정 의견쓰기"
+      }
+    ],
+    "scripts": [
+      "//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.2.min.js",
+      "js/bible.list.js",
+      "js/bible.page.js?v2",
+      "js/common.js",
+      "js/layer.js",
+      "/js/alertify.js",
+      "/bible/js/check_version.js?v=2"
+    ],
+    "parsedVerseCount": 48,
+    "versePresence": [
+      {
+        "number": 22,
+        "found": true,
+        "characters": 48,
+        "isExplicitNone": false,
+        "textSHA256": "8719839bf4b29ea787c51d28861cf6bd72cf524f6c476ee330e0dbe9347e49a0",
+        "shortExcerpt": "이스라엘 사람들이 스스로 용기를"
+      },
+      {
+        "number": 23,
+        "found": true,
+        "characters": 99,
+        "isExplicitNone": false,
+        "textSHA256": "586894455ce593cefd04cb08bd47c8c126ba636a5b1bd86bcf29c546adb510d1",
+        "shortExcerpt": "이스라엘 자손이 올라가 여호와"
+      }
+    ]
+  },
+  {
+    "provider": "Godpia",
+    "translation": "easy",
+    "book": "IISamuel",
+    "chapter": 4,
+    "targets": [
+      6,
+      7
+    ],
+    "url": "http://bible.godpia.com/read/reading.asp?ver=easy&vol=2sa&chap=4",
+    "status": 200,
+    "finalURL": "https://www.godpia.com/",
+    "bytes": 46887,
+    "charset": "utf-8",
+    "title": "GODpia",
+    "translationOptions": [],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://www.godpia.com/read/reading.asp",
+        "label": "성경 읽기"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RE",
+        "label": "매일 성경 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RR",
+        "label": "Reformation 95일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RM",
+        "label": "Miracle 153일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RT",
+        "label": "오늘의 만나 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-sel.asp",
+        "label": "선택 통독"
+      },
+      {
+        "url": "https://www.godpia.com/search/search-dic.asp",
+        "label": "성경 사전"
+      },
+      {
+        "url": "https://www.godpia.com/write/write_everyday.asp",
+        "label": "매일 성경 필사"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading.asp?ver=gae&vol=rom&chap=8&sec=2&goSec=gae_rom_8_2",
+        "label": "많이 본 성경 말씀 이는 그리스도 예수 안에 있는 생명의 성령의 법이 죄와 사망의 법에서 너를 해방하였음이라 로마서 8:2"
+      },
+      {
+        "url": "https://www.godpia.com/search/search-dic.asp",
+        "label": "성경 사전 가우다 (Cauda) 크레타 섬 남쪽으로 약 37㎞ 가량 떨어져 있는 작은 섬으로 오늘날에는 ‘가우도스’(Gaudos)로 불린다. 성경에서는, 바울과 다른 죄수들을 실은 로마행 배가 풍랑을 만난 것과 연관해서 언급하고 있다(행 27 : 16). 이 섬 남쪽을 지나면서 난파를 대비할 수 있었.."
+      },
+      {
+        "url": "https://www.godpia.com/qt/open_qt.asp?db_idx=693700",
+        "label": "날마다 솟는 샘물 결단과 적용 늘 내 일상생활이 먼저이기에 매일 큐티와 말씀읽기를 게을리하고 있었습니다. \r\n나의 일상과 타협하며 하나님을.. 신선영 yevonia | 2026-10-05 아멘 1"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading.asp?ver=gae&vol=1pe&chap=2&sec=2&goSec=gae_1pe_2_2",
+        "label": "갓난 아기들 같이 순전하고 신령한 젖을 사모하라 이는 그로 말미암아 너희로 구원에 이르도록 자라게 하려 함이라 베드로전서 2:2"
+      }
+    ],
+    "scripts": [
+      "/assets/js/jquery-3.6.0.min.js",
+      "/assets/js/plugins.js",
+      "/assets/js/gsap.min.js",
+      "/assets/js/scripts.js?v=1",
+      "/assets/js/aos.js",
+      "/assets/js/common.js?v=0.1",
+      "/plugin/confirm/jquery-confirm.js",
+      "/assets/js/Script_Login.asp?HTTPD=www.godpia.com&VIU=frameindex.asp&HTTPU=/index.asp?",
+      "https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"
+    ],
+    "parsedVerseCount": 0,
+    "versePresence": [
+      {
+        "number": 6,
+        "found": false,
+        "characters": 0,
+        "isExplicitNone": false,
+        "textSHA256": null,
+        "shortExcerpt": ""
+      },
+      {
+        "number": 7,
+        "found": false,
+        "characters": 0,
+        "isExplicitNone": false,
+        "textSHA256": null,
+        "shortExcerpt": ""
+      }
+    ],
+    "numericElements": [],
+    "relevantClasses": [
+      "progress-circle svg-content",
+      "collapse navbar-collapse justify-content-center",
+      "row justify-content-between",
+      "content full-width",
+      "row justify-content-end"
+    ]
+  },
+  {
+    "provider": "Godpia",
+    "translation": "gae",
+    "book": "IISamuel",
+    "chapter": 4,
+    "targets": [
+      6,
+      7
+    ],
+    "url": "http://bible.godpia.com/read/reading.asp?ver=gae&vol=2sa&chap=4",
+    "status": 200,
+    "finalURL": "https://www.godpia.com/",
+    "bytes": 46887,
+    "charset": "utf-8",
+    "title": "GODpia",
+    "translationOptions": [],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://www.godpia.com/read/reading.asp",
+        "label": "성경 읽기"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RE",
+        "label": "매일 성경 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RR",
+        "label": "Reformation 95일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RM",
+        "label": "Miracle 153일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RT",
+        "label": "오늘의 만나 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-sel.asp",
+        "label": "선택 통독"
+      },
+      {
+        "url": "https://www.godpia.com/search/search-dic.asp",
+        "label": "성경 사전"
+      },
+      {
+        "url": "https://www.godpia.com/write/write_everyday.asp",
+        "label": "매일 성경 필사"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading.asp?ver=gae&vol=rom&chap=8&sec=2&goSec=gae_rom_8_2",
+        "label": "많이 본 성경 말씀 이는 그리스도 예수 안에 있는 생명의 성령의 법이 죄와 사망의 법에서 너를 해방하였음이라 로마서 8:2"
+      },
+      {
+        "url": "https://www.godpia.com/search/search-dic.asp",
+        "label": "성경 사전 가우다 (Cauda) 크레타 섬 남쪽으로 약 37㎞ 가량 떨어져 있는 작은 섬으로 오늘날에는 ‘가우도스’(Gaudos)로 불린다. 성경에서는, 바울과 다른 죄수들을 실은 로마행 배가 풍랑을 만난 것과 연관해서 언급하고 있다(행 27 : 16). 이 섬 남쪽을 지나면서 난파를 대비할 수 있었.."
+      },
+      {
+        "url": "https://www.godpia.com/qt/open_qt.asp?db_idx=693700",
+        "label": "날마다 솟는 샘물 결단과 적용 늘 내 일상생활이 먼저이기에 매일 큐티와 말씀읽기를 게을리하고 있었습니다. \r\n나의 일상과 타협하며 하나님을.. 신선영 yevonia | 2026-10-05 아멘 1"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading.asp?ver=gae&vol=1pe&chap=2&sec=2&goSec=gae_1pe_2_2",
+        "label": "갓난 아기들 같이 순전하고 신령한 젖을 사모하라 이는 그로 말미암아 너희로 구원에 이르도록 자라게 하려 함이라 베드로전서 2:2"
+      }
+    ],
+    "scripts": [
+      "/assets/js/jquery-3.6.0.min.js",
+      "/assets/js/plugins.js",
+      "/assets/js/gsap.min.js",
+      "/assets/js/scripts.js?v=1",
+      "/assets/js/aos.js",
+      "/assets/js/common.js?v=0.1",
+      "/plugin/confirm/jquery-confirm.js",
+      "/assets/js/Script_Login.asp?HTTPD=www.godpia.com&VIU=frameindex.asp&HTTPU=/index.asp?",
+      "https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"
+    ],
+    "parsedVerseCount": 0,
+    "versePresence": [
+      {
+        "number": 6,
+        "found": false,
+        "characters": 0,
+        "isExplicitNone": false,
+        "textSHA256": null,
+        "shortExcerpt": ""
+      },
+      {
+        "number": 7,
+        "found": false,
+        "characters": 0,
+        "isExplicitNone": false,
+        "textSHA256": null,
+        "shortExcerpt": ""
+      }
+    ],
+    "numericElements": [],
+    "relevantClasses": [
+      "progress-circle svg-content",
+      "collapse navbar-collapse justify-content-center",
+      "row justify-content-between",
+      "content full-width",
+      "row justify-content-end"
+    ]
+  },
+  {
+    "provider": "GOODTV",
+    "translation": "2",
+    "book": "IISamuel",
+    "chapter": 4,
+    "targets": [
+      6,
+      7
+    ],
+    "url": "http://goodtvbible.goodtv.co.kr/bible.asp",
+    "post": {
+      "bible_idx": "10",
+      "jang_idx": "4",
+      "bible_version_1": "2",
+      "bible_version_2": "0",
+      "bible_version_3": "0",
+      "count": "1"
+    },
+    "error": "HTTP Error 307: Temporary Redirect"
+  },
+  {
+    "provider": "Korean Bible Society",
+    "translation": "GAE",
+    "book": "IISamuel",
+    "chapter": 4,
+    "targets": [
+      6,
+      7
+    ],
+    "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=2sa&chap=4",
+    "status": 200,
+    "finalURL": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=2sa&chap=4",
+    "bytes": 24847,
+    "charset": "utf-8",
+    "title": "대한성서공회",
+    "translationOptions": [
+      {
+        "value": "GAE",
+        "label": "개역개정",
+        "selected": true
+      },
+      {
+        "value": "HAN",
+        "label": "개역한글",
+        "selected": false
+      },
+      {
+        "value": "SAE",
+        "label": "표준새번역",
+        "selected": false
+      },
+      {
+        "value": "SAENEW",
+        "label": "새번역",
+        "selected": false
+      },
+      {
+        "value": "COG",
+        "label": "공동번역",
+        "selected": false
+      },
+      {
+        "value": "COGNEW",
+        "label": "공동번역 개정판",
+        "selected": false
+      }
+    ],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://bible.bskorea.or.kr",
+        "label": "성경플랫폼 가기"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php",
+        "label": "성경읽기"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/korbibSearchlist.php",
+        "label": "성경검색"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/write_comment.php",
+        "label": "개역개정 의견쓰기"
+      }
+    ],
+    "scripts": [
+      "//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.2.min.js",
+      "js/bible.list.js",
+      "js/bible.page.js?v2",
+      "js/common.js",
+      "js/layer.js",
+      "/js/alertify.js",
+      "/bible/js/check_version.js?v=2"
+    ],
+    "parsedVerseCount": 12,
+    "versePresence": [
+      {
+        "number": 6,
+        "found": true,
+        "characters": 58,
+        "isExplicitNone": false,
+        "textSHA256": "2a0590c6a672c4c2328520445a2de5698fe3e363e85ef3184a0164c2bce14513",
+        "shortExcerpt": "레갑 과 그의 형제"
+      },
+      {
+        "number": 7,
+        "found": true,
+        "characters": 76,
+        "isExplicitNone": false,
+        "textSHA256": "716be053c8bfa682cf2c9e52461d05e4b33964204a838dd843e26db9a127f14d",
+        "shortExcerpt": "그들이 집에 들어가니 이스보셋"
+      }
+    ]
+  },
+  {
+    "provider": "Godpia",
+    "translation": "easy",
+    "book": "IKings",
+    "chapter": 8,
+    "targets": [
+      41,
+      42
+    ],
+    "url": "http://bible.godpia.com/read/reading.asp?ver=easy&vol=1ki&chap=8",
+    "status": 200,
+    "finalURL": "https://www.godpia.com/",
+    "bytes": 46887,
+    "charset": "utf-8",
+    "title": "GODpia",
+    "translationOptions": [],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://www.godpia.com/read/reading.asp",
+        "label": "성경 읽기"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RE",
+        "label": "매일 성경 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RR",
+        "label": "Reformation 95일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RM",
+        "label": "Miracle 153일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RT",
+        "label": "오늘의 만나 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-sel.asp",
+        "label": "선택 통독"
+      },
+      {
+        "url": "https://www.godpia.com/search/search-dic.asp",
+        "label": "성경 사전"
+      },
+      {
+        "url": "https://www.godpia.com/write/write_everyday.asp",
+        "label": "매일 성경 필사"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading.asp?ver=gae&vol=rom&chap=8&sec=2&goSec=gae_rom_8_2",
+        "label": "많이 본 성경 말씀 이는 그리스도 예수 안에 있는 생명의 성령의 법이 죄와 사망의 법에서 너를 해방하였음이라 로마서 8:2"
+      },
+      {
+        "url": "https://www.godpia.com/search/search-dic.asp",
+        "label": "성경 사전 가우다 (Cauda) 크레타 섬 남쪽으로 약 37㎞ 가량 떨어져 있는 작은 섬으로 오늘날에는 ‘가우도스’(Gaudos)로 불린다. 성경에서는, 바울과 다른 죄수들을 실은 로마행 배가 풍랑을 만난 것과 연관해서 언급하고 있다(행 27 : 16). 이 섬 남쪽을 지나면서 난파를 대비할 수 있었.."
+      },
+      {
+        "url": "https://www.godpia.com/qt/open_qt.asp?db_idx=693700",
+        "label": "날마다 솟는 샘물 결단과 적용 늘 내 일상생활이 먼저이기에 매일 큐티와 말씀읽기를 게을리하고 있었습니다. \r\n나의 일상과 타협하며 하나님을.. 신선영 yevonia | 2026-10-05 아멘 1"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading.asp?ver=gae&vol=1pe&chap=2&sec=2&goSec=gae_1pe_2_2",
+        "label": "갓난 아기들 같이 순전하고 신령한 젖을 사모하라 이는 그로 말미암아 너희로 구원에 이르도록 자라게 하려 함이라 베드로전서 2:2"
+      }
+    ],
+    "scripts": [
+      "/assets/js/jquery-3.6.0.min.js",
+      "/assets/js/plugins.js",
+      "/assets/js/gsap.min.js",
+      "/assets/js/scripts.js?v=1",
+      "/assets/js/aos.js",
+      "/assets/js/common.js?v=0.1",
+      "/plugin/confirm/jquery-confirm.js",
+      "/assets/js/Script_Login.asp?HTTPD=www.godpia.com&VIU=frameindex.asp&HTTPU=/index.asp?",
+      "https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"
+    ],
+    "parsedVerseCount": 0,
+    "versePresence": [
+      {
+        "number": 41,
+        "found": false,
+        "characters": 0,
+        "isExplicitNone": false,
+        "textSHA256": null,
+        "shortExcerpt": ""
+      },
+      {
+        "number": 42,
+        "found": false,
+        "characters": 0,
+        "isExplicitNone": false,
+        "textSHA256": null,
+        "shortExcerpt": ""
+      }
+    ],
+    "numericElements": [],
+    "relevantClasses": [
+      "progress-circle svg-content",
+      "collapse navbar-collapse justify-content-center",
+      "row justify-content-between",
+      "content full-width",
+      "row justify-content-end"
+    ]
+  },
+  {
+    "provider": "Godpia",
+    "translation": "gae",
+    "book": "IKings",
+    "chapter": 8,
+    "targets": [
+      41,
+      42
+    ],
+    "url": "http://bible.godpia.com/read/reading.asp?ver=gae&vol=1ki&chap=8",
+    "status": 200,
+    "finalURL": "https://www.godpia.com/",
+    "bytes": 46887,
+    "charset": "utf-8",
+    "title": "GODpia",
+    "translationOptions": [],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://www.godpia.com/read/reading.asp",
+        "label": "성경 읽기"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RE",
+        "label": "매일 성경 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RR",
+        "label": "Reformation 95일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RM",
+        "label": "Miracle 153일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RT",
+        "label": "오늘의 만나 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-sel.asp",
+        "label": "선택 통독"
+      },
+      {
+        "url": "https://www.godpia.com/search/search-dic.asp",
+        "label": "성경 사전"
+      },
+      {
+        "url": "https://www.godpia.com/write/write_everyday.asp",
+        "label": "매일 성경 필사"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading.asp?ver=gae&vol=rom&chap=8&sec=2&goSec=gae_rom_8_2",
+        "label": "많이 본 성경 말씀 이는 그리스도 예수 안에 있는 생명의 성령의 법이 죄와 사망의 법에서 너를 해방하였음이라 로마서 8:2"
+      },
+      {
+        "url": "https://www.godpia.com/search/search-dic.asp",
+        "label": "성경 사전 가우다 (Cauda) 크레타 섬 남쪽으로 약 37㎞ 가량 떨어져 있는 작은 섬으로 오늘날에는 ‘가우도스’(Gaudos)로 불린다. 성경에서는, 바울과 다른 죄수들을 실은 로마행 배가 풍랑을 만난 것과 연관해서 언급하고 있다(행 27 : 16). 이 섬 남쪽을 지나면서 난파를 대비할 수 있었.."
+      },
+      {
+        "url": "https://www.godpia.com/qt/open_qt.asp?db_idx=693700",
+        "label": "날마다 솟는 샘물 결단과 적용 늘 내 일상생활이 먼저이기에 매일 큐티와 말씀읽기를 게을리하고 있었습니다. \r\n나의 일상과 타협하며 하나님을.. 신선영 yevonia | 2026-10-05 아멘 1"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading.asp?ver=gae&vol=1pe&chap=2&sec=2&goSec=gae_1pe_2_2",
+        "label": "갓난 아기들 같이 순전하고 신령한 젖을 사모하라 이는 그로 말미암아 너희로 구원에 이르도록 자라게 하려 함이라 베드로전서 2:2"
+      }
+    ],
+    "scripts": [
+      "/assets/js/jquery-3.6.0.min.js",
+      "/assets/js/plugins.js",
+      "/assets/js/gsap.min.js",
+      "/assets/js/scripts.js?v=1",
+      "/assets/js/aos.js",
+      "/assets/js/common.js?v=0.1",
+      "/plugin/confirm/jquery-confirm.js",
+      "/assets/js/Script_Login.asp?HTTPD=www.godpia.com&VIU=frameindex.asp&HTTPU=/index.asp?",
+      "https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"
+    ],
+    "parsedVerseCount": 0,
+    "versePresence": [
+      {
+        "number": 41,
+        "found": false,
+        "characters": 0,
+        "isExplicitNone": false,
+        "textSHA256": null,
+        "shortExcerpt": ""
+      },
+      {
+        "number": 42,
+        "found": false,
+        "characters": 0,
+        "isExplicitNone": false,
+        "textSHA256": null,
+        "shortExcerpt": ""
+      }
+    ],
+    "numericElements": [],
+    "relevantClasses": [
+      "progress-circle svg-content",
+      "collapse navbar-collapse justify-content-center",
+      "row justify-content-between",
+      "content full-width",
+      "row justify-content-end"
+    ]
+  },
+  {
+    "provider": "GOODTV",
+    "translation": "2",
+    "book": "IKings",
+    "chapter": 8,
+    "targets": [
+      41,
+      42
+    ],
+    "url": "http://goodtvbible.goodtv.co.kr/bible.asp",
+    "post": {
+      "bible_idx": "11",
+      "jang_idx": "8",
+      "bible_version_1": "2",
+      "bible_version_2": "0",
+      "bible_version_3": "0",
+      "count": "1"
+    },
+    "error": "HTTP Error 307: Temporary Redirect"
+  },
+  {
+    "provider": "Korean Bible Society",
+    "translation": "GAE",
+    "book": "IKings",
+    "chapter": 8,
+    "targets": [
+      41,
+      42
+    ],
+    "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=1ki&chap=8",
+    "status": 200,
+    "finalURL": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=1ki&chap=8",
+    "bytes": 39810,
+    "charset": "utf-8",
+    "title": "대한성서공회",
+    "translationOptions": [
+      {
+        "value": "GAE",
+        "label": "개역개정",
+        "selected": true
+      },
+      {
+        "value": "HAN",
+        "label": "개역한글",
+        "selected": false
+      },
+      {
+        "value": "SAE",
+        "label": "표준새번역",
+        "selected": false
+      },
+      {
+        "value": "SAENEW",
+        "label": "새번역",
+        "selected": false
+      },
+      {
+        "value": "COG",
+        "label": "공동번역",
+        "selected": false
+      },
+      {
+        "value": "COGNEW",
+        "label": "공동번역 개정판",
+        "selected": false
+      }
+    ],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://bible.bskorea.or.kr",
+        "label": "성경플랫폼 가기"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php",
+        "label": "성경읽기"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/korbibSearchlist.php",
+        "label": "성경검색"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/write_comment.php",
+        "label": "개역개정 의견쓰기"
+      }
+    ],
+    "scripts": [
+      "//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.2.min.js",
+      "js/bible.list.js",
+      "js/bible.page.js?v2",
+      "js/common.js",
+      "js/layer.js",
+      "/js/alertify.js",
+      "/bible/js/check_version.js?v=2"
+    ],
+    "parsedVerseCount": 66,
+    "versePresence": [
+      {
+        "number": 41,
+        "found": true,
+        "characters": 53,
+        "isExplicitNone": false,
+        "textSHA256": "fca14e94a5c249042ed5cc17f900c7d46e3e97e625e4cc7389aa8a611b333fee",
+        "shortExcerpt": "또 주의 백성 이스라엘"
+      },
+      {
+        "number": 42,
+        "found": true,
+        "characters": 58,
+        "isExplicitNone": false,
+        "textSHA256": "231898cf4654683df7306ddc22aa878b2d0244318830bb6888a7626ea9099d63",
+        "shortExcerpt": "그들이 주의 크신 이름과"
+      }
+    ]
+  },
+  {
+    "provider": "Godpia",
+    "translation": "easy",
+    "book": "Jeremiah",
+    "chapter": 16,
+    "targets": [
+      2
+    ],
+    "url": "http://bible.godpia.com/read/reading.asp?ver=easy&vol=jer&chap=16",
+    "status": 200,
+    "finalURL": "https://www.godpia.com/",
+    "bytes": 46887,
+    "charset": "utf-8",
+    "title": "GODpia",
+    "translationOptions": [],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://www.godpia.com/read/reading.asp",
+        "label": "성경 읽기"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RE",
+        "label": "매일 성경 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RR",
+        "label": "Reformation 95일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RM",
+        "label": "Miracle 153일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RT",
+        "label": "오늘의 만나 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-sel.asp",
+        "label": "선택 통독"
+      },
+      {
+        "url": "https://www.godpia.com/search/search-dic.asp",
+        "label": "성경 사전"
+      },
+      {
+        "url": "https://www.godpia.com/write/write_everyday.asp",
+        "label": "매일 성경 필사"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading.asp?ver=gae&vol=rom&chap=8&sec=2&goSec=gae_rom_8_2",
+        "label": "많이 본 성경 말씀 이는 그리스도 예수 안에 있는 생명의 성령의 법이 죄와 사망의 법에서 너를 해방하였음이라 로마서 8:2"
+      },
+      {
+        "url": "https://www.godpia.com/search/search-dic.asp",
+        "label": "성경 사전 가우다 (Cauda) 크레타 섬 남쪽으로 약 37㎞ 가량 떨어져 있는 작은 섬으로 오늘날에는 ‘가우도스’(Gaudos)로 불린다. 성경에서는, 바울과 다른 죄수들을 실은 로마행 배가 풍랑을 만난 것과 연관해서 언급하고 있다(행 27 : 16). 이 섬 남쪽을 지나면서 난파를 대비할 수 있었.."
+      },
+      {
+        "url": "https://www.godpia.com/qt/open_qt.asp?db_idx=693700",
+        "label": "날마다 솟는 샘물 결단과 적용 늘 내 일상생활이 먼저이기에 매일 큐티와 말씀읽기를 게을리하고 있었습니다. \r\n나의 일상과 타협하며 하나님을.. 신선영 yevonia | 2026-10-05 아멘 1"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading.asp?ver=gae&vol=1pe&chap=2&sec=2&goSec=gae_1pe_2_2",
+        "label": "갓난 아기들 같이 순전하고 신령한 젖을 사모하라 이는 그로 말미암아 너희로 구원에 이르도록 자라게 하려 함이라 베드로전서 2:2"
+      }
+    ],
+    "scripts": [
+      "/assets/js/jquery-3.6.0.min.js",
+      "/assets/js/plugins.js",
+      "/assets/js/gsap.min.js",
+      "/assets/js/scripts.js?v=1",
+      "/assets/js/aos.js",
+      "/assets/js/common.js?v=0.1",
+      "/plugin/confirm/jquery-confirm.js",
+      "/assets/js/Script_Login.asp?HTTPD=www.godpia.com&VIU=frameindex.asp&HTTPU=/index.asp?",
+      "https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"
+    ],
+    "parsedVerseCount": 0,
+    "versePresence": [
+      {
+        "number": 2,
+        "found": false,
+        "characters": 0,
+        "isExplicitNone": false,
+        "textSHA256": null,
+        "shortExcerpt": ""
+      }
+    ],
+    "numericElements": [],
+    "relevantClasses": [
+      "progress-circle svg-content",
+      "collapse navbar-collapse justify-content-center",
+      "row justify-content-between",
+      "content full-width",
+      "row justify-content-end"
+    ]
+  },
+  {
+    "provider": "Godpia",
+    "translation": "gae",
+    "book": "Jeremiah",
+    "chapter": 16,
+    "targets": [
+      2
+    ],
+    "url": "http://bible.godpia.com/read/reading.asp?ver=gae&vol=jer&chap=16",
+    "status": 200,
+    "finalURL": "https://www.godpia.com/",
+    "bytes": 46887,
+    "charset": "utf-8",
+    "title": "GODpia",
+    "translationOptions": [],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://www.godpia.com/read/reading.asp",
+        "label": "성경 읽기"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RE",
+        "label": "매일 성경 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RR",
+        "label": "Reformation 95일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RM",
+        "label": "Miracle 153일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RT",
+        "label": "오늘의 만나 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-sel.asp",
+        "label": "선택 통독"
+      },
+      {
+        "url": "https://www.godpia.com/search/search-dic.asp",
+        "label": "성경 사전"
+      },
+      {
+        "url": "https://www.godpia.com/write/write_everyday.asp",
+        "label": "매일 성경 필사"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading.asp?ver=gae&vol=rom&chap=8&sec=2&goSec=gae_rom_8_2",
+        "label": "많이 본 성경 말씀 이는 그리스도 예수 안에 있는 생명의 성령의 법이 죄와 사망의 법에서 너를 해방하였음이라 로마서 8:2"
+      },
+      {
+        "url": "https://www.godpia.com/search/search-dic.asp",
+        "label": "성경 사전 가우다 (Cauda) 크레타 섬 남쪽으로 약 37㎞ 가량 떨어져 있는 작은 섬으로 오늘날에는 ‘가우도스’(Gaudos)로 불린다. 성경에서는, 바울과 다른 죄수들을 실은 로마행 배가 풍랑을 만난 것과 연관해서 언급하고 있다(행 27 : 16). 이 섬 남쪽을 지나면서 난파를 대비할 수 있었.."
+      },
+      {
+        "url": "https://www.godpia.com/qt/open_qt.asp?db_idx=693700",
+        "label": "날마다 솟는 샘물 결단과 적용 늘 내 일상생활이 먼저이기에 매일 큐티와 말씀읽기를 게을리하고 있었습니다. \r\n나의 일상과 타협하며 하나님을.. 신선영 yevonia | 2026-10-05 아멘 1"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading.asp?ver=gae&vol=1pe&chap=2&sec=2&goSec=gae_1pe_2_2",
+        "label": "갓난 아기들 같이 순전하고 신령한 젖을 사모하라 이는 그로 말미암아 너희로 구원에 이르도록 자라게 하려 함이라 베드로전서 2:2"
+      }
+    ],
+    "scripts": [
+      "/assets/js/jquery-3.6.0.min.js",
+      "/assets/js/plugins.js",
+      "/assets/js/gsap.min.js",
+      "/assets/js/scripts.js?v=1",
+      "/assets/js/aos.js",
+      "/assets/js/common.js?v=0.1",
+      "/plugin/confirm/jquery-confirm.js",
+      "/assets/js/Script_Login.asp?HTTPD=www.godpia.com&VIU=frameindex.asp&HTTPU=/index.asp?",
+      "https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"
+    ],
+    "parsedVerseCount": 0,
+    "versePresence": [
+      {
+        "number": 2,
+        "found": false,
+        "characters": 0,
+        "isExplicitNone": false,
+        "textSHA256": null,
+        "shortExcerpt": ""
+      }
+    ],
+    "numericElements": [],
+    "relevantClasses": [
+      "progress-circle svg-content",
+      "collapse navbar-collapse justify-content-center",
+      "row justify-content-between",
+      "content full-width",
+      "row justify-content-end"
+    ]
+  },
+  {
+    "provider": "GOODTV",
+    "translation": "2",
+    "book": "Jeremiah",
+    "chapter": 16,
+    "targets": [
+      2
+    ],
+    "url": "http://goodtvbible.goodtv.co.kr/bible.asp",
+    "post": {
+      "bible_idx": "24",
+      "jang_idx": "16",
+      "bible_version_1": "2",
+      "bible_version_2": "0",
+      "bible_version_3": "0",
+      "count": "1"
+    },
+    "error": "HTTP Error 307: Temporary Redirect"
+  },
+  {
+    "provider": "Korean Bible Society",
+    "translation": "GAE",
+    "book": "Jeremiah",
+    "chapter": 16,
+    "targets": [
+      2
+    ],
+    "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=jer&chap=16",
+    "status": 200,
+    "finalURL": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=jer&chap=16",
+    "bytes": 26167,
+    "charset": "utf-8",
+    "title": "대한성서공회",
+    "translationOptions": [
+      {
+        "value": "GAE",
+        "label": "개역개정",
+        "selected": true
+      },
+      {
+        "value": "HAN",
+        "label": "개역한글",
+        "selected": false
+      },
+      {
+        "value": "SAE",
+        "label": "표준새번역",
+        "selected": false
+      },
+      {
+        "value": "SAENEW",
+        "label": "새번역",
+        "selected": false
+      },
+      {
+        "value": "COG",
+        "label": "공동번역",
+        "selected": false
+      },
+      {
+        "value": "COGNEW",
+        "label": "공동번역 개정판",
+        "selected": false
+      }
+    ],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://bible.bskorea.or.kr",
+        "label": "성경플랫폼 가기"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php",
+        "label": "성경읽기"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/korbibSearchlist.php",
+        "label": "성경검색"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/write_comment.php",
+        "label": "개역개정 의견쓰기"
+      }
+    ],
+    "scripts": [
+      "//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.2.min.js",
+      "js/bible.list.js",
+      "js/bible.page.js?v2",
+      "js/common.js",
+      "js/layer.js",
+      "/js/alertify.js",
+      "/bible/js/check_version.js?v=2"
+    ],
+    "parsedVerseCount": 21,
+    "versePresence": [
+      {
+        "number": 2,
+        "found": true,
+        "characters": 32,
+        "isExplicitNone": false,
+        "textSHA256": "4a07a7c5b4fbb570a07e9736972a88bbb844e0effdf9e0b22b3d17d07f08ca19",
+        "shortExcerpt": "너는 이 땅에서 아내를"
+      }
+    ]
+  },
+  {
+    "provider": "Godpia",
+    "url": "http://bible.godpia.com/index.asp",
+    "status": 200,
+    "finalURL": "https://www.godpia.com/",
+    "bytes": 46887,
+    "charset": "utf-8",
+    "title": "GODpia",
+    "translationOptions": [],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://www.godpia.com/read/reading.asp",
+        "label": "성경 읽기"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RE",
+        "label": "매일 성경 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RR",
+        "label": "Reformation 95일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RM",
+        "label": "Miracle 153일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RT",
+        "label": "오늘의 만나 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-sel.asp",
+        "label": "선택 통독"
+      },
+      {
+        "url": "https://www.godpia.com/search/search-dic.asp",
+        "label": "성경 사전"
+      },
+      {
+        "url": "https://www.godpia.com/write/write_everyday.asp",
+        "label": "매일 성경 필사"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading.asp?ver=gae&vol=rom&chap=8&sec=2&goSec=gae_rom_8_2",
+        "label": "많이 본 성경 말씀 이는 그리스도 예수 안에 있는 생명의 성령의 법이 죄와 사망의 법에서 너를 해방하였음이라 로마서 8:2"
+      },
+      {
+        "url": "https://www.godpia.com/search/search-dic.asp",
+        "label": "성경 사전 가우다 (Cauda) 크레타 섬 남쪽으로 약 37㎞ 가량 떨어져 있는 작은 섬으로 오늘날에는 ‘가우도스’(Gaudos)로 불린다. 성경에서는, 바울과 다른 죄수들을 실은 로마행 배가 풍랑을 만난 것과 연관해서 언급하고 있다(행 27 : 16). 이 섬 남쪽을 지나면서 난파를 대비할 수 있었.."
+      },
+      {
+        "url": "https://www.godpia.com/qt/open_qt.asp?db_idx=693700",
+        "label": "날마다 솟는 샘물 결단과 적용 늘 내 일상생활이 먼저이기에 매일 큐티와 말씀읽기를 게을리하고 있었습니다. \r\n나의 일상과 타협하며 하나님을.. 신선영 yevonia | 2026-10-05 아멘 1"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading.asp?ver=gae&vol=1pe&chap=2&sec=2&goSec=gae_1pe_2_2",
+        "label": "갓난 아기들 같이 순전하고 신령한 젖을 사모하라 이는 그로 말미암아 너희로 구원에 이르도록 자라게 하려 함이라 베드로전서 2:2"
+      }
+    ],
+    "scripts": [
+      "/assets/js/jquery-3.6.0.min.js",
+      "/assets/js/plugins.js",
+      "/assets/js/gsap.min.js",
+      "/assets/js/scripts.js?v=1",
+      "/assets/js/aos.js",
+      "/assets/js/common.js?v=0.1",
+      "/plugin/confirm/jquery-confirm.js",
+      "/assets/js/Script_Login.asp?HTTPD=www.godpia.com&VIU=frameindex.asp&HTTPU=/index.asp?",
+      "https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"
+    ],
+    "parsedVerseCount": 0,
+    "versePresence": []
+  },
+  {
+    "provider": "Godpia",
+    "url": "https://bible.godpia.com/index.asp",
+    "status": 200,
+    "finalURL": "https://www.godpia.com/",
+    "bytes": 46887,
+    "charset": "utf-8",
+    "title": "GODpia",
+    "translationOptions": [],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://www.godpia.com/read/reading.asp",
+        "label": "성경 읽기"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RE",
+        "label": "매일 성경 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RR",
+        "label": "Reformation 95일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RM",
+        "label": "Miracle 153일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RT",
+        "label": "오늘의 만나 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-sel.asp",
+        "label": "선택 통독"
+      },
+      {
+        "url": "https://www.godpia.com/search/search-dic.asp",
+        "label": "성경 사전"
+      },
+      {
+        "url": "https://www.godpia.com/write/write_everyday.asp",
+        "label": "매일 성경 필사"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading.asp?ver=gae&vol=rom&chap=8&sec=2&goSec=gae_rom_8_2",
+        "label": "많이 본 성경 말씀 이는 그리스도 예수 안에 있는 생명의 성령의 법이 죄와 사망의 법에서 너를 해방하였음이라 로마서 8:2"
+      },
+      {
+        "url": "https://www.godpia.com/search/search-dic.asp",
+        "label": "성경 사전 가우다 (Cauda) 크레타 섬 남쪽으로 약 37㎞ 가량 떨어져 있는 작은 섬으로 오늘날에는 ‘가우도스’(Gaudos)로 불린다. 성경에서는, 바울과 다른 죄수들을 실은 로마행 배가 풍랑을 만난 것과 연관해서 언급하고 있다(행 27 : 16). 이 섬 남쪽을 지나면서 난파를 대비할 수 있었.."
+      },
+      {
+        "url": "https://www.godpia.com/qt/open_qt.asp?db_idx=693700",
+        "label": "날마다 솟는 샘물 결단과 적용 늘 내 일상생활이 먼저이기에 매일 큐티와 말씀읽기를 게을리하고 있었습니다. \r\n나의 일상과 타협하며 하나님을.. 신선영 yevonia | 2026-10-05 아멘 1"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading.asp?ver=gae&vol=1pe&chap=2&sec=2&goSec=gae_1pe_2_2",
+        "label": "갓난 아기들 같이 순전하고 신령한 젖을 사모하라 이는 그로 말미암아 너희로 구원에 이르도록 자라게 하려 함이라 베드로전서 2:2"
+      }
+    ],
+    "scripts": [
+      "/assets/js/jquery-3.6.0.min.js",
+      "/assets/js/plugins.js",
+      "/assets/js/gsap.min.js",
+      "/assets/js/scripts.js?v=1",
+      "/assets/js/aos.js",
+      "/assets/js/common.js?v=0.1",
+      "/plugin/confirm/jquery-confirm.js",
+      "/assets/js/Script_Login.asp?HTTPD=www.godpia.com&VIU=frameindex.asp&HTTPU=/index.asp?",
+      "https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"
+    ],
+    "parsedVerseCount": 0,
+    "versePresence": []
+  },
+  {
+    "provider": "GOODTV",
+    "url": "http://goodtvbible.goodtv.co.kr/bible.asp",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "provider": "GOODTV",
+    "url": "https://goodtvbible.goodtv.co.kr/bible.asp",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "provider": "Korean Bible Society",
+    "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php",
+    "status": 200,
+    "finalURL": "https://www.bskorea.or.kr/bible/korbibReadpage.php",
+    "bytes": 27453,
+    "charset": "utf-8",
+    "title": "대한성서공회",
+    "translationOptions": [
+      {
+        "value": "GAE",
+        "label": "개역개정",
+        "selected": true
+      },
+      {
+        "value": "HAN",
+        "label": "개역한글",
+        "selected": false
+      },
+      {
+        "value": "SAE",
+        "label": "표준새번역",
+        "selected": false
+      },
+      {
+        "value": "SAENEW",
+        "label": "새번역",
+        "selected": false
+      },
+      {
+        "value": "COG",
+        "label": "공동번역",
+        "selected": false
+      },
+      {
+        "value": "COGNEW",
+        "label": "공동번역 개정판",
+        "selected": false
+      }
+    ],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://bible.bskorea.or.kr",
+        "label": "성경플랫폼 가기"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php",
+        "label": "성경읽기"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/korbibSearchlist.php",
+        "label": "성경검색"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/write_comment.php",
+        "label": "개역개정 의견쓰기"
+      }
+    ],
+    "scripts": [
+      "//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.2.min.js",
+      "js/bible.list.js",
+      "js/bible.page.js?v2",
+      "js/common.js",
+      "js/layer.js",
+      "/js/alertify.js",
+      "/bible/js/check_version.js?v=2"
+    ],
+    "parsedVerseCount": 31,
+    "versePresence": []
+  }
+]
