@@ -21,6 +21,10 @@ for key,online,number,chapter,verses in CASES:
     for ver in ['easy','gae']:
         TASKS.append({'provider':'Godpia','translation':ver,'book':key,'chapter':chapter,'targets':verses,
                       'url':f'https://www.godpia.com/read/reading.asp?ver={ver}&vol={online}&chap={chapter}'})
+        TASKS.append({'provider':'Godpia','translation':ver,'book':key,'chapter':chapter,'targets':verses,
+                      'url':'https://www.godpia.com/read/reading_body.asp',
+                      'post':{'readFlag':'','calDate':'','seq':'','ver':ver,'ver2':'','vol':online,
+                              'chap':str(chapter),'vol2':'','chap2':'','handwriting':'','curUrl':'/read/reading.asp'}})
     TASKS.append({'provider':'GOODTV','translation':'2','book':key,'chapter':chapter,'targets':verses,
                   'url':'https://goodtvbible.goodtv.co.kr/bible.asp',
                   'post':{'bible_idx':str(number),'jang_idx':str(chapter),'bible_version_1':'2',
@@ -99,6 +103,21 @@ def fetch(task):
                     for number in range(start,end+1):
                         rows[number] = text_only(body)
                         ranges[number] = (start,end)
+            for node in soup.select('[datasec], [data-sec]'):
+                body=node.select_one('.bible-read-cont')
+                if body is None:continue
+                label=node.get('datasec') or node.get('data-sec')
+                numbers=re.findall(r'\d+',label)
+                if not numbers:continue
+                start=int(numbers[0]);end=int(numbers[-1])
+                if end<start or end-start>10:continue
+                for number in range(start,end+1):
+                    rows[number]=body.get_text(' ',strip=True)
+                    ranges[number]=(start,end)
+            result['dataVerseSamples'] = [{'tag':n.name,'attributes':n.attrs,'bodyClasses':[x.get('class') for x in n.find_all(class_=True)][:5]}
+                                          for n in soup.select('[datasec], [data-sec]')[:2]]
+            result['versionNameFields'] = [{'name':n.get('id') or n.get('name'),'value':n.get('value')}
+                                          for n in soup.select('input') if 'vername' in str(n.attrs).lower()]
         elif task['provider']=='GOODTV':
             area = soup.find(id='one_jang')
             if area:
