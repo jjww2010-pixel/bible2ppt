@@ -7,12 +7,7 @@ import sys
 import urllib.request
 import urllib.parse
 
-URLS = ['https://www.bing.com/search?' + urllib.parse.urlencode({'q': q}) for q in [
-    '"쉬운성경" "사사기" "20" "22"',
-    '"쉬운성경" "사무엘하" "4" "6"',
-    '"쉬운성경" "열왕기상" "8" "41"',
-    '"쉬운성경" "예레미야" "16" "2"']]
-URLS += ['http://www.holybible.or.kr/', 'https://bible.goodtv.co.kr/bible.asp']
+URLS = ['http://www.holybible.or.kr/B_AGAPE/', 'https://holybible.biblenote.kr/']
 
 
 def probe(url):
@@ -55,7 +50,9 @@ def probe(url):
         result['title'] = html.unescape(title.group(1)) if title else ''
         result['links'] = [(html.unescape(a), re.sub('<[^>]*>', '', html.unescape(b)))
                            for a,b in re.findall(r'<a[^>]+href=[\"\']([^\"\']+)[\"\'][^>]*>(.*?)</a>', page, re.S)
-                           if re.search(r'version|bible|쉬운|easy|성경', a+' '+b, re.I)][:100]
+                           if re.search(r'version|bible|쉬운|easy|성경|AGAPE|cgi', a+' '+b, re.I)][:100]
+        result['frames'] = re.findall(r'<(?:iframe|frame)[^>]+src=[\"\']?([^\"\'\s>]+)',page,re.I)
+        result['locations'] = re.findall(r'location(?:\.href)?\s*=\s*[\"\']([^\"\']+)',page,re.I)
         if 'bing.com' in url:
             result['searchResults'] = [re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', ' ', html.unescape(part)))[:1400]
                                        for part in re.findall(r'<li[^>]+class=[\"\']b_algo[\"\'][^>]*>(.*?)</li>', page, re.S)][:6]
