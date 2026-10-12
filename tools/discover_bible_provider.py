@@ -5,11 +5,14 @@ from pathlib import Path
 import re
 import sys
 import urllib.request
+import urllib.parse
 
-URLS = ['https://www.kaggle.com/api/v1/datasets/download/rycont/korean-bible-classic-modern-pair',
-        'https://nocr.net/korea_easy',
-        'https://bible.godpeople.com/index.html',
-        'https://www.godpeople.com/?GO=bible']
+URLS = ['https://www.bing.com/search?' + urllib.parse.urlencode({'q': q}) for q in [
+    '"쉬운성경" "사사기" "20" "22"',
+    '"쉬운성경" "사무엘하" "4" "6"',
+    '"쉬운성경" "열왕기상" "8" "41"',
+    '"쉬운성경" "예레미야" "16" "2"']]
+URLS += ['http://www.holybible.or.kr/', 'https://bible.goodtv.co.kr/bible.asp']
 
 
 def probe(url):
@@ -43,16 +46,19 @@ def probe(url):
                                     if len(starts)==len(ends)==1 and ends[0]-starts[0]==len(missing)+1:
                                         candidate['repairs']=[{'number':n,'text':rows[starts[0]+i+1][col]} for i,n in enumerate(missing)]
                                     result.setdefault('candidates',[]).append(candidate)
-                result.update(status=r.status, finalURL=r.geturl(), bytes=len(raw))
+                result.update(status=r.status, finalURL=r.geturl().split('?')[0], bytes=len(raw))
                 return result
             charset = r.headers.get_content_charset() or ('cp949' if 'holybible' in url else 'utf-8')
             page = raw.decode(charset, errors='replace')
-            result.update(status=r.status, finalURL=r.geturl(), bytes=len(raw))
+            result.update(status=r.status, finalURL=r.geturl().split('?')[0], bytes=len(raw))
         title = re.search(r'<title[^>]*>(.*?)</title>', page, re.S)
         result['title'] = html.unescape(title.group(1)) if title else ''
         result['links'] = [(html.unescape(a), re.sub('<[^>]*>', '', html.unescape(b)))
                            for a,b in re.findall(r'<a[^>]+href=[\"\']([^\"\']+)[\"\'][^>]*>(.*?)</a>', page, re.S)
-                           if re.search(r'version|bible|쉬운|easy', a+' '+b, re.I)][:100]
+                           if re.search(r'version|bible|쉬운|easy|성경', a+' '+b, re.I)][:100]
+        if 'bing.com' in url:
+            result['searchResults'] = [re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', ' ', html.unescape(part)))[:1400]
+                                       for part in re.findall(r'<li[^>]+class=[\"\']b_algo[\"\'][^>]*>(.*?)</li>', page, re.S)][:6]
         data = re.search(r'<script[^>]+id=[\"\']__NEXT_DATA__[\"\'][^>]*>(.*?)</script>', page, re.S)
         if data:
             result['nextData'] = json.loads(data.group(1))
