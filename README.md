@@ -14,9 +14,13 @@
 비공개 저장소에 접근할 수 있는 GitHub 계정으로 로그인해 다운로드하세요.
 파일 페이지에서 **Download raw file**을 눌러 받을 수도 있습니다.
 
+**이번 수정 상태:** 현대인의 성경 창22:23의 참조 오류는 수정했습니다. 쉬운성경 공란 7개는 같은 번역의 대체 본문을 확보하지 못해 아직 복원하지 못했습니다. `Audit/source-repair-status.json`에 확인 결과가 있습니다.
+
 ## 적용 방법
 
 JSON 사용을 권장합니다. JSON에는 원본 대조용 정보도 들어 있으며 선행·후행 공백을 포함한 본문을 보존합니다.
+
+기존 개역개정과 동일한 가져오기 방식입니다. 최신 EXE에서 각 번역을 선택한 후 파일을 한 번씩 가져옵니다. 이미 가져온 경우에도 새 파일을 가져오면 해당 번역만 교체됩니다.
 
 1. ZIP을 압축 해제합니다.
 2. 최신 Bible2PPT에서 설정 화면의 **쉬운성경**을 선택하고 **성경 본문 가져오기**로 `Bibles/easy.json`을 가져옵니다.
@@ -50,6 +54,6 @@ JSON의 `sourceLine`, `originalText`, `sourceMarkers` 정보를 이용해 **두 
 
 실제 Windows 검사 결과:
 
-[Windows 실행 검사](https://github.com/jjww2010-pixel/bible2ppt/actions/runs/38288079356)에서 x64·x86 배포 EXE로 두 JSON·TXT의 모든 절 조회가 통과했습니다.
+[Windows 실행 검사](https://github.com/jjww2010-pixel/bible2ppt/actions/runs/38290149284)에서 x64·x86 배포 EXE로 두 JSON·TXT의 모든 절 조회가 통과했습니다.
 `Validation/Windows-x64`, `Validation/Windows-x86`에 각 파일의 SHA-256과 검사 결과가 있습니다.
 배포 JSON·TXT는 Windows 검사 당시의 CRLF 줄바꿈으로 저장하여 검사한 파일과 SHA-256이 정확히 일치합니다. 본문 문자는 변하지 않았습니다.

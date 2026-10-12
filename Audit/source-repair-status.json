@@ -1,0 +1,39 @@
+{
+  "modern": {
+    "resolvedReference": "창22:23",
+    "replacementRange": "창22:22–23",
+    "method": "Use the preceding supplied passage, which already names Bethuel as Rebekah’s father; retain the original erroneous marker in sourceMarkers.",
+    "remainingUnresolvedReferences": []
+  },
+  "easy": {
+    "unresolvedReferences": [
+      "삿20:22",
+      "삿20:23",
+      "삼하4:6",
+      "삼하4:7",
+      "왕상8:41",
+      "왕상8:42",
+      "렘16:2"
+    ],
+    "status": "Not restored: matching replacement text has not been obtained. No other translation was substituted.",
+    "checkedSources": [
+      {
+        "provider": "Godpia",
+        "result": "Old public reading URLs redirect to the homepage rather than Bible text."
+      },
+      {
+        "provider": "Godpeople",
+        "result": "Old public reading URLs redirect to the homepage; the current Bible screen requires login."
+      },
+      {
+        "provider": "KoBART Biblify linked Kaggle corpus",
+        "url": "https://www.kaggle.com/datasets/rycont/korean-bible-classic-modern-pair",
+        "result": "Supplied neighboring verses match, but the same missing slots are absent from this corpus."
+      },
+      {
+        "provider": "HolyBible / BibleNote",
+        "result": "Old Easy Bible entry point does not offer Easy Bible in its reading controls. CGI translation parameters returned other translations; mismatched passages were rejected."
+      }
+    ]
+  }
+}

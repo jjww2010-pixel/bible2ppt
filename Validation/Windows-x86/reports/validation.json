@@ -1,8 +1,7 @@
 {
-  "architecture": "x86",
   "checks": [
     {
-      "inputSHA256": "4814edd869ec24ecc9609f77c0256094f266db917f1567dcd6a9d0a1820b6f78",
+      "inputSHA256": "81dd15af734a797f984e45ca5abda6b3fb085f55e976f752548b48c1a1078af4",
       "exitCode": 0,
       "file": "Bibles/modern.json",
       "case": "modern-json"
@@ -14,7 +13,7 @@
       "case": "easy-json"
     },
     {
-      "inputSHA256": "f055dc4b2aa48e609bd7d66824f879b5c3fffb3b2bd1f06f1c32588b5444b2b7",
+      "inputSHA256": "99dca352e2251c15460076697a6118bb05e1830bed9bdfd462f48baeaedb68a7",
       "exitCode": 0,
       "file": "TXT/현대인의성경_권장절정리.txt",
       "case": "modern-txt"
@@ -27,5 +26,6 @@
     }
   ],
   "exeSHA256": "766cd9ec42d6ef4b2a0ef2bc2d37e8b1208c6d9ec92b93eff43e53382fb4bea0",
-  "powerPoint": "NOT TESTED"
+  "powerPoint": "NOT TESTED",
+  "architecture": "x86"
 }
