@@ -1,0 +1,31 @@
+{
+  "architecture": "x86",
+  "powerPoint": "NOT TESTED",
+  "checks": [
+    {
+      "file": "Bibles/modern.json",
+      "case": "modern-json",
+      "inputSHA256": "81dd15af734a797f984e45ca5abda6b3fb085f55e976f752548b48c1a1078af4",
+      "exitCode": 0
+    },
+    {
+      "file": "Bibles/easy.json",
+      "case": "easy-json",
+      "inputSHA256": "9fd4f732f2f98bb942c23cb7b19093ca963d68fb25b08a8a4c55518fd23c9e4d",
+      "exitCode": 0
+    },
+    {
+      "file": "TXT/현대인의성경_권장절정리.txt",
+      "case": "modern-txt",
+      "inputSHA256": "99dca352e2251c15460076697a6118bb05e1830bed9bdfd462f48baeaedb68a7",
+      "exitCode": 0
+    },
+    {
+      "file": "TXT/쉬운성경_권장절정리.txt",
+      "case": "easy-txt",
+      "inputSHA256": "e1fc000e1f8154d418e3e03dfe2688f40a054e8d5855ebe173e78abe07f69ce6",
+      "exitCode": 0
+    }
+  ],
+  "exeSHA256": "766cd9ec42d6ef4b2a0ef2bc2d37e8b1208c6d9ec92b93eff43e53382fb4bea0"
+}
