@@ -21,7 +21,7 @@ async function main() {
       record.final_url = page.url();
       record.title = await page.title();
       const text = await page.locator('body').innerText({ timeout: 5000 });
-      const blocked = /just a moment|access denied|verify you are human|checking your browser|security verification/i.test(record.title + '\n' + text.slice(0, 1200));
+      const blocked = /just a moment|access denied|verify you are human|checking your browser|security verification|unusual traffic/i.test(record.title + '\n' + text.slice(0, 1200));
       record.access_blocked = blocked || record.status === 403;
       record.documentation_links = [];
       record.excerpts = [];
@@ -33,6 +33,14 @@ async function main() {
             return ['support.logos.com', 'community.logos.com'].includes(parsed.hostname) && /print.?export|copy.?bible.?verses/i.test(link.href + ' ' + link.label);
           } catch { return false; }
         }).slice(0, 15);
+        if (new URL(record.final_url).hostname.endsWith('bing.com')) {
+          const results = await page.locator('li.b_algo').evaluateAll(elements => elements.map(el => ({ text: el.innerText, url: el.querySelector('h2 a')?.href })));
+          record.search_snippets = [];
+          for (const result of results.slice(0, 8)) {
+            if (!/logos|bible/i.test(result.text)) continue;
+            record.search_snippets.push({ url: result.url, text: result.text.split(/\s+/).slice(0, 65).join(' ') });
+          }
+        }
         if (/\/articles\/|\/kb\/articles\//.test(new URL(record.final_url).pathname)) {
           let article = page.locator('article');
           if (!(await article.count())) article = page.locator('main');
@@ -54,10 +62,10 @@ async function main() {
     return record;
   }
   try {
-    await read('https://support.logos.com/');
-    await read('https://community.logos.com/search?query=Print%2FExport&scope=knowledgebase');
-    const candidates = records.flatMap(record => record.documentation_links || []).map(link => link.href);
-    for (const url of [...new Set(candidates)].slice(0, 4)) await read(url);
+    // Official hosts were already checked and returned a browser challenge.
+    // Read public search summaries without retrying or bypassing that challenge.
+    await read('https://www.bing.com/search?q=Logos+Print+Export+100+pages+limit');
+    await read('https://www.bing.com/search?q=Logos+Copy+Bible+Verses+entire+Bible+limit');
   } finally {
     await browser.close();
     const report = { checked_utc: new Date().toISOString(), mac_application_execution: 'NOT TESTED', records };
@@ -67,6 +75,7 @@ async function main() {
       lines.push(record.url, '', `Status: ${record.status ?? 'unknown'}; title: ${record.title ?? 'unknown'}; blocked: ${record.access_blocked ?? 'unknown'}`, '');
       if (record.error) lines.push(record.error, '');
       for (const excerpt of record.excerpts || []) lines.push('> ' + excerpt);
+      for (const snippet of record.search_snippets || []) lines.push('Search result: ' + snippet.url, '', '> ' + snippet.text, '');
       lines.push('');
     }
     fs.appendFileSync(path.join(output, 'README.md'), lines.join('\n'));
