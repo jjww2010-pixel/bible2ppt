@@ -1,0 +1,3 @@
+변환 완료: 66권, 1189장, 31088절 → C:\Users\runneradmin\AppData\Local\Temp\Bible2PPT smoke a67456f9-3137-4abb-bfa0-2d5c2c7e3764\한글 경로\Bibles\krv.json
+변환 완료: 66권, 1189장, 31088절 → C:\Users\runneradmin\AppData\Local\Temp\Bible2PPT smoke a67456f9-3137-4abb-bfa0-2d5c2c7e3764\한글 경로\Bibles\easy.json
+변환 완료: 66권, 1189장, 31088절 → C:\Users\runneradmin\AppData\Local\Temp\Bible2PPT smoke a67456f9-3137-4abb-bfa0-2d5c2c7e3764\한글 경로\Bibles\modern.json

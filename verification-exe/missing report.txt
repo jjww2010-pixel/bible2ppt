@@ -1,0 +1,3 @@
+로컬 성경 파일: C:\Users\runneradmin\AppData\Local\Temp\Bible2PPT smoke a67456f9-3137-4abb-bfa0-2d5c2c7e3764\missing file.json
+
+개역개정 본문 파일을 찾을 수 없습니다. 해당 번역본의 JSON 또는 TXT 파일을 가져오세요.
