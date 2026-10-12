@@ -1,31 +1,49 @@
 {
-  "architecture": "x64",
-  "powerPoint": "NOT TESTED",
   "checks": [
     {
-      "case": "modern-json",
+      "file": "Bibles/krv.json",
       "exitCode": 0,
+      "inputSHA256": "38153380596a08c9a015104bf77ba2644fabc4104bf418b2adc977815fa2ac62",
+      "case": "nkrv-json"
+    },
+    {
       "file": "Bibles/modern.json",
-      "inputSHA256": "81dd15af734a797f984e45ca5abda6b3fb085f55e976f752548b48c1a1078af4"
+      "exitCode": 0,
+      "inputSHA256": "81dd15af734a797f984e45ca5abda6b3fb085f55e976f752548b48c1a1078af4",
+      "case": "modern-json"
     },
     {
-      "case": "easy-json",
-      "exitCode": 0,
       "file": "Bibles/easy.json",
-      "inputSHA256": "9fd4f732f2f98bb942c23cb7b19093ca963d68fb25b08a8a4c55518fd23c9e4d"
+      "exitCode": 0,
+      "inputSHA256": "9fd4f732f2f98bb942c23cb7b19093ca963d68fb25b08a8a4c55518fd23c9e4d",
+      "case": "easy-json"
     },
     {
-      "case": "modern-txt",
+      "file": "TXT/개역개정_권장절정리.txt",
       "exitCode": 0,
+      "inputSHA256": "53cdcc2e681f50a072206b71797cd0b7996e71249ee9f13757016ae231bbcb47",
+      "case": "nkrv-txt"
+    },
+    {
       "file": "TXT/현대인의성경_권장절정리.txt",
-      "inputSHA256": "99dca352e2251c15460076697a6118bb05e1830bed9bdfd462f48baeaedb68a7"
+      "exitCode": 0,
+      "inputSHA256": "99dca352e2251c15460076697a6118bb05e1830bed9bdfd462f48baeaedb68a7",
+      "case": "modern-txt"
     },
     {
-      "case": "easy-txt",
-      "exitCode": 0,
       "file": "TXT/쉬운성경_권장절정리.txt",
-      "inputSHA256": "e1fc000e1f8154d418e3e03dfe2688f40a054e8d5855ebe173e78abe07f69ce6"
+      "exitCode": 0,
+      "inputSHA256": "e1fc000e1f8154d418e3e03dfe2688f40a054e8d5855ebe173e78abe07f69ce6",
+      "case": "easy-txt"
     }
   ],
-  "exeSHA256": "07b65780f0a930c8b7875a6cd8afb56e3db2f5fff0272b2508336f6f071e39fd"
+  "architecture": "x64",
+  "exeSHA256": "07b65780f0a930c8b7875a6cd8afb56e3db2f5fff0272b2508336f6f071e39fd",
+  "uiCheck": {
+    "report": "all-translations-ui.txt",
+    "state": "fresh bundled Bible files",
+    "exitCode": 0,
+    "translations": 3
+  },
+  "powerPoint": "NOT TESTED"
 }

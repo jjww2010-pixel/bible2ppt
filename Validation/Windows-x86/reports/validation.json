@@ -1,7 +1,20 @@
 {
-  "architecture": "x86",
+  "exeSHA256": "766cd9ec42d6ef4b2a0ef2bc2d37e8b1208c6d9ec92b93eff43e53382fb4bea0",
+  "uiCheck": {
+    "translations": 3,
+    "state": "fresh bundled Bible files",
+    "exitCode": 0,
+    "report": "all-translations-ui.txt"
+  },
   "powerPoint": "NOT TESTED",
+  "architecture": "x86",
   "checks": [
+    {
+      "file": "Bibles/krv.json",
+      "case": "nkrv-json",
+      "inputSHA256": "38153380596a08c9a015104bf77ba2644fabc4104bf418b2adc977815fa2ac62",
+      "exitCode": 0
+    },
     {
       "file": "Bibles/modern.json",
       "case": "modern-json",
@@ -12,6 +25,12 @@
       "file": "Bibles/easy.json",
       "case": "easy-json",
       "inputSHA256": "9fd4f732f2f98bb942c23cb7b19093ca963d68fb25b08a8a4c55518fd23c9e4d",
+      "exitCode": 0
+    },
+    {
+      "file": "TXT/개역개정_권장절정리.txt",
+      "case": "nkrv-txt",
+      "inputSHA256": "53cdcc2e681f50a072206b71797cd0b7996e71249ee9f13757016ae231bbcb47",
       "exitCode": 0
     },
     {
@@ -26,6 +45,5 @@
       "inputSHA256": "e1fc000e1f8154d418e3e03dfe2688f40a054e8d5855ebe173e78abe07f69ce6",
       "exitCode": 0
     }
-  ],
-  "exeSHA256": "766cd9ec42d6ef4b2a0ef2bc2d37e8b1208c6d9ec92b93eff43e53382fb4bea0"
+  ]
 }

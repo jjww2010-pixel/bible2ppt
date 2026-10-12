@@ -62,7 +62,7 @@ JSON의 `sourceLine`, `originalText`, `sourceMarkers` 정보를 이용해 **현�
 
 실제 Windows 검사 결과:
 
-[Windows 실행 검사](https://github.com/jjww2010-pixel/bible2ppt/actions/runs/38293932239)에서 x64·x86 배포 EXE로 두 JSON·TXT의 모든 절 조회가 통과했습니다.
+[Windows 실행 검사](https://github.com/jjww2010-pixel/bible2ppt/actions/runs/38299983580)에서 x64·x86 배포 EXE로 세 번역본의 JSON·TXT 각각 모든 절 조회가 통과했고, EXE 옆에 세 본문 파일을 둔 상태에서 실제 메인 화면의 초기 로딩과 번역 선택을 확인했습니다.
 `Validation/Windows-x64`, `Validation/Windows-x86`에 각 파일의 SHA-256과 검사 결과가 있습니다.
 배포 JSON·TXT는 Windows 검사 당시의 CRLF 줄바꿈으로 저장하여 검사한 파일과 SHA-256이 정확히 일치합니다. 원래 본문 문자는 보존하고, 원본 공란과 잘못된 참조만 위에 명시한 방식으로 수정했습니다.
 
