@@ -112,7 +112,7 @@ def fetch(task):
                 start=int(numbers[0]);end=int(numbers[-1])
                 if end<start or end-start>10:continue
                 for number in range(start,end+1):
-                    rows[number]=body.get_text(' ',strip=True)
+                    rows[number]=body.get_text('',strip=False).strip()
                     ranges[number]=(start,end)
             result['dataVerseSamples'] = [{'tag':n.name,'attributes':n.attrs,'bodyClasses':[x.get('class') for x in n.find_all(class_=True)][:5]}
                                           for n in soup.select('[datasec], [data-sec]')[:2]]
