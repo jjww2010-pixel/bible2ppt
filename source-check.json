@@ -1,0 +1,113 @@
+[
+  {
+    "book": "Judges",
+    "chapter": 20,
+    "attempts": [
+      {
+        "url": "https://bible.godpia.com/read/reading.asp?ver=easy&vol=jdg&chap=20",
+        "status": 200,
+        "finalURL": "https://www.godpia.com/",
+        "bytes": 46887,
+        "parsedVerseCount": 0,
+        "adjacentSourceMatches": false,
+        "availableMissing": []
+      },
+      {
+        "url": "https://find.godpeople.com/?page=bidx&kwrd=%BB%F120&vers=ezsn",
+        "error": "HTTP Error 502: Proxy Error"
+      },
+      {
+        "url": "http://find.godpeople.com/?page=bidx&kwrd=%BB%F120&vers=ezsn",
+        "status": 200,
+        "finalURL": "https://cnts.godpeople.com/",
+        "bytes": 326642,
+        "parsedVerseCount": 0,
+        "adjacentSourceMatches": false,
+        "availableMissing": []
+      }
+    ],
+    "repairs": []
+  },
+  {
+    "book": "IISamuel",
+    "chapter": 4,
+    "attempts": [
+      {
+        "url": "https://bible.godpia.com/read/reading.asp?ver=easy&vol=2sa&chap=4",
+        "status": 200,
+        "finalURL": "https://www.godpia.com/",
+        "bytes": 46887,
+        "parsedVerseCount": 0,
+        "adjacentSourceMatches": false,
+        "availableMissing": []
+      },
+      {
+        "url": "https://find.godpeople.com/?page=bidx&kwrd=%BB%EF%C7%CF4&vers=ezsn",
+        "status": 200,
+        "finalURL": "https://cnts.godpeople.com/",
+        "bytes": 326642,
+        "parsedVerseCount": 0,
+        "adjacentSourceMatches": false,
+        "availableMissing": []
+      },
+      {
+        "url": "http://find.godpeople.com/?page=bidx&kwrd=%BB%EF%C7%CF4&vers=ezsn",
+        "status": 200,
+        "finalURL": "https://cnts.godpeople.com/",
+        "bytes": 326642,
+        "parsedVerseCount": 0,
+        "adjacentSourceMatches": false,
+        "availableMissing": []
+      }
+    ],
+    "repairs": []
+  },
+  {
+    "book": "IKings",
+    "chapter": 8,
+    "attempts": [
+      {
+        "url": "https://bible.godpia.com/read/reading.asp?ver=easy&vol=1ki&chap=8",
+        "status": 200,
+        "finalURL": "https://www.godpia.com/",
+        "bytes": 46887,
+        "parsedVerseCount": 0,
+        "adjacentSourceMatches": false,
+        "availableMissing": []
+      },
+      {
+        "url": "https://find.godpeople.com/?page=bidx&kwrd=%BF%D5%BB%F38&vers=ezsn",
+        "error": "HTTP Error 502: Proxy Error"
+      },
+      {
+        "url": "http://find.godpeople.com/?page=bidx&kwrd=%BF%D5%BB%F38&vers=ezsn",
+        "error": "HTTP Error 502: Proxy Error"
+      }
+    ],
+    "repairs": []
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 16,
+    "attempts": [
+      {
+        "url": "https://bible.godpia.com/read/reading.asp?ver=easy&vol=jer&chap=16",
+        "status": 200,
+        "finalURL": "https://www.godpia.com/",
+        "bytes": 46887,
+        "parsedVerseCount": 0,
+        "adjacentSourceMatches": false,
+        "availableMissing": []
+      },
+      {
+        "url": "https://find.godpeople.com/?page=bidx&kwrd=%B7%BD16&vers=ezsn",
+        "error": "HTTP Error 502: Proxy Error"
+      },
+      {
+        "url": "http://find.godpeople.com/?page=bidx&kwrd=%B7%BD16&vers=ezsn",
+        "error": "HTTP Error 502: Proxy Error"
+      }
+    ],
+    "repairs": []
+  }
+]

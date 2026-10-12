@@ -1,0 +1,106 @@
+[
+  {
+    "url": "https://www.kaggle.com/api/v1/datasets/download/rycont/korean-bible-classic-modern-pair",
+    "archiveFiles": [
+      "pair.csv"
+    ],
+    "tables": [
+      {
+        "name": "pair.csv",
+        "header": [
+          "input_text",
+          "target_text"
+        ],
+        "rows": 31092
+      }
+    ],
+    "status": 200,
+    "finalURL": "https://storage.googleapis.com:443/kaggle-data-sets/2331604/4004965/bundle/archive.zip?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gcp-kaggle-com%40kaggle-161607.iam.gserviceaccount.com%2F20261012%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20261012T181713Z&X-Goog-Expires=259200&X-Goog-SignedHeaders=host&X-Goog-Signature=01345bfb7710445261df84cc04cbf65645e43870b80b27b84229b7049901886e7d453b7aee3d71fa0d0dd2f7e96e879667b3b5efbc86125f10f73f0f8f97e0545f3b4565dd511ff7af18dbc83f1b6627e11286a958e762885bf2dda22ecbc8299713b6d2e68bf19dd6da335462b07732e388c35f38f5123da255a1cc8701e5b70f71126d1f8e5d185fb25653141def17d1d297c171318b76d365c52eb22787f0a59faa57b1fecf8de39f4cdcdf4633b67480da8855334adef3789e6ae652367dcdbb60a4d1047ae405e2129561ab6bbd782df1eb4e252efb50282ee880347bde1552dc0fc4ee4341721e15c70a2088b5c7443138c5a40136b615078df9eee18d",
+    "bytes": 2753290
+  },
+  {
+    "url": "https://nocr.net/korea_easy",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://bible.godpeople.com/index.html",
+    "status": 200,
+    "finalURL": "https://user.godpeople.com/login?rurl=https%3A%2F%2Fbible.godpeople.com%2Findex.html",
+    "bytes": 1018,
+    "title": "갓피플",
+    "links": []
+  },
+  {
+    "url": "https://www.godpeople.com/?GO=bible",
+    "status": 200,
+    "finalURL": "https://cnts.godpeople.com/",
+    "bytes": 326642,
+    "title": "갓피플",
+    "links": [
+      [
+        "https://gpbible.godpeople.com/",
+        "갓피플성경묵상기록과 성경통독을 돕는 탁월한 성경! 통독 모임과 한줄감사 등 크리스천 필수 성경앱본 성경별자료는 갓피플성경 > 채널에서도 볼 수 있습니다."
+      ],
+      [
+        "/book/booksBible",
+        "성경"
+      ],
+      [
+        "https://mall.godpeople.com/?GO=bible_main",
+        "이런 성경책 어때요?"
+      ],
+      [
+        "https://mall.godpeople.com/?GO=kidsday_bible",
+        "어린이성경"
+      ],
+      [
+        "https://mall.godpeople.com/?GO=easybible",
+        "쉬운번역"
+      ],
+      [
+        "https://gpbible.godpeople.com/thanks",
+        "갓피플성경 앱 사용자감사고백0번째 감사나를 바꾸는 감사습관갓피플성경 한줄감사"
+      ],
+      [
+        "/bible/15000",
+        "스에스라컨텐츠 60개"
+      ],
+      [
+        "/bible/7000",
+        "삿사사기컨텐츠 258개"
+      ],
+      [
+        "/words/65000?kind=info",
+        "유유다서컨텐츠 21개"
+      ],
+      [
+        "/words/51000?kind=info",
+        "골골로새서컨텐츠 425개"
+      ],
+      [
+        "https://mall.godpeople.com/?GO=bible_main",
+        "성경"
+      ],
+      [
+        "https://gpbible.godpeople.com/",
+        "갓피플성경 APP"
+      ],
+      [
+        "https://play.google.com/store/apps/details?id=com.godpeople.GPBIBLE",
+        ""
+      ],
+      [
+        "https://apps.apple.com/app/id511852665",
+        ""
+      ],
+      [
+        "https://gpbible.godpeople.com/",
+        "갓피플성경"
+      ],
+      [
+        "https://gpbible.godpeople.com/",
+        "★ 교회 성경앱 단체선물"
+      ]
+    ]
+  }
+]
