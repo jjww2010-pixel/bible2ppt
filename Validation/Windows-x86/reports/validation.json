@@ -1,31 +1,31 @@
 {
-  "exeSHA256": "766cd9ec42d6ef4b2a0ef2bc2d37e8b1208c6d9ec92b93eff43e53382fb4bea0",
+  "architecture": "x86",
   "checks": [
     {
+      "inputSHA256": "4814edd869ec24ecc9609f77c0256094f266db917f1567dcd6a9d0a1820b6f78",
       "exitCode": 0,
-      "case": "modern-json",
       "file": "Bibles/modern.json",
-      "inputSHA256": "4814edd869ec24ecc9609f77c0256094f266db917f1567dcd6a9d0a1820b6f78"
+      "case": "modern-json"
     },
     {
+      "inputSHA256": "51053b4a2a96d6ba6c7db6f8ee77355ed97d4c478428b1e7f927c286504b9c29",
       "exitCode": 0,
-      "case": "easy-json",
       "file": "Bibles/easy.json",
-      "inputSHA256": "51053b4a2a96d6ba6c7db6f8ee77355ed97d4c478428b1e7f927c286504b9c29"
+      "case": "easy-json"
     },
     {
+      "inputSHA256": "f055dc4b2aa48e609bd7d66824f879b5c3fffb3b2bd1f06f1c32588b5444b2b7",
       "exitCode": 0,
-      "case": "modern-txt",
       "file": "TXT/현대인의성경_권장절정리.txt",
-      "inputSHA256": "f055dc4b2aa48e609bd7d66824f879b5c3fffb3b2bd1f06f1c32588b5444b2b7"
+      "case": "modern-txt"
     },
     {
+      "inputSHA256": "4da777bb16f0b6e27464e6b64d2a94b1d97d57b4fa14a95c3348e3dfb37b934f",
       "exitCode": 0,
-      "case": "easy-txt",
       "file": "TXT/쉬운성경_권장절정리.txt",
-      "inputSHA256": "4da777bb16f0b6e27464e6b64d2a94b1d97d57b4fa14a95c3348e3dfb37b934f"
+      "case": "easy-txt"
     }
   ],
-  "architecture": "x86",
+  "exeSHA256": "766cd9ec42d6ef4b2a0ef2bc2d37e8b1208c6d9ec92b93eff43e53382fb4bea0",
   "powerPoint": "NOT TESTED"
 }

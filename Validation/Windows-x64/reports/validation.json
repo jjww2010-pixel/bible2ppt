@@ -1,6 +1,7 @@
 {
-  "powerPoint": "NOT TESTED",
   "architecture": "x64",
+  "powerPoint": "NOT TESTED",
+  "exeSHA256": "07b65780f0a930c8b7875a6cd8afb56e3db2f5fff0272b2508336f6f071e39fd",
   "checks": [
     {
       "exitCode": 0,
@@ -26,6 +27,5 @@
       "case": "easy-txt",
       "inputSHA256": "4da777bb16f0b6e27464e6b64d2a94b1d97d57b4fa14a95c3348e3dfb37b934f"
     }
-  ],
-  "exeSHA256": "07b65780f0a930c8b7875a6cd8afb56e3db2f5fff0272b2508336f6f071e39fd"
+  ]
 }
