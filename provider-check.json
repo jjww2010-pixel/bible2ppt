@@ -1,0 +1,375 @@
+[
+  {
+    "provider": "Godpia",
+    "translation": "gae",
+    "book": "Acts",
+    "chapter": 24,
+    "targets": [
+      7
+    ],
+    "url": "https://www.godpia.com/read/reading.asp?ver=gae&vol=act&chap=24",
+    "status": 200,
+    "finalURL": "https://www.godpia.com/read/reading.asp?ver=gae&vol=act&chap=24",
+    "bytes": 48627,
+    "charset": "utf-8",
+    "title": "GODpia",
+    "translationOptions": [],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://www.godpia.com/read/reading.asp",
+        "label": "성경 읽기"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RE",
+        "label": "매일 성경 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RR",
+        "label": "Reformation 95일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RM",
+        "label": "Miracle 153일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RT",
+        "label": "오늘의 만나 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-sel.asp",
+        "label": "선택 통독"
+      },
+      {
+        "url": "https://www.godpia.com/search/search-dic.asp",
+        "label": "성경 사전"
+      },
+      {
+        "url": "https://www.godpia.com/write/write_everyday.asp",
+        "label": "매일 성경 필사"
+      }
+    ],
+    "scripts": [
+      "/assets/js/jquery-3.6.0.min.js",
+      "/assets/js/plugins.js",
+      "/assets/js/gsap.min.js",
+      "/assets/js/scripts.js?v=1",
+      "/assets/js/aos.js",
+      "/assets/js/common.js?v=0.1",
+      "/plugin/confirm/jquery-confirm.js",
+      "/assets/js/Script_Login.asp?HTTPD=www.godpia.com&VIU=frameindex.asp&HTTPU=/read/reading.asp?ver=gae!!vol=act!!chap=24",
+      "/assets/js/read.js?v=2026-10-13 오전 4:43:26"
+    ],
+    "readerSelection": {
+      "jsCurVer": "gae",
+      "jsCurVol": "act",
+      "jsCurChap": "24"
+    },
+    "dataVerseSamples": [],
+    "versionNameFields": [
+      {
+        "name": "btn-check-1-gae",
+        "value": "gae"
+      },
+      {
+        "name": "btn-check-1-niv",
+        "value": "niv"
+      },
+      {
+        "name": "btn-check-1-han",
+        "value": "han"
+      },
+      {
+        "name": "btn-check-1-easy",
+        "value": "easy"
+      },
+      {
+        "name": "btn-check-1-hyun",
+        "value": "hyun"
+      },
+      {
+        "name": "btn-check-1-saenew",
+        "value": "saenew"
+      },
+      {
+        "name": "btn-check-1-hebrew",
+        "value": "hebrew"
+      },
+      {
+        "name": "btn-check-1-greek",
+        "value": "greek"
+      },
+      {
+        "name": "btn-check-1-",
+        "value": "non"
+      },
+      {
+        "name": "btn-check-2-gae",
+        "value": "gae"
+      },
+      {
+        "name": "btn-check-2-niv",
+        "value": "niv"
+      },
+      {
+        "name": "btn-check-2-han",
+        "value": "han"
+      },
+      {
+        "name": "btn-check-2-easy",
+        "value": "easy"
+      },
+      {
+        "name": "btn-check-2-hyun",
+        "value": "hyun"
+      },
+      {
+        "name": "btn-check-2-saenew",
+        "value": "saenew"
+      },
+      {
+        "name": "btn-check-2-hebrew",
+        "value": "hebrew"
+      },
+      {
+        "name": "btn-check-2-greek",
+        "value": "greek"
+      }
+    ],
+    "parsedVerseCount": 0,
+    "versePresence": [
+      {
+        "number": 7,
+        "found": false,
+        "characters": 0,
+        "sourceRange": [
+          7,
+          7
+        ],
+        "isExplicitNone": false,
+        "textSHA256": null,
+        "shortExcerpt": ""
+      }
+    ],
+    "numericElements": [],
+    "relevantClasses": [
+      "progress-circle svg-content",
+      "collapse navbar-collapse justify-content-center",
+      "sub-header sub-bg-read",
+      "bible section-padding pt-0",
+      "swiper mySwiperRead",
+      "modal-content rounded-3 shadow",
+      "form-control clsContents",
+      "offcanvas offcanvas-bottom bible-two",
+      "tab-content",
+      "bible-wrap mx-auto",
+      "bible-wrap mx-auto jang",
+      "bible-wrap mx-auto ver-size"
+    ]
+  },
+  {
+    "provider": "Godpia",
+    "translation": "gae",
+    "book": "Acts",
+    "chapter": 24,
+    "targets": [
+      7
+    ],
+    "url": "https://www.godpia.com/read/reading_body.asp",
+    "post": {
+      "readFlag": "",
+      "calDate": "",
+      "seq": "",
+      "ver": "gae",
+      "ver2": "",
+      "vol": "act",
+      "chap": "24",
+      "vol2": "",
+      "chap2": "",
+      "handwriting": "",
+      "curUrl": "/read/reading.asp"
+    },
+    "status": 200,
+    "finalURL": "https://www.godpia.com/read/reading_body.asp",
+    "bytes": 13244,
+    "charset": "utf-8",
+    "title": "",
+    "translationOptions": [],
+    "translationLabels": [],
+    "readingLinks": [],
+    "scripts": [],
+    "readerSelection": {},
+    "dataVerseSamples": [
+      {
+        "tag": "li",
+        "attributes": {
+          "class": [],
+          "id": "gae_act_24_1",
+          "dataver": "gae",
+          "datavol": "act",
+          "datachap": "24",
+          "datasec": "1"
+        },
+        "bodyClasses": [
+          [
+            "bible-read-no"
+          ],
+          [
+            "bible-read-cont"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ]
+        ]
+      },
+      {
+        "tag": "li",
+        "attributes": {
+          "class": [],
+          "id": "gae_act_24_2",
+          "dataver": "gae",
+          "datavol": "act",
+          "datachap": "24",
+          "datasec": "2"
+        },
+        "bodyClasses": [
+          [
+            "bible-read-no"
+          ],
+          [
+            "bible-read-cont"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ]
+        ]
+      }
+    ],
+    "versionNameFields": [
+      {
+        "name": "infoVerName",
+        "value": "개역개정(4판)"
+      }
+    ],
+    "parsedVerseCount": 27,
+    "versePresence": [
+      {
+        "number": 7,
+        "found": true,
+        "characters": 4,
+        "sourceRange": [
+          7,
+          7
+        ],
+        "isExplicitNone": true,
+        "textSHA256": "2c5539adbf825ee1c84f495c41d2e3ab18f6627a722578a5aea4ff650909eec7",
+        "shortExcerpt": "(없음)"
+      }
+    ]
+  },
+  {
+    "provider": "Korean Bible Society",
+    "translation": "GAE",
+    "book": "Acts",
+    "chapter": 24,
+    "targets": [
+      7
+    ],
+    "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=act&chap=24",
+    "status": 200,
+    "finalURL": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=act&chap=24",
+    "bytes": 27211,
+    "charset": "utf-8",
+    "title": "대한성서공회",
+    "translationOptions": [
+      {
+        "value": "GAE",
+        "label": "개역개정",
+        "selected": true
+      },
+      {
+        "value": "HAN",
+        "label": "개역한글",
+        "selected": false
+      },
+      {
+        "value": "SAE",
+        "label": "표준새번역",
+        "selected": false
+      },
+      {
+        "value": "SAENEW",
+        "label": "새번역",
+        "selected": false
+      },
+      {
+        "value": "COG",
+        "label": "공동번역",
+        "selected": false
+      },
+      {
+        "value": "COGNEW",
+        "label": "공동번역 개정판",
+        "selected": false
+      }
+    ],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://bible.bskorea.or.kr",
+        "label": "성경플랫폼 가기"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php",
+        "label": "성경읽기"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/korbibSearchlist.php",
+        "label": "성경검색"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/write_comment.php",
+        "label": "개역개정 의견쓰기"
+      }
+    ],
+    "scripts": [
+      "//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.2.min.js",
+      "js/bible.list.js",
+      "js/bible.page.js?v2",
+      "js/common.js",
+      "js/layer.js",
+      "/js/alertify.js",
+      "/bible/js/check_version.js?v=2"
+    ],
+    "readerSelection": {},
+    "parsedVerseCount": 26,
+    "versePresence": [
+      {
+        "number": 7,
+        "found": false,
+        "characters": 0,
+        "sourceRange": [
+          7,
+          7
+        ],
+        "isExplicitNone": false,
+        "textSHA256": null,
+        "shortExcerpt": ""
+      }
+    ]
+  }
+]
