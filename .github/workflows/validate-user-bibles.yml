@@ -1,0 +1,95 @@
+name: Validate uploaded Bible conversions on Windows
+
+on:
+  push:
+    branches: [local-bible-files]
+    paths:
+      - 'Bibles/**'
+      - 'TXT/**'
+      - '.github/workflows/validate-user-bibles.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: windows-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    strategy:
+      fail-fast: false
+      matrix:
+        architecture: [x64, x86]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Get the previously verified EXE
+        uses: actions/checkout@v4
+        with:
+          ref: 6b1a50fbfd70cbb2373653f3453f0a8a117157e7
+          path: runtime-source
+      - name: Run each converted JSON and TXT with the actual EXE
+        shell: pwsh
+        env:
+          CHECK_ARCHITECTURE: ${{ matrix.architecture }}
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $results = Join-Path $env:RUNNER_TEMP 'bible-conversion-validation'
+          New-Item -ItemType Directory -Force $results | Out-Null
+          $binary = Join-Path $env:RUNNER_TEMP '본문 검사 실행 폴더'
+          Expand-Archive "runtime-source/Bible2PPT-win-$env:CHECK_ARCHITECTURE.zip" $binary
+          $exe = Join-Path $binary 'Bible2PPT.exe'
+          $cases = @(
+            @('modern-json', 'Bibles/modern.json'),
+            @('easy-json', 'Bibles/easy.json'),
+            @('modern-txt', 'TXT/현대인의성경_권장절정리.txt'),
+            @('easy-txt', 'TXT/쉬운성경_권장절정리.txt')
+          )
+          $checks = @()
+          try {
+            foreach ($case in $cases) {
+              $inputFile = (Resolve-Path $case[1]).Path
+              $report = Join-Path $results ($case[0] + '.txt')
+              $process = Start-Process $exe -ArgumentList @('--check-bible', ('"{0}"' -f $inputFile), ('"{0}"' -f $report)) -PassThru
+              $null = $process.Handle
+              if (!$process.WaitForExit(180000)) { Stop-Process -Id $process.Id -Force; throw 'EXE check timed out.' }
+              if ($process.ExitCode -ne 0) { throw "EXE failed for $($case[0]): $(Get-Content $report -Raw -ErrorAction SilentlyContinue)" }
+              $text = Get-Content $report -Raw
+              foreach ($expected in @('Books=66', 'Chapters=1189', 'CoveredVerses=31102', 'QueriesChecked=31102')) {
+                if ($text -notmatch "(?m)^$expected$") { throw "Missing expected count: $expected" }
+              }
+              $checks += @{ case = $case[0]; file = $case[1]; inputSHA256 = (Get-FileHash $inputFile -Algorithm SHA256).Hash.ToLowerInvariant(); exitCode = $process.ExitCode }
+            }
+          } catch {
+            $_ | Out-String | Set-Content (Join-Path $results 'failure.txt') -Encoding utf8
+            throw
+          } finally {
+            @{ architecture = $env:CHECK_ARCHITECTURE; exeSHA256 = (Get-FileHash $exe -Algorithm SHA256).Hash.ToLowerInvariant(); checks = $checks; powerPoint = 'NOT TESTED' } |
+              ConvertTo-Json -Depth 8 | Set-Content (Join-Path $results 'validation.json') -Encoding utf8
+          }
+      - name: Publish readable results
+        if: always()
+        shell: pwsh
+        env:
+          CHECK_ARCHITECTURE: ${{ matrix.architecture }}
+        run: |
+          $branch = 'verification-bible-files-win-' + $env:CHECK_ARCHITECTURE + '-' + $env:GITHUB_SHA + '-' + $env:GITHUB_RUN_ID
+          git switch --orphan $branch
+          if ($LASTEXITCODE -ne 0) { throw 'Cannot create result branch.' }
+          New-Item -ItemType Directory -Force reports | Out-Null
+          Copy-Item (Join-Path $env:RUNNER_TEMP 'bible-conversion-validation/*') reports
+          $failed = (Test-Path reports/failure.txt) -or !(Test-Path reports/validation.json)
+          if (!$failed) {
+            $validation = Get-Content reports/validation.json -Raw | ConvertFrom-Json
+            $failed = @($validation.checks).Count -ne 4
+          }
+          $summary = "# Converted Bible Windows verification`n`nSource data commit: $env:GITHUB_SHA`n`nArchitecture: $env:CHECK_ARCHITECTURE`n`nFailed: $failed`n`nRun: https://github.com/$env:GITHUB_REPOSITORY/actions/runs/$env:GITHUB_RUN_ID`n`nThe published EXE checks every covered verse query in both uploaded translations, in JSON and TXT forms. Missing original passages remain explicitly marked.`n`nPowerPoint rendering: NOT TESTED.`n"
+          Set-Content README.md $summary -Encoding utf8
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add README.md reports
+          git commit -m 'Record Windows EXE checks of converted user-provided Bibles'
+          if ($LASTEXITCODE -ne 0) { throw 'Cannot commit report.' }
+          git push origin "HEAD:refs/heads/$branch"
+          if ($LASTEXITCODE -ne 0) { throw 'Cannot publish report.' }

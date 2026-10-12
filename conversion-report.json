@@ -1,0 +1,765 @@
+[
+  {
+    "translation": "현대인의 성경",
+    "sourceFile": "현대인의성경.txt",
+    "sourceEncoding": "CP949",
+    "outputEncoding": "UTF-8",
+    "sourceSHA256": "9a3322769a494c6c9278597bd36707047607dfa9a85fdb90e20bd5aca18934cd",
+    "sourceLinesSHA256": "a1ecf20779704cf704ea5d5dfd5cb83346fa315e3ef0d89a949255b06d998a19",
+    "originalLinesReconstructExactly": true,
+    "books": 66,
+    "chapters": 1189,
+    "sourceVerseSlots": 31102,
+    "outputPassages": 30373,
+    "coveredReferences": 31102,
+    "sameVerseMarkers": 733,
+    "mergedConsecutiveMarkers": 729,
+    "resolvedNonconsecutiveMarkers": 3,
+    "missingOriginalVerses": [],
+    "sourceWarnings": [
+      {
+        "reference": "창22:23",
+        "sourceLine": 571,
+        "originalText": "(23절과 같음)",
+        "reason": "Source refers to itself or to an unavailable verse; original text retained."
+      }
+    ],
+    "bookBoundaries": [
+      {
+        "book": "Genesis",
+        "sourceStartLine": 1,
+        "chapters": 50
+      },
+      {
+        "book": "Exodus",
+        "sourceStartLine": 1534,
+        "chapters": 40
+      },
+      {
+        "book": "Leviticus",
+        "sourceStartLine": 2747,
+        "chapters": 27
+      },
+      {
+        "book": "Numbers",
+        "sourceStartLine": 3606,
+        "chapters": 36
+      },
+      {
+        "book": "Deuteronomy",
+        "sourceStartLine": 4894,
+        "chapters": 34
+      },
+      {
+        "book": "Joshua",
+        "sourceStartLine": 5853,
+        "chapters": 24
+      },
+      {
+        "book": "Judges",
+        "sourceStartLine": 6511,
+        "chapters": 21
+      },
+      {
+        "book": "Ruth",
+        "sourceStartLine": 7129,
+        "chapters": 4
+      },
+      {
+        "book": "ISamuel",
+        "sourceStartLine": 7214,
+        "chapters": 31
+      },
+      {
+        "book": "IISamuel",
+        "sourceStartLine": 8024,
+        "chapters": 24
+      },
+      {
+        "book": "IKings",
+        "sourceStartLine": 8719,
+        "chapters": 22
+      },
+      {
+        "book": "IIKings",
+        "sourceStartLine": 9535,
+        "chapters": 25
+      },
+      {
+        "book": "IChronicles",
+        "sourceStartLine": 10254,
+        "chapters": 29
+      },
+      {
+        "book": "IIChronicles",
+        "sourceStartLine": 11196,
+        "chapters": 36
+      },
+      {
+        "book": "Ezra",
+        "sourceStartLine": 12018,
+        "chapters": 10
+      },
+      {
+        "book": "Nehemiah",
+        "sourceStartLine": 12298,
+        "chapters": 13
+      },
+      {
+        "book": "Esther",
+        "sourceStartLine": 12704,
+        "chapters": 10
+      },
+      {
+        "book": "Job",
+        "sourceStartLine": 12871,
+        "chapters": 42
+      },
+      {
+        "book": "Psalms",
+        "sourceStartLine": 13941,
+        "chapters": 150
+      },
+      {
+        "book": "Proverbs",
+        "sourceStartLine": 16402,
+        "chapters": 31
+      },
+      {
+        "book": "Ecclesiastes",
+        "sourceStartLine": 17317,
+        "chapters": 12
+      },
+      {
+        "book": "SongOfSolomon",
+        "sourceStartLine": 17539,
+        "chapters": 8
+      },
+      {
+        "book": "Isaiah",
+        "sourceStartLine": 17656,
+        "chapters": 66
+      },
+      {
+        "book": "Jeremiah",
+        "sourceStartLine": 18948,
+        "chapters": 52
+      },
+      {
+        "book": "Lamentations",
+        "sourceStartLine": 20312,
+        "chapters": 5
+      },
+      {
+        "book": "Ezekiel",
+        "sourceStartLine": 20466,
+        "chapters": 48
+      },
+      {
+        "book": "Daniel",
+        "sourceStartLine": 21739,
+        "chapters": 12
+      },
+      {
+        "book": "Hosea",
+        "sourceStartLine": 22096,
+        "chapters": 14
+      },
+      {
+        "book": "Joel",
+        "sourceStartLine": 22293,
+        "chapters": 3
+      },
+      {
+        "book": "Amos",
+        "sourceStartLine": 22366,
+        "chapters": 9
+      },
+      {
+        "book": "Obadiah",
+        "sourceStartLine": 22512,
+        "chapters": 1
+      },
+      {
+        "book": "Jonah",
+        "sourceStartLine": 22533,
+        "chapters": 4
+      },
+      {
+        "book": "Micah",
+        "sourceStartLine": 22581,
+        "chapters": 7
+      },
+      {
+        "book": "Nahum",
+        "sourceStartLine": 22686,
+        "chapters": 3
+      },
+      {
+        "book": "Habakkuk",
+        "sourceStartLine": 22733,
+        "chapters": 3
+      },
+      {
+        "book": "Zephaniah",
+        "sourceStartLine": 22789,
+        "chapters": 3
+      },
+      {
+        "book": "Haggai",
+        "sourceStartLine": 22842,
+        "chapters": 2
+      },
+      {
+        "book": "Zechariah",
+        "sourceStartLine": 22880,
+        "chapters": 14
+      },
+      {
+        "book": "Malachi",
+        "sourceStartLine": 23091,
+        "chapters": 4
+      },
+      {
+        "book": "Matthew",
+        "sourceStartLine": 23146,
+        "chapters": 28
+      },
+      {
+        "book": "Mark",
+        "sourceStartLine": 24217,
+        "chapters": 16
+      },
+      {
+        "book": "Luke",
+        "sourceStartLine": 24895,
+        "chapters": 24
+      },
+      {
+        "book": "John",
+        "sourceStartLine": 26046,
+        "chapters": 21
+      },
+      {
+        "book": "Acts",
+        "sourceStartLine": 26925,
+        "chapters": 28
+      },
+      {
+        "book": "Romans",
+        "sourceStartLine": 27932,
+        "chapters": 16
+      },
+      {
+        "book": "ICorinthians",
+        "sourceStartLine": 28365,
+        "chapters": 16
+      },
+      {
+        "book": "IICorinthians",
+        "sourceStartLine": 28802,
+        "chapters": 13
+      },
+      {
+        "book": "Galatians",
+        "sourceStartLine": 29058,
+        "chapters": 6
+      },
+      {
+        "book": "Ephesians",
+        "sourceStartLine": 29207,
+        "chapters": 6
+      },
+      {
+        "book": "Philippians",
+        "sourceStartLine": 29362,
+        "chapters": 4
+      },
+      {
+        "book": "Colossians",
+        "sourceStartLine": 29466,
+        "chapters": 4
+      },
+      {
+        "book": "IThessalonians",
+        "sourceStartLine": 29561,
+        "chapters": 5
+      },
+      {
+        "book": "IIThessalonians",
+        "sourceStartLine": 29650,
+        "chapters": 3
+      },
+      {
+        "book": "ITimothy",
+        "sourceStartLine": 29697,
+        "chapters": 6
+      },
+      {
+        "book": "IITimothy",
+        "sourceStartLine": 29810,
+        "chapters": 4
+      },
+      {
+        "book": "Titus",
+        "sourceStartLine": 29893,
+        "chapters": 3
+      },
+      {
+        "book": "Philemon",
+        "sourceStartLine": 29939,
+        "chapters": 1
+      },
+      {
+        "book": "Hebrews",
+        "sourceStartLine": 29964,
+        "chapters": 13
+      },
+      {
+        "book": "James",
+        "sourceStartLine": 30267,
+        "chapters": 5
+      },
+      {
+        "book": "IPeter",
+        "sourceStartLine": 30375,
+        "chapters": 5
+      },
+      {
+        "book": "IIPeter",
+        "sourceStartLine": 30480,
+        "chapters": 3
+      },
+      {
+        "book": "IJohn",
+        "sourceStartLine": 30541,
+        "chapters": 5
+      },
+      {
+        "book": "IIJohn",
+        "sourceStartLine": 30646,
+        "chapters": 1
+      },
+      {
+        "book": "IIIJohn",
+        "sourceStartLine": 30659,
+        "chapters": 1
+      },
+      {
+        "book": "Jude",
+        "sourceStartLine": 30674,
+        "chapters": 1
+      },
+      {
+        "book": "Revelation",
+        "sourceStartLine": 30699,
+        "chapters": 22
+      }
+    ],
+    "outputJSON": "Bibles/modern.json",
+    "outputTXT": "TXT/현대인의성경_권장절정리.txt"
+  },
+  {
+    "translation": "쉬운성경",
+    "sourceFile": "쉬운성경.txt",
+    "sourceEncoding": "CP949",
+    "outputEncoding": "UTF-8",
+    "sourceSHA256": "7d249cb7313382ff25f534522decf1f8dd16b2e4686ca394b907e003617fe115",
+    "sourceLinesSHA256": "54578509d47d80c08c841a43ddec2316ad0c38d0e9bae9b16c59d989588cf790",
+    "originalLinesReconstructExactly": true,
+    "books": 66,
+    "chapters": 1189,
+    "sourceVerseSlots": 31102,
+    "outputPassages": 31102,
+    "coveredReferences": 31102,
+    "sameVerseMarkers": 0,
+    "mergedConsecutiveMarkers": 0,
+    "resolvedNonconsecutiveMarkers": 0,
+    "missingOriginalVerses": [
+      {
+        "book": "Judges",
+        "chapter": 20,
+        "verse": 22,
+        "reference": "삿20:22",
+        "sourceLine": 7077
+      },
+      {
+        "book": "Judges",
+        "chapter": 20,
+        "verse": 23,
+        "reference": "삿20:23",
+        "sourceLine": 7078
+      },
+      {
+        "book": "IISamuel",
+        "chapter": 4,
+        "verse": 6,
+        "reference": "삼하4:6",
+        "sourceLine": 8127
+      },
+      {
+        "book": "IISamuel",
+        "chapter": 4,
+        "verse": 7,
+        "reference": "삼하4:7",
+        "sourceLine": 8128
+      },
+      {
+        "book": "IKings",
+        "chapter": 8,
+        "verse": 41,
+        "reference": "왕상8:41",
+        "sourceLine": 9027
+      },
+      {
+        "book": "IKings",
+        "chapter": 8,
+        "verse": 42,
+        "reference": "왕상8:42",
+        "sourceLine": 9028
+      },
+      {
+        "book": "Jeremiah",
+        "chapter": 16,
+        "verse": 2,
+        "reference": "렘16:2",
+        "sourceLine": 19339
+      }
+    ],
+    "sourceWarnings": [],
+    "bookBoundaries": [
+      {
+        "book": "Genesis",
+        "sourceStartLine": 1,
+        "chapters": 50
+      },
+      {
+        "book": "Exodus",
+        "sourceStartLine": 1534,
+        "chapters": 40
+      },
+      {
+        "book": "Leviticus",
+        "sourceStartLine": 2747,
+        "chapters": 27
+      },
+      {
+        "book": "Numbers",
+        "sourceStartLine": 3606,
+        "chapters": 36
+      },
+      {
+        "book": "Deuteronomy",
+        "sourceStartLine": 4894,
+        "chapters": 34
+      },
+      {
+        "book": "Joshua",
+        "sourceStartLine": 5853,
+        "chapters": 24
+      },
+      {
+        "book": "Judges",
+        "sourceStartLine": 6511,
+        "chapters": 21
+      },
+      {
+        "book": "Ruth",
+        "sourceStartLine": 7129,
+        "chapters": 4
+      },
+      {
+        "book": "ISamuel",
+        "sourceStartLine": 7214,
+        "chapters": 31
+      },
+      {
+        "book": "IISamuel",
+        "sourceStartLine": 8024,
+        "chapters": 24
+      },
+      {
+        "book": "IKings",
+        "sourceStartLine": 8719,
+        "chapters": 22
+      },
+      {
+        "book": "IIKings",
+        "sourceStartLine": 9535,
+        "chapters": 25
+      },
+      {
+        "book": "IChronicles",
+        "sourceStartLine": 10254,
+        "chapters": 29
+      },
+      {
+        "book": "IIChronicles",
+        "sourceStartLine": 11196,
+        "chapters": 36
+      },
+      {
+        "book": "Ezra",
+        "sourceStartLine": 12018,
+        "chapters": 10
+      },
+      {
+        "book": "Nehemiah",
+        "sourceStartLine": 12298,
+        "chapters": 13
+      },
+      {
+        "book": "Esther",
+        "sourceStartLine": 12704,
+        "chapters": 10
+      },
+      {
+        "book": "Job",
+        "sourceStartLine": 12871,
+        "chapters": 42
+      },
+      {
+        "book": "Psalms",
+        "sourceStartLine": 13941,
+        "chapters": 150
+      },
+      {
+        "book": "Proverbs",
+        "sourceStartLine": 16402,
+        "chapters": 31
+      },
+      {
+        "book": "Ecclesiastes",
+        "sourceStartLine": 17317,
+        "chapters": 12
+      },
+      {
+        "book": "SongOfSolomon",
+        "sourceStartLine": 17539,
+        "chapters": 8
+      },
+      {
+        "book": "Isaiah",
+        "sourceStartLine": 17656,
+        "chapters": 66
+      },
+      {
+        "book": "Jeremiah",
+        "sourceStartLine": 18948,
+        "chapters": 52
+      },
+      {
+        "book": "Lamentations",
+        "sourceStartLine": 20312,
+        "chapters": 5
+      },
+      {
+        "book": "Ezekiel",
+        "sourceStartLine": 20466,
+        "chapters": 48
+      },
+      {
+        "book": "Daniel",
+        "sourceStartLine": 21739,
+        "chapters": 12
+      },
+      {
+        "book": "Hosea",
+        "sourceStartLine": 22096,
+        "chapters": 14
+      },
+      {
+        "book": "Joel",
+        "sourceStartLine": 22293,
+        "chapters": 3
+      },
+      {
+        "book": "Amos",
+        "sourceStartLine": 22366,
+        "chapters": 9
+      },
+      {
+        "book": "Obadiah",
+        "sourceStartLine": 22512,
+        "chapters": 1
+      },
+      {
+        "book": "Jonah",
+        "sourceStartLine": 22533,
+        "chapters": 4
+      },
+      {
+        "book": "Micah",
+        "sourceStartLine": 22581,
+        "chapters": 7
+      },
+      {
+        "book": "Nahum",
+        "sourceStartLine": 22686,
+        "chapters": 3
+      },
+      {
+        "book": "Habakkuk",
+        "sourceStartLine": 22733,
+        "chapters": 3
+      },
+      {
+        "book": "Zephaniah",
+        "sourceStartLine": 22789,
+        "chapters": 3
+      },
+      {
+        "book": "Haggai",
+        "sourceStartLine": 22842,
+        "chapters": 2
+      },
+      {
+        "book": "Zechariah",
+        "sourceStartLine": 22880,
+        "chapters": 14
+      },
+      {
+        "book": "Malachi",
+        "sourceStartLine": 23091,
+        "chapters": 4
+      },
+      {
+        "book": "Matthew",
+        "sourceStartLine": 23146,
+        "chapters": 28
+      },
+      {
+        "book": "Mark",
+        "sourceStartLine": 24217,
+        "chapters": 16
+      },
+      {
+        "book": "Luke",
+        "sourceStartLine": 24895,
+        "chapters": 24
+      },
+      {
+        "book": "John",
+        "sourceStartLine": 26046,
+        "chapters": 21
+      },
+      {
+        "book": "Acts",
+        "sourceStartLine": 26925,
+        "chapters": 28
+      },
+      {
+        "book": "Romans",
+        "sourceStartLine": 27932,
+        "chapters": 16
+      },
+      {
+        "book": "ICorinthians",
+        "sourceStartLine": 28365,
+        "chapters": 16
+      },
+      {
+        "book": "IICorinthians",
+        "sourceStartLine": 28802,
+        "chapters": 13
+      },
+      {
+        "book": "Galatians",
+        "sourceStartLine": 29058,
+        "chapters": 6
+      },
+      {
+        "book": "Ephesians",
+        "sourceStartLine": 29207,
+        "chapters": 6
+      },
+      {
+        "book": "Philippians",
+        "sourceStartLine": 29362,
+        "chapters": 4
+      },
+      {
+        "book": "Colossians",
+        "sourceStartLine": 29466,
+        "chapters": 4
+      },
+      {
+        "book": "IThessalonians",
+        "sourceStartLine": 29561,
+        "chapters": 5
+      },
+      {
+        "book": "IIThessalonians",
+        "sourceStartLine": 29650,
+        "chapters": 3
+      },
+      {
+        "book": "ITimothy",
+        "sourceStartLine": 29697,
+        "chapters": 6
+      },
+      {
+        "book": "IITimothy",
+        "sourceStartLine": 29810,
+        "chapters": 4
+      },
+      {
+        "book": "Titus",
+        "sourceStartLine": 29893,
+        "chapters": 3
+      },
+      {
+        "book": "Philemon",
+        "sourceStartLine": 29939,
+        "chapters": 1
+      },
+      {
+        "book": "Hebrews",
+        "sourceStartLine": 29964,
+        "chapters": 13
+      },
+      {
+        "book": "James",
+        "sourceStartLine": 30267,
+        "chapters": 5
+      },
+      {
+        "book": "IPeter",
+        "sourceStartLine": 30375,
+        "chapters": 5
+      },
+      {
+        "book": "IIPeter",
+        "sourceStartLine": 30480,
+        "chapters": 3
+      },
+      {
+        "book": "IJohn",
+        "sourceStartLine": 30541,
+        "chapters": 5
+      },
+      {
+        "book": "IIJohn",
+        "sourceStartLine": 30646,
+        "chapters": 1
+      },
+      {
+        "book": "IIIJohn",
+        "sourceStartLine": 30659,
+        "chapters": 1
+      },
+      {
+        "book": "Jude",
+        "sourceStartLine": 30674,
+        "chapters": 1
+      },
+      {
+        "book": "Revelation",
+        "sourceStartLine": 30699,
+        "chapters": 22
+      }
+    ],
+    "outputJSON": "Bibles/easy.json",
+    "outputTXT": "TXT/쉬운성경_권장절정리.txt"
+  }
+]
