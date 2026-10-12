@@ -30,7 +30,7 @@ class ArticleText(HTMLParser):
 
 
 def fetch(url):
-    request = urllib.request.Request(url, headers={"User-Agent": "Bible2PPT-doc-verification/1.0"})
+    request = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (compatible; documentation verification)", "Accept": "text/html,application/json"})
     with urllib.request.urlopen(request, timeout=20) as response:
         return response.geturl(), response.status, response.read(6_000_000).decode("utf-8", errors="replace")
 
@@ -80,10 +80,16 @@ def wiki(url):
         article = re.search(r"<article\b[^>]*>(.*?)</article>", page, re.I | re.S)
         if article is None:
             article = re.search(r'<div[^>]*class="[^"]*mw-parser-output[^>]*>(.*?)(?:<div[^>]*class="printfooter|<!--)', page, re.I | re.S)
+        links = []
+        for link in re.findall(r'href=[\"\x27]([^\"\x27]+)[\"\x27]', page):
+            absolute = urllib.parse.urljoin(final, html.unescape(link))
+            if urllib.parse.urlparse(absolute).hostname in {"support.logos.com", "community.logos.com", "wiki.logos.com"} and re.search(r"print|export|copy.?bible|/kb/articles/|/articles/", absolute, re.I):
+                if absolute not in links:
+                    links.append(absolute)
         return {"request_url": url, "final_url": final, "status": status,
                 "title": html.unescape(match.group(1)) if match else "",
                 "excerpt": excerpts(article.group(1)) if article else [],
-                "article_extracted": article is not None}
+                "article_extracted": article is not None, "documentation_links": links[:35]}
     except Exception as error:
         return {"request_url": url, "error": f"{type(error).__name__}: {error}"}
 
@@ -94,7 +100,19 @@ def main():
     (output / "README.md").write_text("# Logos export documentation verification\n\nProbe not completed. No verified conclusion.\n")
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
         searches = list(pool.map(search, ["Print Export", "Copy Bible Verses", "export limit", "copy limit"]))
-        pages = list(pool.map(wiki, ["https://wiki.logos.com/Print$2fExport", "https://wiki.logos.com/Copy_Bible_Verses"]))
+        pages = list(pool.map(wiki, [
+            "https://support.logos.com/",
+            "https://support.logos.com/hc/en-us/search?query=Print%20Export",
+            "https://support.logos.com/hc/en-us/search?query=Copy%20Bible%20Verses",
+            "https://community.logos.com/search?query=Print%2FExport&scope=knowledgebase",
+            "https://community.logos.com/search?query=Copy%20Bible%20Verses&scope=knowledgebase",
+        ]))
+        discovered = []
+        for page in pages:
+            for url in page.get("documentation_links", []):
+                if re.search(r"print|export|copy.?bible", urllib.parse.urlparse(url).path, re.I) and url not in discovered:
+                    discovered.append(url)
+        pages.extend(pool.map(wiki, discovered[:12]))
     report = {"checked_utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
               "source_commit": os.environ.get("GITHUB_SHA", "local"),
               "runner_os": os.environ.get("RUNNER_OS", "local"),
