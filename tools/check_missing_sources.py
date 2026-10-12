@@ -33,7 +33,9 @@ def probe(case):
     verses = next(c for c in book['chapters'] if c['number'] == chapter)['verses']
     local = {v['number']: v['text'] for v in verses}
     encoded = urllib.parse.quote((abbr + str(chapter)).encode('cp949'))
-    urls = [f'https://bible.godpia.com/read/reading.asp?ver=easy&vol={online}&chap={chapter}',
+    book_number = {'Judges':7,'IISamuel':10,'IKings':11,'Jeremiah':24}[key]
+    urls = [f'http://www.holybible.or.kr/B_AGAPE/cgi/bibleftxt.php?VR=0&VL={book_number}&CN={chapter}&CV=99',
+            f'https://bible.godpia.com/read/reading.asp?ver=easy&vol={online}&chap={chapter}',
             f'https://find.godpeople.com/?page=bidx&kwrd={encoded}&vers=ezsn',
             f'http://find.godpeople.com/?page=bidx&kwrd={encoded}&vers=ezsn']
     attempts = []
@@ -43,14 +45,22 @@ def probe(case):
             request = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
             with urllib.request.urlopen(request, timeout=25) as response:
                 raw = response.read(2_000_000)
-                encoding = response.headers.get_content_charset() or ('cp949' if 'godpeople' in url else 'utf-8')
+                encoding = response.headers.get_content_charset() or ('cp949' if 'godpeople' in url or 'holybible' in url else 'utf-8')
                 page = raw.decode(encoding, errors='replace')
                 attempt.update(status=response.status, finalURL=response.geturl(), bytes=len(raw))
             if re.search(r'Just a moment|captcha|verify you are human', page, re.I):
                 attempt['error'] = 'Access gate; stopped.'
                 attempts.append(attempt)
                 continue
-            if 'godpeople' in url:
+            if 'holybible' in url:
+                matches = []
+                for fragment in re.findall(r'<li\b[^>]*>(.*?)(?:</li>|(?=<li\b)|</ol>)', page, re.I|re.S):
+                    row = plain(fragment)
+                    m = re.match(r'^\s*(\d+)\s*[.\s]?\s*(.+)', row, re.S)
+                    if m: matches.append((m.group(1),m.group(2)))
+                attempt['numberTags'] = re.findall(r'<[^>]+>\s*\d{1,3}\s*</[^>]+>',page)[:10]
+                attempt['tagStructure'] = re.sub(r'>[^<]*<','><',page)[-3500:]
+            elif 'godpeople' in url:
                 matches = re.findall(r'bidx_listTd_yak.+?>(\d+)[\s\S]+?bidx_listTd_phrase.+?>(.+?)</td', page)
             else:
                 matches = re.findall(r'class=[\"\']num[\"\']>(\d+).*?</span>(.*?)</p>', page, re.S)
