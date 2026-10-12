@@ -34,7 +34,7 @@ def probe(case):
     local = {v['number']: v['text'] for v in verses}
     encoded = urllib.parse.quote((abbr + str(chapter)).encode('cp949'))
     book_number = {'Judges':7,'IISamuel':10,'IKings':11,'Jeremiah':24}[key]
-    urls = [f'http://www.holybible.or.kr/B_AGAPE/cgi/bibleftxt.php?VR=0&VL={book_number}&CN={chapter}&CV=99',
+    urls = [f'http://www.holybible.or.kr/B_AGAPE/cgi/bibleftxt.php?VR=AGAPE&VL={book_number}&CN={chapter}&CV=99',
             f'https://bible.godpia.com/read/reading.asp?ver=easy&vol={online}&chap={chapter}',
             f'https://find.godpeople.com/?page=bidx&kwrd={encoded}&vers=ezsn',
             f'http://find.godpeople.com/?page=bidx&kwrd={encoded}&vers=ezsn']
@@ -59,7 +59,12 @@ def probe(case):
                     m = re.match(r'^\s*(\d+)\s*[.\s]?\s*(.+)', row, re.S)
                     if m: matches.append((m.group(1),m.group(2)))
                 attempt['numberTags'] = re.findall(r'<[^>]+>\s*\d{1,3}\s*</[^>]+>',page)[:10]
-                attempt['tagStructure'] = re.sub(r'>[^<]*<','><',page)[-3500:]
+                attempt['tagStructure'] = re.sub(r'>[^<]*<','><',page)[7000:14500]
+                title = re.search(r'<title[^>]*>(.*?)</title>',page,re.I|re.S)
+                attempt['title'] = plain(title.group(1)) if title else ''
+                if not matches:
+                    for n,body in re.findall(r'<li\b[^>]*>\s*(?:<[^>]+>\s*)*(\d+)\s*(.*?)<br\s*/?>',page,re.I|re.S):
+                        matches.append((n,body))
             elif 'godpeople' in url:
                 matches = re.findall(r'bidx_listTd_yak.+?>(\d+)[\s\S]+?bidx_listTd_phrase.+?>(.+?)</td', page)
             else:
