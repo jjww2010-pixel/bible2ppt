@@ -7,6 +7,8 @@ public abstract class BibleSource
     public static BibleSource[] AvailableSources = new BibleSource[]
     {
         new LocalBible(),
+        new LocalBible(Path.Combine(AppContext.BaseDirectory, "Bibles", "easy.json"), 4, "쉬운성경"),
+        new LocalBible(Path.Combine(AppContext.BaseDirectory, "Bibles", "modern.json"), 5, "현대인의 성경"),
     };
 
     public int Id { get; set; }

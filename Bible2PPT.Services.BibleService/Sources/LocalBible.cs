@@ -17,10 +17,15 @@ public sealed class LocalBible : BibleSource
     public string FilePath { get; }
     public override bool CacheContent => false;
 
-    public LocalBible(string? filePath = null)
+    public string TranslationName { get; }
+
+    public LocalBible(string? filePath = null, int sourceId = DefaultSourceId, string translationName = "개역개정")
     {
-        Id = DefaultSourceId;
-        Name = "로컬 성경 (JSON)";
+        if (sourceId < DefaultSourceId) throw new ArgumentOutOfRangeException(nameof(sourceId));
+        if (string.IsNullOrWhiteSpace(translationName)) throw new ArgumentException("번역본 이름이 필요합니다.", nameof(translationName));
+        Id = sourceId;
+        TranslationName = translationName;
+        Name = $"로컬 성경 ({translationName})";
         FilePath = Path.GetFullPath(filePath ?? Path.Combine(AppContext.BaseDirectory, "Bibles", "krv.json"));
         // One validated snapshot per process. Restart after replacing the file.
         _document = new Lazy<Task<Document>>(LoadAsync);
@@ -103,11 +108,11 @@ public sealed class LocalBible : BibleSource
         }
         catch (FileNotFoundException ex)
         {
-            throw Invalid("본문 파일을 찾을 수 없습니다. 개역개정 본문을 UTF-8 JSON으로 저장한 뒤 프로그램을 다시 시작하세요.", ex);
+            throw Invalid($"{TranslationName} 본문 파일을 찾을 수 없습니다. 해당 번역본의 JSON 또는 TXT 파일을 가져오세요.", ex);
         }
         catch (DirectoryNotFoundException ex)
         {
-            throw Invalid("Bibles 폴더와 krv.json 본문 파일을 준비한 뒤 프로그램을 다시 시작하세요.", ex);
+            throw Invalid($"{TranslationName} 본문 파일을 찾을 수 없습니다. 해당 번역본의 JSON 또는 TXT 파일을 가져오세요.", ex);
         }
         catch (JsonException ex)
         {

@@ -158,4 +158,31 @@ public sealed class LocalBibleImporterTest : IDisposable
     }
 
     public void Dispose() => Directory.Delete(_directory, recursive: true);
+
+    [Theory]
+    [InlineData("input.txt", "요일4:8 테스트 문장", "쉬운성경")]
+    [InlineData("input.json", "[{\"book\":\"IJohn\",\"chapter\":4,\"verse\":8,\"text\":\"테스트 문장\"}]", "현대인의 성경")]
+    public async Task SetsSelectedTranslationNameForTextAndFlatJson(string file, string text, string name)
+    {
+        var input = Path.Combine(_directory, file);
+        await File.WriteAllTextAsync(input, text);
+        await LocalBibleImporter.ImportAsync(input, Output, name);
+        Assert.Equal(name, Assert.Single(await new LocalBible(Output).GetBiblesOnlineAsync()).Name);
+    }
+
+    [Fact]
+    public async Task NativeJsonCanBeRenamedInPlaceWithoutChangingPassages()
+    {
+        var input = Path.Combine(_directory, "input.txt");
+        await File.WriteAllTextAsync(input, "요일4:8 테스트 문장");
+        await LocalBibleImporter.ImportAsync(input, Output);
+        await LocalBibleImporter.ImportAsync(Output, Output, "현대인의 성경");
+        var source = new LocalBible(Output);
+        var bible = Assert.Single(await source.GetBiblesOnlineAsync());
+        Assert.Equal("현대인의 성경", bible.Name);
+        var book = Assert.Single(await source.GetBooksOnlineAsync(bible));
+        var chapter = Assert.Single(await source.GetChaptersOnlineAsync(book));
+        chapter.Book = book;
+        Assert.Equal("테스트 문장", Assert.Single(await source.GetVersesOnlineAsync(chapter)).Text);
+    }
 }

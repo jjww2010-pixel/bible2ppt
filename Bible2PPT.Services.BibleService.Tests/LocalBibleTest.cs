@@ -219,7 +219,55 @@ public sealed class LocalBibleTest : IDisposable
     }
 
     [Fact]
-    public void OnlyLocalSourceIsAvailable() => Assert.IsType<LocalBible>(Assert.Single(BibleSource.AvailableSources));
+    public void ThreeLocalTranslationsHaveDistinctPersistentIdentitiesAndFiles()
+    {
+        var sources = BibleSource.AvailableSources.Select(Assert.IsType<LocalBible>).ToArray();
+        Assert.Equal(new[] { 3, 4, 5 }, sources.Select(source => source.Id));
+        Assert.Equal(new[] { "개역개정", "쉬운성경", "현대인의 성경" }, sources.Select(source => source.TranslationName));
+        Assert.Equal(new[] { "krv.json", "easy.json", "modern.json" }, sources.Select(source => Path.GetFileName(source.FilePath)));
+    }
+
+    [Fact]
+    public async Task TranslationsStaySeparateAcrossImportReplacementAndDatabaseReopen()
+    {
+        var input = Path.Combine(_directory, "input.txt");
+        var ids = new List<int>();
+        using (var services = CreateServices())
+        {
+            var service = services.GetRequiredService<BibleService>();
+            foreach (var registered in BibleSource.AvailableSources.Cast<LocalBible>())
+            {
+                var output = Path.Combine(_directory, Path.GetFileName(registered.FilePath));
+                await File.WriteAllTextAsync(input, $"요일4:8 {registered.TranslationName} 테스트 문장");
+                await LocalBibleImporter.ImportAsync(input, output, registered.TranslationName);
+                var source = new LocalBible(output, registered.Id, registered.TranslationName);
+                var bible = Assert.Single(await service.GetBiblesAsync(source));
+                ids.Add(bible.Id);
+                var book = Assert.Single(await service.GetBooksAsync(bible));
+                var chapter = Assert.Single(await service.GetChaptersAsync(book));
+                Assert.Equal($"{registered.TranslationName} 테스트 문장", Assert.Single(await service.GetVersesAsync(chapter)).Text);
+            }
+            Assert.Equal(3, ids.Distinct().Count());
+            await File.WriteAllTextAsync(input, "잘못된 파일");
+            await Assert.ThrowsAsync<InvalidDataException>(() => LocalBibleImporter.ImportAsync(input, Path.Combine(_directory, "easy.json"), "쉬운성경"));
+            await File.WriteAllTextAsync(input, "요일4:8 쉬운성경 교체 문장");
+            await LocalBibleImporter.ImportAsync(input, Path.Combine(_directory, "easy.json"), "쉬운성경");
+        }
+        using var reopened = CreateServices();
+        var reloaded = reopened.GetRequiredService<BibleService>();
+        for (var index = 0; index < ids.Count; index++)
+        {
+            var registered = (LocalBible)BibleSource.AvailableSources[index];
+            var restored = reloaded.FindBible(ids[index])!;
+            Assert.Equal(registered.Id, restored.Source!.Id);
+            var bible = Assert.Single(await reloaded.GetBiblesAsync(new LocalBible(Path.Combine(_directory, Path.GetFileName(registered.FilePath)), registered.Id, registered.TranslationName)));
+            Assert.Equal(ids[index], bible.Id);
+            var book = Assert.Single(await reloaded.GetBooksAsync(bible));
+            var chapter = Assert.Single(await reloaded.GetChaptersAsync(book));
+            var expected = index == 1 ? "쉬운성경 교체 문장" : $"{registered.TranslationName} 테스트 문장";
+            Assert.Equal(expected, Assert.Single(await reloaded.GetVersesAsync(chapter)).Text);
+        }
+    }
 
     private void WriteBible(string text = "테스트 본문 1", string name = "개역개정", string key = "Genesis")
     {

@@ -44,7 +44,7 @@ internal static class PublishedUiCheck
                     try
                     {
                         await form.CheckUiAsync();
-                        File.WriteAllText(report, "UI OK\nBooks=66\nNavigation=3\nHiddenTemplateLibrary=EXPECTED\nTemplateExtraction=OK\nBookSelection=IJohn\nBibleRemoveAdd=OK\nSettings=OK\nPowerPoint=NOT_TESTED\n");
+                        File.WriteAllText(report, "UI OK\nBooks=66\nNavigation=3\nHiddenTemplateLibrary=EXPECTED\nTemplateExtraction=OK\nBookSelection=IJohn\nBibleRemoveAdd=OK\nSettings=OK\nTranslations=3\nTranslationSelection=OK\nPowerPoint=NOT_TESTED\n");
                         result = 0;
                     }
                     catch (Exception ex) { File.WriteAllText(report, ex.ToString()); }

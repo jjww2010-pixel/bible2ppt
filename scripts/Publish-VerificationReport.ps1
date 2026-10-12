@@ -35,7 +35,7 @@ Published EXE checks: $env:EXE_RESULT
 Run: https://github.com/$env:GITHUB_REPOSITORY/actions/runs/$env:GITHUB_RUN_ID
 
 These checks run on a GitHub-hosted Windows machine. Full-format fixtures contain generated test sentences, not scripture text.
-Published EXE checks cover 66 books, 1189 chapters, 31101 individual verse queries, imports, SQLite, Unicode/space paths, and the real MainForm's navigation, book selection, Bible selection and settings/configuration handling.
+Published EXE checks cover 66 books, 1189 chapters, 31101 individual verse queries, imports, SQLite, Unicode/space paths, and the real MainForm's navigation, book selection, Bible selection, three separate translation files and selectors, and settings/configuration handling.
 
 PowerPoint COM rendering: **NOT TESTED**. Microsoft Office is not installed on GitHub-hosted runners.
 GUI diagnostics disable the rendering dependency; they do not bypass the MainForm or its event handlers.

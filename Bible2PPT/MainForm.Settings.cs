@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
+using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Bible2PPT.Services.BibleService;
@@ -13,10 +14,20 @@ namespace Bible2PPT
     {
         private void InitializeSettingsComponent()
         {
+            var translationCombo = new ComboBox
+            {
+                Name = "importTranslationComboBox",
+                DropDownStyle = ComboBoxStyle.DropDownList,
+                Location = new Point(150, 24),
+                Size = new Size(280, 30),
+                DisplayMember = nameof(LocalBible.TranslationName),
+                DataSource = BibleSource.AvailableSources.OfType<LocalBible>().ToArray(),
+            };
+            settingsMultiPanelPage.Controls.Add(translationCombo);
             var importButton = new Button
             {
                 Text = "성경 본문 가져오기",
-                Location = new Point(150, 24),
+                Location = new Point(150, 64),
                 Size = new Size(160, 35),
                 UseVisualStyleBackColor = true,
             };
@@ -27,10 +38,12 @@ namespace Bible2PPT
                     MessageBox.Show(this, "PPT 제작이 끝난 뒤 본문을 교체하세요.", Text);
                     return;
                 }
-                var source = sourceComboBox.SelectedItem as LocalBible;
+                var source = translationCombo.SelectedItem as LocalBible;
                 if (source != null && await ImportLocalBibleAsync(source))
                 {
-                    SourceComboBox_SelectedValueChanged(sourceComboBox, EventArgs.Empty);
+                    if (ReferenceEquals(sourceComboBox.SelectedItem, source))
+                        SourceComboBox_SelectedValueChanged(sourceComboBox, EventArgs.Empty);
+                    else sourceComboBox.SelectedItem = source;
                 }
             };
             settingsMultiPanelPage.Controls.Add(importButton);
@@ -40,7 +53,7 @@ namespace Bible2PPT
         {
             using var dialog = new OpenFileDialog
             {
-                Title = "사용할 개역개정 본문 파일 선택",
+                Title = $"사용할 {source.TranslationName} 본문 파일 선택",
                 Filter = "성경 본문 (*.json;*.txt;*.tsv)|*.json;*.txt;*.tsv|모든 파일 (*.*)|*.*",
                 CheckFileExists = true,
                 Multiselect = false,
@@ -48,7 +61,7 @@ namespace Bible2PPT
             if (dialog.ShowDialog(this) != DialogResult.OK) return false;
             try
             {
-                await LocalBibleImporter.ImportAsync(dialog.FileName, source.FilePath);
+                await LocalBibleImporter.ImportAsync(dialog.FileName, source.FilePath, source.TranslationName);
                 source.Reload();
                 return true;
             }

@@ -67,6 +67,26 @@ public sealed class BuilderTest : IAsyncLifetime
     }
 
     [Fact]
+    public async Task MultipleTranslationsReachThePresentationInSelectionOrder()
+    {
+        var bibles = new List<Bible>();
+        foreach (var source in BibleSource.AvailableSources.Cast<LocalBible>())
+        {
+            var input = Path.Combine(_directory, "translation.txt");
+            var output = Path.Combine(_directory, Path.GetFileName(source.FilePath));
+            await File.WriteAllTextAsync(input, $"요일4:8 {source.TranslationName} 테스트 문장");
+            await LocalBibleImporter.ImportAsync(input, output, source.TranslationName);
+            bibles.Add(Assert.Single(await _services.GetRequiredService<LocalBibleService>().GetBiblesAsync(new LocalBible(output, source.Id, source.TranslationName))));
+        }
+        var job = Job("요일 4:8");
+        job.Bibles = bibles.ToArray();
+        await _builder.Run(job);
+        var writer = Assert.Single(_builder.Writers);
+        Assert.Equal(new[] { "개역개정 테스트 문장", "쉬운성경 테스트 문장", "현대인의 성경 테스트 문장" }, Assert.Single(writer.Translations));
+        Assert.True(writer.Saved);
+    }
+
+    [Fact]
     public async Task SplitsChaptersIntoDistinctOutputFiles()
     {
         await _builder.Run(Job("창1-3", split: true));
@@ -178,6 +198,7 @@ public sealed class BuilderTest : IAsyncLifetime
     {
         public string Output { get; }
         public List<(BookKey Key, int Chapter, int Start, int End, string Text)> Passages { get; } = new();
+        public List<string?[]> Translations { get; } = new();
         public bool Saved, Disposed;
         private readonly TestBuilder _owner;
         public RecordingWriter(string output, TestBuilder owner) { Output = output; _owner = owner; }
@@ -187,7 +208,9 @@ public sealed class BuilderTest : IAsyncLifetime
             await foreach (var row in rows.WithCancellation(token))
             {
                 token.ThrowIfCancellationRequested();
-                var verse = row.First(item => item is not null)!;
+                var values = row.ToArray();
+                Translations.Add(values.Select(item => item?.Text).ToArray());
+                var verse = values.First(item => item is not null)!;
                 Passages.Add((book.Key, chapter.Number, verse.Number, verse.EndNumber ?? verse.Number, verse.Text));
             }
             _owner.AfterAppend?.Invoke();

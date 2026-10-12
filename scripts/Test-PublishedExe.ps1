@@ -66,8 +66,11 @@ try {
 
     $bibleDirectory = Join-Path $isolated 'Bibles'
     New-Item -ItemType Directory $bibleDirectory | Out-Null
-    python tools/import_bible.py $fullText (Join-Path $bibleDirectory 'krv.json') --name '진단용 예시' > (Join-Path $results 'prepare-ui.txt') 2>&1
-    if ($LASTEXITCODE -ne 0) { throw 'Failed to prepare UI fixture.' }
+    foreach ($translation in @(@('krv.json', '개역개정'), @('easy.json', '쉬운성경'), @('modern.json', '현대인의 성경'))) {
+        python tools/import_bible.py $fullText (Join-Path $bibleDirectory $translation[0]) --name $translation[1] >> (Join-Path $results 'prepare-ui.txt') 2>&1
+        if ($LASTEXITCODE -ne 0) { throw 'Failed to prepare UI fixture.' }
+        Invoke-BibleCheck (Join-Path $bibleDirectory $translation[0]) (Join-Path $scratch ($translation[0] + ' report.txt')) 0
+    }
     foreach ($configMode in @('fresh', 'truncated', 'invalid-line-limit')) {
         $configPath = "$exe.cfg"
         if ($configMode -eq 'truncated') { [IO.File]::WriteAllBytes($configPath, [byte[]]@(255,255)) }

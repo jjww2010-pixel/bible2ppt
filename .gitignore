@@ -4,6 +4,8 @@
 # User-specific files
 # User-supplied local Bible text (the format example is tracked).
 Bible2PPT/Bibles/krv.json
+Bible2PPT/Bibles/easy.json
+Bible2PPT/Bibles/modern.json
 local-bible-input/
 __pycache__/
 *.pyc

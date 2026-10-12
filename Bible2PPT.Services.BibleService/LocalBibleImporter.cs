@@ -1,6 +1,7 @@
 using System.Globalization;
 using System.Text;
 using System.Text.Json;
+using System.Text.Json.Nodes;
 using System.Text.RegularExpressions;
 using Bible2PPT.Services.BibleIndexService;
 using Bible2PPT.Sources;
@@ -10,11 +11,13 @@ namespace Bible2PPT.Services.BibleService;
 /// <summary>Imports a supplied Bible file without requiring Python or a network connection.</summary>
 public static class LocalBibleImporter
 {
-    public static async Task ImportAsync(string inputPath, string outputPath)
+    public static async Task ImportAsync(string inputPath, string outputPath, string? translationName = null)
     {
+        if (translationName is not null && string.IsNullOrWhiteSpace(translationName))
+            throw new ArgumentException("번역본 이름이 필요합니다.", nameof(translationName));
         inputPath = Path.GetFullPath(inputPath);
         outputPath = Path.GetFullPath(outputPath);
-        if (string.Equals(inputPath, outputPath, StringComparison.OrdinalIgnoreCase))
+        if (translationName is null && string.Equals(inputPath, outputPath, StringComparison.OrdinalIgnoreCase))
         {
             await new LocalBible(inputPath).GetBiblesOnlineAsync().ConfigureAwait(false);
             return;
@@ -29,8 +32,14 @@ public static class LocalBibleImporter
             {
                 using var document = JsonDocument.Parse(content);
                 json = document.RootElement.ValueKind == JsonValueKind.Array
-                    ? ConvertRows(ReadJsonRows(document.RootElement))
+                    ? ConvertRows(ReadJsonRows(document.RootElement), translationName)
                     : content;
+                if (translationName is not null && document.RootElement.ValueKind == JsonValueKind.Object)
+                {
+                    var renamed = JsonNode.Parse(json)!.AsObject();
+                    renamed["name"] = translationName;
+                    json = renamed.ToJsonString();
+                }
             }
             catch (Exception ex) when (ex is JsonException || ex is KeyNotFoundException || ex is InvalidOperationException || ex is FormatException || ex is OverflowException)
             {
@@ -39,7 +48,7 @@ public static class LocalBibleImporter
         }
         else
         {
-            json = ConvertRows(ReadTextRows(content));
+            json = ConvertRows(ReadTextRows(content), translationName);
         }
 
         Directory.CreateDirectory(Path.GetDirectoryName(outputPath)!);
@@ -140,7 +149,7 @@ public static class LocalBibleImporter
         return new Row(GetBookKey(fields[0]), chapter, verse, fields[3]);
     }
 
-    private static string ConvertRows(IEnumerable<Row> input)
+    private static string ConvertRows(IEnumerable<Row> input, string? translationName)
     {
         var rows = input.ToList();
         if (rows.Count == 0) throw new InvalidDataException("본문 파일에 구절이 없습니다.");
@@ -154,7 +163,7 @@ public static class LocalBibleImporter
 
         var document = new
         {
-            name = "개역개정", languageCode = "ko",
+            name = translationName ?? "개역개정", languageCode = "ko",
             books = rows.GroupBy(row => row.Key).OrderBy(group => group.Key).Select(book => new
             {
                 key = book.Key.ToString(),

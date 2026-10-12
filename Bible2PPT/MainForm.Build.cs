@@ -119,7 +119,7 @@ namespace Bible2PPT
             catch (InvalidDataException ex) when (source is LocalBible)
             {
                 if (DialogResult.Yes == MessageBox.Show(this,
-                    $"{ex.Message}\n\n사용할 개역개정 JSON 또는 TXT 파일을 가져올까요?",
+                    $"{ex.Message}\n\n사용할 {((LocalBible)source).TranslationName} JSON 또는 TXT 파일을 가져올까요?",
                     "로컬 성경 파일 확인", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
                 {
                     if (await ImportLocalBibleAsync((LocalBible)source)) goto RETRY;
