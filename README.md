@@ -1,11 +1,13 @@
 # 사용자 제공 성경 본문 변환본
 
-사용자가 업로드한 현대인의성경.txt와 쉬운성경.txt의 줄 순서에 권·장·절을 부여한 변환 파일입니다.
-각 입력은 CP949 인코딩의 31,102줄입니다. 빈 줄도 절 위치로 유지해 66권·1,189장·31,102개 절 위치에 대응시켰습니다.
+사용자가 업로드한 개역개정 nkrv_bible.txt, 현대인의성경.txt, 쉬운성경.txt를 Bible2PPT용 로컬 JSON으로 변환한 파일입니다.
+현대인의 성경·쉬운성경 입력은 CP949 인코딩의 31,102줄입니다. 빈 줄도 절 위치로 유지해 66권·1,189장·31,102개 절 위치에 대응시켰습니다. 개역개정 입력은 권·장·절 번호가 붙은 UTF-8 파일의 31,325줄이며, 번호 없이 이어진 45줄을 같은 절의 본문에 연결했습니다.
 표준 장·절 배열, 66권의 시작 위치, 현대인의 성경 내 절 참조 표기, 요일 4:8과 마지막 절을 대조했습니다.
 별도 공식 판본과 모든 문장의 정확성·완전성을 대조한 결과는 아닙니다. 현대인의 성경 창22:23의 자기 참조는 아래와 같이 수정했습니다.
 
-[변환본 ZIP 다운로드](https://github.com/jjww2010-pixel/bible2ppt/raw/refs/heads/local-bible-files/BibleTexts.zip)
+[세 번역본 변환 ZIP 다운로드](https://github.com/jjww2010-pixel/bible2ppt/raw/refs/heads/local-bible-files/BibleTexts.zip)
+
+[개역개정 JSON](https://github.com/jjww2010-pixel/bible2ppt/raw/refs/heads/local-bible-files/Bibles/krv.json)
 
 [쉬운성경 JSON](https://github.com/jjww2010-pixel/bible2ppt/raw/refs/heads/local-bible-files/Bibles/easy.json)
 
@@ -18,22 +20,28 @@
 
 ## 적용 방법
 
+[실행 파일·세 번역본 통합 ZIP](https://github.com/jjww2010-pixel/bible2ppt/raw/refs/heads/windows-download/Bible2PPT-v2.2-all-bibles-win-x64.zip)을 사용하면 압축 해제 후 EXE를 실행하는 것만으로 세 번역을 사용할 수 있습니다. 파일 가져오기나 기존 본문 복사가 필요하지 않습니다.
+
+아래 방법은 기존 EXE에서 본문 파일만 갱신하는 경우입니다.
+
 JSON 사용을 권장합니다. JSON에는 원본 대조용 정보도 들어 있으며 선행·후행 공백을 포함한 본문을 보존합니다.
 
 기존 개역개정과 동일한 가져오기 방식입니다. 최신 EXE에서 각 번역을 선택한 후 파일을 한 번씩 가져옵니다. 이미 가져온 경우에도 새 파일을 가져오면 해당 번역만 교체됩니다.
 
 1. ZIP을 압축 해제합니다.
-2. 최신 Bible2PPT에서 설정 화면의 **쉬운성경**을 선택하고 **성경 본문 가져오기**로 `Bibles/easy.json`을 가져옵니다.
-3. **현대인의 성경**을 선택하고 `Bibles/modern.json`을 가져옵니다.
-4. 제작 화면에서 사용할 번역을 선택합니다. 한 번역만 제작하려면 다른 번역을 제작 대상 목록에서 제거합니다.
+2. 최신 Bible2PPT에서 설정 화면의 **개역개정**을 선택하고 **성경 본문 가져오기**로 `Bibles/krv.json`을 가져옵니다.
+3. **쉬운성경**을 선택하고 `Bibles/easy.json`을 가져옵니다.
+4. **현대인의 성경**을 선택하고 `Bibles/modern.json`을 가져옵니다.
+5. 제작 화면에서 사용할 번역을 선택합니다. 한 번역만 제작하려면 다른 번역을 제작 대상 목록에서 제거합니다.
 
-또는 프로그램을 닫은 상태에서 ZIP의 `Bibles/easy.json`, `Bibles/modern.json`을 실행 파일 옆 `Bibles` 폴더에 복사할 수 있습니다.
-기존 `krv.json`은 유지하세요. EXE를 새로 빌드할 필요는 없습니다.
+또는 프로그램을 닫은 상태에서 ZIP의 `Bibles/krv.json`, `Bibles/easy.json`, `Bibles/modern.json`을 실행 파일 옆 `Bibles` 폴더에 복사할 수 있습니다. EXE를 새로 빌드할 필요는 없습니다.
 
 `TXT` 폴더의 번호가 붙은 TXT도 가져올 수 있습니다. 이 형식은 가져오기 과정에서 본문 앞쪽의 공백이 정리될 수 있습니다.
 `Audit` 폴더의 TSV는 원문 대조용이며 가져오기 파일이 아닙니다.
 
 ## 원본에서 확인한 사항
+
+- 개역개정의 번호 없는 본문 45줄을 앞의 해당 절에 연결했습니다. 원본에 빠진 **행24:7**은 갓피아 개역개정(4판)에서 `(없음)` 표기임을 확인해 그대로 추가했습니다. [행24장 출처](https://www.godpia.com/read/reading.asp?ver=gae&vol=act&chap=24). 임의의 본문을 만들지 않았으며 모든 원본 줄을 대조 정보에서 재구성할 수 있습니다.
 
 - 쉬운성경 원본의 7개 공란 **삿20:22–23, 삼하4:6–7, 왕상8:41–42, 렘16:2**를 보충했습니다. 갓피아에서는 앞의 세 묶음을 각각 두 절을 합친 본문으로 제공합니다. 변환본도 같은 절 범위를 사용하며, 어느 절을 조회해도 실제 본문을 반환합니다. 렘16:2는 단독 절 본문을 보충했습니다. 기존 누락 안내는 제거했습니다.
   [사사기 20장](https://www.godpia.com/read/reading.asp?ver=easy&vol=jdg&chap=20), [사무엘하 4장](https://www.godpia.com/read/reading.asp?ver=easy&vol=2sa&chap=4), [열왕기상 8장](https://www.godpia.com/read/reading.asp?ver=easy&vol=1ki&chap=8), [예레미야 16장](https://www.godpia.com/read/reading.asp?ver=easy&vol=jer&chap=16).
@@ -45,8 +53,8 @@ JSON 사용을 권장합니다. JSON에는 원본 대조용 정보도 들어 있
 ## 검사와 원문 보존
 
 `conversion-report.json`에 원본 SHA-256, 권별 시작 줄, 누락 위치와 참조 경고가 있습니다.
-JSON의 `sourceLine`, `originalText`, `sourceMarkers` 정보를 이용해 **두 원본의 모든 줄을 정확히 재구성**하고 문자별 일치를 확인했습니다.
-현대인의 성경은 30,372개 본문 항목이 31,102개 절 위치를 포함하며, 쉬운성경은 복원한 통합 절 3개를 포함해 31,099개 항목이며, 31,102개 절 위치를 모두 포함합니다. 현재 미복원 공란은 없습니다.
+JSON의 `sourceLine`, `originalText`, `sourceMarkers` 정보를 이용해 **현대인의 성경·쉬운성경 원본의 모든 줄을 정확히 재구성**하고 문자별 일치를 확인했습니다.
+현대인의 성경은 30,372개 본문 항목이 31,102개 절 위치를 포함하며, 쉬운성경은 복원한 통합 절 3개를 포함해 31,099개 항목이며, 31,102개 절 위치를 모두 포함합니다. 개역개정은 31,089개 본문 항목이 31,102개 절 위치를 포함하며, `Audit/개역개정_변환대조.json`과 JSON의 원본 줄 정보로 원본 31,325줄을 정확히 재구성할 수 있습니다. 현재 미복원 공란은 없습니다.
 
 `Validation` 폴더에는 현재 프로그램의 C# 본문 조회 코드로 JSON·TXT 각각의 모든 절 요청을 검사한 결과가 있습니다.
 이 검사는 파일 조회·선택과 숫자 대응을 확인하며, 전체 원문을 별도 공식 판본과 대조하는 검사는 아닙니다. 보충한 7개 절은 갓피아의 쉬운성경 표시와 절 범위를 확인했고, 앞뒤 절이 업로드한 번역과 일치하는지 공백·따옴표·소제목 표기를 정규화해 대조했습니다.

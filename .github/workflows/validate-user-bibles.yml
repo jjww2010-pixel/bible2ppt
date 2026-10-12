@@ -33,7 +33,7 @@ jobs:
         shell: pwsh
         run: |
           $ErrorActionPreference = 'Stop'
-          foreach ($file in @('Bibles/easy.json', 'Bibles/modern.json')) {
+          foreach ($file in @('Bibles/krv.json', 'Bibles/easy.json', 'Bibles/modern.json')) {
             $document = Get-Content $file -Raw -Encoding utf8 | ConvertFrom-Json
             foreach ($book in $document.books) {
               foreach ($chapter in $book.chapters) {
@@ -60,12 +60,15 @@ jobs:
           Expand-Archive "runtime-source/Bible2PPT-win-$env:CHECK_ARCHITECTURE.zip" $binary
           $exe = Join-Path $binary 'Bible2PPT.exe'
           $cases = @(
+            @('nkrv-json', 'Bibles/krv.json'),
             @('modern-json', 'Bibles/modern.json'),
             @('easy-json', 'Bibles/easy.json'),
+            @('nkrv-txt', 'TXT/개역개정_권장절정리.txt'),
             @('modern-txt', 'TXT/현대인의성경_권장절정리.txt'),
             @('easy-txt', 'TXT/쉬운성경_권장절정리.txt')
           )
           $checks = @()
+          $uiCheck = $null
           try {
             foreach ($case in $cases) {
               $inputFile = (Resolve-Path $case[1]).Path
@@ -80,11 +83,26 @@ jobs:
               }
               $checks += @{ case = $case[0]; file = $case[1]; inputSHA256 = (Get-FileHash $inputFile -Algorithm SHA256).Hash.ToLowerInvariant(); exitCode = $process.ExitCode }
             }
+            $bibles = Join-Path $binary 'Bibles'
+            New-Item -ItemType Directory -Force $bibles | Out-Null
+            foreach ($name in @('krv.json', 'easy.json', 'modern.json')) {
+              Copy-Item "Bibles/$name" (Join-Path $bibles $name)
+            }
+            $uiReport = Join-Path $results 'all-translations-ui.txt'
+            $uiProcess = Start-Process $exe -ArgumentList @('--check-ui', ('"{0}"' -f $uiReport)) -WorkingDirectory $binary -PassThru
+            $null = $uiProcess.Handle
+            if (!$uiProcess.WaitForExit(180000)) { Stop-Process -Id $uiProcess.Id -Force; throw 'UI check timed out.' }
+            if ($uiProcess.ExitCode -ne 0) { throw "UI failed: $(Get-Content $uiReport -Raw -ErrorAction SilentlyContinue)" }
+            $uiText = Get-Content $uiReport -Raw
+            foreach ($expected in @('UI OK', 'Translations=3', 'TranslationSelection=OK', 'Books=66')) {
+              if ($uiText -notmatch "(?m)^$expected$") { throw "Missing UI result: $expected" }
+            }
+            $uiCheck = @{ exitCode = $uiProcess.ExitCode; report = 'all-translations-ui.txt'; translations = 3; state = 'fresh bundled Bible files' }
           } catch {
             $_ | Out-String | Set-Content (Join-Path $results 'failure.txt') -Encoding utf8
             throw
           } finally {
-            @{ architecture = $env:CHECK_ARCHITECTURE; exeSHA256 = (Get-FileHash $exe -Algorithm SHA256).Hash.ToLowerInvariant(); checks = $checks; powerPoint = 'NOT TESTED' } |
+            @{ architecture = $env:CHECK_ARCHITECTURE; exeSHA256 = (Get-FileHash $exe -Algorithm SHA256).Hash.ToLowerInvariant(); checks = $checks; uiCheck = $uiCheck; powerPoint = 'NOT TESTED' } |
               ConvertTo-Json -Depth 8 | Set-Content (Join-Path $results 'validation.json') -Encoding utf8
           }
       - name: Publish readable results
@@ -101,9 +119,9 @@ jobs:
           $failed = (Test-Path reports/failure.txt) -or !(Test-Path reports/validation.json)
           if (!$failed) {
             $validation = Get-Content reports/validation.json -Raw | ConvertFrom-Json
-            $failed = @($validation.checks).Count -ne 4
+            $failed = @($validation.checks).Count -ne 6 -or $null -eq $validation.uiCheck -or $validation.uiCheck.exitCode -ne 0
           }
-          $summary = "# Converted Bible Windows verification`n`nSource data commit: $env:GITHUB_SHA`n`nArchitecture: $env:CHECK_ARCHITECTURE`n`nFailed: $failed`n`nRun: https://github.com/$env:GITHUB_REPOSITORY/actions/runs/$env:GITHUB_RUN_ID`n`nThe published EXE checks every covered verse query in both uploaded translations, in JSON and TXT forms. Delivered passages are checked for unresolved source gaps and reference markers.`n`nPowerPoint rendering: NOT TESTED.`n"
+          $summary = "# Converted Bible Windows verification`n`nSource data commit: $env:GITHUB_SHA`n`nArchitecture: $env:CHECK_ARCHITECTURE`n`nFailed: $failed`n`nRun: https://github.com/$env:GITHUB_REPOSITORY/actions/runs/$env:GITHUB_RUN_ID`n`nThe published EXE checks every covered verse query in all three uploaded translations, in JSON and TXT forms. Fresh WinForms startup, navigation, and three-translation selection are checked with the real supplied files beside the EXE. Delivered passages are checked for unresolved source gaps and reference markers.`n`nPowerPoint rendering: NOT TESTED.`n"
           Set-Content README.md $summary -Encoding utf8
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'

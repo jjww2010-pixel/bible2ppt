@@ -1,0 +1,981 @@
+{
+  "translation": "개역개정",
+  "sourceFile": "nkrv_bible.txt",
+  "sourceEncoding": "UTF-8",
+  "outputEncoding": "UTF-8",
+  "sourceSHA256": "f17a98158a5fd9e97acf313adbb13da42b28c56140645593a241edab4e69ba71",
+  "sourceLines": 31325,
+  "books": 66,
+  "chapters": 1189,
+  "outputPassages": 31089,
+  "coveredReferences": 31102,
+  "wrappedSourceLinesMerged": 45,
+  "continuations": [
+    {
+      "reference": "창35:22",
+      "sourceLine": 1049
+    },
+    {
+      "reference": "삼상4:1",
+      "sourceLine": 7371
+    },
+    {
+      "reference": "삼상13:15",
+      "sourceLine": 7577
+    },
+    {
+      "reference": "삼하2:4",
+      "sourceLine": 8131
+    },
+    {
+      "reference": "삼하12:15",
+      "sourceLine": 8380
+    },
+    {
+      "reference": "삼하19:8",
+      "sourceLine": 8602
+    },
+    {
+      "reference": "삼하20:10",
+      "sourceLine": 8649
+    },
+    {
+      "reference": "왕하4:25",
+      "sourceLine": 9720
+    },
+    {
+      "reference": "왕하24:20",
+      "sourceLine": 10315
+    },
+    {
+      "reference": "대상29:22",
+      "sourceLine": 11280
+    },
+    {
+      "reference": "느1:1",
+      "sourceLine": 12392
+    },
+    {
+      "reference": "잠10:1",
+      "sourceLine": 16753
+    },
+    {
+      "reference": "잠24:23",
+      "sourceLine": 17199
+    },
+    {
+      "reference": "아7:9",
+      "sourceLine": 17740
+    },
+    {
+      "reference": "아8:5",
+      "sourceLine": 17750
+    },
+    {
+      "reference": "사15:1",
+      "sourceLine": 18068
+    },
+    {
+      "reference": "사17:1",
+      "sourceLine": 18092
+    },
+    {
+      "reference": "사19:1",
+      "sourceLine": 18114
+    },
+    {
+      "reference": "사21:1",
+      "sourceLine": 18146
+    },
+    {
+      "reference": "사21:11",
+      "sourceLine": 18157
+    },
+    {
+      "reference": "사21:13",
+      "sourceLine": 18160
+    },
+    {
+      "reference": "사22:1",
+      "sourceLine": 18166
+    },
+    {
+      "reference": "사23:1",
+      "sourceLine": 18192
+    },
+    {
+      "reference": "사30:6",
+      "sourceLine": 18338
+    },
+    {
+      "reference": "사58:9",
+      "sourceLine": 18911
+    },
+    {
+      "reference": "사59:15",
+      "sourceLine": 18932
+    },
+    {
+      "reference": "렘3:22",
+      "sourceLine": 19143
+    },
+    {
+      "reference": "렘23:9",
+      "sourceLine": 19631
+    },
+    {
+      "reference": "렘52:3",
+      "sourceLine": 20439
+    },
+    {
+      "reference": "옵1:1",
+      "sourceLine": 22675
+    },
+    {
+      "reference": "슥12:1",
+      "sourceLine": 23211
+    },
+    {
+      "reference": "마1:6",
+      "sourceLine": 23316
+    },
+    {
+      "reference": "막6:6",
+      "sourceLine": 24581
+    },
+    {
+      "reference": "눅8:42",
+      "sourceLine": 25466
+    },
+    {
+      "reference": "눅9:43",
+      "sourceLine": 25524
+    },
+    {
+      "reference": "눅23:56",
+      "sourceLine": 26172
+    },
+    {
+      "reference": "요5:9",
+      "sourceLine": 26401
+    },
+    {
+      "reference": "요12:36",
+      "sourceLine": 26799
+    },
+    {
+      "reference": "요18:38",
+      "sourceLine": 27007
+    },
+    {
+      "reference": "행8:1",
+      "sourceLine": 27362
+    },
+    {
+      "reference": "행9:19",
+      "sourceLine": 27421
+    },
+    {
+      "reference": "행10:23",
+      "sourceLine": 27469
+    },
+    {
+      "reference": "롬16:20",
+      "sourceLine": 28574
+    },
+    {
+      "reference": "고전14:33",
+      "sourceLine": 28930
+    },
+    {
+      "reference": "딤전3:16",
+      "sourceLine": 29966
+    }
+  ],
+  "remainingMissingVerses": [],
+  "outputJSON": "Bibles/krv.json",
+  "originalAbsentReferences": [
+    "행24:7"
+  ],
+  "confirmedOmissionsAdded": [
+    {
+      "reference": "행24:7",
+      "text": "(없음)",
+      "sourceURL": "https://www.godpia.com/read/reading.asp?ver=gae&vol=act&chap=24",
+      "provider": "GODpia",
+      "translation": "개역개정(4판)",
+      "verificationRun": "https://github.com/jjww2010-pixel/bible2ppt/actions/runs/38299510718"
+    }
+  ],
+  "originalLinesReconstructExactly": true,
+  "ignoredSourceLines": [
+    {
+      "sourceLine": 426,
+      "text": ""
+    },
+    {
+      "sourceLine": 460,
+      "text": ""
+    },
+    {
+      "sourceLine": 499,
+      "text": ""
+    },
+    {
+      "sourceLine": 576,
+      "text": ""
+    },
+    {
+      "sourceLine": 664,
+      "text": ""
+    },
+    {
+      "sourceLine": 699,
+      "text": ""
+    },
+    {
+      "sourceLine": 735,
+      "text": ""
+    },
+    {
+      "sourceLine": 782,
+      "text": ""
+    },
+    {
+      "sourceLine": 840,
+      "text": ""
+    },
+    {
+      "sourceLine": 884,
+      "text": ""
+    },
+    {
+      "sourceLine": 940,
+      "text": ""
+    },
+    {
+      "sourceLine": 973,
+      "text": ""
+    },
+    {
+      "sourceLine": 994,
+      "text": ""
+    },
+    {
+      "sourceLine": 1026,
+      "text": ""
+    },
+    {
+      "sourceLine": 1057,
+      "text": ""
+    },
+    {
+      "sourceLine": 1101,
+      "text": ""
+    },
+    {
+      "sourceLine": 1138,
+      "text": ""
+    },
+    {
+      "sourceLine": 1169,
+      "text": ""
+    },
+    {
+      "sourceLine": 1193,
+      "text": ""
+    },
+    {
+      "sourceLine": 1217,
+      "text": ""
+    },
+    {
+      "sourceLine": 1275,
+      "text": ""
+    },
+    {
+      "sourceLine": 1709,
+      "text": ""
+    },
+    {
+      "sourceLine": 1735,
+      "text": ""
+    },
+    {
+      "sourceLine": 1768,
+      "text": ""
+    },
+    {
+      "sourceLine": 1804,
+      "text": ""
+    },
+    {
+      "sourceLine": 1834,
+      "text": ""
+    },
+    {
+      "sourceLine": 1845,
+      "text": ""
+    },
+    {
+      "sourceLine": 1897,
+      "text": ""
+    },
+    {
+      "sourceLine": 1920,
+      "text": ""
+    },
+    {
+      "sourceLine": 1952,
+      "text": ""
+    },
+    {
+      "sourceLine": 1980,
+      "text": ""
+    },
+    {
+      "sourceLine": 2017,
+      "text": ""
+    },
+    {
+      "sourceLine": 2034,
+      "text": ""
+    },
+    {
+      "sourceLine": 2062,
+      "text": ""
+    },
+    {
+      "sourceLine": 2088,
+      "text": ""
+    },
+    {
+      "sourceLine": 2115,
+      "text": ""
+    },
+    {
+      "sourceLine": 3083,
+      "text": ""
+    },
+    {
+      "sourceLine": 3092,
+      "text": ""
+    },
+    {
+      "sourceLine": 3152,
+      "text": ""
+    },
+    {
+      "sourceLine": 3210,
+      "text": ""
+    },
+    {
+      "sourceLine": 3244,
+      "text": ""
+    },
+    {
+      "sourceLine": 3295,
+      "text": ""
+    },
+    {
+      "sourceLine": 3326,
+      "text": ""
+    },
+    {
+      "sourceLine": 3364,
+      "text": ""
+    },
+    {
+      "sourceLine": 3392,
+      "text": ""
+    },
+    {
+      "sourceLine": 3417,
+      "text": ""
+    },
+    {
+      "sourceLine": 3451,
+      "text": ""
+    },
+    {
+      "sourceLine": 3519,
+      "text": ""
+    },
+    {
+      "sourceLine": 3575,
+      "text": ""
+    },
+    {
+      "sourceLine": 3622,
+      "text": ""
+    },
+    {
+      "sourceLine": 3992,
+      "text": ""
+    },
+    {
+      "sourceLine": 4019,
+      "text": ""
+    },
+    {
+      "sourceLine": 4043,
+      "text": ""
+    },
+    {
+      "sourceLine": 4080,
+      "text": ""
+    },
+    {
+      "sourceLine": 4132,
+      "text": ""
+    },
+    {
+      "sourceLine": 4166,
+      "text": ""
+    },
+    {
+      "sourceLine": 4212,
+      "text": ""
+    },
+    {
+      "sourceLine": 4400,
+      "text": ""
+    },
+    {
+      "sourceLine": 4436,
+      "text": ""
+    },
+    {
+      "sourceLine": 4478,
+      "text": ""
+    },
+    {
+      "sourceLine": 4509,
+      "text": ""
+    },
+    {
+      "sourceLine": 4535,
+      "text": ""
+    },
+    {
+      "sourceLine": 4554,
+      "text": ""
+    },
+    {
+      "sourceLine": 4620,
+      "text": ""
+    },
+    {
+      "sourceLine": 4644,
+      "text": ""
+    },
+    {
+      "sourceLine": 4676,
+      "text": ""
+    },
+    {
+      "sourceLine": 4717,
+      "text": ""
+    },
+    {
+      "sourceLine": 4734,
+      "text": ""
+    },
+    {
+      "sourceLine": 4789,
+      "text": ""
+    },
+    {
+      "sourceLine": 4832,
+      "text": ""
+    },
+    {
+      "sourceLine": 4889,
+      "text": ""
+    },
+    {
+      "sourceLine": 4919,
+      "text": ""
+    },
+    {
+      "sourceLine": 4954,
+      "text": ""
+    },
+    {
+      "sourceLine": 7519,
+      "text": ""
+    },
+    {
+      "sourceLine": 7535,
+      "text": ""
+    },
+    {
+      "sourceLine": 7561,
+      "text": ""
+    },
+    {
+      "sourceLine": 8529,
+      "text": ""
+    },
+    {
+      "sourceLine": 8559,
+      "text": ""
+    },
+    {
+      "sourceLine": 8593,
+      "text": ""
+    },
+    {
+      "sourceLine": 8638,
+      "text": ""
+    },
+    {
+      "sourceLine": 8666,
+      "text": ""
+    },
+    {
+      "sourceLine": 8689,
+      "text": ""
+    },
+    {
+      "sourceLine": 8780,
+      "text": ""
+    },
+    {
+      "sourceLine": 8859,
+      "text": ""
+    },
+    {
+      "sourceLine": 9075,
+      "text": ""
+    },
+    {
+      "sourceLine": 9142,
+      "text": ""
+    },
+    {
+      "sourceLine": 11027,
+      "text": ""
+    },
+    {
+      "sourceLine": 12589,
+      "text": ""
+    },
+    {
+      "sourceLine": 12721,
+      "text": ""
+    },
+    {
+      "sourceLine": 12769,
+      "text": ""
+    },
+    {
+      "sourceLine": 17515,
+      "text": ""
+    },
+    {
+      "sourceLine": 17528,
+      "text": ""
+    },
+    {
+      "sourceLine": 17558,
+      "text": ""
+    },
+    {
+      "sourceLine": 17594,
+      "text": ""
+    },
+    {
+      "sourceLine": 17615,
+      "text": ""
+    },
+    {
+      "sourceLine": 17626,
+      "text": ""
+    },
+    {
+      "sourceLine": 17791,
+      "text": ""
+    },
+    {
+      "sourceLine": 19120,
+      "text": ""
+    },
+    {
+      "sourceLine": 19147,
+      "text": ""
+    },
+    {
+      "sourceLine": 19179,
+      "text": ""
+    },
+    {
+      "sourceLine": 19211,
+      "text": ""
+    },
+    {
+      "sourceLine": 19242,
+      "text": ""
+    },
+    {
+      "sourceLine": 19277,
+      "text": ""
+    },
+    {
+      "sourceLine": 19300,
+      "text": ""
+    },
+    {
+      "sourceLine": 19327,
+      "text": ""
+    },
+    {
+      "sourceLine": 19353,
+      "text": ""
+    },
+    {
+      "sourceLine": 19377,
+      "text": ""
+    },
+    {
+      "sourceLine": 19395,
+      "text": ""
+    },
+    {
+      "sourceLine": 19423,
+      "text": ""
+    },
+    {
+      "sourceLine": 19446,
+      "text": ""
+    },
+    {
+      "sourceLine": 19468,
+      "text": ""
+    },
+    {
+      "sourceLine": 19490,
+      "text": ""
+    },
+    {
+      "sourceLine": 19518,
+      "text": ""
+    },
+    {
+      "sourceLine": 19542,
+      "text": ""
+    },
+    {
+      "sourceLine": 19558,
+      "text": ""
+    },
+    {
+      "sourceLine": 19577,
+      "text": ""
+    },
+    {
+      "sourceLine": 19757,
+      "text": ""
+    },
+    {
+      "sourceLine": 19775,
+      "text": ""
+    },
+    {
+      "sourceLine": 19808,
+      "text": ""
+    },
+    {
+      "sourceLine": 19833,
+      "text": ""
+    },
+    {
+      "sourceLine": 19874,
+      "text": ""
+    },
+    {
+      "sourceLine": 19917,
+      "text": ""
+    },
+    {
+      "sourceLine": 19943,
+      "text": ""
+    },
+    {
+      "sourceLine": 19966,
+      "text": ""
+    },
+    {
+      "sourceLine": 19986,
+      "text": ""
+    },
+    {
+      "sourceLine": 20019,
+      "text": ""
+    },
+    {
+      "sourceLine": 20041,
+      "text": ""
+    },
+    {
+      "sourceLine": 20088,
+      "text": ""
+    },
+    {
+      "sourceLine": 20105,
+      "text": ""
+    },
+    {
+      "sourceLine": 20124,
+      "text": ""
+    },
+    {
+      "sourceLine": 20147,
+      "text": ""
+    },
+    {
+      "sourceLine": 20161,
+      "text": ""
+    },
+    {
+      "sourceLine": 20192,
+      "text": ""
+    },
+    {
+      "sourceLine": 20198,
+      "text": ""
+    },
+    {
+      "sourceLine": 20227,
+      "text": ""
+    },
+    {
+      "sourceLine": 20235,
+      "text": ""
+    },
+    {
+      "sourceLine": 20283,
+      "text": ""
+    },
+    {
+      "sourceLine": 20323,
+      "text": ""
+    },
+    {
+      "sourceLine": 20370,
+      "text": ""
+    },
+    {
+      "sourceLine": 20435,
+      "text": ""
+    },
+    {
+      "sourceLine": 20493,
+      "text": ""
+    },
+    {
+      "sourceLine": 20516,
+      "text": ""
+    },
+    {
+      "sourceLine": 20583,
+      "text": ""
+    },
+    {
+      "sourceLine": 20606,
+      "text": ""
+    },
+    {
+      "sourceLine": 24574,
+      "text": ""
+    },
+    {
+      "sourceLine": 24632,
+      "text": ""
+    },
+    {
+      "sourceLine": 24670,
+      "text": ""
+    },
+    {
+      "sourceLine": 24709,
+      "text": ""
+    },
+    {
+      "sourceLine": 24760,
+      "text": ""
+    },
+    {
+      "sourceLine": 24813,
+      "text": ""
+    },
+    {
+      "sourceLine": 24847,
+      "text": ""
+    },
+    {
+      "sourceLine": 24892,
+      "text": ""
+    },
+    {
+      "sourceLine": 24930,
+      "text": ""
+    },
+    {
+      "sourceLine": 25003,
+      "text": ""
+    },
+    {
+      "sourceLine": 25051,
+      "text": ""
+    },
+    {
+      "sourceLine": 27495,
+      "text": ""
+    },
+    {
+      "sourceLine": 27526,
+      "text": ""
+    },
+    {
+      "sourceLine": 27552,
+      "text": ""
+    },
+    {
+      "sourceLine": 27605,
+      "text": ""
+    },
+    {
+      "sourceLine": 27634,
+      "text": ""
+    },
+    {
+      "sourceLine": 27675,
+      "text": ""
+    },
+    {
+      "sourceLine": 27716,
+      "text": ""
+    },
+    {
+      "sourceLine": 27751,
+      "text": ""
+    },
+    {
+      "sourceLine": 27780,
+      "text": ""
+    },
+    {
+      "sourceLine": 27822,
+      "text": ""
+    },
+    {
+      "sourceLine": 27861,
+      "text": ""
+    },
+    {
+      "sourceLine": 27902,
+      "text": ""
+    },
+    {
+      "sourceLine": 27933,
+      "text": ""
+    },
+    {
+      "sourceLine": 27969,
+      "text": ""
+    },
+    {
+      "sourceLine": 27996,
+      "text": ""
+    },
+    {
+      "sourceLine": 28024,
+      "text": ""
+    },
+    {
+      "sourceLine": 28057,
+      "text": ""
+    },
+    {
+      "sourceLine": 28102,
+      "text": ""
+    },
+    {
+      "sourceLine": 28166,
+      "text": ""
+    },
+    {
+      "sourceLine": 28196,
+      "text": ""
+    },
+    {
+      "sourceLine": 28228,
+      "text": ""
+    },
+    {
+      "sourceLine": 28254,
+      "text": ""
+    },
+    {
+      "sourceLine": 28276,
+      "text": ""
+    },
+    {
+      "sourceLine": 28300,
+      "text": ""
+    },
+    {
+      "sourceLine": 28326,
+      "text": ""
+    },
+    {
+      "sourceLine": 28366,
+      "text": ""
+    },
+    {
+      "sourceLine": 28399,
+      "text": ""
+    },
+    {
+      "sourceLine": 28421,
+      "text": ""
+    },
+    {
+      "sourceLine": 28458,
+      "text": ""
+    },
+    {
+      "sourceLine": 28480,
+      "text": ""
+    },
+    {
+      "sourceLine": 28495,
+      "text": ""
+    },
+    {
+      "sourceLine": 28519,
+      "text": ""
+    },
+    {
+      "sourceLine": 28553,
+      "text": ""
+    },
+    {
+      "sourceLine": 30513,
+      "text": ""
+    },
+    {
+      "sourceLine": 30540,
+      "text": ""
+    },
+    {
+      "sourceLine": 30559,
+      "text": ""
+    },
+    {
+      "sourceLine": 30577,
+      "text": ""
+    }
+  ]
+}
