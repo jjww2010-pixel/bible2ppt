@@ -372,7 +372,7 @@
     "books": 66,
     "chapters": 1189,
     "sourceVerseSlots": 31102,
-    "outputPassages": 31102,
+    "outputPassages": 31099,
     "coveredReferences": 31102,
     "sameVerseMarkers": 0,
     "mergedConsecutiveMarkers": 0,
@@ -762,6 +762,74 @@
       }
     ],
     "outputJSON": "Bibles/easy.json",
-    "outputTXT": "TXT/쉬운성경_권장절정리.txt"
+    "outputTXT": "TXT/쉬운성경_권장절정리.txt",
+    "repairedOriginalVerses": [
+      {
+        "reference": "삿20:22",
+        "sourceLine": 7077,
+        "sourceRange": [
+          22,
+          23
+        ],
+        "sourceURL": "https://www.godpia.com/read/reading.asp?ver=easy&vol=jdg&chap=20"
+      },
+      {
+        "reference": "삿20:23",
+        "sourceLine": 7078,
+        "sourceRange": [
+          22,
+          23
+        ],
+        "sourceURL": "https://www.godpia.com/read/reading.asp?ver=easy&vol=jdg&chap=20"
+      },
+      {
+        "reference": "삼하4:6",
+        "sourceLine": 8127,
+        "sourceRange": [
+          6,
+          7
+        ],
+        "sourceURL": "https://www.godpia.com/read/reading.asp?ver=easy&vol=2sa&chap=4"
+      },
+      {
+        "reference": "삼하4:7",
+        "sourceLine": 8128,
+        "sourceRange": [
+          6,
+          7
+        ],
+        "sourceURL": "https://www.godpia.com/read/reading.asp?ver=easy&vol=2sa&chap=4"
+      },
+      {
+        "reference": "왕상8:41",
+        "sourceLine": 9027,
+        "sourceRange": [
+          41,
+          42
+        ],
+        "sourceURL": "https://www.godpia.com/read/reading.asp?ver=easy&vol=1ki&chap=8"
+      },
+      {
+        "reference": "왕상8:42",
+        "sourceLine": 9028,
+        "sourceRange": [
+          41,
+          42
+        ],
+        "sourceURL": "https://www.godpia.com/read/reading.asp?ver=easy&vol=1ki&chap=8"
+      },
+      {
+        "reference": "렘16:2",
+        "sourceLine": 19339,
+        "sourceRange": [
+          2,
+          2
+        ],
+        "sourceURL": "https://www.godpia.com/read/reading.asp?ver=easy&vol=jer&chap=16"
+      }
+    ],
+    "remainingMissingVerses": [],
+    "recoveredCombinedPassages": 3,
+    "sourceRecoveryRun": "https://github.com/jjww2010-pixel/bible2ppt/actions/runs/38293477627"
   }
 ]

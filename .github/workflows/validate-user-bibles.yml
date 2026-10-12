@@ -29,6 +29,25 @@ jobs:
         with:
           ref: 6b1a50fbfd70cbb2373653f3453f0a8a117157e7
           path: runtime-source
+      - name: Reject unresolved source gaps in delivered passages
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          foreach ($file in @('Bibles/easy.json', 'Bibles/modern.json')) {
+            $document = Get-Content $file -Raw -Encoding utf8 | ConvertFrom-Json
+            foreach ($book in $document.books) {
+              foreach ($chapter in $book.chapters) {
+                foreach ($verse in $chapter.verses) {
+                  if ($verse.sourceBlank -or $verse.unresolvedSourceReference -or
+                      [string]::IsNullOrWhiteSpace($verse.text) -or
+                      $verse.text.StartsWith('[원본 본문 누락:') -or
+                      $verse.text -match '^\s*\(\d+절과 같음\)\s*$') {
+                    throw "Unresolved delivered passage: $file $($book.key) $($chapter.number):$($verse.number)"
+                  }
+                }
+              }
+            }
+          }
       - name: Run each converted JSON and TXT with the actual EXE
         shell: pwsh
         env:
@@ -84,7 +103,7 @@ jobs:
             $validation = Get-Content reports/validation.json -Raw | ConvertFrom-Json
             $failed = @($validation.checks).Count -ne 4
           }
-          $summary = "# Converted Bible Windows verification`n`nSource data commit: $env:GITHUB_SHA`n`nArchitecture: $env:CHECK_ARCHITECTURE`n`nFailed: $failed`n`nRun: https://github.com/$env:GITHUB_REPOSITORY/actions/runs/$env:GITHUB_RUN_ID`n`nThe published EXE checks every covered verse query in both uploaded translations, in JSON and TXT forms. Missing original passages remain explicitly marked.`n`nPowerPoint rendering: NOT TESTED.`n"
+          $summary = "# Converted Bible Windows verification`n`nSource data commit: $env:GITHUB_SHA`n`nArchitecture: $env:CHECK_ARCHITECTURE`n`nFailed: $failed`n`nRun: https://github.com/$env:GITHUB_REPOSITORY/actions/runs/$env:GITHUB_RUN_ID`n`nThe published EXE checks every covered verse query in both uploaded translations, in JSON and TXT forms. Delivered passages are checked for unresolved source gaps and reference markers.`n`nPowerPoint rendering: NOT TESTED.`n"
           Set-Content README.md $summary -Encoding utf8
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'

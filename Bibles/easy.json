@@ -36585,17 +36585,33 @@
             },
             {
               "number": 22,
-              "text": "[원본 본문 누락: 삿20:22]",
+              "text": "이스라엘 사람들은 여호와 앞에 나아가서 저녁 때까지 소리내어 울었습니다. 그들은 여호와께 \"우리 친척인 베냐민 사람들과 다시 싸우러 나가야 합니까?\" 하고 물었습니다. 여호와께서는 \"나가서 그들과 싸워라\" 하고 대답하셨습니다. 이스라엘 사람들은 서로 용기를 북돋웠습니다. 그리고 나서 그들은 첫째 날과 같은 대형으로 베냐민 사람들과 마주 섰습니다.",
               "sourceLine": 7077,
               "originalText": "",
-              "sourceBlank": true
-            },
-            {
-              "number": 23,
-              "text": "[원본 본문 누락: 삿20:23]",
-              "sourceLine": 7078,
-              "originalText": "",
-              "sourceBlank": true
+              "endNumber": 23,
+              "sourceRepair": {
+                "provider": "GODpia",
+                "translation": "쉬운성경",
+                "sourceURL": "https://www.godpia.com/read/reading.asp?ver=easy&vol=jdg&chap=20",
+                "bodyURL": "https://www.godpia.com/read/reading_body.asp",
+                "sourceRange": [
+                  22,
+                  23
+                ],
+                "sourceTextSHA256": "f8fbfd9c8a223d3b0dcadaea9aa7e8135759641524fea3517d699c0ef7ea77c8",
+                "neighborVersesMatched": [
+                  21,
+                  24
+                ],
+                "verificationRun": "https://github.com/jjww2010-pixel/bible2ppt/actions/runs/38293477627"
+              },
+              "sourceMarkers": [
+                {
+                  "number": 23,
+                  "sourceLine": 7078,
+                  "text": ""
+                }
+              ]
             },
             {
               "number": 24,
@@ -42060,17 +42076,33 @@
             },
             {
               "number": 6,
-              "text": "[원본 본문 누락: 삼하4:6]",
+              "text": "그들은 집 한가운데로 들어갔습니다. 레갑과 바아나는 밀을 가지러 온 체했습니다. 이스보셋은 안방 침대 위에 누워 있었습니다. 레갑과 바아나는 이스보셋의 배를 찌르고, 이스보셋의 머리를 베어 가지고 도망쳤습니다. 그들은 밤새도록 요단 강 계곡을 따라 걸었습니다.",
               "sourceLine": 8127,
               "originalText": "",
-              "sourceBlank": true
-            },
-            {
-              "number": 7,
-              "text": "[원본 본문 누락: 삼하4:7]",
-              "sourceLine": 8128,
-              "originalText": "",
-              "sourceBlank": true
+              "endNumber": 7,
+              "sourceRepair": {
+                "provider": "GODpia",
+                "translation": "쉬운성경",
+                "sourceURL": "https://www.godpia.com/read/reading.asp?ver=easy&vol=2sa&chap=4",
+                "bodyURL": "https://www.godpia.com/read/reading_body.asp",
+                "sourceRange": [
+                  6,
+                  7
+                ],
+                "sourceTextSHA256": "c1c30108217f3aea9559eb68797bceac342265f30b16c4bf022361d066e6aba2",
+                "neighborVersesMatched": [
+                  5,
+                  8
+                ],
+                "verificationRun": "https://github.com/jjww2010-pixel/bible2ppt/actions/runs/38293477627"
+              },
+              "sourceMarkers": [
+                {
+                  "number": 7,
+                  "sourceLine": 8128,
+                  "text": ""
+                }
+              ]
             },
             {
               "number": 8,
@@ -46711,17 +46743,33 @@
             },
             {
               "number": 41,
-              "text": "[원본 본문 누락: 왕상8:41]",
+              "text": "이스라엘에 속하지 아니한 외국인이 주의 크신 이름과 주께서 행하신 큰 일에 대해 듣고 먼 땅에서 와서 이 성전을 향하여 기도하면,",
               "sourceLine": 9027,
               "originalText": "",
-              "sourceBlank": true
-            },
-            {
-              "number": 42,
-              "text": "[원본 본문 누락: 왕상8:42]",
-              "sourceLine": 9028,
-              "originalText": "",
-              "sourceBlank": true
+              "endNumber": 42,
+              "sourceRepair": {
+                "provider": "GODpia",
+                "translation": "쉬운성경",
+                "sourceURL": "https://www.godpia.com/read/reading.asp?ver=easy&vol=1ki&chap=8",
+                "bodyURL": "https://www.godpia.com/read/reading_body.asp",
+                "sourceRange": [
+                  41,
+                  42
+                ],
+                "sourceTextSHA256": "34e40093a8d27234c76b820340821da04f3bd137d2eb9297b8fd2e53f9342e89",
+                "neighborVersesMatched": [
+                  40,
+                  43
+                ],
+                "verificationRun": "https://github.com/jjww2010-pixel/bible2ppt/actions/runs/38293477627"
+              },
+              "sourceMarkers": [
+                {
+                  "number": 42,
+                  "sourceLine": 9028,
+                  "text": ""
+                }
+              ]
             },
             {
               "number": 43,
@@ -100676,10 +100724,25 @@
             },
             {
               "number": 2,
-              "text": "[원본 본문 누락: 렘16:2]",
+              "text": "\"너는 결혼하지 말아야 한다. 이 곳에서 아들이나 딸을 낳지 말아야 한다.\"",
               "sourceLine": 19339,
               "originalText": "",
-              "sourceBlank": true
+              "sourceRepair": {
+                "provider": "GODpia",
+                "translation": "쉬운성경",
+                "sourceURL": "https://www.godpia.com/read/reading.asp?ver=easy&vol=jer&chap=16",
+                "bodyURL": "https://www.godpia.com/read/reading_body.asp",
+                "sourceRange": [
+                  2,
+                  2
+                ],
+                "sourceTextSHA256": "e6d4dfdecc28ae420eb0038a0154cda7702a81857138051cef7447aa2337a3d2",
+                "neighborVersesMatched": [
+                  1,
+                  3
+                ],
+                "verificationRun": "https://github.com/jjww2010-pixel/bible2ppt/actions/runs/38293477627"
+              }
             },
             {
               "number": 3,

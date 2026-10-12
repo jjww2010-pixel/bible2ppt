@@ -6,20 +6,12 @@
     "remainingUnresolvedReferences": []
   },
   "easy": {
-    "unresolvedReferences": [
-      "삿20:22",
-      "삿20:23",
-      "삼하4:6",
-      "삼하4:7",
-      "왕상8:41",
-      "왕상8:42",
-      "렘16:2"
-    ],
-    "status": "Not restored: matching replacement text has not been obtained. No other translation was substituted.",
+    "unresolvedReferences": [],
+    "status": "Restored all seven original blank slots from the current GODpia Easy Bible reader. Three two-verse passages are stored as combined ranges.",
     "checkedSources": [
       {
         "provider": "Godpia",
-        "result": "Old public reading URLs redirect to the homepage rather than Bible text."
+        "result": "Current reader moved to www.godpia.com/read/reading.asp and loads reading_body.asp. Its Easy Bible responses contain all seven references. Neighboring supplied verses match."
       },
       {
         "provider": "Godpeople",
@@ -33,7 +25,84 @@
       {
         "provider": "HolyBible / BibleNote",
         "result": "Old Easy Bible entry point does not offer Easy Bible in its reading controls. CGI translation parameters returned other translations; mismatched passages were rejected."
+      },
+      {
+        "provider": "Korean Bible Society",
+        "translation": "개역개정",
+        "result": "All seven requested verse numbers have real text. The six-version selection list does not include Easy Bible."
+      },
+      {
+        "provider": "GOODTV",
+        "result": "Public GET and POST attempts returned HTTP 403; verse absence was not established."
       }
-    ]
+    ],
+    "repairedReferences": [
+      {
+        "reference": "삿20:22",
+        "sourceLine": 7077,
+        "sourceRange": [
+          22,
+          23
+        ],
+        "sourceURL": "https://www.godpia.com/read/reading.asp?ver=easy&vol=jdg&chap=20"
+      },
+      {
+        "reference": "삿20:23",
+        "sourceLine": 7078,
+        "sourceRange": [
+          22,
+          23
+        ],
+        "sourceURL": "https://www.godpia.com/read/reading.asp?ver=easy&vol=jdg&chap=20"
+      },
+      {
+        "reference": "삼하4:6",
+        "sourceLine": 8127,
+        "sourceRange": [
+          6,
+          7
+        ],
+        "sourceURL": "https://www.godpia.com/read/reading.asp?ver=easy&vol=2sa&chap=4"
+      },
+      {
+        "reference": "삼하4:7",
+        "sourceLine": 8128,
+        "sourceRange": [
+          6,
+          7
+        ],
+        "sourceURL": "https://www.godpia.com/read/reading.asp?ver=easy&vol=2sa&chap=4"
+      },
+      {
+        "reference": "왕상8:41",
+        "sourceLine": 9027,
+        "sourceRange": [
+          41,
+          42
+        ],
+        "sourceURL": "https://www.godpia.com/read/reading.asp?ver=easy&vol=1ki&chap=8"
+      },
+      {
+        "reference": "왕상8:42",
+        "sourceLine": 9028,
+        "sourceRange": [
+          41,
+          42
+        ],
+        "sourceURL": "https://www.godpia.com/read/reading.asp?ver=easy&vol=1ki&chap=8"
+      },
+      {
+        "reference": "렘16:2",
+        "sourceLine": 19339,
+        "sourceRange": [
+          2,
+          2
+        ],
+        "sourceURL": "https://www.godpia.com/read/reading.asp?ver=easy&vol=jer&chap=16"
+      }
+    ],
+    "verificationRun": "https://github.com/jjww2010-pixel/bible2ppt/actions/runs/38293477627",
+    "evidenceSourceCommit": "957664e4cec483a801ed81fb4de517ee599732e2",
+    "evidenceReportCommit": "de90868b71b4f133c8da6bb1b1ed668e8f7be13b"
   }
 }
