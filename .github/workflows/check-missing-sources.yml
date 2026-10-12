@@ -1,0 +1,26 @@
+name: Check missing source verses
+on:
+  push:
+    branches: [local-bible-files]
+    paths: ['tools/check_missing_sources.py', '.github/workflows/check-missing-sources.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compare public provider text with supplied adjacent verses
+        run: python tools/check_missing_sources.py "$RUNNER_TEMP/source-check"
+      - name: Publish result
+        run: |
+          report_branch="verification-missing-sources-${GITHUB_SHA}-${GITHUB_RUN_ID}"
+          git switch --orphan "$report_branch"
+          cp "$RUNNER_TEMP/source-check/source-check.json" .
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add source-check.json
+          git commit -m 'Record source checks for missing supplied verse slots'
+          git push origin "HEAD:refs/heads/$report_branch"
