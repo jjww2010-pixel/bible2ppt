@@ -10,20 +10,12 @@
     "books": 66,
     "chapters": 1189,
     "sourceVerseSlots": 31102,
-    "outputPassages": 30373,
+    "outputPassages": 30372,
     "coveredReferences": 31102,
     "sameVerseMarkers": 733,
-    "mergedConsecutiveMarkers": 729,
+    "mergedConsecutiveMarkers": 730,
     "resolvedNonconsecutiveMarkers": 3,
     "missingOriginalVerses": [],
-    "sourceWarnings": [
-      {
-        "reference": "창22:23",
-        "sourceLine": 571,
-        "originalText": "(23절과 같음)",
-        "reason": "Source refers to itself or to an unavailable verse; original text retained."
-      }
-    ],
     "bookBoundaries": [
       {
         "book": "Genesis",
@@ -357,7 +349,17 @@
       }
     ],
     "outputJSON": "Bibles/modern.json",
-    "outputTXT": "TXT/현대인의성경_권장절정리.txt"
+    "outputTXT": "TXT/현대인의성경_권장절정리.txt",
+    "resolvedSourceWarnings": [
+      {
+        "reference": "창22:23",
+        "sourceLine": 571,
+        "originalText": "(23절과 같음)",
+        "reason": "Source refers to itself or to an unavailable verse; original text retained.",
+        "resolution": "Merged into the preceding supplied passage: Genesis 22:22–23; no text invented or obtained externally."
+      }
+    ],
+    "sourceWarnings": []
   },
   {
     "translation": "쉬운성경",

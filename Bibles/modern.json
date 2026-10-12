@@ -3003,13 +3003,17 @@
             {
               "number": 22,
               "text": "\"게셋, 하소, 빌다스, 이들랍, 리브가의 아버지인 브두엘이었다. \"",
-              "sourceLine": 570
-            },
-            {
-              "number": 23,
-              "text": "(23절과 같음)",
-              "sourceLine": 571,
-              "unresolvedSourceReference": 23
+              "sourceLine": 570,
+              "endNumber": 23,
+              "sourceMarkers": [
+                {
+                  "number": 23,
+                  "sourceLine": 571,
+                  "text": "(23절과 같음)",
+                  "correctedSourceReference": 22,
+                  "reason": "The preceding supplied verse already includes Bethuel as Rebekah’s father; repair the self-reference as the combined 22–23 passage."
+                }
+              ]
             },
             {
               "number": 24,
