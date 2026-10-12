@@ -14,11 +14,10 @@ import urllib.parse
 import urllib.request
 from bs4 import BeautifulSoup
 
-CASES = [('Judges','jdg',7,20,[22,23]), ('IISamuel','2sa',10,4,[6,7]),
-         ('IKings','1ki',11,8,[41,42]), ('Jeremiah','jer',24,16,[2])]
+CASES = [('Acts','act',44,24,[7])]
 TASKS = []
 for key,online,number,chapter,verses in CASES:
-    for ver in ['easy','gae']:
+    for ver in ['gae']:
         TASKS.append({'provider':'Godpia','translation':ver,'book':key,'chapter':chapter,'targets':verses,
                       'url':f'https://www.godpia.com/read/reading.asp?ver={ver}&vol={online}&chap={chapter}'})
         TASKS.append({'provider':'Godpia','translation':ver,'book':key,'chapter':chapter,'targets':verses,
@@ -37,6 +36,7 @@ TASKS.extend([
     {'provider':'GOODTV','url':'https://goodtvbible.goodtv.co.kr/bible.asp'},
     {'provider':'Korean Bible Society','url':'https://www.bskorea.or.kr/bible/korbibReadpage.php'},
 ])
+TASKS=[t for t in TASKS if t['provider'] in ['Godpia','Korean Bible Society'] and t.get('book')]
 
 
 def text_only(value):
