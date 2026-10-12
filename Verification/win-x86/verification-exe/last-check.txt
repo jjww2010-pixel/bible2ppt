@@ -1,1 +1,1 @@
---check-bible / C:\Users\runneradmin\AppData\Local\Temp\Bible2PPT smoke 0b0fb8df-3ee6-4eaf-87db-447e4df0af1c\bad TXT input.txt / expected=1 / started=2026-10-11T16:28:34.8992070Z
+--check-bible / C:\Users\runneradmin\AppData\Local\Temp\Bible2PPT smoke a67456f9-3137-4abb-bfa0-2d5c2c7e3764\bad TXT input.txt / expected=1 / started=2026-10-12T16:31:42.0640740Z

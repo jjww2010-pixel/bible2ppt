@@ -1,0 +1,7 @@
+Books=66
+Chapters=1189
+Verses=31088
+CoveredVerses=31101
+QueriesChecked=31101
+EmptySources=OK
+PowerPoint=NOT_TESTED

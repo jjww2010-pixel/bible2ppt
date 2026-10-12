@@ -6,4 +6,6 @@ TemplateExtraction=OK
 BookSelection=IJohn
 BibleRemoveAdd=OK
 Settings=OK
+Translations=3
+TranslationSelection=OK
 PowerPoint=NOT_TESTED
