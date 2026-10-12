@@ -1,0 +1,106 @@
+[
+  {
+    "url": "http://www.holybible.or.kr/B_AGAPE/",
+    "status": 200,
+    "finalURL": "http://www.holybible.or.kr/B_AGAPE/",
+    "bytes": 9121,
+    "title": "다국어 성경 Holy-Bible",
+    "links": [
+      [
+        "http://www.holybible.or.kr/",
+        ""
+      ],
+      [
+        "mailto:holybible.orkr@gmail.com",
+        "holybible.orkr@gmail.com"
+      ],
+      [
+        "http://www.holybible.or.kr/mobile/",
+        "mobile용 HolyBible로 가기(시험중)"
+      ]
+    ],
+    "frames": [
+      "https://www.googletagmanager.com/ns.html?id=GTM-NX3PB98"
+    ],
+    "locations": []
+  },
+  {
+    "url": "https://holybible.biblenote.kr/",
+    "status": 200,
+    "finalURL": "https://www.biblenote.kr/",
+    "bytes": 65906,
+    "title": "BibleNote 홀리바이블 - 22개 번역본 무료 성경읽기·통합검색·필사",
+    "links": [
+      [
+        "/read.html",
+        "📖성경읽기"
+      ],
+      [
+        "/bible_reading_plan.html",
+        "🗓️일독"
+      ],
+      [
+        "https://www.biblenote.kr/typing",
+        "✍️성경필사"
+      ],
+      [
+        "/search_unified.html?type=dictionary",
+        "📚성경사전"
+      ],
+      [
+        "/bible_reading_plan.html",
+        "달력"
+      ],
+      [
+        "/bible_reading_plan.html",
+        "불러오는 중…"
+      ],
+      [
+        "/bible_reading_plan.html",
+        "오늘 읽고 체크하기"
+      ],
+      [
+        "/bible_print.html",
+        "성경 본문 출력›"
+      ],
+      [
+        "/board.html",
+        "성경공부 자료방›"
+      ],
+      [
+        "https://kcm.kr/dic.php",
+        "KCM 성경연구↗"
+      ],
+      [
+        "https://www.bible.com",
+        "YouVersion↗"
+      ],
+      [
+        "mailto:holybible.orkr@gmail.com",
+        "holybible.orkr@gmail.com"
+      ],
+      [
+        "/read.html",
+        "성경읽기"
+      ],
+      [
+        "/bible_reading_plan.html",
+        "일독"
+      ],
+      [
+        "/bible_reading_plan.html",
+        "일독 화면에서 확인"
+      ],
+      [
+        "/bible_reading_plan.html",
+        "일독 화면으로"
+      ],
+      [
+        "/read.html",
+        "성경 읽으러 가기"
+      ]
+    ],
+    "frames": [],
+    "locations": []
+  }
+]
