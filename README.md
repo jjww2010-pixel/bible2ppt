@@ -54,6 +54,8 @@ JSON의 `sourceLine`, `originalText`, `sourceMarkers` 정보를 이용해 **두 
 
 실제 Windows 검사 결과:
 
-[Windows 실행 검사](https://github.com/jjww2010-pixel/bible2ppt/actions/runs/38290149284)에서 x64·x86 배포 EXE로 두 JSON·TXT의 모든 절 조회가 통과했습니다.
+[Windows 실행 검사](https://github.com/jjww2010-pixel/bible2ppt/actions/runs/38293932239)에서 x64·x86 배포 EXE로 두 JSON·TXT의 모든 절 조회가 통과했습니다.
 `Validation/Windows-x64`, `Validation/Windows-x86`에 각 파일의 SHA-256과 검사 결과가 있습니다.
 배포 JSON·TXT는 Windows 검사 당시의 CRLF 줄바꿈으로 저장하여 검사한 파일과 SHA-256이 정확히 일치합니다. 원래 본문 문자는 보존하고, 원본 공란과 잘못된 참조만 위에 명시한 방식으로 수정했습니다.
+
+누락분 출처 확인: [갓피아 현재 읽기 화면 검사](https://github.com/jjww2010-pixel/bible2ppt/actions/runs/38293477627). 쉬운성경 번역명, 요청한 권·장·절 속성, 본문 존재와 통합 절 범위를 확인했습니다.
