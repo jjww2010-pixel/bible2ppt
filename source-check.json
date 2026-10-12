@@ -1,0 +1,231 @@
+[
+  {
+    "book": "Judges",
+    "chapter": 20,
+    "attempts": [
+      {
+        "url": "http://www.holybible.or.kr/B_AGAPE/cgi/bibleftxt.php?VR=10&VL=7&CN=20&CV=99",
+        "status": 200,
+        "finalURL": "http://www.holybible.or.kr/B_AGAPE/cgi/bibleftxt.php?VR=10&VL=7&CN=20&CV=99",
+        "bytes": 44171,
+        "numberTags": [
+          "<a href=\"B_HDB/cgi/bibleftxt.php?VR=10&amp;CI=1793&amp;CV=99\">1</a>",
+          "<a href=\"B_HDB/cgi/bibleftxt.php?VR=10&amp;CI=1806&amp;CV=99\">14</a>",
+          "<a href=\"B_HDB/cgi/bibleftxt.php?VR=10&amp;CI=1807&amp;CV=99\">15</a>",
+          "<a href=\"B_HDB/cgi/bibleftxt.php?VR=10&amp;CI=1808&amp;CV=99\">16</a>",
+          "<a href=\"B_HDB/cgi/bibleftxt.php?VR=10&amp;CI=1809&amp;CV=99\">17</a>",
+          "<a href=\"B_HDB/cgi/bibleftxt.php?VR=10&amp;CI=1810&amp;CV=99\">18</a>",
+          "<a href=\"B_HDB/cgi/bibleftxt.php?VR=10&amp;CI=1811&amp;CV=99\">19</a>",
+          "<b>20</b>",
+          "<a href=\"B_HDB/cgi/bibleftxt.php?VR=10&amp;CI=1813&amp;CV=99\">21</a>",
+          "<a href=\"B_HDB/cgi/bibleftxt.php?VR=10&amp;CI=1793&amp;CV=99\">1</a>"
+        ],
+        "selectedTranslations": [
+          "현대인",
+          "현대인",
+          "사사기",
+          "없음"
+        ],
+        "title": "다국어 성경 Holy-Bible",
+        "parsedVerseCount": 48,
+        "adjacentSourceMatches": false,
+        "availableMissing": [
+          22,
+          23
+        ]
+      },
+      {
+        "url": "https://bible.godpia.com/read/reading.asp?ver=easy&vol=jdg&chap=20",
+        "status": 200,
+        "finalURL": "https://www.godpia.com/",
+        "bytes": 46887,
+        "parsedVerseCount": 0,
+        "adjacentSourceMatches": false,
+        "availableMissing": []
+      },
+      {
+        "url": "https://find.godpeople.com/?page=bidx&kwrd=%BB%F120&vers=ezsn",
+        "error": "HTTP Error 502: Proxy Error"
+      },
+      {
+        "url": "http://find.godpeople.com/?page=bidx&kwrd=%BB%F120&vers=ezsn",
+        "error": "HTTP Error 502: Proxy Error"
+      }
+    ],
+    "repairs": []
+  },
+  {
+    "book": "IISamuel",
+    "chapter": 4,
+    "attempts": [
+      {
+        "url": "http://www.holybible.or.kr/B_AGAPE/cgi/bibleftxt.php?VR=10&VL=10&CN=4&CV=99",
+        "status": 200,
+        "finalURL": "http://www.holybible.or.kr/B_AGAPE/cgi/bibleftxt.php?VR=10&VL=10&CN=4&CV=99",
+        "bytes": 35643,
+        "numberTags": [
+          "<a href=\"B_HDB/cgi/bibleftxt.php?VR=10&amp;CI=2561&amp;CV=99\">1</a>",
+          "<a href=\"B_HDB/cgi/bibleftxt.php?VR=10&amp;CI=2562&amp;CV=99\">2</a>",
+          "<a href=\"B_HDB/cgi/bibleftxt.php?VR=10&amp;CI=2563&amp;CV=99\">3</a>",
+          "<b>4</b>",
+          "<a href=\"B_HDB/cgi/bibleftxt.php?VR=10&amp;CI=2565&amp;CV=99\">5</a>",
+          "<a href=\"B_HDB/cgi/bibleftxt.php?VR=10&amp;CI=2566&amp;CV=99\">6</a>",
+          "<a href=\"B_HDB/cgi/bibleftxt.php?VR=10&amp;CI=2567&amp;CV=99\">7</a>",
+          "<a href=\"B_HDB/cgi/bibleftxt.php?VR=10&amp;CI=2568&amp;CV=99\">8</a>",
+          "<a href=\"B_HDB/cgi/bibleftxt.php?VR=10&amp;CI=2569&amp;CV=99\">9</a>",
+          "<a href=\"B_HDB/cgi/bibleftxt.php?VR=10&amp;CI=2570&amp;CV=99\">10</a>"
+        ],
+        "selectedTranslations": [
+          "현대인",
+          "현대인",
+          "사무엘하",
+          "없음"
+        ],
+        "title": "다국어 성경 Holy-Bible",
+        "parsedVerseCount": 12,
+        "adjacentSourceMatches": false,
+        "availableMissing": [
+          6,
+          7
+        ]
+      },
+      {
+        "url": "https://bible.godpia.com/read/reading.asp?ver=easy&vol=2sa&chap=4",
+        "status": 200,
+        "finalURL": "https://www.godpia.com/",
+        "bytes": 46887,
+        "parsedVerseCount": 0,
+        "adjacentSourceMatches": false,
+        "availableMissing": []
+      },
+      {
+        "url": "https://find.godpeople.com/?page=bidx&kwrd=%BB%EF%C7%CF4&vers=ezsn",
+        "error": "HTTP Error 502: Proxy Error"
+      },
+      {
+        "url": "http://find.godpeople.com/?page=bidx&kwrd=%BB%EF%C7%CF4&vers=ezsn",
+        "status": 200,
+        "finalURL": "https://cnts.godpeople.com/",
+        "bytes": 326689,
+        "parsedVerseCount": 0,
+        "adjacentSourceMatches": false,
+        "availableMissing": []
+      }
+    ],
+    "repairs": []
+  },
+  {
+    "book": "IKings",
+    "chapter": 8,
+    "attempts": [
+      {
+        "url": "http://www.holybible.or.kr/B_AGAPE/cgi/bibleftxt.php?VR=10&VL=11&CN=8&CV=99",
+        "status": 200,
+        "finalURL": "http://www.holybible.or.kr/B_AGAPE/cgi/bibleftxt.php?VR=10&VL=11&CN=8&CV=99",
+        "bytes": 47059,
+        "numberTags": [
+          "<a href=\"B_HDB/cgi/bibleftxt.php?VR=10&amp;CI=2817&amp;CV=99\">1</a>",
+          "<a href=\"B_HDB/cgi/bibleftxt.php?VR=10&amp;CI=2818&amp;CV=99\">2</a>",
+          "<a href=\"B_HDB/cgi/bibleftxt.php?VR=10&amp;CI=2819&amp;CV=99\">3</a>",
+          "<a href=\"B_HDB/cgi/bibleftxt.php?VR=10&amp;CI=2820&amp;CV=99\">4</a>",
+          "<a href=\"B_HDB/cgi/bibleftxt.php?VR=10&amp;CI=2821&amp;CV=99\">5</a>",
+          "<a href=\"B_HDB/cgi/bibleftxt.php?VR=10&amp;CI=2822&amp;CV=99\">6</a>",
+          "<a href=\"B_HDB/cgi/bibleftxt.php?VR=10&amp;CI=2823&amp;CV=99\">7</a>",
+          "<b>8</b>",
+          "<a href=\"B_HDB/cgi/bibleftxt.php?VR=10&amp;CI=2825&amp;CV=99\">9</a>",
+          "<a href=\"B_HDB/cgi/bibleftxt.php?VR=10&amp;CI=2826&amp;CV=99\">10</a>"
+        ],
+        "selectedTranslations": [
+          "현대인",
+          "현대인",
+          "열왕기상",
+          "없음"
+        ],
+        "title": "다국어 성경 Holy-Bible",
+        "parsedVerseCount": 66,
+        "adjacentSourceMatches": false,
+        "availableMissing": [
+          41,
+          42
+        ]
+      },
+      {
+        "url": "https://bible.godpia.com/read/reading.asp?ver=easy&vol=1ki&chap=8",
+        "status": 200,
+        "finalURL": "https://www.godpia.com/",
+        "bytes": 46887,
+        "parsedVerseCount": 0,
+        "adjacentSourceMatches": false,
+        "availableMissing": []
+      },
+      {
+        "url": "https://find.godpeople.com/?page=bidx&kwrd=%BF%D5%BB%F38&vers=ezsn",
+        "status": 200,
+        "finalURL": "https://cnts.godpeople.com/",
+        "bytes": 326689,
+        "parsedVerseCount": 0,
+        "adjacentSourceMatches": false,
+        "availableMissing": []
+      },
+      {
+        "url": "http://find.godpeople.com/?page=bidx&kwrd=%BF%D5%BB%F38&vers=ezsn",
+        "error": "HTTP Error 502: Proxy Error"
+      }
+    ],
+    "repairs": []
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 16,
+    "attempts": [
+      {
+        "url": "http://www.holybible.or.kr/B_AGAPE/cgi/bibleftxt.php?VR=10&VL=24&CN=16&CV=99",
+        "status": 200,
+        "finalURL": "http://www.holybible.or.kr/B_AGAPE/cgi/bibleftxt.php?VR=10&VL=24&CN=16&CV=99",
+        "bytes": 35660,
+        "numberTags": [
+          "<a href=\"B_HDB/cgi/bibleftxt.php?VR=10&amp;CI=6145&amp;CV=99\">1</a>",
+          "<a href=\"B_HDB/cgi/bibleftxt.php?VR=10&amp;CI=6154&amp;CV=99\">10</a>",
+          "<a href=\"B_HDB/cgi/bibleftxt.php?VR=10&amp;CI=6155&amp;CV=99\">11</a>",
+          "<a href=\"B_HDB/cgi/bibleftxt.php?VR=10&amp;CI=6156&amp;CV=99\">12</a>",
+          "<a href=\"B_HDB/cgi/bibleftxt.php?VR=10&amp;CI=6157&amp;CV=99\">13</a>",
+          "<a href=\"B_HDB/cgi/bibleftxt.php?VR=10&amp;CI=6158&amp;CV=99\">14</a>",
+          "<a href=\"B_HDB/cgi/bibleftxt.php?VR=10&amp;CI=6159&amp;CV=99\">15</a>",
+          "<b>16</b>",
+          "<a href=\"B_HDB/cgi/bibleftxt.php?VR=10&amp;CI=6161&amp;CV=99\">17</a>",
+          "<a href=\"B_HDB/cgi/bibleftxt.php?VR=10&amp;CI=6162&amp;CV=99\">18</a>"
+        ],
+        "selectedTranslations": [
+          "현대인",
+          "현대인",
+          "예레미야",
+          "없음"
+        ],
+        "title": "다국어 성경 Holy-Bible",
+        "parsedVerseCount": 21,
+        "adjacentSourceMatches": false,
+        "availableMissing": [
+          2
+        ]
+      },
+      {
+        "url": "https://bible.godpia.com/read/reading.asp?ver=easy&vol=jer&chap=16",
+        "status": 200,
+        "finalURL": "https://www.godpia.com/",
+        "bytes": 46887,
+        "parsedVerseCount": 0,
+        "adjacentSourceMatches": false,
+        "availableMissing": []
+      },
+      {
+        "url": "https://find.godpeople.com/?page=bidx&kwrd=%B7%BD16&vers=ezsn",
+        "error": "HTTP Error 502: Proxy Error"
+      },
+      {
+        "url": "http://find.godpeople.com/?page=bidx&kwrd=%B7%BD16&vers=ezsn",
+        "error": "HTTP Error 502: Proxy Error"
+      }
+    ],
+    "repairs": []
+  }
+]
