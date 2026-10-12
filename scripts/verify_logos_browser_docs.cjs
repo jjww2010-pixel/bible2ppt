@@ -64,8 +64,9 @@ async function main() {
   try {
     // Official hosts were already checked and returned a browser challenge.
     // Read public search summaries without retrying or bypassing that challenge.
-    await read('https://www.bing.com/search?q=Logos+Print+Export+100+pages+limit');
-    await read('https://www.bing.com/search?q=Logos+Copy+Bible+Verses+entire+Bible+limit');
+    await read('https://www.bing.com/search?q=' + encodeURIComponent('site:support.logos.com "Print" "Export"'));
+    await read('https://www.bing.com/search?q=' + encodeURIComponent('site:community.logos.com "100 pages"'));
+    await read('https://www.bing.com/search?q=' + encodeURIComponent('site:community.logos.com "Copy Bible Verses" "entire"'));
   } finally {
     await browser.close();
     const report = { checked_utc: new Date().toISOString(), mac_application_execution: 'NOT TESTED', records };
