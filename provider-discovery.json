@@ -1,0 +1,180 @@
+[
+  {
+    "url": "https://www.bible.com/ko/languages/kor",
+    "status": 200,
+    "finalURL": "https://www.bible.com/ko/languages/kor",
+    "bytes": 304051,
+    "title": "한국어 - Korean 성경 다운로드 - 지금 다운로드하거나 온라인으로 읽으세요. - 성경 앱",
+    "links": [
+      [
+        "/ko",
+        ""
+      ],
+      [
+        "/ko/bible",
+        "성경"
+      ],
+      [
+        "/ko",
+        ""
+      ],
+      [
+        "/ko/versions/4639-wb-woorimal-bible-5th-edition",
+        "WBWoorimal Bible 5th EditionDuranno Ministry"
+      ],
+      [
+        "/ko/versions/88-krv-개역한글",
+        "KRV개역한글Korean Bible Society"
+      ],
+      [
+        "/ko/versions/142-rnksv-새번역",
+        "RNKSV새번역Korean Bible Society"
+      ],
+      [
+        "/ko/versions/3803-koerv-읽기-쉬운-성경",
+        "KOERV읽기 쉬운 성경Bible League International"
+      ],
+      [
+        "/ko/versions/3502-nltnk-하나님의-약속-평양말-new-living-translation",
+        "NLTNK하나님의 약속: 평양말 New Living TranslationPyongyang Bible Institute, Inc."
+      ],
+      [
+        "/ko/versions/86-klb-현대인의-성경",
+        "KLB현대인의 성경Biblica, Inc.오디오 사용 가능"
+      ],
+      [
+        "/ko/audio-bible-app-versions",
+        "한국어 Audio Bibles (1)"
+      ],
+      [
+        "https://blog.youversion.com/ko/",
+        "블로그"
+      ],
+      [
+        "/ko/versions",
+        "성경 번역본"
+      ],
+      [
+        "https://help.youversion.com/",
+        "도움"
+      ],
+      [
+        "https://www.youversion.com/giving",
+        "후원"
+      ],
+      [
+        "https://www.youversion.com/our-mission",
+        "소개"
+      ],
+      [
+        "https://www.youversion.com/newsroom",
+        "기사"
+      ],
+      [
+        "https://www.youversion.com/churches",
+        "Churches"
+      ],
+      [
+        "https://www.youversion.com/platform",
+        "Developers"
+      ],
+      [
+        "/ko/bible",
+        "성경"
+      ]
+    ]
+  },
+  {
+    "url": "https://www.bible.com/ko/versions",
+    "status": 200,
+    "finalURL": "https://www.bible.com/ko/versions",
+    "bytes": 316615,
+    "title": "2456개 언어의 3823개 이상의 번역본 - 지금 다운로드하거나 온라인에서 읽어보세요. - 성경 앱",
+    "links": [
+      [
+        "/ko",
+        ""
+      ],
+      [
+        "/ko/bible",
+        "성경"
+      ],
+      [
+        "/ko",
+        ""
+      ],
+      [
+        "/ko/versions/88-krv-개역한글",
+        "KRV개역한글Korean Bible Society"
+      ],
+      [
+        "/ko/versions/142-rnksv-새번역",
+        "RNKSV새번역Korean Bible Society"
+      ],
+      [
+        "/ko/versions/86-klb-현대인의-성경",
+        "KLB현대인의 성경Biblica, Inc.오디오 사용 가능"
+      ],
+      [
+        "/ko/versions/3803-koerv-읽기-쉬운-성경",
+        "KOERV읽기 쉬운 성경Bible League International"
+      ],
+      [
+        "/ko/languages/kor",
+        "More 한국어 Text Bibles (6)"
+      ],
+      [
+        "/ko/audio-bible-app-versions",
+        "한국어 Audio Bibles (1)"
+      ],
+      [
+        "https://blog.youversion.com/ko/",
+        "블로그"
+      ],
+      [
+        "/ko/versions",
+        "성경 번역본"
+      ],
+      [
+        "https://help.youversion.com/",
+        "도움"
+      ],
+      [
+        "https://www.youversion.com/giving",
+        "후원"
+      ],
+      [
+        "https://www.youversion.com/our-mission",
+        "소개"
+      ],
+      [
+        "https://www.youversion.com/newsroom",
+        "기사"
+      ],
+      [
+        "https://www.youversion.com/churches",
+        "Churches"
+      ],
+      [
+        "https://www.youversion.com/platform",
+        "Developers"
+      ],
+      [
+        "/ko/bible",
+        "성경"
+      ]
+    ]
+  },
+  {
+    "url": "https://www.bible.com/json/bible/versions/kor",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://bible.godpeople.com/",
+    "error": "Remote end closed connection without response"
+  },
+  {
+    "url": "https://www.holybible.or.kr/B_EASY/cgi/bibleftxt.php?VR=0&VL=7&CN=20&CV=99",
+    "error": "<urlopen error [Errno 111] Connection refused>"
+  }
+]
