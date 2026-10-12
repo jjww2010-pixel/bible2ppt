@@ -1,0 +1,205 @@
+[
+  {
+    "book": "Judges",
+    "chapter": 20,
+    "attempts": [
+      {
+        "url": "http://www.holybible.or.kr/B_AGAPE/cgi/bibleftxt.php?VR=AGAPE&VL=7&CN=20&CV=99",
+        "status": 200,
+        "finalURL": "http://www.holybible.or.kr/B_AGAPE/cgi/bibleftxt.php?VR=AGAPE&VL=7&CN=20&CV=99",
+        "bytes": 45153,
+        "numberTags": [
+          "<a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=1793&amp;CV=99\">1</a>",
+          "<a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=1806&amp;CV=99\">14</a>",
+          "<a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=1807&amp;CV=99\">15</a>",
+          "<a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=1808&amp;CV=99\">16</a>",
+          "<a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=1809&amp;CV=99\">17</a>",
+          "<a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=1810&amp;CV=99\">18</a>",
+          "<a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=1811&amp;CV=99\">19</a>",
+          "<b>20</b>",
+          "<a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=1813&amp;CV=99\">21</a>",
+          "<a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=1793&amp;CV=99\">1</a>"
+        ],
+        "tagStructure": "=20 height=1></TD><TD height=\"6\"><img src=http://www.holybible.or.kr/images/c_ffffff.gif width=730 height=1></TD></TR></TBODY></TABLE><TABLE width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\"  align=\"center\" bgcolor=#efefef height=\"25\"><TR><TD><img src=http://www.holybible.or.kr/images/c_ffffff.gif width=750 height=1></TD></TR><TR><SCRIPT LANGUAGE=\"JavaScript\"><!--\nfunction openGalpi(url)\n{\n\tif ( confirm('책갈피에 등록하시겠습니까?') ) {\n\t\twindow.open(url,'galpi','marginwidth=0,marginheight=0,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,width=300,height=200,left=400,top=20');\n\t}\n}\n//--></SCRIPT><TD width=\"100%\" align=\"right\" class=\"tkab\"><a href=\"javascript:openGalpi('/B_GAE/cgi/bible_galpi.php?VR=GAE&VL=7&CN=20&CV=99')\"><img src=images/galpi.gif width=104 height=21 border=0></a></TD></TR></TABLE><TABLE border=0 cellpadding=0 width=\"100%\"><TR><TD width=20></TD><TD height=15></TD><TD width=20></TD></TR><TR><TD width=20></TD><TD align=center class=tk3><img src=\"http://www.holybible.or.kr/images/l_arrow.gif\" alt=\"\" border=0 width=13 height=12><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=1811&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=1793&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=1806&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=1807&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=1808&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=1809&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=1810&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=1811&amp;CV=99\"></a><b></b><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=1813&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=1813&amp;CV=99\"></a><img src=\"http://www.holybible.or.kr/images/arrow.gif\" alt=\"\" border=0 width=13 height=12></TD><TD width=20></TD></TR><TR><TD width=20></TD><TD height=1><img src=http://www.holybible.or.kr/images/c_ffffff width=710 height=1></TD><TD width=20></TD></TR></TABLE><TABLE border=0 cellpadding=0 cellspacing=0 width=\"100%\"><TR><TD width=\"19\" class=tkb></TD><TD></TD><TD class=tk4l align=right valign=middle><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=1812&amp;KY=&amp;ftxt_font_size=8\"><b><font color=#0000FF></font></b></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=1812&amp;KY=&amp;ftxt_font_size=10\"><b><font color=#FF0000></font></b></a></TD></TR><TR><TD width=\"19\" height=\"1\" bgcolor=#d8d8d8></TD><TD bgcolor=#d8d8d8></TD><TD width=\"281\" bgcolor=#d8d8d8></TD></TR><TR><TD height=\"15\" colspan=\"3\"></TD></TR><TR><TD height=\"25\"></TD><TD class=\"tkb\"><img src=http://www.holybible.or.kr/images/arrow.gif width=13 height=12><b></b></TD><TD class=tkb align=right><a href=http://www.bskorea.or.kr/ target=\"PUBL\"></a></TD></TR><TR><TD height=\"19\"><img src=http://www.holybible.or.kr/images/c_ffffff.gif width=19 height=1></TD><TD height=\"19\"><img src=http://www.holybible.or.kr/images/c_ffffff.gif width=581 height=1></TD><TD height=\"19\"><img src=http://www.holybible.or.kr/images/c_ffffff.gif width=150 height=1></TD></TR></TABLE><table border=0 cellpadding=0 cellspacing=0 width=100%><tr><td width=30></td><td valign=top bgcolor=#FAFAFA class=tk4br><ol start=001 id=\"b_001\"><li><font class=tk4l><a href=\"javascript:openDict('3121', '이스라엘')\"></a><a href=\"javascript:openDict('797', '단')\"></a><a href=\"javascript:openDict('1661', '브엘세바')\"></a><a href=\"javascript:openDict('533', '길르앗')\"></a><a href=\"javascript:openDict('1345', '미스바')\"></a></font><li><font class=tk4l><a href=\"javascript:openDict('3121', '이스라엘')\"></a><a href=\"javascript:openDict('3255', '하나님')\"></a></font><li><font class=tk4l><a href=\"javascript:openDict('3121', '이스라엘')\"></a><a href=\"javascript:openDict('1345', '미스바')\"></a><a href=\"javascript:openDict('1482', '베냐민')\"></a><a href=\"javascript:openDict('3121', '이스라엘')\"></a></font><li><font class=tk4l><a href=\"javascript:openDict('1482', '베냐민')\"></a><a href=\"javascript:openDict('500', '기브아')\"></a></font><li><font class=tk4l><a href=\"javascript:openDict('500', '기브아')\"></a></font></td><td width=40></td></tr></table><table border=0 cellpadding=0 cellspacing=0 width=100%><tr><td width=30></td><td valign=top bgcolor=#FAFAFA class=tk4br><ol start=006 id=\"b_006\"><li><font class=tk4l><a href=\"javascript:openDict('3121', '이스라엘')\"></a><a href=\"javascript:openDict('514', '기업')\"></a><a href=\"javascript:openDict('3121', '이스라엘')\"></a></font><li><font class=tk4l><a href=\"javascript:openDict('3121', '이스라엘')\"></a></font><li><font class=tk4l></font><li><font class=tk4l><a href=\"javascript:openDict('500', '기브아')\"></a></font><li><font class=tk4l><a href=\"javascript:openDict('3121', '이스라엘')\"></a><a href=\"javascript:openDict('1482', '베냐민')\"></a><a href=\"javascript:openDict('500', '기브아')\"></a><a href=\"javascript:openDict('3121', '이스라엘')\"></a></font></td><td width=40></td></tr></table><table border=0 cellpadding=0 cellspacing=0 width=100%><tr><td width=30></td><td valign=top bgcolor=#FAFAFA class=tk4br><ol start=011 id=\"b_011\"><li><font class=tk4l><a href=\"javascript:openDict('3121', '이스라엘')\"></a></font><li><font class=tk4l><a href=\"javascript:openDict('3121', '이스라엘')\"></a><a href=\"javascript:openDict('1482', '베냐민')\"></a><a href=\"javascript:openDict('908', '두루')\"></a></font><li><font class=tk4l><a href=\"javascript:openDict('500', '기브아')\"></a><a href=\"javascript:openDict('3121', '이스라엘')\"></a><a href=\"javascript:openDict('1482', '베냐민')\"></a><a href=\"javascript:openDict('3450', '형제')\"></a><a href=\"javascript:openDict('3121', '이스라엘')\"></a></font><li><font class=tk4l><a href=\"javascript:openDict('500', '기브아')\"></a><a href=\"javascript:openDict('3121', '이스라엘')\"></a></font><li><font class=tk4l><a href=\"javascript:openDict('1482', '베냐민')\"></a><a href=\"javascript:openDict('500', '기브아')\"></a></font></td><td width=40></td></tr></table><table border=0 cellpadding=0 cellspacing=0 width=100%><tr><td width=30></td><td valign=top bgcolor=#FAFAFA class=tk4br><ol start=016 id=\"b_016\"><li><font class=tk4l></font><li><font class=tk4l><a href=\"javascript:openDict('1482', '베냐민')\"></a><a href=\"javascript:openDict('3121', '이스라엘')\"></a></font><li><font class=tk4l><a href=\"javascript:openDict('3121', '이스라엘')\"></a><a href=\"javascript:openDict('1540', '벧엘')\"></a><a href=\"javascript:openDict('3255', '하나님')\"></a><a href=\"javascript:openDict('1482', '베냐민')\"></a></font><li><font class=tk4l><a href=\"javascript:openDict('3121', '이스라엘')\"></a><a href=\"javascript:openDict('500', '기브아')\"></a></font><li><font class=tk4l><a href=\"javascript:openDict('3121', '이스라엘')\"></a><a href=\"javascript:openDict('1482', '베냐민')\"></a><a href=\"javascript:openDict('500', '기브아')\"></a></font></td><td width=40></td></tr></table><table border=0 cellpadding=0 cellspacing=0 width=100%><tr><td width=30></td><td valign=top bgcolor=#FAFAFA class=tk4br><ol start=021 id=\"b_021\"><li><font class=tk4l><a href=\"javascript:openDict('1482', '베냐민')\"></a><a href=\"javascript:openDict('500', '기브아')\"></a><a href=\"javascript:openDict('3121', '이스라엘')\"></a></font><li><font class=tk4l><a href=\"javascript:openDict('3121', '이스라엘')\"></a></font><li><font class=tk4l><a href=\"javascript:openDict('3121', '이스라엘')\"></a><a href=\"javascript:openDict('3450', '형제')\"></a><a href=\"javascript:openDict('1482', '베냐민')\"></a></font><li><font class=tk4l><a href=\"javascript:openDict('3121', '이스라엘')\"></a><a href=\"javascript:openDict('1482', '베냐민')\"></a></font><li><font class=tk4l><a href=\"javascript:openDict('1482', '베냐민')\"></a><a href=\"javascript:openDict('500', '기브아')\"></a><a href=\"javascript:ope",
+        "title": "다국어 성경 Holy-Bible",
+        "parsedVerseCount": 0,
+        "adjacentSourceMatches": false,
+        "availableMissing": []
+      },
+      {
+        "url": "https://bible.godpia.com/read/reading.asp?ver=easy&vol=jdg&chap=20",
+        "status": 200,
+        "finalURL": "https://www.godpia.com/",
+        "bytes": 46887,
+        "parsedVerseCount": 0,
+        "adjacentSourceMatches": false,
+        "availableMissing": []
+      },
+      {
+        "url": "https://find.godpeople.com/?page=bidx&kwrd=%BB%F120&vers=ezsn",
+        "error": "HTTP Error 502: Proxy Error"
+      },
+      {
+        "url": "http://find.godpeople.com/?page=bidx&kwrd=%BB%F120&vers=ezsn",
+        "status": 200,
+        "finalURL": "https://cnts.godpeople.com/",
+        "bytes": 326689,
+        "parsedVerseCount": 0,
+        "adjacentSourceMatches": false,
+        "availableMissing": []
+      }
+    ],
+    "repairs": []
+  },
+  {
+    "book": "IISamuel",
+    "chapter": 4,
+    "attempts": [
+      {
+        "url": "http://www.holybible.or.kr/B_AGAPE/cgi/bibleftxt.php?VR=AGAPE&VL=10&CN=4&CV=99",
+        "status": 200,
+        "finalURL": "http://www.holybible.or.kr/B_AGAPE/cgi/bibleftxt.php?VR=AGAPE&VL=10&CN=4&CV=99",
+        "bytes": 35801,
+        "numberTags": [
+          "<a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2561&amp;CV=99\">1</a>",
+          "<a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2562&amp;CV=99\">2</a>",
+          "<a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2563&amp;CV=99\">3</a>",
+          "<b>4</b>",
+          "<a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2565&amp;CV=99\">5</a>",
+          "<a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2566&amp;CV=99\">6</a>",
+          "<a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2567&amp;CV=99\">7</a>",
+          "<a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2568&amp;CV=99\">8</a>",
+          "<a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2569&amp;CV=99\">9</a>",
+          "<a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2570&amp;CV=99\">10</a>"
+        ],
+        "tagStructure": "=20 height=1></TD><TD height=\"6\"><img src=http://www.holybible.or.kr/images/c_ffffff.gif width=730 height=1></TD></TR></TBODY></TABLE><TABLE width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\"  align=\"center\" bgcolor=#efefef height=\"25\"><TR><TD><img src=http://www.holybible.or.kr/images/c_ffffff.gif width=750 height=1></TD></TR><TR><SCRIPT LANGUAGE=\"JavaScript\"><!--\nfunction openGalpi(url)\n{\n\tif ( confirm('책갈피에 등록하시겠습니까?') ) {\n\t\twindow.open(url,'galpi','marginwidth=0,marginheight=0,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,width=300,height=200,left=400,top=20');\n\t}\n}\n//--></SCRIPT><TD width=\"100%\" align=\"right\" class=\"tkab\"><a href=\"javascript:openGalpi('/B_GAE/cgi/bible_galpi.php?VR=GAE&VL=10&CN=4&CV=99')\"><img src=images/galpi.gif width=104 height=21 border=0></a></TD></TR></TABLE><TABLE border=0 cellpadding=0 width=\"100%\"><TR><TD width=20></TD><TD height=15></TD><TD width=20></TD></TR><TR><TD width=20></TD><TD align=center class=tk3><img src=\"http://www.holybible.or.kr/images/l_arrow.gif\" alt=\"\" border=0 width=13 height=12><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2563&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2561&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2562&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2563&amp;CV=99\"></a><b></b><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2565&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2566&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2567&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2568&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2569&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2570&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2571&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2572&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2584&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2565&amp;CV=99\"></a><img src=\"http://www.holybible.or.kr/images/arrow.gif\" alt=\"\" border=0 width=13 height=12></TD><TD width=20></TD></TR><TR><TD width=20></TD><TD height=1><img src=http://www.holybible.or.kr/images/c_ffffff width=710 height=1></TD><TD width=20></TD></TR></TABLE><TABLE border=0 cellpadding=0 cellspacing=0 width=\"100%\"><TR><TD width=\"19\" class=tkb></TD><TD></TD><TD class=tk4l align=right valign=middle><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2564&amp;KY=&amp;ftxt_font_size=8\"><b><font color=#0000FF></font></b></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2564&amp;KY=&amp;ftxt_font_size=10\"><b><font color=#FF0000></font></b></a></TD></TR><TR><TD width=\"19\" height=\"1\" bgcolor=#d8d8d8></TD><TD bgcolor=#d8d8d8></TD><TD width=\"281\" bgcolor=#d8d8d8></TD></TR><TR><TD height=\"15\" colspan=\"3\"></TD></TR><TR><TD height=\"25\"></TD><TD class=\"tkb\"><img src=http://www.holybible.or.kr/images/arrow.gif width=13 height=12><b></b></TD><TD class=tkb align=right><a href=http://www.bskorea.or.kr/ target=\"PUBL\"></a></TD></TR><TR><TD height=\"19\"><img src=http://www.holybible.or.kr/images/c_ffffff.gif width=19 height=1></TD><TD height=\"19\"><img src=http://www.holybible.or.kr/images/c_ffffff.gif width=581 height=1></TD><TD height=\"19\"><img src=http://www.holybible.or.kr/images/c_ffffff.gif width=150 height=1></TD></TR></TABLE><table border=0 cellpadding=0 cellspacing=0 width=100%><tr><td width=30></td><td valign=top bgcolor=#FAFAFA class=tk4br><ol start=001 id=\"b_001\"><li><font class=tk4l><a href=\"javascript:openDict('1783', '사울')\"></a><a href=\"javascript:openDict('3137', '이스보셋')\"></a><a href=\"javascript:openDict('2330', '아브넬')\"></a><a href=\"javascript:openDict('3417', '헤브론')\"></a><a href=\"javascript:openDict('3121', '이스라엘')\"></a></font><li><font class=tk4l><a href=\"javascript:openDict('1783', '사울')\"></a><a href=\"javascript:openDict('1420', '바아나')\"></a><a href=\"javascript:openDict('1028', '레갑')\"></a><a href=\"javascript:openDict('1482', '베냐민')\"></a><a href=\"javascript:openDict('1655', '브에롯')\"></a><a href=\"javascript:openDict('1123', '림몬')\"></a><a href=\"javascript:openDict('1655', '브에롯')\"></a><a href=\"javascript:openDict('1482', '베냐민')\"></a></font><li><font class=tk4l><a href=\"javascript:openDict('1655', '브에롯')\"></a></font><li><font class=tk4l><a href=\"javascript:openDict('1783', '사울')\"></a><a href=\"javascript:openDict('2953', '요나단')\"></a><a href=\"javascript:openDict('1300', '므비보셋')\"></a><a href=\"javascript:openDict('1783', '사울')\"></a><a href=\"javascript:openDict('2953', '요나단')\"></a><a href=\"javascript:openDict('3125', '이스르엘')\"></a></font><li><font class=tk4l><a href=\"javascript:openDict('1123', '림몬')\"></a><a href=\"javascript:openDict('1028', '레갑')\"></a><a href=\"javascript:openDict('1420', '바아나')\"></a><a href=\"javascript:openDict('3137', '이스보셋')\"></a><a href=\"javascript:openDict('631', '낮')\"></a></font></td><td width=40></td></tr></table><table border=0 cellpadding=0 cellspacing=0 width=100%><tr><td width=30></td><td valign=top bgcolor=#FAFAFA class=tk4br><ol start=006 id=\"b_006\"><li><font class=tk4l><a href=\"javascript:openDict('1028', '레갑')\"></a><a href=\"javascript:openDict('3450', '형제')\"></a><a href=\"javascript:openDict('1420', '바아나')\"></a><a href=\"javascript:openDict('1361', '밀')\"></a></font><li><font class=tk4l><a href=\"javascript:openDict('2235', '아라바')\"></a><a href=\"javascript:openDict('526', '길')\"></a></font><li><font class=tk4l><a href=\"javascript:openDict('3417', '헤브론')\"></a><a href=\"javascript:openDict('784', '다윗')\"></a><a href=\"javascript:openDict('3137', '이스보셋')\"></a><a href=\"javascript:openDict('2251', '아뢰되')\"></a><a href=\"javascript:openDict('1846', '생명')\"></a><a href=\"javascript:openDict('3039', '원수')\"></a><a href=\"javascript:openDict('1783', '사울')\"></a><a href=\"javascript:openDict('3137', '이스보셋')\"></a><a href=\"javascript:openDict('3039', '원수')\"></a><a href=\"javascript:openDict('1783', '사울')\"></a></font><li><font class=tk4l><a href=\"javascript:openDict('784', '다윗')\"></a><a href=\"javascript:openDict('1123', '림몬')\"></a><a href=\"javascript:openDict('1028', '레갑')\"></a><a href=\"javascript:openDict('3450', '형제')\"></a><a href=\"javascript:openDict('1420', '바아나')\"></a><a href=\"javascript:openDict('1846', '생명')\"></a></font><li><font class=tk4l><a href=\"javascript:openDict('1783', '사울')\"></a><a href=\"javascript:openDict('2067', '시글락')\"></a></font></td><td width=40></td></tr></table><table border=0 cellpadding=0 cellspacing=0 width=100%><tr><td width=30></td><td valign=top bgcolor=#FAFAFA class=tk4br><ol start=011 id=\"b_011\"><li><font class=tk4l><a href=\"javascript:openDict('3071', '의인')\"></a><a href=\"javascript:openDict('3242', '피')\"></a><a href=\"javascript:openDict('3186', '죄')\"></a><a href=\"javascript:openDict('984', '땅')\"></a></font><li><font class=tk4l><a href=\"javascript:openDict('3417', '헤브론')\"></a><a href=\"javascript:openDict('3137', '이스보셋')\"></a><a href=\"javascript:openDict('3417', '헤브론')\"></a><a href=\"javascript:openDict('2330', '아브넬')\"></a></font></td><td width=40></td></tr></table><TABLE border=0 cellpadding=0 width=\"100%\"><TR><TD width=20></TD><TD height=15></TD><TD width=20></TD></TR><TR><TD width=20></TD><TD align=center class=tk3><img src=\"http://www.holybible.or.kr/images/l_arrow.gif\" alt=\"\" border=0 width=13 height=12><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2563&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2561&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2562&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2563&amp;CV=99\"></a><b></b><a href=\"B_GA",
+        "title": "다국어 성경 Holy-Bible",
+        "parsedVerseCount": 0,
+        "adjacentSourceMatches": false,
+        "availableMissing": []
+      },
+      {
+        "url": "https://bible.godpia.com/read/reading.asp?ver=easy&vol=2sa&chap=4",
+        "status": 200,
+        "finalURL": "https://www.godpia.com/",
+        "bytes": 46887,
+        "parsedVerseCount": 0,
+        "adjacentSourceMatches": false,
+        "availableMissing": []
+      },
+      {
+        "url": "https://find.godpeople.com/?page=bidx&kwrd=%BB%EF%C7%CF4&vers=ezsn",
+        "status": 200,
+        "finalURL": "https://cnts.godpeople.com/",
+        "bytes": 326533,
+        "parsedVerseCount": 0,
+        "adjacentSourceMatches": false,
+        "availableMissing": []
+      },
+      {
+        "url": "http://find.godpeople.com/?page=bidx&kwrd=%BB%EF%C7%CF4&vers=ezsn",
+        "status": 200,
+        "finalURL": "https://cnts.godpeople.com/",
+        "bytes": 326689,
+        "parsedVerseCount": 0,
+        "adjacentSourceMatches": false,
+        "availableMissing": []
+      }
+    ],
+    "repairs": []
+  },
+  {
+    "book": "IKings",
+    "chapter": 8,
+    "attempts": [
+      {
+        "url": "http://www.holybible.or.kr/B_AGAPE/cgi/bibleftxt.php?VR=AGAPE&VL=11&CN=8&CV=99",
+        "status": 200,
+        "finalURL": "http://www.holybible.or.kr/B_AGAPE/cgi/bibleftxt.php?VR=AGAPE&VL=11&CN=8&CV=99",
+        "bytes": 49416,
+        "numberTags": [
+          "<a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2817&amp;CV=99\">1</a>",
+          "<a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2818&amp;CV=99\">2</a>",
+          "<a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2819&amp;CV=99\">3</a>",
+          "<a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2820&amp;CV=99\">4</a>",
+          "<a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2821&amp;CV=99\">5</a>",
+          "<a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2822&amp;CV=99\">6</a>",
+          "<a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2823&amp;CV=99\">7</a>",
+          "<b>8</b>",
+          "<a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2825&amp;CV=99\">9</a>",
+          "<a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2826&amp;CV=99\">10</a>"
+        ],
+        "tagStructure": "=20 height=1></TD><TD height=\"6\"><img src=http://www.holybible.or.kr/images/c_ffffff.gif width=730 height=1></TD></TR></TBODY></TABLE><TABLE width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\"  align=\"center\" bgcolor=#efefef height=\"25\"><TR><TD><img src=http://www.holybible.or.kr/images/c_ffffff.gif width=750 height=1></TD></TR><TR><SCRIPT LANGUAGE=\"JavaScript\"><!--\nfunction openGalpi(url)\n{\n\tif ( confirm('책갈피에 등록하시겠습니까?') ) {\n\t\twindow.open(url,'galpi','marginwidth=0,marginheight=0,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,width=300,height=200,left=400,top=20');\n\t}\n}\n//--></SCRIPT><TD width=\"100%\" align=\"right\" class=\"tkab\"><a href=\"javascript:openGalpi('/B_GAE/cgi/bible_galpi.php?VR=GAE&VL=11&CN=8&CV=99')\"><img src=images/galpi.gif width=104 height=21 border=0></a></TD></TR></TABLE><TABLE border=0 cellpadding=0 width=\"100%\"><TR><TD width=20></TD><TD height=15></TD><TD width=20></TD></TR><TR><TD width=20></TD><TD align=center class=tk3><img src=\"http://www.holybible.or.kr/images/l_arrow.gif\" alt=\"\" border=0 width=13 height=12><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2823&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2817&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2818&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2819&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2820&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2821&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2822&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2823&amp;CV=99\"></a><b></b><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2825&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2826&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2827&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2828&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2829&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2838&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2825&amp;CV=99\"></a><img src=\"http://www.holybible.or.kr/images/arrow.gif\" alt=\"\" border=0 width=13 height=12></TD><TD width=20></TD></TR><TR><TD width=20></TD><TD height=1><img src=http://www.holybible.or.kr/images/c_ffffff width=710 height=1></TD><TD width=20></TD></TR></TABLE><TABLE border=0 cellpadding=0 cellspacing=0 width=\"100%\"><TR><TD width=\"19\" class=tkb></TD><TD></TD><TD class=tk4l align=right valign=middle><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2824&amp;KY=&amp;ftxt_font_size=8\"><b><font color=#0000FF></font></b></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=2824&amp;KY=&amp;ftxt_font_size=10\"><b><font color=#FF0000></font></b></a></TD></TR><TR><TD width=\"19\" height=\"1\" bgcolor=#d8d8d8></TD><TD bgcolor=#d8d8d8></TD><TD width=\"281\" bgcolor=#d8d8d8></TD></TR><TR><TD height=\"15\" colspan=\"3\"></TD></TR><TR><TD height=\"25\"></TD><TD class=\"tkb\"><img src=http://www.holybible.or.kr/images/arrow.gif width=13 height=12><b></b></TD><TD class=tkb align=right><a href=http://www.bskorea.or.kr/ target=\"PUBL\"></a></TD></TR><TR><TD height=\"19\"><img src=http://www.holybible.or.kr/images/c_ffffff.gif width=19 height=1></TD><TD height=\"19\"><img src=http://www.holybible.or.kr/images/c_ffffff.gif width=581 height=1></TD><TD height=\"19\"><img src=http://www.holybible.or.kr/images/c_ffffff.gif width=150 height=1></TD></TR></TABLE><table border=0 cellpadding=0 cellspacing=0 width=100%><tr><td width=30></td><td valign=top bgcolor=#FAFAFA class=tk4br><ol start=001 id=\"b_001\"><li><font class=tk4l><a href=\"javascript:openDict('1947', '솔로몬')\"></a><a href=\"javascript:openDict('2619', '언약')\"></a><a href=\"javascript:openDict('785', '다윗 성')\"></a><a href=\"javascript:openDict('2112', '시온')\"></a><a href=\"javascript:openDict('2887', '예루살렘')\"></a></font><li><font class=tk4l><a href=\"javascript:openDict('807', '달')\"></a><a href=\"javascript:openDict('1947', '솔로몬')\"></a></font><li><font class=tk4l></font><li><font class=tk4l></font><li><font class=tk4l><a href=\"javascript:openDict('1947', '솔로몬')\"></a><a href=\"javascript:openDict('2614', '양')\"></a></font></td><td width=40></td></tr></table><table border=0 cellpadding=0 cellspacing=0 width=100%><tr><td width=30></td><td valign=top bgcolor=#FAFAFA class=tk4br><ol start=006 id=\"b_006\"><li><font class=tk4l><a href=\"javascript:openDict('2619', '언약')\"></a><a href=\"javascript:openDict('633', '내소')\"></a></font><li><font class=tk4l></font><li><font class=tk4l><a href=\"javascript:openDict('633', '내소')\"></a></font><li><font class=tk4l><a href=\"javascript:openDict('2534', '애굽')\"></a><a href=\"javascript:openDict('2619', '언약')\"></a><a href=\"javascript:openDict('1263', '모세')\"></a><a href=\"javascript:openDict('3462', '호렙')\"></a></font><li><font class=tk4l><a href=\"javascript:openDict('360', '구름')\"></a></font></td><td width=40></td></tr></table><table border=0 cellpadding=0 cellspacing=0 width=100%><tr><td width=30></td><td valign=top bgcolor=#FAFAFA class=tk4br><ol start=011 id=\"b_011\"><li><font class=tk4l><a href=\"javascript:openDict('360', '구름')\"></a><a href=\"javascript:openDict('17', '가득함')\"></a></font><li><font class=tk4l><a href=\"javascript:openDict('1947', '솔로몬')\"></a></font><li><font class=tk4l></font><li><font class=tk4l></font><li><font class=tk4l><a href=\"javascript:openDict('3255', '하나님')\"></a><a href=\"javascript:openDict('2314', '아버지')\"></a><a href=\"javascript:openDict('784', '다윗')\"></a><a href=\"javascript:openDict('1945', '손')\"></a></font></td><td width=40></td></tr></table><table border=0 cellpadding=0 cellspacing=0 width=100%><tr><td width=30></td><td valign=top bgcolor=#FAFAFA class=tk4br><ol start=016 id=\"b_016\"><li><font class=tk4l><a href=\"javascript:openDict('2534', '애굽')\"></a><a href=\"javascript:openDict('617', '날')\"></a><a href=\"javascript:openDict('784', '다윗')\"></a></font><li><font class=tk4l><a href=\"javascript:openDict('2314', '아버지')\"></a><a href=\"javascript:openDict('784', '다윗')\"></a><a href=\"javascript:openDict('3255', '하나님')\"></a></font><li><font class=tk4l><a href=\"javascript:openDict('2314', '아버지')\"></a><a href=\"javascript:openDict('784', '다윗')\"></a></font><li><font class=tk4l></font><li><font class=tk4l><a href=\"javascript:openDict('2314', '아버지')\"></a><a href=\"javascript:openDict('784', '다윗')\"></a><a href=\"javascript:openDict('3255', '하나님')\"></a></font></td><td width=40></td></tr></table><table border=0 cellpadding=0 cellspacing=0 width=100%><tr><td width=30></td><td valign=top bgcolor=#FAFAFA class=tk4br><ol start=021 id=\"b_021\"><li><font class=tk4l><a href=\"javascript:openDict('2534', '애굽')\"></a><a href=\"javascript:openDict('2619', '언약')\"></a></font><li><font class=tk4l><a href=\"javascript:openDict('1947', '솔로몬')\"></a><a href=\"javascript:openDict('3176', '제단')\"></a><a href=\"javascript:openDict('3262', '하늘')\"></a></font><li><font class=tk4l><a href=\"javascript:openDict('3255', '하나님')\"></a><a href=\"javascript:openDict('3262', '하늘')\"></a><a href=\"javascript:openDict('984', '땅')\"></a><a href=\"javascript:openDict('2619', '언약')\"></a></font><li><font class=tk4l><a href=\"javascript:openDict('2314', '아버지')\"></a><a href=\"javascript:openDict('784', '다윗')\"></a><a href=\"javascript:openDict('1945', '손')\"></a></font><li><font class=tk4l><a href=\"javascript:openDict('3255', '하나님')\"></a><a href=\"javascript:openDict('2314', '아버지')\"></a><a href=\"javascript:openDict('784', '다윗')\"></a><a href=\"javascript:openDict('526', '길')\"></a><a href=\"javascript:openDict('784', '다윗')\"></a></font></td><td width=40></td></tr></table><table ",
+        "title": "다국어 성경 Holy-Bible",
+        "parsedVerseCount": 0,
+        "adjacentSourceMatches": false,
+        "availableMissing": []
+      },
+      {
+        "url": "https://bible.godpia.com/read/reading.asp?ver=easy&vol=1ki&chap=8",
+        "status": 200,
+        "finalURL": "https://www.godpia.com/",
+        "bytes": 46887,
+        "parsedVerseCount": 0,
+        "adjacentSourceMatches": false,
+        "availableMissing": []
+      },
+      {
+        "url": "https://find.godpeople.com/?page=bidx&kwrd=%BF%D5%BB%F38&vers=ezsn",
+        "error": "HTTP Error 502: Proxy Error"
+      },
+      {
+        "url": "http://find.godpeople.com/?page=bidx&kwrd=%BF%D5%BB%F38&vers=ezsn",
+        "error": "HTTP Error 502: Proxy Error"
+      }
+    ],
+    "repairs": []
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 16,
+    "attempts": [
+      {
+        "url": "http://www.holybible.or.kr/B_AGAPE/cgi/bibleftxt.php?VR=AGAPE&VL=24&CN=16&CV=99",
+        "status": 200,
+        "finalURL": "http://www.holybible.or.kr/B_AGAPE/cgi/bibleftxt.php?VR=AGAPE&VL=24&CN=16&CV=99",
+        "bytes": 35737,
+        "numberTags": [
+          "<a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=6145&amp;CV=99\">1</a>",
+          "<a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=6154&amp;CV=99\">10</a>",
+          "<a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=6155&amp;CV=99\">11</a>",
+          "<a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=6156&amp;CV=99\">12</a>",
+          "<a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=6157&amp;CV=99\">13</a>",
+          "<a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=6158&amp;CV=99\">14</a>",
+          "<a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=6159&amp;CV=99\">15</a>",
+          "<b>16</b>",
+          "<a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=6161&amp;CV=99\">17</a>",
+          "<a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=6162&amp;CV=99\">18</a>"
+        ],
+        "tagStructure": "=20 height=1></TD><TD height=\"6\"><img src=http://www.holybible.or.kr/images/c_ffffff.gif width=730 height=1></TD></TR></TBODY></TABLE><TABLE width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\"  align=\"center\" bgcolor=#efefef height=\"25\"><TR><TD><img src=http://www.holybible.or.kr/images/c_ffffff.gif width=750 height=1></TD></TR><TR><SCRIPT LANGUAGE=\"JavaScript\"><!--\nfunction openGalpi(url)\n{\n\tif ( confirm('책갈피에 등록하시겠습니까?') ) {\n\t\twindow.open(url,'galpi','marginwidth=0,marginheight=0,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,width=300,height=200,left=400,top=20');\n\t}\n}\n//--></SCRIPT><TD width=\"100%\" align=\"right\" class=\"tkab\"><a href=\"javascript:openGalpi('/B_GAE/cgi/bible_galpi.php?VR=GAE&VL=24&CN=16&CV=99')\"><img src=images/galpi.gif width=104 height=21 border=0></a></TD></TR></TABLE><TABLE border=0 cellpadding=0 width=\"100%\"><TR><TD width=20></TD><TD height=15></TD><TD width=20></TD></TR><TR><TD width=20></TD><TD align=center class=tk3><img src=\"http://www.holybible.or.kr/images/l_arrow.gif\" alt=\"\" border=0 width=13 height=12><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=6159&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=6145&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=6154&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=6155&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=6156&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=6157&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=6158&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=6159&amp;CV=99\"></a><b></b><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=6161&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=6162&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=6163&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=6164&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=6165&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=6196&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=6161&amp;CV=99\"></a><img src=\"http://www.holybible.or.kr/images/arrow.gif\" alt=\"\" border=0 width=13 height=12></TD><TD width=20></TD></TR><TR><TD width=20></TD><TD height=1><img src=http://www.holybible.or.kr/images/c_ffffff width=710 height=1></TD><TD width=20></TD></TR></TABLE><TABLE border=0 cellpadding=0 cellspacing=0 width=\"100%\"><TR><TD width=\"19\" class=tkb></TD><TD></TD><TD class=tk4l align=right valign=middle><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=6160&amp;KY=&amp;ftxt_font_size=8\"><b><font color=#0000FF></font></b></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=6160&amp;KY=&amp;ftxt_font_size=10\"><b><font color=#FF0000></font></b></a></TD></TR><TR><TD width=\"19\" height=\"1\" bgcolor=#d8d8d8></TD><TD bgcolor=#d8d8d8></TD><TD width=\"281\" bgcolor=#d8d8d8></TD></TR><TR><TD height=\"15\" colspan=\"3\"></TD></TR><TR><TD height=\"25\"></TD><TD class=\"tkb\"><img src=http://www.holybible.or.kr/images/arrow.gif width=13 height=12><b></b></TD><TD class=tkb align=right><a href=http://www.bskorea.or.kr/ target=\"PUBL\"></a></TD></TR><TR><TD height=\"19\"><img src=http://www.holybible.or.kr/images/c_ffffff.gif width=19 height=1></TD><TD height=\"19\"><img src=http://www.holybible.or.kr/images/c_ffffff.gif width=581 height=1></TD><TD height=\"19\"><img src=http://www.holybible.or.kr/images/c_ffffff.gif width=150 height=1></TD></TR></TABLE><table border=0 cellpadding=0 cellspacing=0 width=100%><tr><td width=30></td><td valign=top bgcolor=#FAFAFA class=tk4br><ol start=001 id=\"b_001\"><li><font class=tk4l></font><li><font class=tk4l><a href=\"javascript:openDict('2186', '아내')\"></a></font><li><font class=tk4l></font><li><font class=tk4l><a href=\"javascript:openDict('475', '기근')\"></a><a href=\"javascript:openDict('319', '공중')\"></a><a href=\"javascript:openDict('984', '땅')\"></a></font><li><font class=tk4l><a href=\"javascript:openDict('1740', '사랑')\"></a></font></td><td width=40></td></tr></table><table border=0 cellpadding=0 cellspacing=0 width=100%><tr><td width=30></td><td valign=top bgcolor=#FAFAFA class=tk4br><ol start=006 id=\"b_006\"><li><font class=tk4l><a href=\"javascript:openDict('1225', '머리털')\"></a></font><li><font class=tk4l><a href=\"javascript:openDict('2314', '아버지')\"></a></font><li><font class=tk4l></font><li><font class=tk4l></font><li><font class=tk4l><a href=\"javascript:openDict('3188', '죄악')\"></a><a href=\"javascript:openDict('3186', '죄')\"></a></font></td><td width=40></td></tr></table><table border=0 cellpadding=0 cellspacing=0 width=100%><tr><td width=30></td><td valign=top bgcolor=#FAFAFA class=tk4br><ol start=011 id=\"b_011\"><li><font class=tk4l></font><li><font class=tk4l></font><li><font class=tk4l><a href=\"javascript:openDict('3068', '은혜')\"></a></font><li><font class=tk4l><a href=\"javascript:openDict('617', '날')\"></a><a href=\"javascript:openDict('2534', '애굽')\"></a></font><li><font class=tk4l><a href=\"javascript:openDict('568', '나라')\"></a></font></td><td width=40></td></tr></table><table border=0 cellpadding=0 cellspacing=0 width=100%><tr><td width=30></td><td valign=top bgcolor=#FAFAFA class=tk4br><ol start=016 id=\"b_016\"><li><font class=tk4l></font><li><font class=tk4l><a href=\"javascript:openDict('3188', '죄악')\"></a></font><li><font class=tk4l><a href=\"javascript:openDict('3186', '죄')\"></a><a href=\"javascript:openDict('82', '가증')\"></a><a href=\"javascript:openDict('514', '기업')\"></a></font><li><font class=tk4l><a href=\"javascript:openDict('984', '땅')\"></a></font><li><font class=tk4l></font></td><td width=40></td></tr></table><table border=0 cellpadding=0 cellspacing=0 width=100%><tr><td width=30></td><td valign=top bgcolor=#FAFAFA class=tk4br><ol start=021 id=\"b_021\"><li><font class=tk4l><a href=\"javascript:openDict('1945', '손')\"></a></font></td><td width=40></td></tr></table><TABLE border=0 cellpadding=0 width=\"100%\"><TR><TD width=20></TD><TD height=15></TD><TD width=20></TD></TR><TR><TD width=20></TD><TD align=center class=tk3><img src=\"http://www.holybible.or.kr/images/l_arrow.gif\" alt=\"\" border=0 width=13 height=12><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=6159&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=6145&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=6154&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=6155&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=6156&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=6157&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=6158&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=6159&amp;CV=99\"></a><b></b><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=6161&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=6162&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=6163&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=6164&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=6165&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=6196&amp;CV=99\"></a><a href=\"B_GAE/cgi/bibleftxt.php?VR=9&amp;CI=6161&amp;CV=99\"></a><img src=\"http://www.holybible.or.kr/images/arrow.gif\" alt=\"\" border=0 width=13 height=12></TD><TD width=20></TD></TR><TR><TD width=20></TD><TD height=1><img src=http://www.holybible.or.kr/images/c_ffffff width=710 height=1></TD><TD width=20></TD></TR></TABLE><br><!--- 아싸 광고 시작--><!-- center><a href=\"http://storefarm.naver.com/itmagic\" target=\"_blank\"><img src=\"http://www.holybible.or.kr/images/assa.jpg\"></a></center--><!-- 아싸 광고 끝 --><!-- ------------------------ 바로가기 창 시작 -",
+        "title": "다국어 성경 Holy-Bible",
+        "parsedVerseCount": 0,
+        "adjacentSourceMatches": false,
+        "availableMissing": []
+      },
+      {
+        "url": "https://bible.godpia.com/read/reading.asp?ver=easy&vol=jer&chap=16",
+        "status": 200,
+        "finalURL": "https://www.godpia.com/",
+        "bytes": 46887,
+        "parsedVerseCount": 0,
+        "adjacentSourceMatches": false,
+        "availableMissing": []
+      },
+      {
+        "url": "https://find.godpeople.com/?page=bidx&kwrd=%B7%BD16&vers=ezsn",
+        "error": "HTTP Error 502: Proxy Error"
+      },
+      {
+        "url": "http://find.godpeople.com/?page=bidx&kwrd=%B7%BD16&vers=ezsn",
+        "error": "HTTP Error 502: Proxy Error"
+      }
+    ],
+    "repairs": []
+  }
+]
