@@ -7,7 +7,7 @@ import sys
 import urllib.request
 import urllib.parse
 
-URLS = ['http://www.holybible.or.kr/B_AGAPE/', 'https://holybible.biblenote.kr/']
+URLS = ['http://www.holybible.or.kr/B_AGAPE/', 'https://www.biblenote.kr/read.html']
 
 
 def probe(url):
@@ -53,6 +53,10 @@ def probe(url):
                            if re.search(r'version|bible|쉬운|easy|성경|AGAPE|cgi', a+' '+b, re.I)][:100]
         result['frames'] = re.findall(r'<(?:iframe|frame)[^>]+src=[\"\']?([^\"\'\s>]+)',page,re.I)
         result['locations'] = re.findall(r'location(?:\.href)?\s*=\s*[\"\']([^\"\']+)',page,re.I)
+        result['scripts'] = re.findall(r'<script[^>]+src=[\"\']([^\"\']+)',page,re.I)
+        result['forms'] = re.findall(r'<form[^>]*>',page,re.I)
+        result['options'] = [(v,html.unescape(label)) for v,label in re.findall(r'<option[^>]+value=[\"\']?([^\"\'\s>]+)[^>]*>([^<]*)',page,re.I)]
+        result['apiPaths'] = re.findall(r'[\"\']([^\"\']*(?:\.php|\.json|/api/)[^\"\']*)[\"\']',page)[:100]
         if 'bing.com' in url:
             result['searchResults'] = [re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', ' ', html.unescape(part)))[:1400]
                                        for part in re.findall(r'<li[^>]+class=[\"\']b_algo[\"\'][^>]*>(.*?)</li>', page, re.S)][:6]
