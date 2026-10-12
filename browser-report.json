@@ -1,0 +1,24 @@
+{
+  "checked_utc": "2026-10-12T17:19:34.441Z",
+  "mac_application_execution": "NOT TESTED",
+  "records": [
+    {
+      "url": "https://support.logos.com/",
+      "status": 403,
+      "final_url": "https://support.logos.com/hc/en-us",
+      "title": "Just a moment...",
+      "access_blocked": true,
+      "documentation_links": [],
+      "excerpts": []
+    },
+    {
+      "url": "https://community.logos.com/search?query=Print%2FExport&scope=knowledgebase",
+      "status": 403,
+      "final_url": "https://community.logos.com/search?query=Print%2FExport&scope=knowledgebase",
+      "title": "Just a moment...",
+      "access_blocked": true,
+      "documentation_links": [],
+      "excerpts": []
+    }
+  ]
+}
