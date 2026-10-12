@@ -1,0 +1,36 @@
+{
+  "checked_utc": "2026-10-12T17:24:29.906Z",
+  "mac_application_execution": "NOT TESTED",
+  "records": [
+    {
+      "url": "https://www.bing.com/search?q=site%3Asupport.logos.com%20%22Print%22%20%22Export%22",
+      "status": 200,
+      "final_url": "https://www.bing.com/search?q=site%3Asupport.logos.com%20%22Print%22%20%22Export%22&rdr=1&rdrig=AB0C1443AF7742499A648C115B3EA4DF",
+      "title": "site:support.logos.com \"Print\" \"Export\" - Search",
+      "access_blocked": false,
+      "documentation_links": [],
+      "excerpts": [],
+      "search_snippets": []
+    },
+    {
+      "url": "https://www.bing.com/search?q=site%3Acommunity.logos.com%20%22100%20pages%22",
+      "status": 200,
+      "final_url": "https://www.bing.com/search?q=site%3Acommunity.logos.com%20%22100%20pages%22&rdr=1&rdrig=0C457813BC3C4664A334DB431DBACBB7",
+      "title": "site:community.logos.com \"100 pages\" - Search",
+      "access_blocked": false,
+      "documentation_links": [],
+      "excerpts": [],
+      "search_snippets": []
+    },
+    {
+      "url": "https://www.bing.com/search?q=site%3Acommunity.logos.com%20%22Copy%20Bible%20Verses%22%20%22entire%22",
+      "status": 200,
+      "final_url": "https://www.bing.com/search?q=site%3Acommunity.logos.com%20%22Copy%20Bible%20Verses%22%20%22entire%22&rdr=1&rdrig=7AE97F3F204E49F4ADE05920AABCF3CE",
+      "title": "site:community.logos.com \"Copy Bible Verses\" \"entire\" - Search",
+      "access_blocked": false,
+      "documentation_links": [],
+      "excerpts": [],
+      "search_snippets": []
+    }
+  ]
+}
