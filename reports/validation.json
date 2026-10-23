@@ -1,0 +1,49 @@
+{
+  "exeSHA256": "766cd9ec42d6ef4b2a0ef2bc2d37e8b1208c6d9ec92b93eff43e53382fb4bea0",
+  "powerPoint": "NOT TESTED",
+  "uiCheck": {
+    "translations": 3,
+    "state": "fresh bundled Bible files",
+    "report": "all-translations-ui.txt",
+    "exitCode": 0
+  },
+  "architecture": "x86",
+  "checks": [
+    {
+      "inputSHA256": "a0fc21290c310c92a6c2a0fdfb03b2605b80780f31e65bbef3f8ee52312910de",
+      "file": "Bibles/krv.json",
+      "case": "nkrv-json",
+      "exitCode": 0
+    },
+    {
+      "inputSHA256": "81dd15af734a797f984e45ca5abda6b3fb085f55e976f752548b48c1a1078af4",
+      "file": "Bibles/modern.json",
+      "case": "modern-json",
+      "exitCode": 0
+    },
+    {
+      "inputSHA256": "9fd4f732f2f98bb942c23cb7b19093ca963d68fb25b08a8a4c55518fd23c9e4d",
+      "file": "Bibles/easy.json",
+      "case": "easy-json",
+      "exitCode": 0
+    },
+    {
+      "inputSHA256": "49360e1576e5f6b6f39ad6847f3a8ccefafe160cacbe9e64b35253051d6c9d98",
+      "file": "TXT/개역개정_권장절정리.txt",
+      "case": "nkrv-txt",
+      "exitCode": 0
+    },
+    {
+      "inputSHA256": "99dca352e2251c15460076697a6118bb05e1830bed9bdfd462f48baeaedb68a7",
+      "file": "TXT/현대인의성경_권장절정리.txt",
+      "case": "modern-txt",
+      "exitCode": 0
+    },
+    {
+      "inputSHA256": "e1fc000e1f8154d418e3e03dfe2688f40a054e8d5855ebe173e78abe07f69ce6",
+      "file": "TXT/쉬운성경_권장절정리.txt",
+      "case": "easy-txt",
+      "exitCode": 0
+    }
+  ]
+}
