@@ -41,6 +41,8 @@ jobs:
                   if ($verse.sourceBlank -or $verse.unresolvedSourceReference -or
                       [string]::IsNullOrWhiteSpace($verse.text) -or
                       $verse.text.StartsWith('[원본 본문 누락:') -or
+                      $verse.text.Contains([string][char]0xFFFD) -or
+                      ($file -eq 'Bibles/krv.json' -and $verse.text.Contains('?')) -or
                       $verse.text -match '^\s*\(\d+절과 같음\)\s*$') {
                     throw "Unresolved delivered passage: $file $($book.key) $($chapter.number):$($verse.number)"
                   }
@@ -48,6 +50,18 @@ jobs:
               }
             }
           }
+          $unicodeAudit = Get-Content 'Audit/개역개정_문자복원.json' -Raw -Encoding utf8 | ConvertFrom-Json
+          $nkrv = Get-Content 'Bibles/krv.json' -Raw -Encoding utf8 | ConvertFrom-Json
+          foreach ($change in $unicodeAudit.changes) {
+            $book = $nkrv.books | Where-Object key -eq $change.book
+            $chapter = $book.chapters | Where-Object number -eq $change.chapter
+            $verse = $chapter.verses | Where-Object number -eq $change.verse
+            if (!$verse.text.Contains($change.restoredToken)) { throw "Missing restored Unicode: $($change.reference)" }
+            $bytes = [Text.Encoding]::UTF8.GetBytes($verse.text)
+            $hash = [Convert]::ToHexString([Security.Cryptography.SHA256]::HashData($bytes)).ToLowerInvariant()
+            if ($hash -ne $change.correctedTextSHA256) { throw "Restored Unicode text changed: $($change.reference)" }
+          }
+          if (@($unicodeAudit.changes).Count -ne 16) { throw 'Expected 16 verified character restorations.' }
       - name: Run each converted JSON and TXT with the actual EXE
         shell: pwsh
         env:

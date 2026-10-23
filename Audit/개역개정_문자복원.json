@@ -1,0 +1,422 @@
+{
+  "translation": "개역개정",
+  "cause": "The supplied UTF-8 TXT already contained literal question marks in 16 proper names. Only those damaged characters were restored; original source lines remain available for audit.",
+  "restoredVerseCount": 16,
+  "restoredCharacterCount": 16,
+  "verificationRun": "https://github.com/jjww2010-pixel/bible2ppt/actions/runs/39948835367",
+  "verificationSourceCommit": "0a2372e7b9239217f2138ae7cdd95aca2b4d5c57",
+  "verificationReportCommit": "071fb9f1419e63a80d55743426bf8b0c950c0758",
+  "changes": [
+    {
+      "book": "Genesis",
+      "chapter": 10,
+      "verse": 26,
+      "reference": "창10:26",
+      "originalCharacter": "?",
+      "restoredCharacter": "웻",
+      "originalToken": "하살마?과",
+      "restoredToken": "하살마웻과",
+      "localTextSHA256": "38f38870a9de1cb3d26ecde37d553585574d530eb8e6893105d1531b78ab46a0",
+      "correctedTextSHA256": "a402f0ecf10e95c19915387354d3ec40db638c06c49c1b5675bc2cf057bfab53",
+      "verifiedSources": [
+        {
+          "provider": "Godpia",
+          "url": "https://www.godpia.com/read/reading_body.asp",
+          "sourceTextSHA256": "a402f0ecf10e95c19915387354d3ec40db638c06c49c1b5675bc2cf057bfab53",
+          "wholeNormalizedPassageMatches": true
+        },
+        {
+          "provider": "Korean Bible Society",
+          "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=gen&chap=10",
+          "sourceTextSHA256": "70e7727a0023dcd794bb63c2e25ca9d496fc29b1cfcfaee2d461a68e4b2f14d6",
+          "wholeNormalizedPassageMatches": true
+        }
+      ]
+    },
+    {
+      "book": "Genesis",
+      "chapter": 46,
+      "verse": 21,
+      "reference": "창46:21",
+      "originalCharacter": "?",
+      "restoredCharacter": "훕",
+      "originalToken": "?빔과",
+      "restoredToken": "훕빔과",
+      "localTextSHA256": "3fb1757a2568d5c2338437662f900d45ea2f4c27dc8aaee874163462ebf014df",
+      "correctedTextSHA256": "00027654bde179d5ca10a6f33ed8041b1ae7703e63e6085910bce5faaedf4455",
+      "verifiedSources": [
+        {
+          "provider": "Godpia",
+          "url": "https://www.godpia.com/read/reading_body.asp",
+          "sourceTextSHA256": "00027654bde179d5ca10a6f33ed8041b1ae7703e63e6085910bce5faaedf4455",
+          "wholeNormalizedPassageMatches": true
+        },
+        {
+          "provider": "Korean Bible Society",
+          "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=gen&chap=46",
+          "sourceTextSHA256": "d2498b8dbb18daedde6687959e1befcc39dc49584632665147f491a403e65fae",
+          "wholeNormalizedPassageMatches": true
+        }
+      ]
+    },
+    {
+      "book": "IISamuel",
+      "chapter": 23,
+      "verse": 31,
+      "reference": "삼하23:31",
+      "originalCharacter": "?",
+      "restoredCharacter": "웻",
+      "originalToken": "아스마?과",
+      "restoredToken": "아스마웻과",
+      "localTextSHA256": "3bb457119f1e51b00c3e9e7eed63a2e7cea54b5c9f57fb163a817396eba27362",
+      "correctedTextSHA256": "07b8ad092f59176d905a6d289d132a5a87fb39e46146008426086baa8e10e595",
+      "verifiedSources": [
+        {
+          "provider": "Godpia",
+          "url": "https://www.godpia.com/read/reading_body.asp",
+          "sourceTextSHA256": "07b8ad092f59176d905a6d289d132a5a87fb39e46146008426086baa8e10e595",
+          "wholeNormalizedPassageMatches": true
+        },
+        {
+          "provider": "Korean Bible Society",
+          "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=2sa&chap=23",
+          "sourceTextSHA256": "3087eaf8b02eb0a77c15c34714f1168a037a73e95ad460b047608885f8b75d43",
+          "wholeNormalizedPassageMatches": true
+        }
+      ]
+    },
+    {
+      "book": "IChronicles",
+      "chapter": 1,
+      "verse": 20,
+      "reference": "대상1:20",
+      "originalCharacter": "?",
+      "restoredCharacter": "웻",
+      "originalToken": "하살마?과",
+      "restoredToken": "하살마웻과",
+      "localTextSHA256": "165f4e303b9195fc323ff5bd91742260cac773d250efd32a8f92847320c8f4af",
+      "correctedTextSHA256": "06889eb3d193f29169abb09e1edaa6040e2f5848628a58e8e29a7dfa5f324b6a",
+      "verifiedSources": [
+        {
+          "provider": "Godpia",
+          "url": "https://www.godpia.com/read/reading_body.asp",
+          "sourceTextSHA256": "06889eb3d193f29169abb09e1edaa6040e2f5848628a58e8e29a7dfa5f324b6a",
+          "wholeNormalizedPassageMatches": true
+        },
+        {
+          "provider": "Korean Bible Society",
+          "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=1ch&chap=1",
+          "sourceTextSHA256": "2d4fca9c538f8a327ef16ef8d89d819749846e06dc4d1910039c51f7c3f0eabc",
+          "wholeNormalizedPassageMatches": true
+        }
+      ]
+    },
+    {
+      "book": "IChronicles",
+      "chapter": 7,
+      "verse": 12,
+      "reference": "대상7:12",
+      "originalCharacter": "?",
+      "restoredCharacter": "훕",
+      "originalToken": "?빔이요",
+      "restoredToken": "훕빔이요",
+      "localTextSHA256": "aa94585f6bbb2fa4fb82af1bfa987a56812e3b12ddc9d2e1d9a09c037fab60c7",
+      "correctedTextSHA256": "1e21133d6ebad072651b011ffb357fe1d7d7a8d98a0cba133e02db76169e2270",
+      "verifiedSources": [
+        {
+          "provider": "Godpia",
+          "url": "https://www.godpia.com/read/reading_body.asp",
+          "sourceTextSHA256": "1e21133d6ebad072651b011ffb357fe1d7d7a8d98a0cba133e02db76169e2270",
+          "wholeNormalizedPassageMatches": true
+        },
+        {
+          "provider": "Korean Bible Society",
+          "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=1ch&chap=7",
+          "sourceTextSHA256": "b98305d4ebd894cbebdef622ac06e2b4cf4d5b1f9f3a662cf2b622df7b826186",
+          "wholeNormalizedPassageMatches": true
+        }
+      ]
+    },
+    {
+      "book": "IChronicles",
+      "chapter": 7,
+      "verse": 15,
+      "reference": "대상7:15",
+      "originalCharacter": "?",
+      "restoredCharacter": "훕",
+      "originalToken": "?빔과",
+      "restoredToken": "훕빔과",
+      "localTextSHA256": "b996af089534a6e136f303f36e4cf7d447f17f8b40e5f55ee9a338ef8bf91087",
+      "correctedTextSHA256": "a3435f3b31b9028e35ebd32e30fae09388765407f4e36e7827f87b4e4605ee22",
+      "verifiedSources": [
+        {
+          "provider": "Godpia",
+          "url": "https://www.godpia.com/read/reading_body.asp",
+          "sourceTextSHA256": "a3435f3b31b9028e35ebd32e30fae09388765407f4e36e7827f87b4e4605ee22",
+          "wholeNormalizedPassageMatches": true
+        },
+        {
+          "provider": "Korean Bible Society",
+          "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=1ch&chap=7",
+          "sourceTextSHA256": "5cd95d4e4d5528275cd9f019bb961c31181bc21d2cec27a66ecb2165ea576f12",
+          "wholeNormalizedPassageMatches": true
+        }
+      ]
+    },
+    {
+      "book": "IChronicles",
+      "chapter": 8,
+      "verse": 36,
+      "reference": "대상8:36",
+      "originalCharacter": "?",
+      "restoredCharacter": "웻",
+      "originalToken": "아스마?과",
+      "restoredToken": "아스마웻과",
+      "localTextSHA256": "6492e300d5f45c35e4e20e3225198c09cebc0e4a85d586c468dafc26b9e0c037",
+      "correctedTextSHA256": "edfc09b23d34f304a4259aacbaa61872b3959db505a49df3709f60cc329d6040",
+      "verifiedSources": [
+        {
+          "provider": "Godpia",
+          "url": "https://www.godpia.com/read/reading_body.asp",
+          "sourceTextSHA256": "edfc09b23d34f304a4259aacbaa61872b3959db505a49df3709f60cc329d6040",
+          "wholeNormalizedPassageMatches": true
+        },
+        {
+          "provider": "Korean Bible Society",
+          "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=1ch&chap=8",
+          "sourceTextSHA256": "03d17587b8eea229aee88975b65cf2c46174c93c0f547c89c9a9dfba27d16b7a",
+          "wholeNormalizedPassageMatches": true
+        }
+      ]
+    },
+    {
+      "book": "IChronicles",
+      "chapter": 9,
+      "verse": 42,
+      "reference": "대상9:42",
+      "originalCharacter": "?",
+      "restoredCharacter": "웻",
+      "originalToken": "아스마?과",
+      "restoredToken": "아스마웻과",
+      "localTextSHA256": "1d3572c100015ec79b6d554d1f44e6b709a8c6708d7d131039ea24abd5622dda",
+      "correctedTextSHA256": "2e09eaf016bbb529e4c074432cb46f0816b5164bc5e8becdb4020cae51b1712e",
+      "verifiedSources": [
+        {
+          "provider": "Godpia",
+          "url": "https://www.godpia.com/read/reading_body.asp",
+          "sourceTextSHA256": "2e09eaf016bbb529e4c074432cb46f0816b5164bc5e8becdb4020cae51b1712e",
+          "wholeNormalizedPassageMatches": true
+        },
+        {
+          "provider": "Korean Bible Society",
+          "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=1ch&chap=9",
+          "sourceTextSHA256": "66192970b34081c0f4cc85dc4d94415add5cf32073d8200b35b805d3abd86e26",
+          "wholeNormalizedPassageMatches": true
+        }
+      ]
+    },
+    {
+      "book": "IChronicles",
+      "chapter": 11,
+      "verse": 33,
+      "reference": "대상11:33",
+      "originalCharacter": "?",
+      "restoredCharacter": "웻",
+      "originalToken": "아스마?과",
+      "restoredToken": "아스마웻과",
+      "localTextSHA256": "90a6a8dc504224e8b68712bb6cd0e10c8dbc338ad97e221977910fccaa9bed72",
+      "correctedTextSHA256": "af24ea52c72a83e6fb8564c2f2feb3011d27e3336ed5d435133d2a28ba52bd35",
+      "verifiedSources": [
+        {
+          "provider": "Godpia",
+          "url": "https://www.godpia.com/read/reading_body.asp",
+          "sourceTextSHA256": "af24ea52c72a83e6fb8564c2f2feb3011d27e3336ed5d435133d2a28ba52bd35",
+          "wholeNormalizedPassageMatches": true
+        },
+        {
+          "provider": "Korean Bible Society",
+          "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=1ch&chap=11",
+          "sourceTextSHA256": "947ae2d1f8a9befb0c6feb4ae1d3642fc60508cfbd2e59940d4c7c0db3046940",
+          "wholeNormalizedPassageMatches": true
+        }
+      ]
+    },
+    {
+      "book": "IChronicles",
+      "chapter": 12,
+      "verse": 3,
+      "reference": "대상12:3",
+      "originalCharacter": "?",
+      "restoredCharacter": "웻",
+      "originalToken": "아스마?의",
+      "restoredToken": "아스마웻의",
+      "localTextSHA256": "2ee3d06b7802ec890f856d01b9d54ec857ec2294f19722c437bfb726e121b96f",
+      "correctedTextSHA256": "07f6fa9e6a37531602f00cc8e6ac29c817d0f613c4ebd9d5b107858f6011a94e",
+      "verifiedSources": [
+        {
+          "provider": "Godpia",
+          "url": "https://www.godpia.com/read/reading_body.asp",
+          "sourceTextSHA256": "07f6fa9e6a37531602f00cc8e6ac29c817d0f613c4ebd9d5b107858f6011a94e",
+          "wholeNormalizedPassageMatches": true
+        },
+        {
+          "provider": "Korean Bible Society",
+          "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=1ch&chap=12",
+          "sourceTextSHA256": "e5f72963d62f082588b4e5dd7cae68984c5ad836b6e8fcb7579cb0d7bd284e3c",
+          "wholeNormalizedPassageMatches": true
+        }
+      ]
+    },
+    {
+      "book": "IChronicles",
+      "chapter": 24,
+      "verse": 13,
+      "reference": "대상24:13",
+      "originalCharacter": "?",
+      "restoredCharacter": "훕",
+      "originalToken": "?바요",
+      "restoredToken": "훕바요",
+      "localTextSHA256": "2eaaef047be21cf2676eb8cb634bce4a63a9e51e6f0197903a2683aa0288a16a",
+      "correctedTextSHA256": "03ecf436ee616403f4b1abef59ccdc17bb3d7dd4d07d57acfa7c31446355b717",
+      "verifiedSources": [
+        {
+          "provider": "Godpia",
+          "url": "https://www.godpia.com/read/reading_body.asp",
+          "sourceTextSHA256": "03ecf436ee616403f4b1abef59ccdc17bb3d7dd4d07d57acfa7c31446355b717",
+          "wholeNormalizedPassageMatches": true
+        },
+        {
+          "provider": "Korean Bible Society",
+          "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=1ch&chap=24",
+          "sourceTextSHA256": "38c2e8fd2ecd4587d1764732585d5fbe1639015338a7f0d9a8b2853113e9b36b",
+          "wholeNormalizedPassageMatches": true
+        }
+      ]
+    },
+    {
+      "book": "IChronicles",
+      "chapter": 27,
+      "verse": 25,
+      "reference": "대상27:25",
+      "originalCharacter": "?",
+      "restoredCharacter": "웻",
+      "originalToken": "아스마?은",
+      "restoredToken": "아스마웻은",
+      "localTextSHA256": "9c26a3d8be2b6d997a5878b0eeb30e926864e02b88c80f3b823c0eaaf17d8e0c",
+      "correctedTextSHA256": "7c2ebfb7ffdd2714f1ec81e3678d769b03403895821fc3095e97af3955f745eb",
+      "verifiedSources": [
+        {
+          "provider": "Godpia",
+          "url": "https://www.godpia.com/read/reading_body.asp",
+          "sourceTextSHA256": "a17a72e35177347300e48584de548397fd1fd0543769b51a8a19f49c6cab3153",
+          "wholeNormalizedPassageMatches": true
+        },
+        {
+          "provider": "Korean Bible Society",
+          "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=1ch&chap=27",
+          "sourceTextSHA256": "892fc8d1dd14e9be20d49df3a235cf3e6ee53485d7f12b5abaa7362e2c7e44c8",
+          "wholeNormalizedPassageMatches": true
+        }
+      ]
+    },
+    {
+      "book": "Ezra",
+      "chapter": 2,
+      "verse": 24,
+      "reference": "스2:24",
+      "originalCharacter": "?",
+      "restoredCharacter": "웻",
+      "originalToken": "아스마?",
+      "restoredToken": "아스마웻",
+      "localTextSHA256": "1c6cfc75b4079d19ba0d82f46605c8591f252e195218e45f5a0fdaa03fe25f68",
+      "correctedTextSHA256": "d75146232b94da7c67fa5af81f5699418f6ba88a5836d00bd03f7b11ce90d1cf",
+      "verifiedSources": [
+        {
+          "provider": "Godpia",
+          "url": "https://www.godpia.com/read/reading_body.asp",
+          "sourceTextSHA256": "d75146232b94da7c67fa5af81f5699418f6ba88a5836d00bd03f7b11ce90d1cf",
+          "wholeNormalizedPassageMatches": true
+        },
+        {
+          "provider": "Korean Bible Society",
+          "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=ezr&chap=2",
+          "sourceTextSHA256": "d75146232b94da7c67fa5af81f5699418f6ba88a5836d00bd03f7b11ce90d1cf",
+          "wholeNormalizedPassageMatches": true
+        }
+      ]
+    },
+    {
+      "book": "Nehemiah",
+      "chapter": 7,
+      "verse": 28,
+      "reference": "느7:28",
+      "originalCharacter": "?",
+      "restoredCharacter": "웻",
+      "originalToken": "벧아스마?",
+      "restoredToken": "벧아스마웻",
+      "localTextSHA256": "003e437986e4f4d8f24b4be197ba007006292195c2df3f17a9330ffeeffc992f",
+      "correctedTextSHA256": "b11cd17b00858832e43988b5ab450644a2808a6d18f5a46b2d8661df63fcf687",
+      "verifiedSources": [
+        {
+          "provider": "Godpia",
+          "url": "https://www.godpia.com/read/reading_body.asp",
+          "sourceTextSHA256": "b11cd17b00858832e43988b5ab450644a2808a6d18f5a46b2d8661df63fcf687",
+          "wholeNormalizedPassageMatches": true
+        },
+        {
+          "provider": "Korean Bible Society",
+          "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=neh&chap=7",
+          "sourceTextSHA256": "b11cd17b00858832e43988b5ab450644a2808a6d18f5a46b2d8661df63fcf687",
+          "wholeNormalizedPassageMatches": true
+        }
+      ]
+    },
+    {
+      "book": "Nehemiah",
+      "chapter": 12,
+      "verse": 29,
+      "reference": "느12:29",
+      "originalCharacter": "?",
+      "restoredCharacter": "웻",
+      "originalToken": "아스마?",
+      "restoredToken": "아스마웻",
+      "localTextSHA256": "e214c1550bd2a267428447f2db7953118edf019d68e993ee0ada5863d72437e3",
+      "correctedTextSHA256": "c69e697a2f0eb9a795f56f842b9ba4544d70284ae533a58464dcc518d2ab6ee4",
+      "verifiedSources": [
+        {
+          "provider": "Godpia",
+          "url": "https://www.godpia.com/read/reading_body.asp",
+          "sourceTextSHA256": "c69e697a2f0eb9a795f56f842b9ba4544d70284ae533a58464dcc518d2ab6ee4",
+          "wholeNormalizedPassageMatches": true
+        },
+        {
+          "provider": "Korean Bible Society",
+          "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=neh&chap=12",
+          "sourceTextSHA256": "8ed1372b42314e765f2e47ef2d9e0c44cf4e42473b1e6de42c4369d49c973e2d",
+          "wholeNormalizedPassageMatches": true
+        }
+      ]
+    },
+    {
+      "book": "Isaiah",
+      "chapter": 62,
+      "verse": 4,
+      "reference": "사62:4",
+      "originalCharacter": "?",
+      "restoredCharacter": "쁄",
+      "originalToken": "?라라",
+      "restoredToken": "쁄라라",
+      "localTextSHA256": "2c17ba9cb485284926ed736f08481d681a3003b70e369ffb67ee8c704219e6ec",
+      "correctedTextSHA256": "0f16f040dfd376466fffb61b29264568ec7ba14a418d2438ba85e982656bbe13",
+      "verifiedSources": [
+        {
+          "provider": "Godpia",
+          "url": "https://www.godpia.com/read/reading_body.asp",
+          "sourceTextSHA256": "0f16f040dfd376466fffb61b29264568ec7ba14a418d2438ba85e982656bbe13",
+          "wholeNormalizedPassageMatches": true
+        }
+      ]
+    }
+  ],
+  "remainingCorruptCharacters": 0
+}

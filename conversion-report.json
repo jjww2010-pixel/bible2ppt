@@ -859,6 +859,8 @@
         "verificationRun": "https://github.com/jjww2010-pixel/bible2ppt/actions/runs/38299510718"
       }
     ],
-    "originalLinesReconstructExactly": true
+    "originalLinesReconstructExactly": true,
+    "restoredUnicodeCharacters": 16,
+    "unicodeRepairAudit": "Audit/개역개정_문자복원.json"
   }
 ]
