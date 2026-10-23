@@ -1,11 +1,11 @@
-# Bible2PPT v2.2 Windows 통합 다운로드
+# Bible2PPT v2.2.1 Windows 통합 다운로드
 
-개역개정·쉬운성경·현대인의 성경 본문과 Windows 실행 파일을 모두 담은 v2.2 통합 ZIP입니다. 압축 해제 후 실행하면 세 번역본을 바로 사용할 수 있습니다.
+개역개정·쉬운성경·현대인의 성경 본문과 Windows 실행 파일을 모두 담은 v2.2.1 통합 ZIP입니다. 압축 해제 후 실행하면 세 번역본을 바로 사용할 수 있습니다.
 실제 Windows에서 x64·x86 EXE를 직접 실행해 세 번역본의 선택과 독립 저장을 검증했습니다.
 
-[64비트 Windows 세 번역본 통합 ZIP 다운로드](https://github.com/jjww2010-pixel/bible2ppt/raw/refs/heads/windows-download/Bible2PPT-v2.2-all-bibles-win-x64.zip)
+[64비트 Windows 세 번역본 통합 ZIP 다운로드](https://github.com/jjww2010-pixel/bible2ppt/raw/refs/heads/windows-download/Bible2PPT-v2.2.1-all-bibles-win-x64.zip)
 
-[32비트 Windows 세 번역본 통합 ZIP 다운로드](https://github.com/jjww2010-pixel/bible2ppt/raw/refs/heads/windows-download/Bible2PPT-v2.2-all-bibles-win-x86.zip)
+[32비트 Windows 세 번역본 통합 ZIP 다운로드](https://github.com/jjww2010-pixel/bible2ppt/raw/refs/heads/windows-download/Bible2PPT-v2.2.1-all-bibles-win-x86.zip)
 
 비공개 저장소이므로 접근 권한이 있는 GitHub 계정으로 로그인해야 합니다.
 링크로 다운로드되지 않으면 위 파일 목록에서 ZIP 파일을 열고 **Download raw file** 버튼을 누르세요.
@@ -22,11 +22,13 @@
 .NET 런타임은 포함되어 있습니다. PPT 제작에는 Microsoft PowerPoint가 필요합니다.
 개역개정·쉬운성경·현대인의 성경 본문이 모두 포함되어 있습니다.
 
-v2.2는 이번 통합 묶음의 배포 이름입니다. 검사한 EXE를 수정하지 않고 최신 본문 파일과 묶었습니다.
+v2.2.1는 이번 통합 묶음의 배포 이름입니다. 검사한 EXE를 수정하지 않고 최신 본문 파일과 묶었습니다.
 
 ## 확인한 결과
 
-[최종 본문·메인 화면 검증](https://github.com/jjww2010-pixel/bible2ppt/actions/runs/38299983580)에서 x64·x86 EXE로 세 번역본의 JSON·TXT 각각 31,102개 절 조회가 통과했습니다. EXE 옆에 세 본문 파일을 미리 넣은 상태에서 실제 WinForms 메인 화면의 초기 본문 로딩, 66권 목록, 탐색과 번역 선택도 통과했습니다.
+개역개정 본문에서 `?`로 저장되어 있던 한글 16개를 동일 번역의 정상 본문과 대조해 복원했습니다. `쁄라`, `아스마웻`, `하살마웻`, `훕빔`, `훕바`가 정상 표시됩니다. Windows 배포 검사에서 손상 문자와 복원한 16개 구절의 UTF-8 해시를 확인합니다. 변경 기록과 출처는 ZIP의 `BibleDataAudit/개역개정_문자복원.json`에 있습니다.
+
+[최종 본문·메인 화면 검증](https://github.com/jjww2010-pixel/bible2ppt/actions/runs/39949335196)에서 x64·x86 EXE로 세 번역본의 JSON·TXT 각각 31,102개 절 조회가 통과했습니다. EXE 옆에 세 본문 파일을 미리 넣은 상태에서 실제 WinForms 메인 화면의 초기 본문 로딩, 66권 목록, 탐색과 번역 선택도 통과했습니다.
 개역개정의 번호 없이 이어진 본문 45줄을 해당 절에 연결하고, 빠진 행24:7은 같은 번역의 실제 `(없음)` 표기임을 확인해 추가했습니다. 쉬운성경 7개 공란과 현대인의 성경 창22:23의 참조 오류도 수정했습니다. 통합 ZIP의 EXE와 세 JSON의 SHA-256이 Windows 검사 입력과 일치합니다.
 ZIP 내부의 `package-manifest.json`, `Verification` 폴더에 근거가 있습니다.
 
@@ -54,3 +56,5 @@ Windows 검증 서버에는 Microsoft Office가 없어 **PowerPoint를 통한 �
 본문만 갱신하려면 [본문 ZIP](https://github.com/jjww2010-pixel/bible2ppt/raw/refs/heads/local-bible-files/BibleTexts.zip)을 받고 기존 EXE의 가져오기 기능을 사용해도 됩니다.
 
 이 브랜치는 배포 파일 다운로드용입니다. 수정할 소스 코드는 main 브랜치에 있습니다. 이전 ZIP은 기존 다운로드 링크 이용을 위해 유지합니다. 이번 세 번역본 포함 파일은 이름에 `all-bibles`가 있습니다.
+
+기존 v2.2 `all-bibles` 다운로드 경로도 같은 수정본으로 갱신했습니다.
