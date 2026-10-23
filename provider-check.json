@@ -1,0 +1,6133 @@
+[
+  {
+    "provider": "Godpia",
+    "translation": "gae",
+    "book": "Genesis",
+    "chapter": 10,
+    "targets": [
+      26
+    ],
+    "url": "https://www.godpia.com/read/reading.asp?ver=gae&vol=gen&chap=10",
+    "status": 200,
+    "finalURL": "https://www.godpia.com/read/reading.asp?ver=gae&vol=gen&chap=10",
+    "bytes": 48624,
+    "charset": "utf-8",
+    "title": "GODpia",
+    "translationOptions": [],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://www.godpia.com/read/reading.asp",
+        "label": "성경 읽기"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RE",
+        "label": "매일 성경 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RR",
+        "label": "Reformation 95일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RM",
+        "label": "Miracle 153일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RT",
+        "label": "오늘의 만나 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-sel.asp",
+        "label": "선택 통독"
+      },
+      {
+        "url": "https://www.godpia.com/search/search-dic.asp",
+        "label": "성경 사전"
+      },
+      {
+        "url": "https://www.godpia.com/write/write_everyday.asp",
+        "label": "매일 성경 필사"
+      }
+    ],
+    "scripts": [
+      "/assets/js/jquery-3.6.0.min.js",
+      "/assets/js/plugins.js",
+      "/assets/js/gsap.min.js",
+      "/assets/js/scripts.js?v=1",
+      "/assets/js/aos.js",
+      "/assets/js/common.js?v=0.1",
+      "/plugin/confirm/jquery-confirm.js",
+      "/assets/js/Script_Login.asp?HTTPD=www.godpia.com&VIU=frameindex.asp&HTTPU=/read/reading.asp?ver=gae!!vol=gen!!chap=10",
+      "/assets/js/read.js?v=2026-10-23 오후 8:50:01"
+    ],
+    "readerSelection": {
+      "jsCurVer": "gae",
+      "jsCurVol": "gen",
+      "jsCurChap": "10"
+    },
+    "dataVerseSamples": [],
+    "versionNameFields": [
+      {
+        "name": "btn-check-1-gae",
+        "value": "gae"
+      },
+      {
+        "name": "btn-check-1-niv",
+        "value": "niv"
+      },
+      {
+        "name": "btn-check-1-han",
+        "value": "han"
+      },
+      {
+        "name": "btn-check-1-easy",
+        "value": "easy"
+      },
+      {
+        "name": "btn-check-1-hyun",
+        "value": "hyun"
+      },
+      {
+        "name": "btn-check-1-saenew",
+        "value": "saenew"
+      },
+      {
+        "name": "btn-check-1-hebrew",
+        "value": "hebrew"
+      },
+      {
+        "name": "btn-check-1-greek",
+        "value": "greek"
+      },
+      {
+        "name": "btn-check-1-",
+        "value": "non"
+      },
+      {
+        "name": "btn-check-2-gae",
+        "value": "gae"
+      },
+      {
+        "name": "btn-check-2-niv",
+        "value": "niv"
+      },
+      {
+        "name": "btn-check-2-han",
+        "value": "han"
+      },
+      {
+        "name": "btn-check-2-easy",
+        "value": "easy"
+      },
+      {
+        "name": "btn-check-2-hyun",
+        "value": "hyun"
+      },
+      {
+        "name": "btn-check-2-saenew",
+        "value": "saenew"
+      },
+      {
+        "name": "btn-check-2-hebrew",
+        "value": "hebrew"
+      },
+      {
+        "name": "btn-check-2-greek",
+        "value": "greek"
+      }
+    ],
+    "parsedVerseCount": 0,
+    "unicodeRepairs": [],
+    "versePresence": [
+      {
+        "number": 26,
+        "found": false,
+        "characters": 0,
+        "sourceRange": [
+          26,
+          26
+        ],
+        "isExplicitNone": false,
+        "textSHA256": null,
+        "shortExcerpt": ""
+      }
+    ],
+    "numericElements": [],
+    "relevantClasses": [
+      "progress-circle svg-content",
+      "collapse navbar-collapse justify-content-center",
+      "sub-header sub-bg-read",
+      "bible section-padding pt-0",
+      "swiper mySwiperRead",
+      "modal-content rounded-3 shadow",
+      "form-control clsContents",
+      "offcanvas offcanvas-bottom bible-two",
+      "tab-content",
+      "bible-wrap mx-auto",
+      "bible-wrap mx-auto jang",
+      "bible-wrap mx-auto ver-size"
+    ]
+  },
+  {
+    "provider": "Godpia",
+    "translation": "gae",
+    "book": "Genesis",
+    "chapter": 10,
+    "targets": [
+      26
+    ],
+    "url": "https://www.godpia.com/read/reading_body.asp",
+    "post": {
+      "readFlag": "",
+      "calDate": "",
+      "seq": "",
+      "ver": "gae",
+      "ver2": "",
+      "vol": "gen",
+      "chap": "10",
+      "vol2": "",
+      "chap2": "",
+      "handwriting": "",
+      "curUrl": "/read/reading.asp"
+    },
+    "status": 200,
+    "finalURL": "https://www.godpia.com/read/reading_body.asp",
+    "bytes": 16552,
+    "charset": "utf-8",
+    "title": "",
+    "translationOptions": [],
+    "translationLabels": [],
+    "readingLinks": [],
+    "scripts": [],
+    "readerSelection": {},
+    "dataVerseSamples": [
+      {
+        "tag": "li",
+        "attributes": {
+          "class": [],
+          "id": "gae_gen_10_1",
+          "dataver": "gae",
+          "datavol": "gen",
+          "datachap": "10",
+          "datasec": "1"
+        },
+        "bodyClasses": [
+          [
+            "bible-read-no"
+          ],
+          [
+            "bible-read-cont"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ]
+        ]
+      },
+      {
+        "tag": "li",
+        "attributes": {
+          "class": [],
+          "id": "gae_gen_10_2",
+          "dataver": "gae",
+          "datavol": "gen",
+          "datachap": "10",
+          "datasec": "2"
+        },
+        "bodyClasses": [
+          [
+            "bible-read-no"
+          ],
+          [
+            "bible-read-cont"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ]
+        ]
+      }
+    ],
+    "versionNameFields": [
+      {
+        "name": "infoVerName",
+        "value": "개역개정(4판)"
+      }
+    ],
+    "parsedVerseCount": 32,
+    "unicodeRepairs": [
+      {
+        "book": "Genesis",
+        "chapter": 10,
+        "verse": 26,
+        "reference": "창10:26",
+        "originalCharacter": "?",
+        "restoredCharacter": "웻",
+        "originalToken": "하살마?과",
+        "restoredToken": "하살마웻과",
+        "localTextSHA256": "38f38870a9de1cb3d26ecde37d553585574d530eb8e6893105d1531b78ab46a0",
+        "sourceTextSHA256": "a402f0ecf10e95c19915387354d3ec40db638c06c49c1b5675bc2cf057bfab53",
+        "wholeNormalizedPassageMatches": true
+      }
+    ],
+    "versePresence": [
+      {
+        "number": 26,
+        "found": true,
+        "characters": 22,
+        "sourceRange": [
+          26,
+          26
+        ],
+        "isExplicitNone": false,
+        "textSHA256": "a402f0ecf10e95c19915387354d3ec40db638c06c49c1b5675bc2cf057bfab53",
+        "shortExcerpt": "욕단은 알모닷과 셀렙과 하살마웻과"
+      }
+    ]
+  },
+  {
+    "provider": "Korean Bible Society",
+    "translation": "GAE",
+    "book": "Genesis",
+    "chapter": 10,
+    "targets": [
+      26
+    ],
+    "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=gen&chap=10",
+    "status": 200,
+    "finalURL": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=gen&chap=10",
+    "bytes": 29177,
+    "charset": "utf-8",
+    "title": "대한성서공회",
+    "translationOptions": [
+      {
+        "value": "GAE",
+        "label": "개역개정",
+        "selected": true
+      },
+      {
+        "value": "HAN",
+        "label": "개역한글",
+        "selected": false
+      },
+      {
+        "value": "SAE",
+        "label": "표준새번역",
+        "selected": false
+      },
+      {
+        "value": "SAENEW",
+        "label": "새번역",
+        "selected": false
+      },
+      {
+        "value": "COG",
+        "label": "공동번역",
+        "selected": false
+      },
+      {
+        "value": "COGNEW",
+        "label": "공동번역 개정판",
+        "selected": false
+      }
+    ],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://bible.bskorea.or.kr",
+        "label": "성경플랫폼 가기"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php",
+        "label": "성경읽기"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/korbibSearchlist.php",
+        "label": "성경검색"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/write_comment.php",
+        "label": "개역개정 의견쓰기"
+      }
+    ],
+    "scripts": [
+      "//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.2.min.js",
+      "js/bible.list.js",
+      "js/bible.page.js?v2",
+      "js/common.js",
+      "js/layer.js",
+      "/js/alertify.js",
+      "/bible/js/check_version.js?v=2"
+    ],
+    "readerSelection": {},
+    "parsedVerseCount": 32,
+    "unicodeRepairs": [
+      {
+        "book": "Genesis",
+        "chapter": 10,
+        "verse": 26,
+        "reference": "창10:26",
+        "originalCharacter": "?",
+        "restoredCharacter": "웻",
+        "originalToken": "하살마?과",
+        "restoredToken": "하살마웻과",
+        "localTextSHA256": "38f38870a9de1cb3d26ecde37d553585574d530eb8e6893105d1531b78ab46a0",
+        "sourceTextSHA256": "70e7727a0023dcd794bb63c2e25ca9d496fc29b1cfcfaee2d461a68e4b2f14d6",
+        "wholeNormalizedPassageMatches": true
+      }
+    ],
+    "versePresence": [
+      {
+        "number": 26,
+        "found": true,
+        "characters": 27,
+        "sourceRange": [
+          26,
+          26
+        ],
+        "isExplicitNone": false,
+        "textSHA256": "70e7727a0023dcd794bb63c2e25ca9d496fc29b1cfcfaee2d461a68e4b2f14d6",
+        "shortExcerpt": "욕단 은 알모닷 과"
+      }
+    ]
+  },
+  {
+    "provider": "Godpia",
+    "translation": "gae",
+    "book": "Genesis",
+    "chapter": 46,
+    "targets": [
+      21
+    ],
+    "url": "https://www.godpia.com/read/reading.asp?ver=gae&vol=gen&chap=46",
+    "status": 200,
+    "finalURL": "https://www.godpia.com/read/reading.asp?ver=gae&vol=gen&chap=46",
+    "bytes": 48624,
+    "charset": "utf-8",
+    "title": "GODpia",
+    "translationOptions": [],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://www.godpia.com/read/reading.asp",
+        "label": "성경 읽기"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RE",
+        "label": "매일 성경 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RR",
+        "label": "Reformation 95일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RM",
+        "label": "Miracle 153일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RT",
+        "label": "오늘의 만나 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-sel.asp",
+        "label": "선택 통독"
+      },
+      {
+        "url": "https://www.godpia.com/search/search-dic.asp",
+        "label": "성경 사전"
+      },
+      {
+        "url": "https://www.godpia.com/write/write_everyday.asp",
+        "label": "매일 성경 필사"
+      }
+    ],
+    "scripts": [
+      "/assets/js/jquery-3.6.0.min.js",
+      "/assets/js/plugins.js",
+      "/assets/js/gsap.min.js",
+      "/assets/js/scripts.js?v=1",
+      "/assets/js/aos.js",
+      "/assets/js/common.js?v=0.1",
+      "/plugin/confirm/jquery-confirm.js",
+      "/assets/js/Script_Login.asp?HTTPD=www.godpia.com&VIU=frameindex.asp&HTTPU=/read/reading.asp?ver=gae!!vol=gen!!chap=46",
+      "/assets/js/read.js?v=2026-10-23 오후 8:50:01"
+    ],
+    "readerSelection": {
+      "jsCurVer": "gae",
+      "jsCurVol": "gen",
+      "jsCurChap": "46"
+    },
+    "dataVerseSamples": [],
+    "versionNameFields": [
+      {
+        "name": "btn-check-1-gae",
+        "value": "gae"
+      },
+      {
+        "name": "btn-check-1-niv",
+        "value": "niv"
+      },
+      {
+        "name": "btn-check-1-han",
+        "value": "han"
+      },
+      {
+        "name": "btn-check-1-easy",
+        "value": "easy"
+      },
+      {
+        "name": "btn-check-1-hyun",
+        "value": "hyun"
+      },
+      {
+        "name": "btn-check-1-saenew",
+        "value": "saenew"
+      },
+      {
+        "name": "btn-check-1-hebrew",
+        "value": "hebrew"
+      },
+      {
+        "name": "btn-check-1-greek",
+        "value": "greek"
+      },
+      {
+        "name": "btn-check-1-",
+        "value": "non"
+      },
+      {
+        "name": "btn-check-2-gae",
+        "value": "gae"
+      },
+      {
+        "name": "btn-check-2-niv",
+        "value": "niv"
+      },
+      {
+        "name": "btn-check-2-han",
+        "value": "han"
+      },
+      {
+        "name": "btn-check-2-easy",
+        "value": "easy"
+      },
+      {
+        "name": "btn-check-2-hyun",
+        "value": "hyun"
+      },
+      {
+        "name": "btn-check-2-saenew",
+        "value": "saenew"
+      },
+      {
+        "name": "btn-check-2-hebrew",
+        "value": "hebrew"
+      },
+      {
+        "name": "btn-check-2-greek",
+        "value": "greek"
+      }
+    ],
+    "parsedVerseCount": 0,
+    "unicodeRepairs": [],
+    "versePresence": [
+      {
+        "number": 21,
+        "found": false,
+        "characters": 0,
+        "sourceRange": [
+          21,
+          21
+        ],
+        "isExplicitNone": false,
+        "textSHA256": null,
+        "shortExcerpt": ""
+      }
+    ],
+    "numericElements": [],
+    "relevantClasses": [
+      "progress-circle svg-content",
+      "collapse navbar-collapse justify-content-center",
+      "sub-header sub-bg-read",
+      "bible section-padding pt-0",
+      "swiper mySwiperRead",
+      "modal-content rounded-3 shadow",
+      "form-control clsContents",
+      "offcanvas offcanvas-bottom bible-two",
+      "tab-content",
+      "bible-wrap mx-auto",
+      "bible-wrap mx-auto jang",
+      "bible-wrap mx-auto ver-size"
+    ]
+  },
+  {
+    "provider": "Godpia",
+    "translation": "gae",
+    "book": "Genesis",
+    "chapter": 46,
+    "targets": [
+      21
+    ],
+    "url": "https://www.godpia.com/read/reading_body.asp",
+    "post": {
+      "readFlag": "",
+      "calDate": "",
+      "seq": "",
+      "ver": "gae",
+      "ver2": "",
+      "vol": "gen",
+      "chap": "46",
+      "vol2": "",
+      "chap2": "",
+      "handwriting": "",
+      "curUrl": "/read/reading.asp"
+    },
+    "status": 200,
+    "finalURL": "https://www.godpia.com/read/reading_body.asp",
+    "bytes": 20187,
+    "charset": "utf-8",
+    "title": "",
+    "translationOptions": [],
+    "translationLabels": [],
+    "readingLinks": [],
+    "scripts": [],
+    "readerSelection": {},
+    "dataVerseSamples": [
+      {
+        "tag": "li",
+        "attributes": {
+          "class": [],
+          "id": "gae_gen_46_1",
+          "dataver": "gae",
+          "datavol": "gen",
+          "datachap": "46",
+          "datasec": "1"
+        },
+        "bodyClasses": [
+          [
+            "bible-read-no"
+          ],
+          [
+            "bible-read-cont"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ]
+        ]
+      },
+      {
+        "tag": "li",
+        "attributes": {
+          "class": [],
+          "id": "gae_gen_46_2",
+          "dataver": "gae",
+          "datavol": "gen",
+          "datachap": "46",
+          "datasec": "2"
+        },
+        "bodyClasses": [
+          [
+            "bible-read-no"
+          ],
+          [
+            "bible-read-cont"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ]
+        ]
+      }
+    ],
+    "versionNameFields": [
+      {
+        "name": "infoVerName",
+        "value": "개역개정(4판)"
+      }
+    ],
+    "parsedVerseCount": 34,
+    "unicodeRepairs": [
+      {
+        "book": "Genesis",
+        "chapter": 46,
+        "verse": 21,
+        "reference": "창46:21",
+        "originalCharacter": "?",
+        "restoredCharacter": "훕",
+        "originalToken": "?빔과",
+        "restoredToken": "훕빔과",
+        "localTextSHA256": "3fb1757a2568d5c2338437662f900d45ea2f4c27dc8aaee874163462ebf014df",
+        "sourceTextSHA256": "00027654bde179d5ca10a6f33ed8041b1ae7703e63e6085910bce5faaedf4455",
+        "wholeNormalizedPassageMatches": true
+      }
+    ],
+    "versePresence": [
+      {
+        "number": 21,
+        "found": true,
+        "characters": 52,
+        "sourceRange": [
+          21,
+          21
+        ],
+        "isExplicitNone": false,
+        "textSHA256": "00027654bde179d5ca10a6f33ed8041b1ae7703e63e6085910bce5faaedf4455",
+        "shortExcerpt": "베냐민의 아들 곧 벨라와"
+      }
+    ]
+  },
+  {
+    "provider": "Korean Bible Society",
+    "translation": "GAE",
+    "book": "Genesis",
+    "chapter": 46,
+    "targets": [
+      21
+    ],
+    "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=gen&chap=46",
+    "status": 200,
+    "finalURL": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=gen&chap=46",
+    "bytes": 30907,
+    "charset": "utf-8",
+    "title": "대한성서공회",
+    "translationOptions": [
+      {
+        "value": "GAE",
+        "label": "개역개정",
+        "selected": true
+      },
+      {
+        "value": "HAN",
+        "label": "개역한글",
+        "selected": false
+      },
+      {
+        "value": "SAE",
+        "label": "표준새번역",
+        "selected": false
+      },
+      {
+        "value": "SAENEW",
+        "label": "새번역",
+        "selected": false
+      },
+      {
+        "value": "COG",
+        "label": "공동번역",
+        "selected": false
+      },
+      {
+        "value": "COGNEW",
+        "label": "공동번역 개정판",
+        "selected": false
+      }
+    ],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://bible.bskorea.or.kr",
+        "label": "성경플랫폼 가기"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php",
+        "label": "성경읽기"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/korbibSearchlist.php",
+        "label": "성경검색"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/write_comment.php",
+        "label": "개역개정 의견쓰기"
+      }
+    ],
+    "scripts": [
+      "//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.2.min.js",
+      "js/bible.list.js",
+      "js/bible.page.js?v2",
+      "js/common.js",
+      "js/layer.js",
+      "/js/alertify.js",
+      "/bible/js/check_version.js?v=2"
+    ],
+    "readerSelection": {},
+    "parsedVerseCount": 34,
+    "unicodeRepairs": [
+      {
+        "book": "Genesis",
+        "chapter": 46,
+        "verse": 21,
+        "reference": "창46:21",
+        "originalCharacter": "?",
+        "restoredCharacter": "훕",
+        "originalToken": "?빔과",
+        "restoredToken": "훕빔과",
+        "localTextSHA256": "3fb1757a2568d5c2338437662f900d45ea2f4c27dc8aaee874163462ebf014df",
+        "sourceTextSHA256": "d2498b8dbb18daedde6687959e1befcc39dc49584632665147f491a403e65fae",
+        "wholeNormalizedPassageMatches": true
+      }
+    ],
+    "versePresence": [
+      {
+        "number": 21,
+        "found": true,
+        "characters": 63,
+        "sourceRange": [
+          21,
+          21
+        ],
+        "isExplicitNone": false,
+        "textSHA256": "d2498b8dbb18daedde6687959e1befcc39dc49584632665147f491a403e65fae",
+        "shortExcerpt": "베냐민 의 아들 곧"
+      }
+    ]
+  },
+  {
+    "provider": "Godpia",
+    "translation": "gae",
+    "book": "IISamuel",
+    "chapter": 23,
+    "targets": [
+      31
+    ],
+    "url": "https://www.godpia.com/read/reading.asp?ver=gae&vol=2sa&chap=23",
+    "status": 200,
+    "finalURL": "https://www.godpia.com/read/reading.asp?ver=gae&vol=2sa&chap=23",
+    "bytes": 48627,
+    "charset": "utf-8",
+    "title": "GODpia",
+    "translationOptions": [],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://www.godpia.com/read/reading.asp",
+        "label": "성경 읽기"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RE",
+        "label": "매일 성경 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RR",
+        "label": "Reformation 95일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RM",
+        "label": "Miracle 153일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RT",
+        "label": "오늘의 만나 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-sel.asp",
+        "label": "선택 통독"
+      },
+      {
+        "url": "https://www.godpia.com/search/search-dic.asp",
+        "label": "성경 사전"
+      },
+      {
+        "url": "https://www.godpia.com/write/write_everyday.asp",
+        "label": "매일 성경 필사"
+      }
+    ],
+    "scripts": [
+      "/assets/js/jquery-3.6.0.min.js",
+      "/assets/js/plugins.js",
+      "/assets/js/gsap.min.js",
+      "/assets/js/scripts.js?v=1",
+      "/assets/js/aos.js",
+      "/assets/js/common.js?v=0.1",
+      "/plugin/confirm/jquery-confirm.js",
+      "/assets/js/Script_Login.asp?HTTPD=www.godpia.com&VIU=frameindex.asp&HTTPU=/read/reading.asp?ver=gae!!vol=2sa!!chap=23",
+      "/assets/js/read.js?v=2026-10-23 오후 8:50:01"
+    ],
+    "readerSelection": {
+      "jsCurVer": "gae",
+      "jsCurVol": "2sa",
+      "jsCurChap": "23"
+    },
+    "dataVerseSamples": [],
+    "versionNameFields": [
+      {
+        "name": "btn-check-1-gae",
+        "value": "gae"
+      },
+      {
+        "name": "btn-check-1-niv",
+        "value": "niv"
+      },
+      {
+        "name": "btn-check-1-han",
+        "value": "han"
+      },
+      {
+        "name": "btn-check-1-easy",
+        "value": "easy"
+      },
+      {
+        "name": "btn-check-1-hyun",
+        "value": "hyun"
+      },
+      {
+        "name": "btn-check-1-saenew",
+        "value": "saenew"
+      },
+      {
+        "name": "btn-check-1-hebrew",
+        "value": "hebrew"
+      },
+      {
+        "name": "btn-check-1-greek",
+        "value": "greek"
+      },
+      {
+        "name": "btn-check-1-",
+        "value": "non"
+      },
+      {
+        "name": "btn-check-2-gae",
+        "value": "gae"
+      },
+      {
+        "name": "btn-check-2-niv",
+        "value": "niv"
+      },
+      {
+        "name": "btn-check-2-han",
+        "value": "han"
+      },
+      {
+        "name": "btn-check-2-easy",
+        "value": "easy"
+      },
+      {
+        "name": "btn-check-2-hyun",
+        "value": "hyun"
+      },
+      {
+        "name": "btn-check-2-saenew",
+        "value": "saenew"
+      },
+      {
+        "name": "btn-check-2-hebrew",
+        "value": "hebrew"
+      },
+      {
+        "name": "btn-check-2-greek",
+        "value": "greek"
+      }
+    ],
+    "parsedVerseCount": 0,
+    "unicodeRepairs": [],
+    "versePresence": [
+      {
+        "number": 31,
+        "found": false,
+        "characters": 0,
+        "sourceRange": [
+          31,
+          31
+        ],
+        "isExplicitNone": false,
+        "textSHA256": null,
+        "shortExcerpt": ""
+      }
+    ],
+    "numericElements": [],
+    "relevantClasses": [
+      "progress-circle svg-content",
+      "collapse navbar-collapse justify-content-center",
+      "sub-header sub-bg-read",
+      "bible section-padding pt-0",
+      "swiper mySwiperRead",
+      "modal-content rounded-3 shadow",
+      "form-control clsContents",
+      "offcanvas offcanvas-bottom bible-two",
+      "tab-content",
+      "bible-wrap mx-auto",
+      "bible-wrap mx-auto jang",
+      "bible-wrap mx-auto ver-size"
+    ]
+  },
+  {
+    "provider": "Godpia",
+    "translation": "gae",
+    "book": "IISamuel",
+    "chapter": 23,
+    "targets": [
+      31
+    ],
+    "url": "https://www.godpia.com/read/reading_body.asp",
+    "post": {
+      "readFlag": "",
+      "calDate": "",
+      "seq": "",
+      "ver": "gae",
+      "ver2": "",
+      "vol": "2sa",
+      "chap": "23",
+      "vol2": "",
+      "chap2": "",
+      "handwriting": "",
+      "curUrl": "/read/reading.asp"
+    },
+    "status": 200,
+    "finalURL": "https://www.godpia.com/read/reading_body.asp",
+    "bytes": 21718,
+    "charset": "utf-8",
+    "title": "",
+    "translationOptions": [],
+    "translationLabels": [],
+    "readingLinks": [],
+    "scripts": [],
+    "readerSelection": {},
+    "dataVerseSamples": [
+      {
+        "tag": "li",
+        "attributes": {
+          "class": [],
+          "id": "gae_2sa_23_1",
+          "dataver": "gae",
+          "datavol": "2sa",
+          "datachap": "23",
+          "datasec": "1"
+        },
+        "bodyClasses": [
+          [
+            "bible-read-no"
+          ],
+          [
+            "bible-read-cont"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ]
+        ]
+      },
+      {
+        "tag": "li",
+        "attributes": {
+          "class": [],
+          "id": "gae_2sa_23_2",
+          "dataver": "gae",
+          "datavol": "2sa",
+          "datachap": "23",
+          "datasec": "2"
+        },
+        "bodyClasses": [
+          [
+            "bible-read-no"
+          ],
+          [
+            "bible-read-cont"
+          ]
+        ]
+      }
+    ],
+    "versionNameFields": [
+      {
+        "name": "infoVerName",
+        "value": "개역개정(4판)"
+      }
+    ],
+    "parsedVerseCount": 39,
+    "unicodeRepairs": [
+      {
+        "book": "IISamuel",
+        "chapter": 23,
+        "verse": 31,
+        "reference": "삼하23:31",
+        "originalCharacter": "?",
+        "restoredCharacter": "웻",
+        "originalToken": "아스마?과",
+        "restoredToken": "아스마웻과",
+        "localTextSHA256": "3bb457119f1e51b00c3e9e7eed63a2e7cea54b5c9f57fb163a817396eba27362",
+        "sourceTextSHA256": "07b8ad092f59176d905a6d289d132a5a87fb39e46146008426086baa8e10e595",
+        "wholeNormalizedPassageMatches": true
+      }
+    ],
+    "versePresence": [
+      {
+        "number": 31,
+        "found": true,
+        "characters": 25,
+        "sourceRange": [
+          31,
+          31
+        ],
+        "isExplicitNone": false,
+        "textSHA256": "07b8ad092f59176d905a6d289d132a5a87fb39e46146008426086baa8e10e595",
+        "shortExcerpt": "아르바 사람 아비알본과 바르훔"
+      }
+    ]
+  },
+  {
+    "provider": "Korean Bible Society",
+    "translation": "GAE",
+    "book": "IISamuel",
+    "chapter": 23,
+    "targets": [
+      31
+    ],
+    "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=2sa&chap=23",
+    "status": 200,
+    "finalURL": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=2sa&chap=23",
+    "bytes": 31835,
+    "charset": "utf-8",
+    "title": "대한성서공회",
+    "translationOptions": [
+      {
+        "value": "GAE",
+        "label": "개역개정",
+        "selected": true
+      },
+      {
+        "value": "HAN",
+        "label": "개역한글",
+        "selected": false
+      },
+      {
+        "value": "SAE",
+        "label": "표준새번역",
+        "selected": false
+      },
+      {
+        "value": "SAENEW",
+        "label": "새번역",
+        "selected": false
+      },
+      {
+        "value": "COG",
+        "label": "공동번역",
+        "selected": false
+      },
+      {
+        "value": "COGNEW",
+        "label": "공동번역 개정판",
+        "selected": false
+      }
+    ],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://bible.bskorea.or.kr",
+        "label": "성경플랫폼 가기"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php",
+        "label": "성경읽기"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/korbibSearchlist.php",
+        "label": "성경검색"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/write_comment.php",
+        "label": "개역개정 의견쓰기"
+      }
+    ],
+    "scripts": [
+      "//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.2.min.js",
+      "js/bible.list.js",
+      "js/bible.page.js?v2",
+      "js/common.js",
+      "js/layer.js",
+      "/js/alertify.js",
+      "/bible/js/check_version.js?v=2"
+    ],
+    "readerSelection": {},
+    "parsedVerseCount": 39,
+    "unicodeRepairs": [
+      {
+        "book": "IISamuel",
+        "chapter": 23,
+        "verse": 31,
+        "reference": "삼하23:31",
+        "originalCharacter": "?",
+        "restoredCharacter": "웻",
+        "originalToken": "아스마?과",
+        "restoredToken": "아스마웻과",
+        "localTextSHA256": "3bb457119f1e51b00c3e9e7eed63a2e7cea54b5c9f57fb163a817396eba27362",
+        "sourceTextSHA256": "3087eaf8b02eb0a77c15c34714f1168a037a73e95ad460b047608885f8b75d43",
+        "wholeNormalizedPassageMatches": true
+      }
+    ],
+    "versePresence": [
+      {
+        "number": 31,
+        "found": true,
+        "characters": 27,
+        "sourceRange": [
+          31,
+          31
+        ],
+        "isExplicitNone": false,
+        "textSHA256": "3087eaf8b02eb0a77c15c34714f1168a037a73e95ad460b047608885f8b75d43",
+        "shortExcerpt": "아르바 사람 아비알본 과"
+      }
+    ]
+  },
+  {
+    "provider": "Godpia",
+    "translation": "gae",
+    "book": "IChronicles",
+    "chapter": 1,
+    "targets": [
+      20
+    ],
+    "url": "https://www.godpia.com/read/reading.asp?ver=gae&vol=1ch&chap=1",
+    "status": 200,
+    "finalURL": "https://www.godpia.com/read/reading.asp?ver=gae&vol=1ch&chap=1",
+    "bytes": 48619,
+    "charset": "utf-8",
+    "title": "GODpia",
+    "translationOptions": [],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://www.godpia.com/read/reading.asp",
+        "label": "성경 읽기"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RE",
+        "label": "매일 성경 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RR",
+        "label": "Reformation 95일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RM",
+        "label": "Miracle 153일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RT",
+        "label": "오늘의 만나 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-sel.asp",
+        "label": "선택 통독"
+      },
+      {
+        "url": "https://www.godpia.com/search/search-dic.asp",
+        "label": "성경 사전"
+      },
+      {
+        "url": "https://www.godpia.com/write/write_everyday.asp",
+        "label": "매일 성경 필사"
+      }
+    ],
+    "scripts": [
+      "/assets/js/jquery-3.6.0.min.js",
+      "/assets/js/plugins.js",
+      "/assets/js/gsap.min.js",
+      "/assets/js/scripts.js?v=1",
+      "/assets/js/aos.js",
+      "/assets/js/common.js?v=0.1",
+      "/plugin/confirm/jquery-confirm.js",
+      "/assets/js/Script_Login.asp?HTTPD=www.godpia.com&VIU=frameindex.asp&HTTPU=/read/reading.asp?ver=gae!!vol=1ch!!chap=1",
+      "/assets/js/read.js?v=2026-10-23 오후 8:50:01"
+    ],
+    "readerSelection": {
+      "jsCurVer": "gae",
+      "jsCurVol": "1ch",
+      "jsCurChap": "1"
+    },
+    "dataVerseSamples": [],
+    "versionNameFields": [
+      {
+        "name": "btn-check-1-gae",
+        "value": "gae"
+      },
+      {
+        "name": "btn-check-1-niv",
+        "value": "niv"
+      },
+      {
+        "name": "btn-check-1-han",
+        "value": "han"
+      },
+      {
+        "name": "btn-check-1-easy",
+        "value": "easy"
+      },
+      {
+        "name": "btn-check-1-hyun",
+        "value": "hyun"
+      },
+      {
+        "name": "btn-check-1-saenew",
+        "value": "saenew"
+      },
+      {
+        "name": "btn-check-1-hebrew",
+        "value": "hebrew"
+      },
+      {
+        "name": "btn-check-1-greek",
+        "value": "greek"
+      },
+      {
+        "name": "btn-check-1-",
+        "value": "non"
+      },
+      {
+        "name": "btn-check-2-gae",
+        "value": "gae"
+      },
+      {
+        "name": "btn-check-2-niv",
+        "value": "niv"
+      },
+      {
+        "name": "btn-check-2-han",
+        "value": "han"
+      },
+      {
+        "name": "btn-check-2-easy",
+        "value": "easy"
+      },
+      {
+        "name": "btn-check-2-hyun",
+        "value": "hyun"
+      },
+      {
+        "name": "btn-check-2-saenew",
+        "value": "saenew"
+      },
+      {
+        "name": "btn-check-2-hebrew",
+        "value": "hebrew"
+      },
+      {
+        "name": "btn-check-2-greek",
+        "value": "greek"
+      }
+    ],
+    "parsedVerseCount": 0,
+    "unicodeRepairs": [],
+    "versePresence": [
+      {
+        "number": 20,
+        "found": false,
+        "characters": 0,
+        "sourceRange": [
+          20,
+          20
+        ],
+        "isExplicitNone": false,
+        "textSHA256": null,
+        "shortExcerpt": ""
+      }
+    ],
+    "numericElements": [],
+    "relevantClasses": [
+      "progress-circle svg-content",
+      "collapse navbar-collapse justify-content-center",
+      "sub-header sub-bg-read",
+      "bible section-padding pt-0",
+      "swiper mySwiperRead",
+      "modal-content rounded-3 shadow",
+      "form-control clsContents",
+      "offcanvas offcanvas-bottom bible-two",
+      "tab-content",
+      "bible-wrap mx-auto",
+      "bible-wrap mx-auto jang",
+      "bible-wrap mx-auto ver-size"
+    ]
+  },
+  {
+    "provider": "Godpia",
+    "translation": "gae",
+    "book": "IChronicles",
+    "chapter": 1,
+    "targets": [
+      20
+    ],
+    "url": "https://www.godpia.com/read/reading_body.asp",
+    "post": {
+      "readFlag": "",
+      "calDate": "",
+      "seq": "",
+      "ver": "gae",
+      "ver2": "",
+      "vol": "1ch",
+      "chap": "1",
+      "vol2": "",
+      "chap2": "",
+      "handwriting": "",
+      "curUrl": "/read/reading.asp"
+    },
+    "status": 200,
+    "finalURL": "https://www.godpia.com/read/reading_body.asp",
+    "bytes": 27576,
+    "charset": "utf-8",
+    "title": "",
+    "translationOptions": [],
+    "translationLabels": [],
+    "readingLinks": [],
+    "scripts": [],
+    "readerSelection": {},
+    "dataVerseSamples": [
+      {
+        "tag": "li",
+        "attributes": {
+          "class": [],
+          "id": "gae_1ch_1_1",
+          "dataver": "gae",
+          "datavol": "1ch",
+          "datachap": "1",
+          "datasec": "1"
+        },
+        "bodyClasses": [
+          [
+            "bible-read-no"
+          ],
+          [
+            "bible-read-cont"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ]
+        ]
+      },
+      {
+        "tag": "li",
+        "attributes": {
+          "class": [],
+          "id": "gae_1ch_1_2",
+          "dataver": "gae",
+          "datavol": "1ch",
+          "datachap": "1",
+          "datasec": "2"
+        },
+        "bodyClasses": [
+          [
+            "bible-read-no"
+          ],
+          [
+            "bible-read-cont"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ]
+        ]
+      }
+    ],
+    "versionNameFields": [
+      {
+        "name": "infoVerName",
+        "value": "개역개정(4판)"
+      }
+    ],
+    "parsedVerseCount": 54,
+    "unicodeRepairs": [
+      {
+        "book": "IChronicles",
+        "chapter": 1,
+        "verse": 20,
+        "reference": "대상1:20",
+        "originalCharacter": "?",
+        "restoredCharacter": "웻",
+        "originalToken": "하살마?과",
+        "restoredToken": "하살마웻과",
+        "localTextSHA256": "165f4e303b9195fc323ff5bd91742260cac773d250efd32a8f92847320c8f4af",
+        "sourceTextSHA256": "06889eb3d193f29169abb09e1edaa6040e2f5848628a58e8e29a7dfa5f324b6a",
+        "wholeNormalizedPassageMatches": true
+      }
+    ],
+    "versePresence": [
+      {
+        "number": 20,
+        "found": true,
+        "characters": 22,
+        "sourceRange": [
+          20,
+          20
+        ],
+        "isExplicitNone": false,
+        "textSHA256": "06889eb3d193f29169abb09e1edaa6040e2f5848628a58e8e29a7dfa5f324b6a",
+        "shortExcerpt": "욕단이 알모닷과 셀렙과 하살마웻과"
+      }
+    ]
+  },
+  {
+    "provider": "Korean Bible Society",
+    "translation": "GAE",
+    "book": "IChronicles",
+    "chapter": 1,
+    "targets": [
+      20
+    ],
+    "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=1ch&chap=1",
+    "status": 200,
+    "finalURL": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=1ch&chap=1",
+    "bytes": 36092,
+    "charset": "utf-8",
+    "title": "대한성서공회",
+    "translationOptions": [
+      {
+        "value": "GAE",
+        "label": "개역개정",
+        "selected": true
+      },
+      {
+        "value": "HAN",
+        "label": "개역한글",
+        "selected": false
+      },
+      {
+        "value": "SAE",
+        "label": "표준새번역",
+        "selected": false
+      },
+      {
+        "value": "SAENEW",
+        "label": "새번역",
+        "selected": false
+      },
+      {
+        "value": "COG",
+        "label": "공동번역",
+        "selected": false
+      },
+      {
+        "value": "COGNEW",
+        "label": "공동번역 개정판",
+        "selected": false
+      }
+    ],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://bible.bskorea.or.kr",
+        "label": "성경플랫폼 가기"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php",
+        "label": "성경읽기"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/korbibSearchlist.php",
+        "label": "성경검색"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/write_comment.php",
+        "label": "개역개정 의견쓰기"
+      }
+    ],
+    "scripts": [
+      "//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.2.min.js",
+      "js/bible.list.js",
+      "js/bible.page.js?v2",
+      "js/common.js",
+      "js/layer.js",
+      "/js/alertify.js",
+      "/bible/js/check_version.js?v=2"
+    ],
+    "readerSelection": {},
+    "parsedVerseCount": 54,
+    "unicodeRepairs": [
+      {
+        "book": "IChronicles",
+        "chapter": 1,
+        "verse": 20,
+        "reference": "대상1:20",
+        "originalCharacter": "?",
+        "restoredCharacter": "웻",
+        "originalToken": "하살마?과",
+        "restoredToken": "하살마웻과",
+        "localTextSHA256": "165f4e303b9195fc323ff5bd91742260cac773d250efd32a8f92847320c8f4af",
+        "sourceTextSHA256": "2d4fca9c538f8a327ef16ef8d89d819749846e06dc4d1910039c51f7c3f0eabc",
+        "wholeNormalizedPassageMatches": true
+      }
+    ],
+    "versePresence": [
+      {
+        "number": 20,
+        "found": true,
+        "characters": 27,
+        "sourceRange": [
+          20,
+          20
+        ],
+        "isExplicitNone": false,
+        "textSHA256": "2d4fca9c538f8a327ef16ef8d89d819749846e06dc4d1910039c51f7c3f0eabc",
+        "shortExcerpt": "욕단 이 알모닷 과"
+      }
+    ]
+  },
+  {
+    "provider": "Godpia",
+    "translation": "gae",
+    "book": "IChronicles",
+    "chapter": 7,
+    "targets": [
+      12,
+      15
+    ],
+    "url": "https://www.godpia.com/read/reading.asp?ver=gae&vol=1ch&chap=7",
+    "status": 200,
+    "finalURL": "https://www.godpia.com/read/reading.asp?ver=gae&vol=1ch&chap=7",
+    "bytes": 48619,
+    "charset": "utf-8",
+    "title": "GODpia",
+    "translationOptions": [],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://www.godpia.com/read/reading.asp",
+        "label": "성경 읽기"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RE",
+        "label": "매일 성경 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RR",
+        "label": "Reformation 95일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RM",
+        "label": "Miracle 153일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RT",
+        "label": "오늘의 만나 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-sel.asp",
+        "label": "선택 통독"
+      },
+      {
+        "url": "https://www.godpia.com/search/search-dic.asp",
+        "label": "성경 사전"
+      },
+      {
+        "url": "https://www.godpia.com/write/write_everyday.asp",
+        "label": "매일 성경 필사"
+      }
+    ],
+    "scripts": [
+      "/assets/js/jquery-3.6.0.min.js",
+      "/assets/js/plugins.js",
+      "/assets/js/gsap.min.js",
+      "/assets/js/scripts.js?v=1",
+      "/assets/js/aos.js",
+      "/assets/js/common.js?v=0.1",
+      "/plugin/confirm/jquery-confirm.js",
+      "/assets/js/Script_Login.asp?HTTPD=www.godpia.com&VIU=frameindex.asp&HTTPU=/read/reading.asp?ver=gae!!vol=1ch!!chap=7",
+      "/assets/js/read.js?v=2026-10-23 오후 8:50:01"
+    ],
+    "readerSelection": {
+      "jsCurVer": "gae",
+      "jsCurVol": "1ch",
+      "jsCurChap": "7"
+    },
+    "dataVerseSamples": [],
+    "versionNameFields": [
+      {
+        "name": "btn-check-1-gae",
+        "value": "gae"
+      },
+      {
+        "name": "btn-check-1-niv",
+        "value": "niv"
+      },
+      {
+        "name": "btn-check-1-han",
+        "value": "han"
+      },
+      {
+        "name": "btn-check-1-easy",
+        "value": "easy"
+      },
+      {
+        "name": "btn-check-1-hyun",
+        "value": "hyun"
+      },
+      {
+        "name": "btn-check-1-saenew",
+        "value": "saenew"
+      },
+      {
+        "name": "btn-check-1-hebrew",
+        "value": "hebrew"
+      },
+      {
+        "name": "btn-check-1-greek",
+        "value": "greek"
+      },
+      {
+        "name": "btn-check-1-",
+        "value": "non"
+      },
+      {
+        "name": "btn-check-2-gae",
+        "value": "gae"
+      },
+      {
+        "name": "btn-check-2-niv",
+        "value": "niv"
+      },
+      {
+        "name": "btn-check-2-han",
+        "value": "han"
+      },
+      {
+        "name": "btn-check-2-easy",
+        "value": "easy"
+      },
+      {
+        "name": "btn-check-2-hyun",
+        "value": "hyun"
+      },
+      {
+        "name": "btn-check-2-saenew",
+        "value": "saenew"
+      },
+      {
+        "name": "btn-check-2-hebrew",
+        "value": "hebrew"
+      },
+      {
+        "name": "btn-check-2-greek",
+        "value": "greek"
+      }
+    ],
+    "parsedVerseCount": 0,
+    "unicodeRepairs": [],
+    "versePresence": [
+      {
+        "number": 12,
+        "found": false,
+        "characters": 0,
+        "sourceRange": [
+          12,
+          12
+        ],
+        "isExplicitNone": false,
+        "textSHA256": null,
+        "shortExcerpt": ""
+      },
+      {
+        "number": 15,
+        "found": false,
+        "characters": 0,
+        "sourceRange": [
+          15,
+          15
+        ],
+        "isExplicitNone": false,
+        "textSHA256": null,
+        "shortExcerpt": ""
+      }
+    ],
+    "numericElements": [],
+    "relevantClasses": [
+      "progress-circle svg-content",
+      "collapse navbar-collapse justify-content-center",
+      "sub-header sub-bg-read",
+      "bible section-padding pt-0",
+      "swiper mySwiperRead",
+      "modal-content rounded-3 shadow",
+      "form-control clsContents",
+      "offcanvas offcanvas-bottom bible-two",
+      "tab-content",
+      "bible-wrap mx-auto",
+      "bible-wrap mx-auto jang",
+      "bible-wrap mx-auto ver-size"
+    ]
+  },
+  {
+    "provider": "Godpia",
+    "translation": "gae",
+    "book": "IChronicles",
+    "chapter": 7,
+    "targets": [
+      12,
+      15
+    ],
+    "url": "https://www.godpia.com/read/reading_body.asp",
+    "post": {
+      "readFlag": "",
+      "calDate": "",
+      "seq": "",
+      "ver": "gae",
+      "ver2": "",
+      "vol": "1ch",
+      "chap": "7",
+      "vol2": "",
+      "chap2": "",
+      "handwriting": "",
+      "curUrl": "/read/reading.asp"
+    },
+    "status": 200,
+    "finalURL": "https://www.godpia.com/read/reading_body.asp",
+    "bytes": 23843,
+    "charset": "utf-8",
+    "title": "",
+    "translationOptions": [],
+    "translationLabels": [],
+    "readingLinks": [],
+    "scripts": [],
+    "readerSelection": {},
+    "dataVerseSamples": [
+      {
+        "tag": "li",
+        "attributes": {
+          "class": [],
+          "id": "gae_1ch_7_1",
+          "dataver": "gae",
+          "datavol": "1ch",
+          "datachap": "7",
+          "datasec": "1"
+        },
+        "bodyClasses": [
+          [
+            "bible-read-no"
+          ],
+          [
+            "bible-read-cont"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ]
+        ]
+      },
+      {
+        "tag": "li",
+        "attributes": {
+          "class": [],
+          "id": "gae_1ch_7_2",
+          "dataver": "gae",
+          "datavol": "1ch",
+          "datachap": "7",
+          "datasec": "2"
+        },
+        "bodyClasses": [
+          [
+            "bible-read-no"
+          ],
+          [
+            "bible-read-cont"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ]
+        ]
+      }
+    ],
+    "versionNameFields": [
+      {
+        "name": "infoVerName",
+        "value": "개역개정(4판)"
+      }
+    ],
+    "parsedVerseCount": 40,
+    "unicodeRepairs": [
+      {
+        "book": "IChronicles",
+        "chapter": 7,
+        "verse": 12,
+        "reference": "대상7:12",
+        "originalCharacter": "?",
+        "restoredCharacter": "훕",
+        "originalToken": "?빔이요",
+        "restoredToken": "훕빔이요",
+        "localTextSHA256": "aa94585f6bbb2fa4fb82af1bfa987a56812e3b12ddc9d2e1d9a09c037fab60c7",
+        "sourceTextSHA256": "1e21133d6ebad072651b011ffb357fe1d7d7a8d98a0cba133e02db76169e2270",
+        "wholeNormalizedPassageMatches": true
+      },
+      {
+        "book": "IChronicles",
+        "chapter": 7,
+        "verse": 15,
+        "reference": "대상7:15",
+        "originalCharacter": "?",
+        "restoredCharacter": "훕",
+        "originalToken": "?빔과",
+        "restoredToken": "훕빔과",
+        "localTextSHA256": "b996af089534a6e136f303f36e4cf7d447f17f8b40e5f55ee9a338ef8bf91087",
+        "sourceTextSHA256": "a3435f3b31b9028e35ebd32e30fae09388765407f4e36e7827f87b4e4605ee22",
+        "wholeNormalizedPassageMatches": true
+      }
+    ],
+    "versePresence": [
+      {
+        "number": 12,
+        "found": true,
+        "characters": 29,
+        "sourceRange": [
+          12,
+          12
+        ],
+        "isExplicitNone": false,
+        "textSHA256": "1e21133d6ebad072651b011ffb357fe1d7d7a8d98a0cba133e02db76169e2270",
+        "shortExcerpt": "일의 아들은 숩빔과 훕빔이요"
+      },
+      {
+        "number": 15,
+        "found": true,
+        "characters": 72,
+        "sourceRange": [
+          15,
+          15
+        ],
+        "isExplicitNone": false,
+        "textSHA256": "a3435f3b31b9028e35ebd32e30fae09388765407f4e36e7827f87b4e4605ee22",
+        "shortExcerpt": "마길은 훕빔과 숩빔의 누이"
+      }
+    ]
+  },
+  {
+    "provider": "Korean Bible Society",
+    "translation": "GAE",
+    "book": "IChronicles",
+    "chapter": 7,
+    "targets": [
+      12,
+      15
+    ],
+    "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=1ch&chap=7",
+    "status": 200,
+    "finalURL": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=1ch&chap=7",
+    "bytes": 33870,
+    "charset": "utf-8",
+    "title": "대한성서공회",
+    "translationOptions": [
+      {
+        "value": "GAE",
+        "label": "개역개정",
+        "selected": true
+      },
+      {
+        "value": "HAN",
+        "label": "개역한글",
+        "selected": false
+      },
+      {
+        "value": "SAE",
+        "label": "표준새번역",
+        "selected": false
+      },
+      {
+        "value": "SAENEW",
+        "label": "새번역",
+        "selected": false
+      },
+      {
+        "value": "COG",
+        "label": "공동번역",
+        "selected": false
+      },
+      {
+        "value": "COGNEW",
+        "label": "공동번역 개정판",
+        "selected": false
+      }
+    ],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://bible.bskorea.or.kr",
+        "label": "성경플랫폼 가기"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php",
+        "label": "성경읽기"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/korbibSearchlist.php",
+        "label": "성경검색"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/write_comment.php",
+        "label": "개역개정 의견쓰기"
+      }
+    ],
+    "scripts": [
+      "//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.2.min.js",
+      "js/bible.list.js",
+      "js/bible.page.js?v2",
+      "js/common.js",
+      "js/layer.js",
+      "/js/alertify.js",
+      "/bible/js/check_version.js?v=2"
+    ],
+    "readerSelection": {},
+    "parsedVerseCount": 40,
+    "unicodeRepairs": [
+      {
+        "book": "IChronicles",
+        "chapter": 7,
+        "verse": 12,
+        "reference": "대상7:12",
+        "originalCharacter": "?",
+        "restoredCharacter": "훕",
+        "originalToken": "?빔이요",
+        "restoredToken": "훕빔이요",
+        "localTextSHA256": "aa94585f6bbb2fa4fb82af1bfa987a56812e3b12ddc9d2e1d9a09c037fab60c7",
+        "sourceTextSHA256": "b98305d4ebd894cbebdef622ac06e2b4cf4d5b1f9f3a662cf2b622df7b826186",
+        "wholeNormalizedPassageMatches": true
+      },
+      {
+        "book": "IChronicles",
+        "chapter": 7,
+        "verse": 15,
+        "reference": "대상7:15",
+        "originalCharacter": "?",
+        "restoredCharacter": "훕",
+        "originalToken": "?빔과",
+        "restoredToken": "훕빔과",
+        "localTextSHA256": "b996af089534a6e136f303f36e4cf7d447f17f8b40e5f55ee9a338ef8bf91087",
+        "sourceTextSHA256": "5cd95d4e4d5528275cd9f019bb961c31181bc21d2cec27a66ecb2165ea576f12",
+        "wholeNormalizedPassageMatches": true
+      }
+    ],
+    "versePresence": [
+      {
+        "number": 12,
+        "found": true,
+        "characters": 34,
+        "sourceRange": [
+          12,
+          12
+        ],
+        "isExplicitNone": false,
+        "textSHA256": "b98305d4ebd894cbebdef622ac06e2b4cf4d5b1f9f3a662cf2b622df7b826186",
+        "shortExcerpt": "일 의 아들은 숩빔"
+      },
+      {
+        "number": 15,
+        "found": true,
+        "characters": 79,
+        "sourceRange": [
+          15,
+          15
+        ],
+        "isExplicitNone": false,
+        "textSHA256": "5cd95d4e4d5528275cd9f019bb961c31181bc21d2cec27a66ecb2165ea576f12",
+        "shortExcerpt": "마길 은 훕빔 과"
+      }
+    ]
+  },
+  {
+    "provider": "Godpia",
+    "translation": "gae",
+    "book": "IChronicles",
+    "chapter": 8,
+    "targets": [
+      36
+    ],
+    "url": "https://www.godpia.com/read/reading.asp?ver=gae&vol=1ch&chap=8",
+    "status": 200,
+    "finalURL": "https://www.godpia.com/read/reading.asp?ver=gae&vol=1ch&chap=8",
+    "bytes": 48619,
+    "charset": "utf-8",
+    "title": "GODpia",
+    "translationOptions": [],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://www.godpia.com/read/reading.asp",
+        "label": "성경 읽기"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RE",
+        "label": "매일 성경 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RR",
+        "label": "Reformation 95일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RM",
+        "label": "Miracle 153일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RT",
+        "label": "오늘의 만나 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-sel.asp",
+        "label": "선택 통독"
+      },
+      {
+        "url": "https://www.godpia.com/search/search-dic.asp",
+        "label": "성경 사전"
+      },
+      {
+        "url": "https://www.godpia.com/write/write_everyday.asp",
+        "label": "매일 성경 필사"
+      }
+    ],
+    "scripts": [
+      "/assets/js/jquery-3.6.0.min.js",
+      "/assets/js/plugins.js",
+      "/assets/js/gsap.min.js",
+      "/assets/js/scripts.js?v=1",
+      "/assets/js/aos.js",
+      "/assets/js/common.js?v=0.1",
+      "/plugin/confirm/jquery-confirm.js",
+      "/assets/js/Script_Login.asp?HTTPD=www.godpia.com&VIU=frameindex.asp&HTTPU=/read/reading.asp?ver=gae!!vol=1ch!!chap=8",
+      "/assets/js/read.js?v=2026-10-23 오후 8:50:01"
+    ],
+    "readerSelection": {
+      "jsCurVer": "gae",
+      "jsCurVol": "1ch",
+      "jsCurChap": "8"
+    },
+    "dataVerseSamples": [],
+    "versionNameFields": [
+      {
+        "name": "btn-check-1-gae",
+        "value": "gae"
+      },
+      {
+        "name": "btn-check-1-niv",
+        "value": "niv"
+      },
+      {
+        "name": "btn-check-1-han",
+        "value": "han"
+      },
+      {
+        "name": "btn-check-1-easy",
+        "value": "easy"
+      },
+      {
+        "name": "btn-check-1-hyun",
+        "value": "hyun"
+      },
+      {
+        "name": "btn-check-1-saenew",
+        "value": "saenew"
+      },
+      {
+        "name": "btn-check-1-hebrew",
+        "value": "hebrew"
+      },
+      {
+        "name": "btn-check-1-greek",
+        "value": "greek"
+      },
+      {
+        "name": "btn-check-1-",
+        "value": "non"
+      },
+      {
+        "name": "btn-check-2-gae",
+        "value": "gae"
+      },
+      {
+        "name": "btn-check-2-niv",
+        "value": "niv"
+      },
+      {
+        "name": "btn-check-2-han",
+        "value": "han"
+      },
+      {
+        "name": "btn-check-2-easy",
+        "value": "easy"
+      },
+      {
+        "name": "btn-check-2-hyun",
+        "value": "hyun"
+      },
+      {
+        "name": "btn-check-2-saenew",
+        "value": "saenew"
+      },
+      {
+        "name": "btn-check-2-hebrew",
+        "value": "hebrew"
+      },
+      {
+        "name": "btn-check-2-greek",
+        "value": "greek"
+      }
+    ],
+    "parsedVerseCount": 0,
+    "unicodeRepairs": [],
+    "versePresence": [
+      {
+        "number": 36,
+        "found": false,
+        "characters": 0,
+        "sourceRange": [
+          36,
+          36
+        ],
+        "isExplicitNone": false,
+        "textSHA256": null,
+        "shortExcerpt": ""
+      }
+    ],
+    "numericElements": [],
+    "relevantClasses": [
+      "progress-circle svg-content",
+      "collapse navbar-collapse justify-content-center",
+      "sub-header sub-bg-read",
+      "bible section-padding pt-0",
+      "swiper mySwiperRead",
+      "modal-content rounded-3 shadow",
+      "form-control clsContents",
+      "offcanvas offcanvas-bottom bible-two",
+      "tab-content",
+      "bible-wrap mx-auto",
+      "bible-wrap mx-auto jang",
+      "bible-wrap mx-auto ver-size"
+    ]
+  },
+  {
+    "provider": "Godpia",
+    "translation": "gae",
+    "book": "IChronicles",
+    "chapter": 8,
+    "targets": [
+      36
+    ],
+    "url": "https://www.godpia.com/read/reading_body.asp",
+    "post": {
+      "readFlag": "",
+      "calDate": "",
+      "seq": "",
+      "ver": "gae",
+      "ver2": "",
+      "vol": "1ch",
+      "chap": "8",
+      "vol2": "",
+      "chap2": "",
+      "handwriting": "",
+      "curUrl": "/read/reading.asp"
+    },
+    "status": 200,
+    "finalURL": "https://www.godpia.com/read/reading_body.asp",
+    "bytes": 18925,
+    "charset": "utf-8",
+    "title": "",
+    "translationOptions": [],
+    "translationLabels": [],
+    "readingLinks": [],
+    "scripts": [],
+    "readerSelection": {},
+    "dataVerseSamples": [
+      {
+        "tag": "li",
+        "attributes": {
+          "class": [],
+          "id": "gae_1ch_8_1",
+          "dataver": "gae",
+          "datavol": "1ch",
+          "datachap": "8",
+          "datasec": "1"
+        },
+        "bodyClasses": [
+          [
+            "bible-read-no"
+          ],
+          [
+            "bible-read-cont"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ]
+        ]
+      },
+      {
+        "tag": "li",
+        "attributes": {
+          "class": [],
+          "id": "gae_1ch_8_2",
+          "dataver": "gae",
+          "datavol": "1ch",
+          "datachap": "8",
+          "datasec": "2"
+        },
+        "bodyClasses": [
+          [
+            "bible-read-no"
+          ],
+          [
+            "bible-read-cont"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ]
+        ]
+      }
+    ],
+    "versionNameFields": [
+      {
+        "name": "infoVerName",
+        "value": "개역개정(4판)"
+      }
+    ],
+    "parsedVerseCount": 40,
+    "unicodeRepairs": [
+      {
+        "book": "IChronicles",
+        "chapter": 8,
+        "verse": 36,
+        "reference": "대상8:36",
+        "originalCharacter": "?",
+        "restoredCharacter": "웻",
+        "originalToken": "아스마?과",
+        "restoredToken": "아스마웻과",
+        "localTextSHA256": "6492e300d5f45c35e4e20e3225198c09cebc0e4a85d586c468dafc26b9e0c037",
+        "sourceTextSHA256": "edfc09b23d34f304a4259aacbaa61872b3959db505a49df3709f60cc329d6040",
+        "wholeNormalizedPassageMatches": true
+      }
+    ],
+    "versePresence": [
+      {
+        "number": 36,
+        "found": true,
+        "characters": 50,
+        "sourceRange": [
+          36,
+          36
+        ],
+        "isExplicitNone": false,
+        "textSHA256": "edfc09b23d34f304a4259aacbaa61872b3959db505a49df3709f60cc329d6040",
+        "shortExcerpt": "아하스는 여호앗다를 낳고 여호앗다는"
+      }
+    ]
+  },
+  {
+    "provider": "Korean Bible Society",
+    "translation": "GAE",
+    "book": "IChronicles",
+    "chapter": 8,
+    "targets": [
+      36
+    ],
+    "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=1ch&chap=8",
+    "status": 200,
+    "finalURL": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=1ch&chap=8",
+    "bytes": 30593,
+    "charset": "utf-8",
+    "title": "대한성서공회",
+    "translationOptions": [
+      {
+        "value": "GAE",
+        "label": "개역개정",
+        "selected": true
+      },
+      {
+        "value": "HAN",
+        "label": "개역한글",
+        "selected": false
+      },
+      {
+        "value": "SAE",
+        "label": "표준새번역",
+        "selected": false
+      },
+      {
+        "value": "SAENEW",
+        "label": "새번역",
+        "selected": false
+      },
+      {
+        "value": "COG",
+        "label": "공동번역",
+        "selected": false
+      },
+      {
+        "value": "COGNEW",
+        "label": "공동번역 개정판",
+        "selected": false
+      }
+    ],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://bible.bskorea.or.kr",
+        "label": "성경플랫폼 가기"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php",
+        "label": "성경읽기"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/korbibSearchlist.php",
+        "label": "성경검색"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/write_comment.php",
+        "label": "개역개정 의견쓰기"
+      }
+    ],
+    "scripts": [
+      "//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.2.min.js",
+      "js/bible.list.js",
+      "js/bible.page.js?v2",
+      "js/common.js",
+      "js/layer.js",
+      "/js/alertify.js",
+      "/bible/js/check_version.js?v=2"
+    ],
+    "readerSelection": {},
+    "parsedVerseCount": 40,
+    "unicodeRepairs": [
+      {
+        "book": "IChronicles",
+        "chapter": 8,
+        "verse": 36,
+        "reference": "대상8:36",
+        "originalCharacter": "?",
+        "restoredCharacter": "웻",
+        "originalToken": "아스마?과",
+        "restoredToken": "아스마웻과",
+        "localTextSHA256": "6492e300d5f45c35e4e20e3225198c09cebc0e4a85d586c468dafc26b9e0c037",
+        "sourceTextSHA256": "03d17587b8eea229aee88975b65cf2c46174c93c0f547c89c9a9dfba27d16b7a",
+        "wholeNormalizedPassageMatches": true
+      }
+    ],
+    "versePresence": [
+      {
+        "number": 36,
+        "found": true,
+        "characters": 58,
+        "sourceRange": [
+          36,
+          36
+        ],
+        "isExplicitNone": false,
+        "textSHA256": "03d17587b8eea229aee88975b65cf2c46174c93c0f547c89c9a9dfba27d16b7a",
+        "shortExcerpt": "아하스 는 여호앗다 를"
+      }
+    ]
+  },
+  {
+    "provider": "Godpia",
+    "translation": "gae",
+    "book": "IChronicles",
+    "chapter": 9,
+    "targets": [
+      42
+    ],
+    "url": "https://www.godpia.com/read/reading.asp?ver=gae&vol=1ch&chap=9",
+    "status": 200,
+    "finalURL": "https://www.godpia.com/read/reading.asp?ver=gae&vol=1ch&chap=9",
+    "bytes": 48619,
+    "charset": "utf-8",
+    "title": "GODpia",
+    "translationOptions": [],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://www.godpia.com/read/reading.asp",
+        "label": "성경 읽기"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RE",
+        "label": "매일 성경 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RR",
+        "label": "Reformation 95일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RM",
+        "label": "Miracle 153일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RT",
+        "label": "오늘의 만나 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-sel.asp",
+        "label": "선택 통독"
+      },
+      {
+        "url": "https://www.godpia.com/search/search-dic.asp",
+        "label": "성경 사전"
+      },
+      {
+        "url": "https://www.godpia.com/write/write_everyday.asp",
+        "label": "매일 성경 필사"
+      }
+    ],
+    "scripts": [
+      "/assets/js/jquery-3.6.0.min.js",
+      "/assets/js/plugins.js",
+      "/assets/js/gsap.min.js",
+      "/assets/js/scripts.js?v=1",
+      "/assets/js/aos.js",
+      "/assets/js/common.js?v=0.1",
+      "/plugin/confirm/jquery-confirm.js",
+      "/assets/js/Script_Login.asp?HTTPD=www.godpia.com&VIU=frameindex.asp&HTTPU=/read/reading.asp?ver=gae!!vol=1ch!!chap=9",
+      "/assets/js/read.js?v=2026-10-23 오후 8:50:02"
+    ],
+    "readerSelection": {
+      "jsCurVer": "gae",
+      "jsCurVol": "1ch",
+      "jsCurChap": "9"
+    },
+    "dataVerseSamples": [],
+    "versionNameFields": [
+      {
+        "name": "btn-check-1-gae",
+        "value": "gae"
+      },
+      {
+        "name": "btn-check-1-niv",
+        "value": "niv"
+      },
+      {
+        "name": "btn-check-1-han",
+        "value": "han"
+      },
+      {
+        "name": "btn-check-1-easy",
+        "value": "easy"
+      },
+      {
+        "name": "btn-check-1-hyun",
+        "value": "hyun"
+      },
+      {
+        "name": "btn-check-1-saenew",
+        "value": "saenew"
+      },
+      {
+        "name": "btn-check-1-hebrew",
+        "value": "hebrew"
+      },
+      {
+        "name": "btn-check-1-greek",
+        "value": "greek"
+      },
+      {
+        "name": "btn-check-1-",
+        "value": "non"
+      },
+      {
+        "name": "btn-check-2-gae",
+        "value": "gae"
+      },
+      {
+        "name": "btn-check-2-niv",
+        "value": "niv"
+      },
+      {
+        "name": "btn-check-2-han",
+        "value": "han"
+      },
+      {
+        "name": "btn-check-2-easy",
+        "value": "easy"
+      },
+      {
+        "name": "btn-check-2-hyun",
+        "value": "hyun"
+      },
+      {
+        "name": "btn-check-2-saenew",
+        "value": "saenew"
+      },
+      {
+        "name": "btn-check-2-hebrew",
+        "value": "hebrew"
+      },
+      {
+        "name": "btn-check-2-greek",
+        "value": "greek"
+      }
+    ],
+    "parsedVerseCount": 0,
+    "unicodeRepairs": [],
+    "versePresence": [
+      {
+        "number": 42,
+        "found": false,
+        "characters": 0,
+        "sourceRange": [
+          42,
+          42
+        ],
+        "isExplicitNone": false,
+        "textSHA256": null,
+        "shortExcerpt": ""
+      }
+    ],
+    "numericElements": [],
+    "relevantClasses": [
+      "progress-circle svg-content",
+      "collapse navbar-collapse justify-content-center",
+      "sub-header sub-bg-read",
+      "bible section-padding pt-0",
+      "swiper mySwiperRead",
+      "modal-content rounded-3 shadow",
+      "form-control clsContents",
+      "offcanvas offcanvas-bottom bible-two",
+      "tab-content",
+      "bible-wrap mx-auto",
+      "bible-wrap mx-auto jang",
+      "bible-wrap mx-auto ver-size"
+    ]
+  },
+  {
+    "provider": "Godpia",
+    "translation": "gae",
+    "book": "IChronicles",
+    "chapter": 9,
+    "targets": [
+      42
+    ],
+    "url": "https://www.godpia.com/read/reading_body.asp",
+    "post": {
+      "readFlag": "",
+      "calDate": "",
+      "seq": "",
+      "ver": "gae",
+      "ver2": "",
+      "vol": "1ch",
+      "chap": "9",
+      "vol2": "",
+      "chap2": "",
+      "handwriting": "",
+      "curUrl": "/read/reading.asp"
+    },
+    "status": 200,
+    "finalURL": "https://www.godpia.com/read/reading_body.asp",
+    "bytes": 25220,
+    "charset": "utf-8",
+    "title": "",
+    "translationOptions": [],
+    "translationLabels": [],
+    "readingLinks": [],
+    "scripts": [],
+    "readerSelection": {},
+    "dataVerseSamples": [
+      {
+        "tag": "li",
+        "attributes": {
+          "class": [],
+          "id": "gae_1ch_9_1",
+          "dataver": "gae",
+          "datavol": "1ch",
+          "datachap": "9",
+          "datasec": "1"
+        },
+        "bodyClasses": [
+          [
+            "bible-read-no"
+          ],
+          [
+            "bible-read-cont"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ]
+        ]
+      },
+      {
+        "tag": "li",
+        "attributes": {
+          "class": [],
+          "id": "gae_1ch_9_2",
+          "dataver": "gae",
+          "datavol": "1ch",
+          "datachap": "9",
+          "datasec": "2"
+        },
+        "bodyClasses": [
+          [
+            "bible-read-no"
+          ],
+          [
+            "bible-read-cont"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ]
+        ]
+      }
+    ],
+    "versionNameFields": [
+      {
+        "name": "infoVerName",
+        "value": "개역개정(4판)"
+      }
+    ],
+    "parsedVerseCount": 44,
+    "unicodeRepairs": [
+      {
+        "book": "IChronicles",
+        "chapter": 9,
+        "verse": 42,
+        "reference": "대상9:42",
+        "originalCharacter": "?",
+        "restoredCharacter": "웻",
+        "originalToken": "아스마?과",
+        "restoredToken": "아스마웻과",
+        "localTextSHA256": "1d3572c100015ec79b6d554d1f44e6b709a8c6708d7d131039ea24abd5622dda",
+        "sourceTextSHA256": "2e09eaf016bbb529e4c074432cb46f0816b5164bc5e8becdb4020cae51b1712e",
+        "wholeNormalizedPassageMatches": true
+      }
+    ],
+    "versePresence": [
+      {
+        "number": 42,
+        "found": true,
+        "characters": 46,
+        "sourceRange": [
+          42,
+          42
+        ],
+        "isExplicitNone": false,
+        "textSHA256": "2e09eaf016bbb529e4c074432cb46f0816b5164bc5e8becdb4020cae51b1712e",
+        "shortExcerpt": "아하스는 야라를 낳고 야라는"
+      }
+    ]
+  },
+  {
+    "provider": "Korean Bible Society",
+    "translation": "GAE",
+    "book": "IChronicles",
+    "chapter": 9,
+    "targets": [
+      42
+    ],
+    "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=1ch&chap=9",
+    "status": 200,
+    "finalURL": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=1ch&chap=9",
+    "bytes": 33819,
+    "charset": "utf-8",
+    "title": "대한성서공회",
+    "translationOptions": [
+      {
+        "value": "GAE",
+        "label": "개역개정",
+        "selected": true
+      },
+      {
+        "value": "HAN",
+        "label": "개역한글",
+        "selected": false
+      },
+      {
+        "value": "SAE",
+        "label": "표준새번역",
+        "selected": false
+      },
+      {
+        "value": "SAENEW",
+        "label": "새번역",
+        "selected": false
+      },
+      {
+        "value": "COG",
+        "label": "공동번역",
+        "selected": false
+      },
+      {
+        "value": "COGNEW",
+        "label": "공동번역 개정판",
+        "selected": false
+      }
+    ],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://bible.bskorea.or.kr",
+        "label": "성경플랫폼 가기"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php",
+        "label": "성경읽기"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/korbibSearchlist.php",
+        "label": "성경검색"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/write_comment.php",
+        "label": "개역개정 의견쓰기"
+      }
+    ],
+    "scripts": [
+      "//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.2.min.js",
+      "js/bible.list.js",
+      "js/bible.page.js?v2",
+      "js/common.js",
+      "js/layer.js",
+      "/js/alertify.js",
+      "/bible/js/check_version.js?v=2"
+    ],
+    "readerSelection": {},
+    "parsedVerseCount": 44,
+    "unicodeRepairs": [
+      {
+        "book": "IChronicles",
+        "chapter": 9,
+        "verse": 42,
+        "reference": "대상9:42",
+        "originalCharacter": "?",
+        "restoredCharacter": "웻",
+        "originalToken": "아스마?과",
+        "restoredToken": "아스마웻과",
+        "localTextSHA256": "1d3572c100015ec79b6d554d1f44e6b709a8c6708d7d131039ea24abd5622dda",
+        "sourceTextSHA256": "66192970b34081c0f4cc85dc4d94415add5cf32073d8200b35b805d3abd86e26",
+        "wholeNormalizedPassageMatches": true
+      }
+    ],
+    "versePresence": [
+      {
+        "number": 42,
+        "found": true,
+        "characters": 54,
+        "sourceRange": [
+          42,
+          42
+        ],
+        "isExplicitNone": false,
+        "textSHA256": "66192970b34081c0f4cc85dc4d94415add5cf32073d8200b35b805d3abd86e26",
+        "shortExcerpt": "아하스 는 야라 를"
+      }
+    ]
+  },
+  {
+    "provider": "Godpia",
+    "translation": "gae",
+    "book": "IChronicles",
+    "chapter": 11,
+    "targets": [
+      33
+    ],
+    "url": "https://www.godpia.com/read/reading.asp?ver=gae&vol=1ch&chap=11",
+    "status": 200,
+    "finalURL": "https://www.godpia.com/read/reading.asp?ver=gae&vol=1ch&chap=11",
+    "bytes": 48624,
+    "charset": "utf-8",
+    "title": "GODpia",
+    "translationOptions": [],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://www.godpia.com/read/reading.asp",
+        "label": "성경 읽기"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RE",
+        "label": "매일 성경 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RR",
+        "label": "Reformation 95일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RM",
+        "label": "Miracle 153일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RT",
+        "label": "오늘의 만나 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-sel.asp",
+        "label": "선택 통독"
+      },
+      {
+        "url": "https://www.godpia.com/search/search-dic.asp",
+        "label": "성경 사전"
+      },
+      {
+        "url": "https://www.godpia.com/write/write_everyday.asp",
+        "label": "매일 성경 필사"
+      }
+    ],
+    "scripts": [
+      "/assets/js/jquery-3.6.0.min.js",
+      "/assets/js/plugins.js",
+      "/assets/js/gsap.min.js",
+      "/assets/js/scripts.js?v=1",
+      "/assets/js/aos.js",
+      "/assets/js/common.js?v=0.1",
+      "/plugin/confirm/jquery-confirm.js",
+      "/assets/js/Script_Login.asp?HTTPD=www.godpia.com&VIU=frameindex.asp&HTTPU=/read/reading.asp?ver=gae!!vol=1ch!!chap=11",
+      "/assets/js/read.js?v=2026-10-23 오후 8:50:02"
+    ],
+    "readerSelection": {
+      "jsCurVer": "gae",
+      "jsCurVol": "1ch",
+      "jsCurChap": "11"
+    },
+    "dataVerseSamples": [],
+    "versionNameFields": [
+      {
+        "name": "btn-check-1-gae",
+        "value": "gae"
+      },
+      {
+        "name": "btn-check-1-niv",
+        "value": "niv"
+      },
+      {
+        "name": "btn-check-1-han",
+        "value": "han"
+      },
+      {
+        "name": "btn-check-1-easy",
+        "value": "easy"
+      },
+      {
+        "name": "btn-check-1-hyun",
+        "value": "hyun"
+      },
+      {
+        "name": "btn-check-1-saenew",
+        "value": "saenew"
+      },
+      {
+        "name": "btn-check-1-hebrew",
+        "value": "hebrew"
+      },
+      {
+        "name": "btn-check-1-greek",
+        "value": "greek"
+      },
+      {
+        "name": "btn-check-1-",
+        "value": "non"
+      },
+      {
+        "name": "btn-check-2-gae",
+        "value": "gae"
+      },
+      {
+        "name": "btn-check-2-niv",
+        "value": "niv"
+      },
+      {
+        "name": "btn-check-2-han",
+        "value": "han"
+      },
+      {
+        "name": "btn-check-2-easy",
+        "value": "easy"
+      },
+      {
+        "name": "btn-check-2-hyun",
+        "value": "hyun"
+      },
+      {
+        "name": "btn-check-2-saenew",
+        "value": "saenew"
+      },
+      {
+        "name": "btn-check-2-hebrew",
+        "value": "hebrew"
+      },
+      {
+        "name": "btn-check-2-greek",
+        "value": "greek"
+      }
+    ],
+    "parsedVerseCount": 0,
+    "unicodeRepairs": [],
+    "versePresence": [
+      {
+        "number": 33,
+        "found": false,
+        "characters": 0,
+        "sourceRange": [
+          33,
+          33
+        ],
+        "isExplicitNone": false,
+        "textSHA256": null,
+        "shortExcerpt": ""
+      }
+    ],
+    "numericElements": [],
+    "relevantClasses": [
+      "progress-circle svg-content",
+      "collapse navbar-collapse justify-content-center",
+      "sub-header sub-bg-read",
+      "bible section-padding pt-0",
+      "swiper mySwiperRead",
+      "modal-content rounded-3 shadow",
+      "form-control clsContents",
+      "offcanvas offcanvas-bottom bible-two",
+      "tab-content",
+      "bible-wrap mx-auto",
+      "bible-wrap mx-auto jang",
+      "bible-wrap mx-auto ver-size"
+    ]
+  },
+  {
+    "provider": "Godpia",
+    "translation": "gae",
+    "book": "IChronicles",
+    "chapter": 11,
+    "targets": [
+      33
+    ],
+    "url": "https://www.godpia.com/read/reading_body.asp",
+    "post": {
+      "readFlag": "",
+      "calDate": "",
+      "seq": "",
+      "ver": "gae",
+      "ver2": "",
+      "vol": "1ch",
+      "chap": "11",
+      "vol2": "",
+      "chap2": "",
+      "handwriting": "",
+      "curUrl": "/read/reading.asp"
+    },
+    "status": 200,
+    "finalURL": "https://www.godpia.com/read/reading_body.asp",
+    "bytes": 25093,
+    "charset": "utf-8",
+    "title": "",
+    "translationOptions": [],
+    "translationLabels": [],
+    "readingLinks": [],
+    "scripts": [],
+    "readerSelection": {},
+    "dataVerseSamples": [
+      {
+        "tag": "li",
+        "attributes": {
+          "class": [],
+          "id": "gae_1ch_11_1",
+          "dataver": "gae",
+          "datavol": "1ch",
+          "datachap": "11",
+          "datasec": "1"
+        },
+        "bodyClasses": [
+          [
+            "bible-read-no"
+          ],
+          [
+            "bible-read-cont"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ]
+        ]
+      },
+      {
+        "tag": "li",
+        "attributes": {
+          "class": [],
+          "id": "gae_1ch_11_2",
+          "dataver": "gae",
+          "datavol": "1ch",
+          "datachap": "11",
+          "datasec": "2"
+        },
+        "bodyClasses": [
+          [
+            "bible-read-no"
+          ],
+          [
+            "bible-read-cont"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ]
+        ]
+      }
+    ],
+    "versionNameFields": [
+      {
+        "name": "infoVerName",
+        "value": "개역개정(4판)"
+      }
+    ],
+    "parsedVerseCount": 47,
+    "unicodeRepairs": [
+      {
+        "book": "IChronicles",
+        "chapter": 11,
+        "verse": 33,
+        "reference": "대상11:33",
+        "originalCharacter": "?",
+        "restoredCharacter": "웻",
+        "originalToken": "아스마?과",
+        "restoredToken": "아스마웻과",
+        "localTextSHA256": "90a6a8dc504224e8b68712bb6cd0e10c8dbc338ad97e221977910fccaa9bed72",
+        "sourceTextSHA256": "af24ea52c72a83e6fb8564c2f2feb3011d27e3336ed5d435133d2a28ba52bd35",
+        "wholeNormalizedPassageMatches": true
+      }
+    ],
+    "versePresence": [
+      {
+        "number": 33,
+        "found": true,
+        "characters": 25,
+        "sourceRange": [
+          33,
+          33
+        ],
+        "isExplicitNone": false,
+        "textSHA256": "af24ea52c72a83e6fb8564c2f2feb3011d27e3336ed5d435133d2a28ba52bd35",
+        "shortExcerpt": "바하룸 사람 아스마웻과 사알본"
+      }
+    ]
+  },
+  {
+    "provider": "Korean Bible Society",
+    "translation": "GAE",
+    "book": "IChronicles",
+    "chapter": 11,
+    "targets": [
+      33
+    ],
+    "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=1ch&chap=11",
+    "status": 200,
+    "finalURL": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=1ch&chap=11",
+    "bytes": 34845,
+    "charset": "utf-8",
+    "title": "대한성서공회",
+    "translationOptions": [
+      {
+        "value": "GAE",
+        "label": "개역개정",
+        "selected": true
+      },
+      {
+        "value": "HAN",
+        "label": "개역한글",
+        "selected": false
+      },
+      {
+        "value": "SAE",
+        "label": "표준새번역",
+        "selected": false
+      },
+      {
+        "value": "SAENEW",
+        "label": "새번역",
+        "selected": false
+      },
+      {
+        "value": "COG",
+        "label": "공동번역",
+        "selected": false
+      },
+      {
+        "value": "COGNEW",
+        "label": "공동번역 개정판",
+        "selected": false
+      }
+    ],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://bible.bskorea.or.kr",
+        "label": "성경플랫폼 가기"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php",
+        "label": "성경읽기"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/korbibSearchlist.php",
+        "label": "성경검색"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/write_comment.php",
+        "label": "개역개정 의견쓰기"
+      }
+    ],
+    "scripts": [
+      "//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.2.min.js",
+      "js/bible.list.js",
+      "js/bible.page.js?v2",
+      "js/common.js",
+      "js/layer.js",
+      "/js/alertify.js",
+      "/bible/js/check_version.js?v=2"
+    ],
+    "readerSelection": {},
+    "parsedVerseCount": 47,
+    "unicodeRepairs": [
+      {
+        "book": "IChronicles",
+        "chapter": 11,
+        "verse": 33,
+        "reference": "대상11:33",
+        "originalCharacter": "?",
+        "restoredCharacter": "웻",
+        "originalToken": "아스마?과",
+        "restoredToken": "아스마웻과",
+        "localTextSHA256": "90a6a8dc504224e8b68712bb6cd0e10c8dbc338ad97e221977910fccaa9bed72",
+        "sourceTextSHA256": "947ae2d1f8a9befb0c6feb4ae1d3642fc60508cfbd2e59940d4c7c0db3046940",
+        "wholeNormalizedPassageMatches": true
+      }
+    ],
+    "versePresence": [
+      {
+        "number": 33,
+        "found": true,
+        "characters": 27,
+        "sourceRange": [
+          33,
+          33
+        ],
+        "isExplicitNone": false,
+        "textSHA256": "947ae2d1f8a9befb0c6feb4ae1d3642fc60508cfbd2e59940d4c7c0db3046940",
+        "shortExcerpt": "바하룸 사람 아스마웻 과"
+      }
+    ]
+  },
+  {
+    "provider": "Godpia",
+    "translation": "gae",
+    "book": "IChronicles",
+    "chapter": 12,
+    "targets": [
+      3
+    ],
+    "url": "https://www.godpia.com/read/reading.asp?ver=gae&vol=1ch&chap=12",
+    "status": 200,
+    "finalURL": "https://www.godpia.com/read/reading.asp?ver=gae&vol=1ch&chap=12",
+    "bytes": 48624,
+    "charset": "utf-8",
+    "title": "GODpia",
+    "translationOptions": [],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://www.godpia.com/read/reading.asp",
+        "label": "성경 읽기"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RE",
+        "label": "매일 성경 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RR",
+        "label": "Reformation 95일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RM",
+        "label": "Miracle 153일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RT",
+        "label": "오늘의 만나 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-sel.asp",
+        "label": "선택 통독"
+      },
+      {
+        "url": "https://www.godpia.com/search/search-dic.asp",
+        "label": "성경 사전"
+      },
+      {
+        "url": "https://www.godpia.com/write/write_everyday.asp",
+        "label": "매일 성경 필사"
+      }
+    ],
+    "scripts": [
+      "/assets/js/jquery-3.6.0.min.js",
+      "/assets/js/plugins.js",
+      "/assets/js/gsap.min.js",
+      "/assets/js/scripts.js?v=1",
+      "/assets/js/aos.js",
+      "/assets/js/common.js?v=0.1",
+      "/plugin/confirm/jquery-confirm.js",
+      "/assets/js/Script_Login.asp?HTTPD=www.godpia.com&VIU=frameindex.asp&HTTPU=/read/reading.asp?ver=gae!!vol=1ch!!chap=12",
+      "/assets/js/read.js?v=2026-10-23 오후 8:50:02"
+    ],
+    "readerSelection": {
+      "jsCurVer": "gae",
+      "jsCurVol": "1ch",
+      "jsCurChap": "12"
+    },
+    "dataVerseSamples": [],
+    "versionNameFields": [
+      {
+        "name": "btn-check-1-gae",
+        "value": "gae"
+      },
+      {
+        "name": "btn-check-1-niv",
+        "value": "niv"
+      },
+      {
+        "name": "btn-check-1-han",
+        "value": "han"
+      },
+      {
+        "name": "btn-check-1-easy",
+        "value": "easy"
+      },
+      {
+        "name": "btn-check-1-hyun",
+        "value": "hyun"
+      },
+      {
+        "name": "btn-check-1-saenew",
+        "value": "saenew"
+      },
+      {
+        "name": "btn-check-1-hebrew",
+        "value": "hebrew"
+      },
+      {
+        "name": "btn-check-1-greek",
+        "value": "greek"
+      },
+      {
+        "name": "btn-check-1-",
+        "value": "non"
+      },
+      {
+        "name": "btn-check-2-gae",
+        "value": "gae"
+      },
+      {
+        "name": "btn-check-2-niv",
+        "value": "niv"
+      },
+      {
+        "name": "btn-check-2-han",
+        "value": "han"
+      },
+      {
+        "name": "btn-check-2-easy",
+        "value": "easy"
+      },
+      {
+        "name": "btn-check-2-hyun",
+        "value": "hyun"
+      },
+      {
+        "name": "btn-check-2-saenew",
+        "value": "saenew"
+      },
+      {
+        "name": "btn-check-2-hebrew",
+        "value": "hebrew"
+      },
+      {
+        "name": "btn-check-2-greek",
+        "value": "greek"
+      }
+    ],
+    "parsedVerseCount": 0,
+    "unicodeRepairs": [],
+    "versePresence": [
+      {
+        "number": 3,
+        "found": false,
+        "characters": 0,
+        "sourceRange": [
+          3,
+          3
+        ],
+        "isExplicitNone": false,
+        "textSHA256": null,
+        "shortExcerpt": ""
+      }
+    ],
+    "numericElements": [],
+    "relevantClasses": [
+      "progress-circle svg-content",
+      "collapse navbar-collapse justify-content-center",
+      "sub-header sub-bg-read",
+      "bible section-padding pt-0",
+      "swiper mySwiperRead",
+      "modal-content rounded-3 shadow",
+      "form-control clsContents",
+      "offcanvas offcanvas-bottom bible-two",
+      "tab-content",
+      "bible-wrap mx-auto",
+      "bible-wrap mx-auto jang",
+      "bible-wrap mx-auto ver-size"
+    ]
+  },
+  {
+    "provider": "Godpia",
+    "translation": "gae",
+    "book": "IChronicles",
+    "chapter": 12,
+    "targets": [
+      3
+    ],
+    "url": "https://www.godpia.com/read/reading_body.asp",
+    "post": {
+      "readFlag": "",
+      "calDate": "",
+      "seq": "",
+      "ver": "gae",
+      "ver2": "",
+      "vol": "1ch",
+      "chap": "12",
+      "vol2": "",
+      "chap2": "",
+      "handwriting": "",
+      "curUrl": "/read/reading.asp"
+    },
+    "status": 200,
+    "finalURL": "https://www.godpia.com/read/reading_body.asp",
+    "bytes": 23132,
+    "charset": "utf-8",
+    "title": "",
+    "translationOptions": [],
+    "translationLabels": [],
+    "readingLinks": [],
+    "scripts": [],
+    "readerSelection": {},
+    "dataVerseSamples": [
+      {
+        "tag": "li",
+        "attributes": {
+          "class": [],
+          "id": "gae_1ch_12_1",
+          "dataver": "gae",
+          "datavol": "1ch",
+          "datachap": "12",
+          "datasec": "1"
+        },
+        "bodyClasses": [
+          [
+            "bible-read-no"
+          ],
+          [
+            "bible-read-cont"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ]
+        ]
+      },
+      {
+        "tag": "li",
+        "attributes": {
+          "class": [],
+          "id": "gae_1ch_12_2",
+          "dataver": "gae",
+          "datavol": "1ch",
+          "datachap": "12",
+          "datasec": "2"
+        },
+        "bodyClasses": [
+          [
+            "bible-read-no"
+          ],
+          [
+            "bible-read-cont"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ]
+        ]
+      }
+    ],
+    "versionNameFields": [
+      {
+        "name": "infoVerName",
+        "value": "개역개정(4판)"
+      }
+    ],
+    "parsedVerseCount": 40,
+    "unicodeRepairs": [
+      {
+        "book": "IChronicles",
+        "chapter": 12,
+        "verse": 3,
+        "reference": "대상12:3",
+        "originalCharacter": "?",
+        "restoredCharacter": "웻",
+        "originalToken": "아스마?의",
+        "restoredToken": "아스마웻의",
+        "localTextSHA256": "2ee3d06b7802ec890f856d01b9d54ec857ec2294f19722c437bfb726e121b96f",
+        "sourceTextSHA256": "07f6fa9e6a37531602f00cc8e6ac29c817d0f613c4ebd9d5b107858f6011a94e",
+        "wholeNormalizedPassageMatches": true
+      }
+    ],
+    "versePresence": [
+      {
+        "number": 3,
+        "found": true,
+        "characters": 81,
+        "sourceRange": [
+          3,
+          3
+        ],
+        "isExplicitNone": false,
+        "textSHA256": "07f6fa9e6a37531602f00cc8e6ac29c817d0f613c4ebd9d5b107858f6011a94e",
+        "shortExcerpt": "그 우두머리는 아히에셀이요 다음은"
+      }
+    ]
+  },
+  {
+    "provider": "Korean Bible Society",
+    "translation": "GAE",
+    "book": "IChronicles",
+    "chapter": 12,
+    "targets": [
+      3
+    ],
+    "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=1ch&chap=12",
+    "status": 200,
+    "finalURL": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=1ch&chap=12",
+    "bytes": 32968,
+    "charset": "utf-8",
+    "title": "대한성서공회",
+    "translationOptions": [
+      {
+        "value": "GAE",
+        "label": "개역개정",
+        "selected": true
+      },
+      {
+        "value": "HAN",
+        "label": "개역한글",
+        "selected": false
+      },
+      {
+        "value": "SAE",
+        "label": "표준새번역",
+        "selected": false
+      },
+      {
+        "value": "SAENEW",
+        "label": "새번역",
+        "selected": false
+      },
+      {
+        "value": "COG",
+        "label": "공동번역",
+        "selected": false
+      },
+      {
+        "value": "COGNEW",
+        "label": "공동번역 개정판",
+        "selected": false
+      }
+    ],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://bible.bskorea.or.kr",
+        "label": "성경플랫폼 가기"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php",
+        "label": "성경읽기"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/korbibSearchlist.php",
+        "label": "성경검색"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/write_comment.php",
+        "label": "개역개정 의견쓰기"
+      }
+    ],
+    "scripts": [
+      "//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.2.min.js",
+      "js/bible.list.js",
+      "js/bible.page.js?v2",
+      "js/common.js",
+      "js/layer.js",
+      "/js/alertify.js",
+      "/bible/js/check_version.js?v=2"
+    ],
+    "readerSelection": {},
+    "parsedVerseCount": 40,
+    "unicodeRepairs": [
+      {
+        "book": "IChronicles",
+        "chapter": 12,
+        "verse": 3,
+        "reference": "대상12:3",
+        "originalCharacter": "?",
+        "restoredCharacter": "웻",
+        "originalToken": "아스마?의",
+        "restoredToken": "아스마웻의",
+        "localTextSHA256": "2ee3d06b7802ec890f856d01b9d54ec857ec2294f19722c437bfb726e121b96f",
+        "sourceTextSHA256": "e5f72963d62f082588b4e5dd7cae68984c5ad836b6e8fcb7579cb0d7bd284e3c",
+        "wholeNormalizedPassageMatches": true
+      }
+    ],
+    "versePresence": [
+      {
+        "number": 3,
+        "found": true,
+        "characters": 89,
+        "sourceRange": [
+          3,
+          3
+        ],
+        "isExplicitNone": false,
+        "textSHA256": "e5f72963d62f082588b4e5dd7cae68984c5ad836b6e8fcb7579cb0d7bd284e3c",
+        "shortExcerpt": "그 우두머리는 아히에셀 이요"
+      }
+    ]
+  },
+  {
+    "provider": "Godpia",
+    "translation": "gae",
+    "book": "IChronicles",
+    "chapter": 24,
+    "targets": [
+      13
+    ],
+    "url": "https://www.godpia.com/read/reading.asp?ver=gae&vol=1ch&chap=24",
+    "status": 200,
+    "finalURL": "https://www.godpia.com/read/reading.asp?ver=gae&vol=1ch&chap=24",
+    "bytes": 48624,
+    "charset": "utf-8",
+    "title": "GODpia",
+    "translationOptions": [],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://www.godpia.com/read/reading.asp",
+        "label": "성경 읽기"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RE",
+        "label": "매일 성경 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RR",
+        "label": "Reformation 95일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RM",
+        "label": "Miracle 153일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RT",
+        "label": "오늘의 만나 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-sel.asp",
+        "label": "선택 통독"
+      },
+      {
+        "url": "https://www.godpia.com/search/search-dic.asp",
+        "label": "성경 사전"
+      },
+      {
+        "url": "https://www.godpia.com/write/write_everyday.asp",
+        "label": "매일 성경 필사"
+      }
+    ],
+    "scripts": [
+      "/assets/js/jquery-3.6.0.min.js",
+      "/assets/js/plugins.js",
+      "/assets/js/gsap.min.js",
+      "/assets/js/scripts.js?v=1",
+      "/assets/js/aos.js",
+      "/assets/js/common.js?v=0.1",
+      "/plugin/confirm/jquery-confirm.js",
+      "/assets/js/Script_Login.asp?HTTPD=www.godpia.com&VIU=frameindex.asp&HTTPU=/read/reading.asp?ver=gae!!vol=1ch!!chap=24",
+      "/assets/js/read.js?v=2026-10-23 오후 8:50:03"
+    ],
+    "readerSelection": {
+      "jsCurVer": "gae",
+      "jsCurVol": "1ch",
+      "jsCurChap": "24"
+    },
+    "dataVerseSamples": [],
+    "versionNameFields": [
+      {
+        "name": "btn-check-1-gae",
+        "value": "gae"
+      },
+      {
+        "name": "btn-check-1-niv",
+        "value": "niv"
+      },
+      {
+        "name": "btn-check-1-han",
+        "value": "han"
+      },
+      {
+        "name": "btn-check-1-easy",
+        "value": "easy"
+      },
+      {
+        "name": "btn-check-1-hyun",
+        "value": "hyun"
+      },
+      {
+        "name": "btn-check-1-saenew",
+        "value": "saenew"
+      },
+      {
+        "name": "btn-check-1-hebrew",
+        "value": "hebrew"
+      },
+      {
+        "name": "btn-check-1-greek",
+        "value": "greek"
+      },
+      {
+        "name": "btn-check-1-",
+        "value": "non"
+      },
+      {
+        "name": "btn-check-2-gae",
+        "value": "gae"
+      },
+      {
+        "name": "btn-check-2-niv",
+        "value": "niv"
+      },
+      {
+        "name": "btn-check-2-han",
+        "value": "han"
+      },
+      {
+        "name": "btn-check-2-easy",
+        "value": "easy"
+      },
+      {
+        "name": "btn-check-2-hyun",
+        "value": "hyun"
+      },
+      {
+        "name": "btn-check-2-saenew",
+        "value": "saenew"
+      },
+      {
+        "name": "btn-check-2-hebrew",
+        "value": "hebrew"
+      },
+      {
+        "name": "btn-check-2-greek",
+        "value": "greek"
+      }
+    ],
+    "parsedVerseCount": 0,
+    "unicodeRepairs": [],
+    "versePresence": [
+      {
+        "number": 13,
+        "found": false,
+        "characters": 0,
+        "sourceRange": [
+          13,
+          13
+        ],
+        "isExplicitNone": false,
+        "textSHA256": null,
+        "shortExcerpt": ""
+      }
+    ],
+    "numericElements": [],
+    "relevantClasses": [
+      "progress-circle svg-content",
+      "collapse navbar-collapse justify-content-center",
+      "sub-header sub-bg-read",
+      "bible section-padding pt-0",
+      "swiper mySwiperRead",
+      "modal-content rounded-3 shadow",
+      "form-control clsContents",
+      "offcanvas offcanvas-bottom bible-two",
+      "tab-content",
+      "bible-wrap mx-auto",
+      "bible-wrap mx-auto jang",
+      "bible-wrap mx-auto ver-size"
+    ]
+  },
+  {
+    "provider": "Godpia",
+    "translation": "gae",
+    "book": "IChronicles",
+    "chapter": 24,
+    "targets": [
+      13
+    ],
+    "url": "https://www.godpia.com/read/reading_body.asp",
+    "post": {
+      "readFlag": "",
+      "calDate": "",
+      "seq": "",
+      "ver": "gae",
+      "ver2": "",
+      "vol": "1ch",
+      "chap": "24",
+      "vol2": "",
+      "chap2": "",
+      "handwriting": "",
+      "curUrl": "/read/reading.asp"
+    },
+    "status": 200,
+    "finalURL": "https://www.godpia.com/read/reading_body.asp",
+    "bytes": 16157,
+    "charset": "utf-8",
+    "title": "",
+    "translationOptions": [],
+    "translationLabels": [],
+    "readingLinks": [],
+    "scripts": [],
+    "readerSelection": {},
+    "dataVerseSamples": [
+      {
+        "tag": "li",
+        "attributes": {
+          "class": [],
+          "id": "gae_1ch_24_1",
+          "dataver": "gae",
+          "datavol": "1ch",
+          "datachap": "24",
+          "datasec": "1"
+        },
+        "bodyClasses": [
+          [
+            "bible-read-no"
+          ],
+          [
+            "bible-read-cont"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ]
+        ]
+      },
+      {
+        "tag": "li",
+        "attributes": {
+          "class": [],
+          "id": "gae_1ch_24_2",
+          "dataver": "gae",
+          "datavol": "1ch",
+          "datachap": "24",
+          "datasec": "2"
+        },
+        "bodyClasses": [
+          [
+            "bible-read-no"
+          ],
+          [
+            "bible-read-cont"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ]
+        ]
+      }
+    ],
+    "versionNameFields": [
+      {
+        "name": "infoVerName",
+        "value": "개역개정(4판)"
+      }
+    ],
+    "parsedVerseCount": 31,
+    "unicodeRepairs": [
+      {
+        "book": "IChronicles",
+        "chapter": 24,
+        "verse": 13,
+        "reference": "대상24:13",
+        "originalCharacter": "?",
+        "restoredCharacter": "훕",
+        "originalToken": "?바요",
+        "restoredToken": "훕바요",
+        "localTextSHA256": "2eaaef047be21cf2676eb8cb634bce4a63a9e51e6f0197903a2683aa0288a16a",
+        "sourceTextSHA256": "03ecf436ee616403f4b1abef59ccdc17bb3d7dd4d07d57acfa7c31446355b717",
+        "wholeNormalizedPassageMatches": true
+      }
+    ],
+    "versePresence": [
+      {
+        "number": 13,
+        "found": true,
+        "characters": 20,
+        "sourceRange": [
+          13,
+          13
+        ],
+        "isExplicitNone": false,
+        "textSHA256": "03ecf436ee616403f4b1abef59ccdc17bb3d7dd4d07d57acfa7c31446355b717",
+        "shortExcerpt": "열셋째는 훕바요 열넷째는 예세브압이요"
+      }
+    ]
+  },
+  {
+    "provider": "Korean Bible Society",
+    "translation": "GAE",
+    "book": "IChronicles",
+    "chapter": 24,
+    "targets": [
+      13
+    ],
+    "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=1ch&chap=24",
+    "status": 200,
+    "finalURL": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=1ch&chap=24",
+    "bytes": 28704,
+    "charset": "utf-8",
+    "title": "대한성서공회",
+    "translationOptions": [
+      {
+        "value": "GAE",
+        "label": "개역개정",
+        "selected": true
+      },
+      {
+        "value": "HAN",
+        "label": "개역한글",
+        "selected": false
+      },
+      {
+        "value": "SAE",
+        "label": "표준새번역",
+        "selected": false
+      },
+      {
+        "value": "SAENEW",
+        "label": "새번역",
+        "selected": false
+      },
+      {
+        "value": "COG",
+        "label": "공동번역",
+        "selected": false
+      },
+      {
+        "value": "COGNEW",
+        "label": "공동번역 개정판",
+        "selected": false
+      }
+    ],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://bible.bskorea.or.kr",
+        "label": "성경플랫폼 가기"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php",
+        "label": "성경읽기"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/korbibSearchlist.php",
+        "label": "성경검색"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/write_comment.php",
+        "label": "개역개정 의견쓰기"
+      }
+    ],
+    "scripts": [
+      "//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.2.min.js",
+      "js/bible.list.js",
+      "js/bible.page.js?v2",
+      "js/common.js",
+      "js/layer.js",
+      "/js/alertify.js",
+      "/bible/js/check_version.js?v=2"
+    ],
+    "readerSelection": {},
+    "parsedVerseCount": 31,
+    "unicodeRepairs": [
+      {
+        "book": "IChronicles",
+        "chapter": 24,
+        "verse": 13,
+        "reference": "대상24:13",
+        "originalCharacter": "?",
+        "restoredCharacter": "훕",
+        "originalToken": "?바요",
+        "restoredToken": "훕바요",
+        "localTextSHA256": "2eaaef047be21cf2676eb8cb634bce4a63a9e51e6f0197903a2683aa0288a16a",
+        "sourceTextSHA256": "38c2e8fd2ecd4587d1764732585d5fbe1639015338a7f0d9a8b2853113e9b36b",
+        "wholeNormalizedPassageMatches": true
+      }
+    ],
+    "versePresence": [
+      {
+        "number": 13,
+        "found": true,
+        "characters": 22,
+        "sourceRange": [
+          13,
+          13
+        ],
+        "isExplicitNone": false,
+        "textSHA256": "38c2e8fd2ecd4587d1764732585d5fbe1639015338a7f0d9a8b2853113e9b36b",
+        "shortExcerpt": "열셋째는 훕바 요 열넷째는"
+      }
+    ]
+  },
+  {
+    "provider": "Godpia",
+    "translation": "gae",
+    "book": "IChronicles",
+    "chapter": 27,
+    "targets": [
+      25
+    ],
+    "url": "https://www.godpia.com/read/reading.asp?ver=gae&vol=1ch&chap=27",
+    "status": 200,
+    "finalURL": "https://www.godpia.com/read/reading.asp?ver=gae&vol=1ch&chap=27",
+    "bytes": 48624,
+    "charset": "utf-8",
+    "title": "GODpia",
+    "translationOptions": [],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://www.godpia.com/read/reading.asp",
+        "label": "성경 읽기"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RE",
+        "label": "매일 성경 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RR",
+        "label": "Reformation 95일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RM",
+        "label": "Miracle 153일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RT",
+        "label": "오늘의 만나 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-sel.asp",
+        "label": "선택 통독"
+      },
+      {
+        "url": "https://www.godpia.com/search/search-dic.asp",
+        "label": "성경 사전"
+      },
+      {
+        "url": "https://www.godpia.com/write/write_everyday.asp",
+        "label": "매일 성경 필사"
+      }
+    ],
+    "scripts": [
+      "/assets/js/jquery-3.6.0.min.js",
+      "/assets/js/plugins.js",
+      "/assets/js/gsap.min.js",
+      "/assets/js/scripts.js?v=1",
+      "/assets/js/aos.js",
+      "/assets/js/common.js?v=0.1",
+      "/plugin/confirm/jquery-confirm.js",
+      "/assets/js/Script_Login.asp?HTTPD=www.godpia.com&VIU=frameindex.asp&HTTPU=/read/reading.asp?ver=gae!!vol=1ch!!chap=27",
+      "/assets/js/read.js?v=2026-10-23 오후 8:50:03"
+    ],
+    "readerSelection": {
+      "jsCurVer": "gae",
+      "jsCurVol": "1ch",
+      "jsCurChap": "27"
+    },
+    "dataVerseSamples": [],
+    "versionNameFields": [
+      {
+        "name": "btn-check-1-gae",
+        "value": "gae"
+      },
+      {
+        "name": "btn-check-1-niv",
+        "value": "niv"
+      },
+      {
+        "name": "btn-check-1-han",
+        "value": "han"
+      },
+      {
+        "name": "btn-check-1-easy",
+        "value": "easy"
+      },
+      {
+        "name": "btn-check-1-hyun",
+        "value": "hyun"
+      },
+      {
+        "name": "btn-check-1-saenew",
+        "value": "saenew"
+      },
+      {
+        "name": "btn-check-1-hebrew",
+        "value": "hebrew"
+      },
+      {
+        "name": "btn-check-1-greek",
+        "value": "greek"
+      },
+      {
+        "name": "btn-check-1-",
+        "value": "non"
+      },
+      {
+        "name": "btn-check-2-gae",
+        "value": "gae"
+      },
+      {
+        "name": "btn-check-2-niv",
+        "value": "niv"
+      },
+      {
+        "name": "btn-check-2-han",
+        "value": "han"
+      },
+      {
+        "name": "btn-check-2-easy",
+        "value": "easy"
+      },
+      {
+        "name": "btn-check-2-hyun",
+        "value": "hyun"
+      },
+      {
+        "name": "btn-check-2-saenew",
+        "value": "saenew"
+      },
+      {
+        "name": "btn-check-2-hebrew",
+        "value": "hebrew"
+      },
+      {
+        "name": "btn-check-2-greek",
+        "value": "greek"
+      }
+    ],
+    "parsedVerseCount": 0,
+    "unicodeRepairs": [],
+    "versePresence": [
+      {
+        "number": 25,
+        "found": false,
+        "characters": 0,
+        "sourceRange": [
+          25,
+          25
+        ],
+        "isExplicitNone": false,
+        "textSHA256": null,
+        "shortExcerpt": ""
+      }
+    ],
+    "numericElements": [],
+    "relevantClasses": [
+      "progress-circle svg-content",
+      "collapse navbar-collapse justify-content-center",
+      "sub-header sub-bg-read",
+      "bible section-padding pt-0",
+      "swiper mySwiperRead",
+      "modal-content rounded-3 shadow",
+      "form-control clsContents",
+      "offcanvas offcanvas-bottom bible-two",
+      "tab-content",
+      "bible-wrap mx-auto",
+      "bible-wrap mx-auto jang",
+      "bible-wrap mx-auto ver-size"
+    ]
+  },
+  {
+    "provider": "Godpia",
+    "translation": "gae",
+    "book": "IChronicles",
+    "chapter": 27,
+    "targets": [
+      25
+    ],
+    "url": "https://www.godpia.com/read/reading_body.asp",
+    "post": {
+      "readFlag": "",
+      "calDate": "",
+      "seq": "",
+      "ver": "gae",
+      "ver2": "",
+      "vol": "1ch",
+      "chap": "27",
+      "vol2": "",
+      "chap2": "",
+      "handwriting": "",
+      "curUrl": "/read/reading.asp"
+    },
+    "status": 200,
+    "finalURL": "https://www.godpia.com/read/reading_body.asp",
+    "bytes": 18708,
+    "charset": "utf-8",
+    "title": "",
+    "translationOptions": [],
+    "translationLabels": [],
+    "readingLinks": [],
+    "scripts": [],
+    "readerSelection": {},
+    "dataVerseSamples": [
+      {
+        "tag": "li",
+        "attributes": {
+          "class": [],
+          "id": "gae_1ch_27_1",
+          "dataver": "gae",
+          "datavol": "1ch",
+          "datachap": "27",
+          "datasec": "1"
+        },
+        "bodyClasses": [
+          [
+            "bible-read-no"
+          ],
+          [
+            "bible-read-cont"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ]
+        ]
+      },
+      {
+        "tag": "li",
+        "attributes": {
+          "class": [],
+          "id": "gae_1ch_27_2",
+          "dataver": "gae",
+          "datavol": "1ch",
+          "datachap": "27",
+          "datasec": "2"
+        },
+        "bodyClasses": [
+          [
+            "bible-read-no"
+          ],
+          [
+            "bible-read-cont"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ]
+        ]
+      }
+    ],
+    "versionNameFields": [
+      {
+        "name": "infoVerName",
+        "value": "개역개정(4판)"
+      }
+    ],
+    "parsedVerseCount": 34,
+    "unicodeRepairs": [
+      {
+        "book": "IChronicles",
+        "chapter": 27,
+        "verse": 25,
+        "reference": "대상27:25",
+        "originalCharacter": "?",
+        "restoredCharacter": "웻",
+        "originalToken": "아스마?은",
+        "restoredToken": "아스마웻은",
+        "localTextSHA256": "9c26a3d8be2b6d997a5878b0eeb30e926864e02b88c80f3b823c0eaaf17d8e0c",
+        "sourceTextSHA256": "a17a72e35177347300e48584de548397fd1fd0543769b51a8a19f49c6cab3153",
+        "wholeNormalizedPassageMatches": true
+      }
+    ],
+    "versePresence": [
+      {
+        "number": 25,
+        "found": true,
+        "characters": 60,
+        "sourceRange": [
+          25,
+          25
+        ],
+        "isExplicitNone": false,
+        "textSHA256": "a17a72e35177347300e48584de548397fd1fd0543769b51a8a19f49c6cab3153",
+        "shortExcerpt": "아디엘의 아들 아스마웻은 왕의"
+      }
+    ]
+  },
+  {
+    "provider": "Korean Bible Society",
+    "translation": "GAE",
+    "book": "IChronicles",
+    "chapter": 27,
+    "targets": [
+      25
+    ],
+    "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=1ch&chap=27",
+    "status": 200,
+    "finalURL": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=1ch&chap=27",
+    "bytes": 31142,
+    "charset": "utf-8",
+    "title": "대한성서공회",
+    "translationOptions": [
+      {
+        "value": "GAE",
+        "label": "개역개정",
+        "selected": true
+      },
+      {
+        "value": "HAN",
+        "label": "개역한글",
+        "selected": false
+      },
+      {
+        "value": "SAE",
+        "label": "표준새번역",
+        "selected": false
+      },
+      {
+        "value": "SAENEW",
+        "label": "새번역",
+        "selected": false
+      },
+      {
+        "value": "COG",
+        "label": "공동번역",
+        "selected": false
+      },
+      {
+        "value": "COGNEW",
+        "label": "공동번역 개정판",
+        "selected": false
+      }
+    ],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://bible.bskorea.or.kr",
+        "label": "성경플랫폼 가기"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php",
+        "label": "성경읽기"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/korbibSearchlist.php",
+        "label": "성경검색"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/write_comment.php",
+        "label": "개역개정 의견쓰기"
+      }
+    ],
+    "scripts": [
+      "//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.2.min.js",
+      "js/bible.list.js",
+      "js/bible.page.js?v2",
+      "js/common.js",
+      "js/layer.js",
+      "/js/alertify.js",
+      "/bible/js/check_version.js?v=2"
+    ],
+    "readerSelection": {},
+    "parsedVerseCount": 34,
+    "unicodeRepairs": [
+      {
+        "book": "IChronicles",
+        "chapter": 27,
+        "verse": 25,
+        "reference": "대상27:25",
+        "originalCharacter": "?",
+        "restoredCharacter": "웻",
+        "originalToken": "아스마?은",
+        "restoredToken": "아스마웻은",
+        "localTextSHA256": "9c26a3d8be2b6d997a5878b0eeb30e926864e02b88c80f3b823c0eaaf17d8e0c",
+        "sourceTextSHA256": "892fc8d1dd14e9be20d49df3a235cf3e6ee53485d7f12b5abaa7362e2c7e44c8",
+        "wholeNormalizedPassageMatches": true
+      }
+    ],
+    "versePresence": [
+      {
+        "number": 25,
+        "found": true,
+        "characters": 64,
+        "sourceRange": [
+          25,
+          25
+        ],
+        "isExplicitNone": false,
+        "textSHA256": "892fc8d1dd14e9be20d49df3a235cf3e6ee53485d7f12b5abaa7362e2c7e44c8",
+        "shortExcerpt": "아디엘 의 아들 아스마웻"
+      }
+    ]
+  },
+  {
+    "provider": "Godpia",
+    "translation": "gae",
+    "book": "Ezra",
+    "chapter": 2,
+    "targets": [
+      24
+    ],
+    "url": "https://www.godpia.com/read/reading.asp?ver=gae&vol=ezr&chap=2",
+    "status": 200,
+    "finalURL": "https://www.godpia.com/read/reading.asp?ver=gae&vol=ezr&chap=2",
+    "bytes": 48619,
+    "charset": "utf-8",
+    "title": "GODpia",
+    "translationOptions": [],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://www.godpia.com/read/reading.asp",
+        "label": "성경 읽기"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RE",
+        "label": "매일 성경 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RR",
+        "label": "Reformation 95일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RM",
+        "label": "Miracle 153일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RT",
+        "label": "오늘의 만나 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-sel.asp",
+        "label": "선택 통독"
+      },
+      {
+        "url": "https://www.godpia.com/search/search-dic.asp",
+        "label": "성경 사전"
+      },
+      {
+        "url": "https://www.godpia.com/write/write_everyday.asp",
+        "label": "매일 성경 필사"
+      }
+    ],
+    "scripts": [
+      "/assets/js/jquery-3.6.0.min.js",
+      "/assets/js/plugins.js",
+      "/assets/js/gsap.min.js",
+      "/assets/js/scripts.js?v=1",
+      "/assets/js/aos.js",
+      "/assets/js/common.js?v=0.1",
+      "/plugin/confirm/jquery-confirm.js",
+      "/assets/js/Script_Login.asp?HTTPD=www.godpia.com&VIU=frameindex.asp&HTTPU=/read/reading.asp?ver=gae!!vol=ezr!!chap=2",
+      "/assets/js/read.js?v=2026-10-23 오후 8:50:03"
+    ],
+    "readerSelection": {
+      "jsCurVer": "gae",
+      "jsCurVol": "ezr",
+      "jsCurChap": "2"
+    },
+    "dataVerseSamples": [],
+    "versionNameFields": [
+      {
+        "name": "btn-check-1-gae",
+        "value": "gae"
+      },
+      {
+        "name": "btn-check-1-niv",
+        "value": "niv"
+      },
+      {
+        "name": "btn-check-1-han",
+        "value": "han"
+      },
+      {
+        "name": "btn-check-1-easy",
+        "value": "easy"
+      },
+      {
+        "name": "btn-check-1-hyun",
+        "value": "hyun"
+      },
+      {
+        "name": "btn-check-1-saenew",
+        "value": "saenew"
+      },
+      {
+        "name": "btn-check-1-hebrew",
+        "value": "hebrew"
+      },
+      {
+        "name": "btn-check-1-greek",
+        "value": "greek"
+      },
+      {
+        "name": "btn-check-1-",
+        "value": "non"
+      },
+      {
+        "name": "btn-check-2-gae",
+        "value": "gae"
+      },
+      {
+        "name": "btn-check-2-niv",
+        "value": "niv"
+      },
+      {
+        "name": "btn-check-2-han",
+        "value": "han"
+      },
+      {
+        "name": "btn-check-2-easy",
+        "value": "easy"
+      },
+      {
+        "name": "btn-check-2-hyun",
+        "value": "hyun"
+      },
+      {
+        "name": "btn-check-2-saenew",
+        "value": "saenew"
+      },
+      {
+        "name": "btn-check-2-hebrew",
+        "value": "hebrew"
+      },
+      {
+        "name": "btn-check-2-greek",
+        "value": "greek"
+      }
+    ],
+    "parsedVerseCount": 0,
+    "unicodeRepairs": [],
+    "versePresence": [
+      {
+        "number": 24,
+        "found": false,
+        "characters": 0,
+        "sourceRange": [
+          24,
+          24
+        ],
+        "isExplicitNone": false,
+        "textSHA256": null,
+        "shortExcerpt": ""
+      }
+    ],
+    "numericElements": [],
+    "relevantClasses": [
+      "progress-circle svg-content",
+      "collapse navbar-collapse justify-content-center",
+      "sub-header sub-bg-read",
+      "bible section-padding pt-0",
+      "swiper mySwiperRead",
+      "modal-content rounded-3 shadow",
+      "form-control clsContents",
+      "offcanvas offcanvas-bottom bible-two",
+      "tab-content",
+      "bible-wrap mx-auto",
+      "bible-wrap mx-auto jang",
+      "bible-wrap mx-auto ver-size"
+    ]
+  },
+  {
+    "provider": "Godpia",
+    "translation": "gae",
+    "book": "Ezra",
+    "chapter": 2,
+    "targets": [
+      24
+    ],
+    "url": "https://www.godpia.com/read/reading_body.asp",
+    "post": {
+      "readFlag": "",
+      "calDate": "",
+      "seq": "",
+      "ver": "gae",
+      "ver2": "",
+      "vol": "ezr",
+      "chap": "2",
+      "vol2": "",
+      "chap2": "",
+      "handwriting": "",
+      "curUrl": "/read/reading.asp"
+    },
+    "status": 200,
+    "finalURL": "https://www.godpia.com/read/reading_body.asp",
+    "bytes": 26966,
+    "charset": "utf-8",
+    "title": "",
+    "translationOptions": [],
+    "translationLabels": [],
+    "readingLinks": [],
+    "scripts": [],
+    "readerSelection": {},
+    "dataVerseSamples": [
+      {
+        "tag": "li",
+        "attributes": {
+          "class": [],
+          "id": "gae_ezr_2_1",
+          "dataver": "gae",
+          "datavol": "ezr",
+          "datachap": "2",
+          "datasec": "1"
+        },
+        "bodyClasses": [
+          [
+            "bible-read-no"
+          ],
+          [
+            "bible-read-cont"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ]
+        ]
+      },
+      {
+        "tag": "li",
+        "attributes": {
+          "class": [],
+          "id": "gae_ezr_2_2",
+          "dataver": "gae",
+          "datavol": "ezr",
+          "datachap": "2",
+          "datasec": "2"
+        },
+        "bodyClasses": [
+          [
+            "bible-read-no"
+          ],
+          [
+            "bible-read-cont"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ]
+        ]
+      }
+    ],
+    "versionNameFields": [
+      {
+        "name": "infoVerName",
+        "value": "개역개정(4판)"
+      }
+    ],
+    "parsedVerseCount": 70,
+    "unicodeRepairs": [
+      {
+        "book": "Ezra",
+        "chapter": 2,
+        "verse": 24,
+        "reference": "스2:24",
+        "originalCharacter": "?",
+        "restoredCharacter": "웻",
+        "originalToken": "아스마?",
+        "restoredToken": "아스마웻",
+        "localTextSHA256": "1c6cfc75b4079d19ba0d82f46605c8591f252e195218e45f5a0fdaa03fe25f68",
+        "sourceTextSHA256": "d75146232b94da7c67fa5af81f5699418f6ba88a5836d00bd03f7b11ce90d1cf",
+        "wholeNormalizedPassageMatches": true
+      }
+    ],
+    "versePresence": [
+      {
+        "number": 24,
+        "found": true,
+        "characters": 16,
+        "sourceRange": [
+          24,
+          24
+        ],
+        "isExplicitNone": false,
+        "textSHA256": "d75146232b94da7c67fa5af81f5699418f6ba88a5836d00bd03f7b11ce90d1cf",
+        "shortExcerpt": "아스마웻 자손이 사십이 명이요"
+      }
+    ]
+  },
+  {
+    "provider": "Korean Bible Society",
+    "translation": "GAE",
+    "book": "Ezra",
+    "chapter": 2,
+    "targets": [
+      24
+    ],
+    "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=ezr&chap=2",
+    "status": 200,
+    "finalURL": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=ezr&chap=2",
+    "bytes": 34500,
+    "charset": "utf-8",
+    "title": "대한성서공회",
+    "translationOptions": [
+      {
+        "value": "GAE",
+        "label": "개역개정",
+        "selected": true
+      },
+      {
+        "value": "HAN",
+        "label": "개역한글",
+        "selected": false
+      },
+      {
+        "value": "SAE",
+        "label": "표준새번역",
+        "selected": false
+      },
+      {
+        "value": "SAENEW",
+        "label": "새번역",
+        "selected": false
+      },
+      {
+        "value": "COG",
+        "label": "공동번역",
+        "selected": false
+      },
+      {
+        "value": "COGNEW",
+        "label": "공동번역 개정판",
+        "selected": false
+      }
+    ],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://bible.bskorea.or.kr",
+        "label": "성경플랫폼 가기"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php",
+        "label": "성경읽기"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/korbibSearchlist.php",
+        "label": "성경검색"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/write_comment.php",
+        "label": "개역개정 의견쓰기"
+      }
+    ],
+    "scripts": [
+      "//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.2.min.js",
+      "js/bible.list.js",
+      "js/bible.page.js?v2",
+      "js/common.js",
+      "js/layer.js",
+      "/js/alertify.js",
+      "/bible/js/check_version.js?v=2"
+    ],
+    "readerSelection": {},
+    "parsedVerseCount": 70,
+    "unicodeRepairs": [
+      {
+        "book": "Ezra",
+        "chapter": 2,
+        "verse": 24,
+        "reference": "스2:24",
+        "originalCharacter": "?",
+        "restoredCharacter": "웻",
+        "originalToken": "아스마?",
+        "restoredToken": "아스마웻",
+        "localTextSHA256": "1c6cfc75b4079d19ba0d82f46605c8591f252e195218e45f5a0fdaa03fe25f68",
+        "sourceTextSHA256": "d75146232b94da7c67fa5af81f5699418f6ba88a5836d00bd03f7b11ce90d1cf",
+        "wholeNormalizedPassageMatches": true
+      }
+    ],
+    "versePresence": [
+      {
+        "number": 24,
+        "found": true,
+        "characters": 16,
+        "sourceRange": [
+          24,
+          24
+        ],
+        "isExplicitNone": false,
+        "textSHA256": "d75146232b94da7c67fa5af81f5699418f6ba88a5836d00bd03f7b11ce90d1cf",
+        "shortExcerpt": "아스마웻 자손이 사십이 명이요"
+      }
+    ]
+  },
+  {
+    "provider": "Godpia",
+    "translation": "gae",
+    "book": "Nehemiah",
+    "chapter": 7,
+    "targets": [
+      28
+    ],
+    "url": "https://www.godpia.com/read/reading.asp?ver=gae&vol=neh&chap=7",
+    "status": 200,
+    "finalURL": "https://www.godpia.com/read/reading.asp?ver=gae&vol=neh&chap=7",
+    "bytes": 48622,
+    "charset": "utf-8",
+    "title": "GODpia",
+    "translationOptions": [],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://www.godpia.com/read/reading.asp",
+        "label": "성경 읽기"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RE",
+        "label": "매일 성경 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RR",
+        "label": "Reformation 95일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RM",
+        "label": "Miracle 153일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RT",
+        "label": "오늘의 만나 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-sel.asp",
+        "label": "선택 통독"
+      },
+      {
+        "url": "https://www.godpia.com/search/search-dic.asp",
+        "label": "성경 사전"
+      },
+      {
+        "url": "https://www.godpia.com/write/write_everyday.asp",
+        "label": "매일 성경 필사"
+      }
+    ],
+    "scripts": [
+      "/assets/js/jquery-3.6.0.min.js",
+      "/assets/js/plugins.js",
+      "/assets/js/gsap.min.js",
+      "/assets/js/scripts.js?v=1",
+      "/assets/js/aos.js",
+      "/assets/js/common.js?v=0.1",
+      "/plugin/confirm/jquery-confirm.js",
+      "/assets/js/Script_Login.asp?HTTPD=www.godpia.com&VIU=frameindex.asp&HTTPU=/read/reading.asp?ver=gae!!vol=neh!!chap=7",
+      "/assets/js/read.js?v=2026-10-23 오후 8:50:04"
+    ],
+    "readerSelection": {
+      "jsCurVer": "gae",
+      "jsCurVol": "neh",
+      "jsCurChap": "7"
+    },
+    "dataVerseSamples": [],
+    "versionNameFields": [
+      {
+        "name": "btn-check-1-gae",
+        "value": "gae"
+      },
+      {
+        "name": "btn-check-1-niv",
+        "value": "niv"
+      },
+      {
+        "name": "btn-check-1-han",
+        "value": "han"
+      },
+      {
+        "name": "btn-check-1-easy",
+        "value": "easy"
+      },
+      {
+        "name": "btn-check-1-hyun",
+        "value": "hyun"
+      },
+      {
+        "name": "btn-check-1-saenew",
+        "value": "saenew"
+      },
+      {
+        "name": "btn-check-1-hebrew",
+        "value": "hebrew"
+      },
+      {
+        "name": "btn-check-1-greek",
+        "value": "greek"
+      },
+      {
+        "name": "btn-check-1-",
+        "value": "non"
+      },
+      {
+        "name": "btn-check-2-gae",
+        "value": "gae"
+      },
+      {
+        "name": "btn-check-2-niv",
+        "value": "niv"
+      },
+      {
+        "name": "btn-check-2-han",
+        "value": "han"
+      },
+      {
+        "name": "btn-check-2-easy",
+        "value": "easy"
+      },
+      {
+        "name": "btn-check-2-hyun",
+        "value": "hyun"
+      },
+      {
+        "name": "btn-check-2-saenew",
+        "value": "saenew"
+      },
+      {
+        "name": "btn-check-2-hebrew",
+        "value": "hebrew"
+      },
+      {
+        "name": "btn-check-2-greek",
+        "value": "greek"
+      }
+    ],
+    "parsedVerseCount": 0,
+    "unicodeRepairs": [],
+    "versePresence": [
+      {
+        "number": 28,
+        "found": false,
+        "characters": 0,
+        "sourceRange": [
+          28,
+          28
+        ],
+        "isExplicitNone": false,
+        "textSHA256": null,
+        "shortExcerpt": ""
+      }
+    ],
+    "numericElements": [],
+    "relevantClasses": [
+      "progress-circle svg-content",
+      "collapse navbar-collapse justify-content-center",
+      "sub-header sub-bg-read",
+      "bible section-padding pt-0",
+      "swiper mySwiperRead",
+      "modal-content rounded-3 shadow",
+      "form-control clsContents",
+      "offcanvas offcanvas-bottom bible-two",
+      "tab-content",
+      "bible-wrap mx-auto",
+      "bible-wrap mx-auto jang",
+      "bible-wrap mx-auto ver-size"
+    ]
+  },
+  {
+    "provider": "Godpia",
+    "translation": "gae",
+    "book": "Nehemiah",
+    "chapter": 7,
+    "targets": [
+      28
+    ],
+    "url": "https://www.godpia.com/read/reading_body.asp",
+    "post": {
+      "readFlag": "",
+      "calDate": "",
+      "seq": "",
+      "ver": "gae",
+      "ver2": "",
+      "vol": "neh",
+      "chap": "7",
+      "vol2": "",
+      "chap2": "",
+      "handwriting": "",
+      "curUrl": "/read/reading.asp"
+    },
+    "status": 200,
+    "finalURL": "https://www.godpia.com/read/reading_body.asp",
+    "bytes": 29545,
+    "charset": "utf-8",
+    "title": "",
+    "translationOptions": [],
+    "translationLabels": [],
+    "readingLinks": [],
+    "scripts": [],
+    "readerSelection": {},
+    "dataVerseSamples": [
+      {
+        "tag": "li",
+        "attributes": {
+          "class": [],
+          "id": "gae_neh_7_1",
+          "dataver": "gae",
+          "datavol": "neh",
+          "datachap": "7",
+          "datasec": "1"
+        },
+        "bodyClasses": [
+          [
+            "bible-read-no"
+          ],
+          [
+            "bible-read-cont"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ]
+        ]
+      },
+      {
+        "tag": "li",
+        "attributes": {
+          "class": [],
+          "id": "gae_neh_7_2",
+          "dataver": "gae",
+          "datavol": "neh",
+          "datachap": "7",
+          "datasec": "2"
+        },
+        "bodyClasses": [
+          [
+            "bible-read-no"
+          ],
+          [
+            "bible-read-cont"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ]
+        ]
+      }
+    ],
+    "versionNameFields": [
+      {
+        "name": "infoVerName",
+        "value": "개역개정(4판)"
+      }
+    ],
+    "parsedVerseCount": 73,
+    "unicodeRepairs": [
+      {
+        "book": "Nehemiah",
+        "chapter": 7,
+        "verse": 28,
+        "reference": "느7:28",
+        "originalCharacter": "?",
+        "restoredCharacter": "웻",
+        "originalToken": "벧아스마?",
+        "restoredToken": "벧아스마웻",
+        "localTextSHA256": "003e437986e4f4d8f24b4be197ba007006292195c2df3f17a9330ffeeffc992f",
+        "sourceTextSHA256": "b11cd17b00858832e43988b5ab450644a2808a6d18f5a46b2d8661df63fcf687",
+        "wholeNormalizedPassageMatches": true
+      }
+    ],
+    "versePresence": [
+      {
+        "number": 28,
+        "found": true,
+        "characters": 17,
+        "sourceRange": [
+          28,
+          28
+        ],
+        "isExplicitNone": false,
+        "textSHA256": "b11cd17b00858832e43988b5ab450644a2808a6d18f5a46b2d8661df63fcf687",
+        "shortExcerpt": "벧아스마웻 사람이 사십이 명이요"
+      }
+    ]
+  },
+  {
+    "provider": "Korean Bible Society",
+    "translation": "GAE",
+    "book": "Nehemiah",
+    "chapter": 7,
+    "targets": [
+      28
+    ],
+    "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=neh&chap=7",
+    "status": 200,
+    "finalURL": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=neh&chap=7",
+    "bytes": 36353,
+    "charset": "utf-8",
+    "title": "대한성서공회",
+    "translationOptions": [
+      {
+        "value": "GAE",
+        "label": "개역개정",
+        "selected": true
+      },
+      {
+        "value": "HAN",
+        "label": "개역한글",
+        "selected": false
+      },
+      {
+        "value": "SAE",
+        "label": "표준새번역",
+        "selected": false
+      },
+      {
+        "value": "SAENEW",
+        "label": "새번역",
+        "selected": false
+      },
+      {
+        "value": "COG",
+        "label": "공동번역",
+        "selected": false
+      },
+      {
+        "value": "COGNEW",
+        "label": "공동번역 개정판",
+        "selected": false
+      }
+    ],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://bible.bskorea.or.kr",
+        "label": "성경플랫폼 가기"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php",
+        "label": "성경읽기"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/korbibSearchlist.php",
+        "label": "성경검색"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/write_comment.php",
+        "label": "개역개정 의견쓰기"
+      }
+    ],
+    "scripts": [
+      "//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.2.min.js",
+      "js/bible.list.js",
+      "js/bible.page.js?v2",
+      "js/common.js",
+      "js/layer.js",
+      "/js/alertify.js",
+      "/bible/js/check_version.js?v=2"
+    ],
+    "readerSelection": {},
+    "parsedVerseCount": 73,
+    "unicodeRepairs": [
+      {
+        "book": "Nehemiah",
+        "chapter": 7,
+        "verse": 28,
+        "reference": "느7:28",
+        "originalCharacter": "?",
+        "restoredCharacter": "웻",
+        "originalToken": "벧아스마?",
+        "restoredToken": "벧아스마웻",
+        "localTextSHA256": "003e437986e4f4d8f24b4be197ba007006292195c2df3f17a9330ffeeffc992f",
+        "sourceTextSHA256": "b11cd17b00858832e43988b5ab450644a2808a6d18f5a46b2d8661df63fcf687",
+        "wholeNormalizedPassageMatches": true
+      }
+    ],
+    "versePresence": [
+      {
+        "number": 28,
+        "found": true,
+        "characters": 17,
+        "sourceRange": [
+          28,
+          28
+        ],
+        "isExplicitNone": false,
+        "textSHA256": "b11cd17b00858832e43988b5ab450644a2808a6d18f5a46b2d8661df63fcf687",
+        "shortExcerpt": "벧아스마웻 사람이 사십이 명이요"
+      }
+    ]
+  },
+  {
+    "provider": "Godpia",
+    "translation": "gae",
+    "book": "Nehemiah",
+    "chapter": 12,
+    "targets": [
+      29
+    ],
+    "url": "https://www.godpia.com/read/reading.asp?ver=gae&vol=neh&chap=12",
+    "status": 200,
+    "finalURL": "https://www.godpia.com/read/reading.asp?ver=gae&vol=neh&chap=12",
+    "bytes": 48627,
+    "charset": "utf-8",
+    "title": "GODpia",
+    "translationOptions": [],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://www.godpia.com/read/reading.asp",
+        "label": "성경 읽기"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RE",
+        "label": "매일 성경 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RR",
+        "label": "Reformation 95일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RM",
+        "label": "Miracle 153일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RT",
+        "label": "오늘의 만나 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-sel.asp",
+        "label": "선택 통독"
+      },
+      {
+        "url": "https://www.godpia.com/search/search-dic.asp",
+        "label": "성경 사전"
+      },
+      {
+        "url": "https://www.godpia.com/write/write_everyday.asp",
+        "label": "매일 성경 필사"
+      }
+    ],
+    "scripts": [
+      "/assets/js/jquery-3.6.0.min.js",
+      "/assets/js/plugins.js",
+      "/assets/js/gsap.min.js",
+      "/assets/js/scripts.js?v=1",
+      "/assets/js/aos.js",
+      "/assets/js/common.js?v=0.1",
+      "/plugin/confirm/jquery-confirm.js",
+      "/assets/js/Script_Login.asp?HTTPD=www.godpia.com&VIU=frameindex.asp&HTTPU=/read/reading.asp?ver=gae!!vol=neh!!chap=12",
+      "/assets/js/read.js?v=2026-10-23 오후 8:50:04"
+    ],
+    "readerSelection": {
+      "jsCurVer": "gae",
+      "jsCurVol": "neh",
+      "jsCurChap": "12"
+    },
+    "dataVerseSamples": [],
+    "versionNameFields": [
+      {
+        "name": "btn-check-1-gae",
+        "value": "gae"
+      },
+      {
+        "name": "btn-check-1-niv",
+        "value": "niv"
+      },
+      {
+        "name": "btn-check-1-han",
+        "value": "han"
+      },
+      {
+        "name": "btn-check-1-easy",
+        "value": "easy"
+      },
+      {
+        "name": "btn-check-1-hyun",
+        "value": "hyun"
+      },
+      {
+        "name": "btn-check-1-saenew",
+        "value": "saenew"
+      },
+      {
+        "name": "btn-check-1-hebrew",
+        "value": "hebrew"
+      },
+      {
+        "name": "btn-check-1-greek",
+        "value": "greek"
+      },
+      {
+        "name": "btn-check-1-",
+        "value": "non"
+      },
+      {
+        "name": "btn-check-2-gae",
+        "value": "gae"
+      },
+      {
+        "name": "btn-check-2-niv",
+        "value": "niv"
+      },
+      {
+        "name": "btn-check-2-han",
+        "value": "han"
+      },
+      {
+        "name": "btn-check-2-easy",
+        "value": "easy"
+      },
+      {
+        "name": "btn-check-2-hyun",
+        "value": "hyun"
+      },
+      {
+        "name": "btn-check-2-saenew",
+        "value": "saenew"
+      },
+      {
+        "name": "btn-check-2-hebrew",
+        "value": "hebrew"
+      },
+      {
+        "name": "btn-check-2-greek",
+        "value": "greek"
+      }
+    ],
+    "parsedVerseCount": 0,
+    "unicodeRepairs": [],
+    "versePresence": [
+      {
+        "number": 29,
+        "found": false,
+        "characters": 0,
+        "sourceRange": [
+          29,
+          29
+        ],
+        "isExplicitNone": false,
+        "textSHA256": null,
+        "shortExcerpt": ""
+      }
+    ],
+    "numericElements": [],
+    "relevantClasses": [
+      "progress-circle svg-content",
+      "collapse navbar-collapse justify-content-center",
+      "sub-header sub-bg-read",
+      "bible section-padding pt-0",
+      "swiper mySwiperRead",
+      "modal-content rounded-3 shadow",
+      "form-control clsContents",
+      "offcanvas offcanvas-bottom bible-two",
+      "tab-content",
+      "bible-wrap mx-auto",
+      "bible-wrap mx-auto jang",
+      "bible-wrap mx-auto ver-size"
+    ]
+  },
+  {
+    "provider": "Godpia",
+    "translation": "gae",
+    "book": "Nehemiah",
+    "chapter": 12,
+    "targets": [
+      29
+    ],
+    "url": "https://www.godpia.com/read/reading_body.asp",
+    "post": {
+      "readFlag": "",
+      "calDate": "",
+      "seq": "",
+      "ver": "gae",
+      "ver2": "",
+      "vol": "neh",
+      "chap": "12",
+      "vol2": "",
+      "chap2": "",
+      "handwriting": "",
+      "curUrl": "/read/reading.asp"
+    },
+    "status": 200,
+    "finalURL": "https://www.godpia.com/read/reading_body.asp",
+    "bytes": 28052,
+    "charset": "utf-8",
+    "title": "",
+    "translationOptions": [],
+    "translationLabels": [],
+    "readingLinks": [],
+    "scripts": [],
+    "readerSelection": {},
+    "dataVerseSamples": [
+      {
+        "tag": "li",
+        "attributes": {
+          "class": [],
+          "id": "gae_neh_12_1",
+          "dataver": "gae",
+          "datavol": "neh",
+          "datachap": "12",
+          "datasec": "1"
+        },
+        "bodyClasses": [
+          [
+            "bible-read-no"
+          ],
+          [
+            "bible-read-cont"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ]
+        ]
+      },
+      {
+        "tag": "li",
+        "attributes": {
+          "class": [],
+          "id": "gae_neh_12_2",
+          "dataver": "gae",
+          "datavol": "neh",
+          "datachap": "12",
+          "datasec": "2"
+        },
+        "bodyClasses": [
+          [
+            "bible-read-no"
+          ],
+          [
+            "bible-read-cont"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ]
+        ]
+      }
+    ],
+    "versionNameFields": [
+      {
+        "name": "infoVerName",
+        "value": "개역개정(4판)"
+      }
+    ],
+    "parsedVerseCount": 47,
+    "unicodeRepairs": [
+      {
+        "book": "Nehemiah",
+        "chapter": 12,
+        "verse": 29,
+        "reference": "느12:29",
+        "originalCharacter": "?",
+        "restoredCharacter": "웻",
+        "originalToken": "아스마?",
+        "restoredToken": "아스마웻",
+        "localTextSHA256": "e214c1550bd2a267428447f2db7953118edf019d68e993ee0ada5863d72437e3",
+        "sourceTextSHA256": "c69e697a2f0eb9a795f56f842b9ba4544d70284ae533a58464dcc518d2ab6ee4",
+        "wholeNormalizedPassageMatches": true
+      }
+    ],
+    "versePresence": [
+      {
+        "number": 29,
+        "found": true,
+        "characters": 67,
+        "sourceRange": [
+          29,
+          29
+        ],
+        "isExplicitNone": false,
+        "textSHA256": "c69e697a2f0eb9a795f56f842b9ba4544d70284ae533a58464dcc518d2ab6ee4",
+        "shortExcerpt": "또 벧길갈과 게바와 아스마웻"
+      }
+    ]
+  },
+  {
+    "provider": "Korean Bible Society",
+    "translation": "GAE",
+    "book": "Nehemiah",
+    "chapter": 12,
+    "targets": [
+      29
+    ],
+    "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=neh&chap=12",
+    "status": 200,
+    "finalURL": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=neh&chap=12",
+    "bytes": 35368,
+    "charset": "utf-8",
+    "title": "대한성서공회",
+    "translationOptions": [
+      {
+        "value": "GAE",
+        "label": "개역개정",
+        "selected": true
+      },
+      {
+        "value": "HAN",
+        "label": "개역한글",
+        "selected": false
+      },
+      {
+        "value": "SAE",
+        "label": "표준새번역",
+        "selected": false
+      },
+      {
+        "value": "SAENEW",
+        "label": "새번역",
+        "selected": false
+      },
+      {
+        "value": "COG",
+        "label": "공동번역",
+        "selected": false
+      },
+      {
+        "value": "COGNEW",
+        "label": "공동번역 개정판",
+        "selected": false
+      }
+    ],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://bible.bskorea.or.kr",
+        "label": "성경플랫폼 가기"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php",
+        "label": "성경읽기"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/korbibSearchlist.php",
+        "label": "성경검색"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/write_comment.php",
+        "label": "개역개정 의견쓰기"
+      }
+    ],
+    "scripts": [
+      "//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.2.min.js",
+      "js/bible.list.js",
+      "js/bible.page.js?v2",
+      "js/common.js",
+      "js/layer.js",
+      "/js/alertify.js",
+      "/bible/js/check_version.js?v=2"
+    ],
+    "readerSelection": {},
+    "parsedVerseCount": 47,
+    "unicodeRepairs": [
+      {
+        "book": "Nehemiah",
+        "chapter": 12,
+        "verse": 29,
+        "reference": "느12:29",
+        "originalCharacter": "?",
+        "restoredCharacter": "웻",
+        "originalToken": "아스마?",
+        "restoredToken": "아스마웻",
+        "localTextSHA256": "e214c1550bd2a267428447f2db7953118edf019d68e993ee0ada5863d72437e3",
+        "sourceTextSHA256": "8ed1372b42314e765f2e47ef2d9e0c44cf4e42473b1e6de42c4369d49c973e2d",
+        "wholeNormalizedPassageMatches": true
+      }
+    ],
+    "versePresence": [
+      {
+        "number": 29,
+        "found": true,
+        "characters": 69,
+        "sourceRange": [
+          29,
+          29
+        ],
+        "isExplicitNone": false,
+        "textSHA256": "8ed1372b42314e765f2e47ef2d9e0c44cf4e42473b1e6de42c4369d49c973e2d",
+        "shortExcerpt": "또 벧길갈 과 게바"
+      }
+    ]
+  },
+  {
+    "provider": "Godpia",
+    "translation": "gae",
+    "book": "Isaiah",
+    "chapter": 62,
+    "targets": [
+      4
+    ],
+    "url": "https://www.godpia.com/read/reading.asp?ver=gae&vol=isa&chap=62",
+    "status": 200,
+    "finalURL": "https://www.godpia.com/read/reading.asp?ver=gae&vol=isa&chap=62",
+    "bytes": 48624,
+    "charset": "utf-8",
+    "title": "GODpia",
+    "translationOptions": [],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://www.godpia.com/read/reading.asp",
+        "label": "성경 읽기"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RE",
+        "label": "매일 성경 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RR",
+        "label": "Reformation 95일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RM",
+        "label": "Miracle 153일 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-through.asp?readFlag=RT",
+        "label": "오늘의 만나 통독"
+      },
+      {
+        "url": "https://www.godpia.com/read/reading-sel.asp",
+        "label": "선택 통독"
+      },
+      {
+        "url": "https://www.godpia.com/search/search-dic.asp",
+        "label": "성경 사전"
+      },
+      {
+        "url": "https://www.godpia.com/write/write_everyday.asp",
+        "label": "매일 성경 필사"
+      }
+    ],
+    "scripts": [
+      "/assets/js/jquery-3.6.0.min.js",
+      "/assets/js/plugins.js",
+      "/assets/js/gsap.min.js",
+      "/assets/js/scripts.js?v=1",
+      "/assets/js/aos.js",
+      "/assets/js/common.js?v=0.1",
+      "/plugin/confirm/jquery-confirm.js",
+      "/assets/js/Script_Login.asp?HTTPD=www.godpia.com&VIU=frameindex.asp&HTTPU=/read/reading.asp?ver=gae!!vol=isa!!chap=62",
+      "/assets/js/read.js?v=2026-10-23 오후 8:50:04"
+    ],
+    "readerSelection": {
+      "jsCurVer": "gae",
+      "jsCurVol": "isa",
+      "jsCurChap": "62"
+    },
+    "dataVerseSamples": [],
+    "versionNameFields": [
+      {
+        "name": "btn-check-1-gae",
+        "value": "gae"
+      },
+      {
+        "name": "btn-check-1-niv",
+        "value": "niv"
+      },
+      {
+        "name": "btn-check-1-han",
+        "value": "han"
+      },
+      {
+        "name": "btn-check-1-easy",
+        "value": "easy"
+      },
+      {
+        "name": "btn-check-1-hyun",
+        "value": "hyun"
+      },
+      {
+        "name": "btn-check-1-saenew",
+        "value": "saenew"
+      },
+      {
+        "name": "btn-check-1-hebrew",
+        "value": "hebrew"
+      },
+      {
+        "name": "btn-check-1-greek",
+        "value": "greek"
+      },
+      {
+        "name": "btn-check-1-",
+        "value": "non"
+      },
+      {
+        "name": "btn-check-2-gae",
+        "value": "gae"
+      },
+      {
+        "name": "btn-check-2-niv",
+        "value": "niv"
+      },
+      {
+        "name": "btn-check-2-han",
+        "value": "han"
+      },
+      {
+        "name": "btn-check-2-easy",
+        "value": "easy"
+      },
+      {
+        "name": "btn-check-2-hyun",
+        "value": "hyun"
+      },
+      {
+        "name": "btn-check-2-saenew",
+        "value": "saenew"
+      },
+      {
+        "name": "btn-check-2-hebrew",
+        "value": "hebrew"
+      },
+      {
+        "name": "btn-check-2-greek",
+        "value": "greek"
+      }
+    ],
+    "parsedVerseCount": 0,
+    "unicodeRepairs": [],
+    "versePresence": [
+      {
+        "number": 4,
+        "found": false,
+        "characters": 0,
+        "sourceRange": [
+          4,
+          4
+        ],
+        "isExplicitNone": false,
+        "textSHA256": null,
+        "shortExcerpt": ""
+      }
+    ],
+    "numericElements": [],
+    "relevantClasses": [
+      "progress-circle svg-content",
+      "collapse navbar-collapse justify-content-center",
+      "sub-header sub-bg-read",
+      "bible section-padding pt-0",
+      "swiper mySwiperRead",
+      "modal-content rounded-3 shadow",
+      "form-control clsContents",
+      "offcanvas offcanvas-bottom bible-two",
+      "tab-content",
+      "bible-wrap mx-auto",
+      "bible-wrap mx-auto jang",
+      "bible-wrap mx-auto ver-size"
+    ]
+  },
+  {
+    "provider": "Godpia",
+    "translation": "gae",
+    "book": "Isaiah",
+    "chapter": 62,
+    "targets": [
+      4
+    ],
+    "url": "https://www.godpia.com/read/reading_body.asp",
+    "post": {
+      "readFlag": "",
+      "calDate": "",
+      "seq": "",
+      "ver": "gae",
+      "ver2": "",
+      "vol": "isa",
+      "chap": "62",
+      "vol2": "",
+      "chap2": "",
+      "handwriting": "",
+      "curUrl": "/read/reading.asp"
+    },
+    "status": 200,
+    "finalURL": "https://www.godpia.com/read/reading_body.asp",
+    "bytes": 7713,
+    "charset": "utf-8",
+    "title": "",
+    "translationOptions": [],
+    "translationLabels": [],
+    "readingLinks": [],
+    "scripts": [],
+    "readerSelection": {},
+    "dataVerseSamples": [
+      {
+        "tag": "li",
+        "attributes": {
+          "class": [],
+          "id": "gae_isa_62_1",
+          "dataver": "gae",
+          "datavol": "isa",
+          "datachap": "62",
+          "datasec": "1"
+        },
+        "bodyClasses": [
+          [
+            "bible-read-no"
+          ],
+          [
+            "bible-read-cont"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ]
+        ]
+      },
+      {
+        "tag": "li",
+        "attributes": {
+          "class": [],
+          "id": "gae_isa_62_2",
+          "dataver": "gae",
+          "datavol": "isa",
+          "datachap": "62",
+          "datasec": "2"
+        },
+        "bodyClasses": [
+          [
+            "bible-read-no"
+          ],
+          [
+            "bible-read-cont"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ],
+          [
+            "dic-link",
+            "clsDicView"
+          ]
+        ]
+      }
+    ],
+    "versionNameFields": [
+      {
+        "name": "infoVerName",
+        "value": "개역개정(4판)"
+      }
+    ],
+    "parsedVerseCount": 12,
+    "unicodeRepairs": [
+      {
+        "book": "Isaiah",
+        "chapter": 62,
+        "verse": 4,
+        "reference": "사62:4",
+        "originalCharacter": "?",
+        "restoredCharacter": "쁄",
+        "originalToken": "?라라",
+        "restoredToken": "쁄라라",
+        "localTextSHA256": "2c17ba9cb485284926ed736f08481d681a3003b70e369ffb67ee8c704219e6ec",
+        "sourceTextSHA256": "0f16f040dfd376466fffb61b29264568ec7ba14a418d2438ba85e982656bbe13",
+        "wholeNormalizedPassageMatches": true
+      }
+    ],
+    "versePresence": [
+      {
+        "number": 4,
+        "found": true,
+        "characters": 115,
+        "sourceRange": [
+          4,
+          4
+        ],
+        "isExplicitNone": false,
+        "textSHA256": "0f16f040dfd376466fffb61b29264568ec7ba14a418d2438ba85e982656bbe13",
+        "shortExcerpt": "다시는 너를 버림 받은"
+      }
+    ]
+  },
+  {
+    "provider": "Korean Bible Society",
+    "translation": "GAE",
+    "book": "Isaiah",
+    "chapter": 62,
+    "targets": [
+      4
+    ],
+    "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=isa&chap=62",
+    "status": 200,
+    "finalURL": "https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=isa&chap=62",
+    "bytes": 24147,
+    "charset": "utf-8",
+    "title": "대한성서공회",
+    "translationOptions": [
+      {
+        "value": "GAE",
+        "label": "개역개정",
+        "selected": true
+      },
+      {
+        "value": "HAN",
+        "label": "개역한글",
+        "selected": false
+      },
+      {
+        "value": "SAE",
+        "label": "표준새번역",
+        "selected": false
+      },
+      {
+        "value": "SAENEW",
+        "label": "새번역",
+        "selected": false
+      },
+      {
+        "value": "COG",
+        "label": "공동번역",
+        "selected": false
+      },
+      {
+        "value": "COGNEW",
+        "label": "공동번역 개정판",
+        "selected": false
+      }
+    ],
+    "translationLabels": [],
+    "readingLinks": [
+      {
+        "url": "https://bible.bskorea.or.kr",
+        "label": "성경플랫폼 가기"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/korbibReadpage.php",
+        "label": "성경읽기"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/korbibSearchlist.php",
+        "label": "성경검색"
+      },
+      {
+        "url": "https://www.bskorea.or.kr/bible/write_comment.php",
+        "label": "개역개정 의견쓰기"
+      }
+    ],
+    "scripts": [
+      "//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.2.min.js",
+      "js/bible.list.js",
+      "js/bible.page.js?v2",
+      "js/common.js",
+      "js/layer.js",
+      "/js/alertify.js",
+      "/bible/js/check_version.js?v=2"
+    ],
+    "readerSelection": {},
+    "parsedVerseCount": 12,
+    "unicodeRepairs": [],
+    "versePresence": [
+      {
+        "number": 4,
+        "found": true,
+        "characters": 144,
+        "sourceRange": [
+          4,
+          4
+        ],
+        "isExplicitNone": false,
+        "textSHA256": "fdce5e2d4b62dbca63782d1809088fc7cfe1615540dbc8f95bcc88f813a02e0c",
+        "shortExcerpt": "다시는 너를 버림 받은"
+      }
+    ]
+  }
+]
