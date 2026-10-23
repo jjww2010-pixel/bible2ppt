@@ -14,7 +14,14 @@ import urllib.parse
 import urllib.request
 from bs4 import BeautifulSoup
 
-CASES = [('Acts','act',44,24,[7])]
+CASES = [('Genesis','gen',1,10,[26]), ('Genesis','gen',1,46,[21]),
+         ('IISamuel','2sa',10,23,[31]), ('IChronicles','1ch',13,1,[20]),
+         ('IChronicles','1ch',13,7,[12,15]), ('IChronicles','1ch',13,8,[36]),
+         ('IChronicles','1ch',13,9,[42]), ('IChronicles','1ch',13,11,[33]),
+         ('IChronicles','1ch',13,12,[3]), ('IChronicles','1ch',13,24,[13]),
+         ('IChronicles','1ch',13,27,[25]), ('Ezra','ezr',15,2,[24]),
+         ('Nehemiah','neh',16,7,[28]), ('Nehemiah','neh',16,12,[29]),
+         ('Isaiah','isa',23,62,[4])]
 TASKS = []
 for key,online,number,chapter,verses in CASES:
     for ver in ['gae']:
@@ -41,6 +48,43 @@ TASKS=[t for t in TASKS if t['provider'] in ['Godpia','Korean Bible Society'] an
 
 def text_only(value):
     return BeautifulSoup(value,'html.parser').get_text(' ',strip=True)
+
+
+SUPPLIED=json.loads(Path('supplied-data/Bibles/krv.json').read_text()) if Path('supplied-data/Bibles/krv.json').exists() else None
+
+
+def normalized(value):
+    return re.sub(r'\s+', '', re.sub(r'<[^>]*>', '', value))
+
+
+def character_repairs(task, rows):
+    if SUPPLIED is None:return []
+    book=next(b for b in SUPPLIED['books'] if b['key']==task['book'])
+    chapter=next(c for c in book['chapters'] if c['number']==task['chapter'])
+    result=[]
+    for number in task['targets']:
+        verse=next(v for v in chapter['verses'] if v['number']==number)
+        original=verse['text']; local=normalized(original); remote=normalized(rows.get(number,''))
+        for offset,old in enumerate(local):
+            if old!='?':continue
+            replacement=None
+            for width in [16,12,8]:
+                before=local[max(0,offset-width):offset]; after=local[offset+1:offset+width+1]
+                pattern=re.escape(before)+r'(?P<restored>[가-힣])'+re.escape(after)
+                matches=list(re.finditer(pattern,remote))
+                if len(matches)==1:
+                    replacement=matches[0]['restored'];break
+            if replacement is None:continue
+            original_index=original.index('?')
+            token=next(m.group() for m in re.finditer(r'[가-힣?]+',original) if m.start()<=original_index<m.end())
+            result.append({'book':task['book'],'chapter':task['chapter'],'verse':number,
+                           'reference':f'{book["abbreviation"]}{task["chapter"]}:{number}',
+                           'originalCharacter':'?','restoredCharacter':replacement,
+                           'originalToken':token,'restoredToken':token.replace('?',replacement),
+                           'localTextSHA256':hashlib.sha256(original.encode()).hexdigest(),
+                           'sourceTextSHA256':hashlib.sha256(rows[number].encode()).hexdigest(),
+                           'wholeNormalizedPassageMatches':local.replace('?',replacement)==remote})
+    return result
 
 
 def fetch(task):
@@ -136,6 +180,7 @@ def fetch(task):
                     body = text_only(''.join(following))
                     if body: rows[int(number)] = body
         result['parsedVerseCount'] = len(rows)
+        result['unicodeRepairs']=character_repairs(task,rows)
         result['versePresence'] = [{'number':n,'found':n in rows,'characters':len(rows.get(n,'')),
                                     'sourceRange':ranges.get(n,[n,n]),
                                     'isExplicitNone':rows.get(n,'').strip() in ['(없음)','없음'],
